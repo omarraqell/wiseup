@@ -12,6 +12,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from langchain_core.messages import HumanMessage
 from agent_graph import graph
+from runlog import log, new_run
 
 app = FastAPI(title="WISEUP Catalog Assistant")
 app.mount("/images", StaticFiles(directory="images"), name="images")
@@ -64,12 +65,16 @@ def series():
 def ask(req: AskReq):
     t0 = time.time()
     thread = req.session_id or "default"
+    new_run(f"HTTP /ask — message: «{req.query}»  (session: {thread})")
     config = {"configurable": {"thread_id": thread}}
     state = graph.invoke(
         {"messages": [HumanMessage(req.query)], "session_id": thread}, config)
     answer = state["messages"][-1].content
     products = state.get("retrieved_products", [])
     top_score = products[0].get("relevance") if products else None
+    log(f"💬 NODE respond: final reply ready ({len(answer or '')} chars), "
+        f"{len(products)} product card(s)")
+    log(f"HTTP /ask — replying ({len(answer or '')} chars)")
     log_interaction(req, answer, len(products), top_score, int((time.time() - t0) * 1000))
     return {"answer": answer, "products": products}
 

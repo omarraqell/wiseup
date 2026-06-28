@@ -4,11 +4,12 @@ import datetime
 from typing import Annotated, TypedDict
 from langchain_core.messages import BaseMessage, SystemMessage
 from langchain_openai import ChatOpenAI
-from langgraph.graph import StateGraph, START
+from langgraph.graph import StateGraph, START, END
 from langgraph.graph.message import add_messages
 from langgraph.prebuilt import ToolNode, tools_condition
 from langgraph.checkpoint.memory import MemorySaver
 from tools import TOOLS
+from runlog import log
 
 GRAPH_LOG = os.path.join("logs", "graph_compile.log")
 
@@ -38,9 +39,25 @@ class AgentState(TypedDict):
 
 
 def agent_node(state: AgentState) -> dict:
+    log("🤖 NODE agent: thinking...")
     llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.3).bind_tools(TOOLS)
     ai = llm.invoke([SystemMessage(content=SYSTEM_PROMPT)] + state["messages"])
+    tool_calls = getattr(ai, "tool_calls", None) or []
+    for tc in tool_calls:
+        log(f"🤖 NODE agent: decided to CALL {tc['name']} with {tc['args']}")
+    if not tool_calls:
+        log("🤖 NODE agent: produced a final answer (no tool needed)")
     return {"messages": [ai]}
+
+
+def route_agent(state: AgentState):
+    """Same routing as the prebuilt tools_condition, but logs the decision."""
+    decision = tools_condition(state)  # -> "tools" or END
+    if decision == "tools":
+        log("↪️  ROUTER: tool requested → go to 'tools', then LOOP back to agent")
+    else:
+        log("🏁 ROUTER: no tool requested → finish (exit the loop)")
+    return decision
 
 
 def _build_graph():
@@ -48,7 +65,7 @@ def _build_graph():
     builder.add_node("agent", agent_node)
     builder.add_node("tools", ToolNode(TOOLS, handle_tool_errors=True))
     builder.add_edge(START, "agent")
-    builder.add_conditional_edges("agent", tools_condition)
+    builder.add_conditional_edges("agent", route_agent, {"tools": "tools", END: END})
     builder.add_edge("tools", "agent")
     return builder.compile(checkpointer=MemorySaver())
 
