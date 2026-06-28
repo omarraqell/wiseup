@@ -5,6 +5,7 @@ from typing import Annotated, Optional
 from langchain_core.tools import tool, InjectedToolCallId
 from langchain_core.messages import ToolMessage
 from langgraph.types import Command
+from langchain_tavily import TavilySearch
 
 _PRODUCTS = json.load(open("products.json", encoding="utf-8"))
 _BY_ITEM = {str(p["item_no"]): p for p in _PRODUCTS if p.get("item_no")}
@@ -48,3 +49,22 @@ def retrieve_products(query: str, series: Optional[str],
         "retrieved_products": cards,
         "messages": [ToolMessage(summary, tool_call_id=tool_call_id)],
     })
+
+
+def _format_tavily(res) -> str:
+    items = res.get("results", []) if isinstance(res, dict) else res
+    if not items:
+        return "No results found on the WISEUP website."
+    lines = []
+    for r in items:
+        lines.append(f"- {r.get('title','')} ({r.get('url','')})\n  {r.get('content','')}")
+    return "\n".join(lines)
+
+
+@tool
+def search_wiseup_web(query: str) -> str:
+    """Search the official WISEUP website (wiseuptools.com) for company or
+    product-page information that is NOT in the local catalog — e.g. about the
+    company, contact details, certifications, or specific web pages."""
+    tav = TavilySearch(max_results=5, include_domains=["wiseuptools.com"])
+    return _format_tavily(tav.invoke({"query": query}))
