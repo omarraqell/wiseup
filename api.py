@@ -10,6 +10,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 import rag
 import memory
+from tools import to_card
 
 app = FastAPI(title="WISEUP Catalog Assistant")
 app.mount("/images", StaticFiles(directory="images"), name="images")
@@ -46,28 +47,6 @@ class AskReq(BaseModel):
 
 class ResetReq(BaseModel):
     session_id: str
-
-
-def to_card(doc, score):
-    m = doc.metadata
-    img = m.get("image", "")
-    return {
-        "item_no": m.get("item_no", ""),
-        "product_name": m.get("product_name") or "Product",
-        "product_name_ar": m.get("product_name_ar", ""),
-        "series": m.get("series", ""),
-        "series_ar": m.get("series_ar", ""),
-        "material": m.get("material", ""),
-        "material_ar": m.get("material_ar", ""),
-        "size": m.get("size", ""),
-        "packing": m.get("packing", ""),
-        "gross_weight": m.get("gross_weight", ""),
-        "cbm": m.get("cbm", ""),
-        "pdf_page": m.get("pdf_page", ""),
-        "image_url": ("/" + img.replace("\\", "/")) if img else "",
-        # Chroma returns L2 distance (smaller = closer); map to a 0-100 feel
-        "relevance": max(5, min(100, round((1 - score / 2) * 100))),
-    }
 
 
 @app.get("/")
