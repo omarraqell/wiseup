@@ -1,7 +1,11 @@
 """Agent tools + shared helpers for the WISEUP agentic RAG."""
 import json
+import os
+import ssl
+import smtplib
 import rag
 from typing import Annotated, Optional
+from email.message import EmailMessage
 from langchain_core.tools import tool, InjectedToolCallId
 from langchain_core.messages import ToolMessage
 from langgraph.types import Command
@@ -68,3 +72,39 @@ def search_wiseup_web(query: str) -> str:
     company, contact details, certifications, or specific web pages."""
     tav = TavilySearch(max_results=5, include_domains=["wiseuptools.com"])
     return _format_tavily(tav.invoke({"query": query}))
+
+
+OWNER_EMAIL = "omaraqel270@gmail.com"
+
+
+def _format_email(products, customer_message) -> str:
+    lines = ["A customer is interested in the following WISEUP products:", ""]
+    for p in products:
+        lines.append(
+            f"- {p.get('product_name','Product')} | item_no: {p.get('item_no','')} | "
+            f"size: {p.get('size','')} | material: {p.get('material','')} | "
+            f"packing: {p.get('packing','')}")
+    lines += ["", f"Customer message: {customer_message}"]
+    return "\n".join(lines)
+
+
+@tool
+def email_owner(item_nos: list[str], customer_message: str) -> str:
+    """Email the selected products' full details to the WISEUP owner.
+    ONLY call this AFTER the customer has explicitly confirmed (said yes)."""
+    products = _lookup_products(item_nos)
+    if not products:
+        return "No matching products found for those item numbers; nothing sent."
+    msg = EmailMessage()
+    msg["Subject"] = f"New customer interest - {len(products)} product(s)"
+    msg["From"] = OWNER_EMAIL
+    msg["To"] = OWNER_EMAIL
+    msg.set_content(_format_email(products, customer_message))
+    ctx = ssl.create_default_context()
+    with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=ctx) as s:
+        s.login(OWNER_EMAIL, os.environ["GMAIL_APP_PASSWORD"])
+        s.send_message(msg)
+    return f"Sent {len(products)} product(s) to the owner."
+
+
+TOOLS = [retrieve_products, search_wiseup_web, email_owner]
