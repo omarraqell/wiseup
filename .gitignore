@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+chroma_db/
+chroma_db_openai/
+logs/
+memory_store/
+.pytest_cache/
+.superpowers/

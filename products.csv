@@ -1,0 +1,1701 @@
+item_no,series,product_name,material,size,packing,gross_weight,cbm,pdf_page,image,confidence
+010101,Pliers Series,WISCUP,,6°/150MM,48/6,12,0.024,4,images/p004_c0_1.png,high
+010102,Pliers Series,WISCUP,,7'/175MM,48/6,16.5,0.025,4,images/p004_c0_1.png,high
+010103,Pliers Series,WISCUP,,"8""/200MM",48/6,19,0.032,4,images/p004_c0_1.png,high
+010107,Pliers Series,Combination Pliers,Cr-V,6°/150MM,48/6,12,0.024,4,images/p004_c0_0.png,high
+010108,Pliers Series,Combination Pliers,Cr-V,7'/175MM,48/6,16.5,0.025,4,images/p004_c0_0.png,high
+010109,Pliers Series,Combination Pliers,Cr-V,"8""/200MM",48/6,19,0.032,4,images/p004_c0_0.png,high
+010201,Pliers Series,Diagonal Cutting Pliers,Cr-V,6°/150MM,,12.5,0.025,4,images/p004_c1_3.png,high
+010202,Pliers Series,Diagonal Cutting Pliers,Cr-V,"8""/200MM",48/6,13.5,0.031,4,images/p004_c1_3.png,high
+010205,Pliers Series,Diagonal Cutting Pliers,Cr-V,"6""/150MM",48/6,12.5,0.025,4,images/p004_c1_2.png,high
+010206,Pliers Series,Diagonal Cutting Pliers,Cr-V,"8""/200MM",48/6,13.5,0.031,4,images/p004_c1_2.png,high
+010301,Pliers Series,Long Nose Pliers,Cr-V,6°/150MM,48/6,12.5,0.025,4,images/p004_c2_5.png,high
+010302,Pliers Series,Long Nose Pliers,Cr-V,8°/200MM,48/6,13.5,0.031,4,images/p004_c2_5.png,high
+010305,Pliers Series,Long Nose Pliers,Cr-V,"6""/150MM",48/6,12.5,0.02,4,images/p004_c2_4.png,high
+010306,Pliers Series,Long Nose Pliers,Cr-V,"8""/200MM",48/6,13.5,0.024,4,images/p004_c2_4.png,high
+010104,Pliers Series,Combination Pliers,Nickeling,6'/150MM,72/6,17,0.0375,5,images/p005_c0_0.png,high
+010105,Pliers Series,Combination Pliers,Nickeling,7'/175MM,60/6,20,0.0225,5,images/p005_c0_0.png,high
+010106,Pliers Series,Combination Pliers,Nickeling,"8""/200MM",48/6,18,0.026,5,images/p005_c0_0.png,high
+010203,Pliers Series,uscup,,6°/150MM,72/6,18,0.03,5,images/p005_c1_2.png,high
+010204,Pliers Series,uscup,,8°/200MM,48/6,18,0.026,5,images/p005_c1_2.png,high
+010303,Pliers Series,Long Nose Pliers,Nickeling,6°/150MM,72/6,15,0.023,5,images/p005_c2_4.png,high
+010304,Pliers Series,Long Nose Pliers,Nickeling,8°/200MM,48/6,12,0.02,5,images/p005_c2_4.png,high
+010601,Pliers Series,Combination Pliers,Nickeling,6°/150MM,60/6,17.3,0.03,5,images/p005_c0_1.png,high
+010602,Pliers Series,Combination Pliers,Nickeling,7°/175MM,48/6,17.7,0.03,5,images/p005_c0_1.png,high
+010603,Pliers Series,Combination Pliers,Nickeling,"8""/200MM",48/6,20.6,0.0335,5,images/p005_c0_1.png,high
+010604,Pliers Series,ENE000100V3,,6'/150MM,60/6,16.5,0.0335,5,images/p005_c1_3.png,high
+010605,Pliers Series,ENE000100V3,,"8""/200MM",48/6,,0.0335,5,images/p005_c1_3.png,high
+010606,Pliers Series,UNGCUP,,6°/150MM,60/6,14.6,0.032,5,images/p005_c2_5.png,high
+010607,Pliers Series,UNGCUP,,8°/200MM,48/6,14.3,0.024,5,images/p005_c2_5.png,high
+010701,Pliers Series,Combination Pliers,55#Steel,"4.5""/115MM",120/12,10,0.027,6,images/p006_c1_3.png,high
+010702,Pliers Series,Long Nose Pliers,55#Steel,4.5/115MM,120/12,9.7,0.0265,6,images/p006_c2_5.png,high
+010801,Pliers Series,Circlip Pliers,55#Steel,"7""/175MM",96/12,19,0.03,6,images/p006_c0_0.png,high
+010802,Pliers Series,Circlip Pliers,55#Steel,"7""/175MM",96/12,19,0.03,6,images/p006_c1_2.png,high
+010803,Pliers Series,Circlip Pliers,55#Steel,"7""/175MM",96/12,19,0.03,6,images/p006_c2_4.png,high
+010804,Pliers Series,Circlip Pliers,55#Steel,"7""/175MM",96/12,19,0.03,6,images/p006_c0_1.png,high
+010703,Pliers Series,Diagonal Cutting Pliers,55#Steel,"4.5""/115MM",,9.2,0.0265,7,images/p007_c0_0.png,high
+010704,Pliers Series,End Cutting Pliers,55#Steel,"4.5""/115MM",,8.4,0.0265,7,images/p007_c1_2.png,high
+012001,Pliers Series,3pcs Plier Set,55#Steel,"6""/ 6""/8""",,20.5,0.049,7,images/p007_c1_3.png,high
+012003,Pliers Series,,55#Steel,"7""/175MM",,19,0.035,7,images/p007_c2_4.png,low
+012005,Pliers Series,4pcs MiniPliersSet,55#Steel,4.5*/115MM,48/6,19.5,0.053,7,images/p007_c0_1.png,high
+020101,Pliers Series,Sk-5,,215MM,,25,0.065,7,images/p007_c2_5.png,high
+011001,Pliers Series,Water Pump Pliers,Cr-V,"7""/180MM",,15.7,0.012,8,images/p008_c1_3.png,high
+011002,Pliers Series,Water Pump Pliers,Cr-V,"10""/250MM",60/6,17.7,0.025,8,images/p008_c1_3.png,high
+011003,Pliers Series,Water Pump Pliers,Cr-V,"12""/300MM",36/6,23.2,0.025,8,images/p008_c1_3.png,high
+011004,Pliers Series,Water Pump Pliers,Cr-V,"10""/250MM",36/6,21,0.016,8,images/p008_c2_5.png,high
+012502,Pliers Series,WISEUR,,"1""/25MM",36/1,25.4,0.0294,8,images/p008_c0_1.png,high
+012503,Pliers Series,WISEUR,,"1-1/2""/38MM",,27,0.0341,8,images/p008_c0_1.png,high
+012504,Pliers Series,WISEUR,,"2""/50MM",12/1,20.8,0.0287,8,images/p008_c0_1.png,high
+012505,Pliers Series,WISEUR,,"3""/75MM",6/1,15.8,0.024,8,images/p008_c0_1.png,high
+020104,Pliers Series,Sk-5,,"8""/195MM",,19.5,0.066,8,images/p008_c0_0.png,high
+020105,Pliers Series,Sk-5,,"8.5""/215MM",,15.5,0.051,8,images/p008_c1_2.png,high
+020106,Pliers Series,30cr13,Stainless Steel,5.5°/140MM,120/12,11.5,0.055,8,images/p008_c2_4.png,high
+011006,Pliers Series,LISCUP,,10/250MM,48/6,20,0.025,9,images/p009_c0_0.png,high
+011007,Pliers Series,LISCUP,,"12""/300MM",36/6,21.7,0.028,9,images/p009_c0_0.png,high
+011101,Pliers Series,Slip Joint Plier,Cr-V,"6""/150MM",60/6,13,0.03,9,images/p009_c1_2.png,high
+011102,Pliers Series,Slip Joint Plier,Cr-V,"8""/200MM",,20,0.039,9,images/p009_c1_2.png,high
+011301,Pliers Series,WISEUD,,"8""/200MM",60/6,21.5,0.031,9,images/p009_c2_5.png,high
+011302,Pliers Series,WISEUD,,"9""/225MM",60/6,23.5,0.033,9,images/p009_c2_5.png,high
+011401,Pliers Series,wSEuP,,"6""/150MM",,18,0.021,9,images/p009_c1_3.png,high
+011402,Pliers Series,wSEuP,,7/175MM,,19,0.023,9,images/p009_c1_3.png,high
+011403,Pliers Series,wSEuP,,"8""/200MM",,21,0.035,9,images/p009_c1_3.png,high
+011501,Pliers Series,Punch Plier,Iron,"9""/230MM",24/6,11.3,0.023,9,images/p009_c2_4.png,high
+011502,Pliers Series,Punch Plier,Iron,2-4.5MM,,11.3,0.028,9,images/p009_c0_1.png,high
+010901,Pliers Series,WISCUP,,"5""/125MM",72/6,12.8,0.017,10,images/p010_c0_0.png,high
+010902,Pliers Series,WISCUP,,"7""/175MM",48/6,18.4,0.02,10,images/p010_c0_0.png,high
+010903,Pliers Series,WISCUP,,10*/250MM,36/6,20,0.024,10,images/p010_c0_0.png,high
+010904,Pliers Series,C-type Locking Pliers,Cr-V,"11""/275MM",12/2,10.8,0.021,10,images/p010_c1_2.png,high
+010905,Pliers Series,C-type Locking Pliers,Cr-V,"14""/350MM",12/2,12.9,0.0265,10,images/p010_c1_2.png,high
+010907,Pliers Series,Long Nose Locking Plier,Cr-V,"9""225MM",60/6,18,0.023,10,images/p010_c2_4.png,high
+010908,Pliers Series,Sheet Metal Locking Plier,Cr-V,"8""/200MM",,20,0.036,10,images/p010_c0_1.png,high
+010911,Pliers Series,Welding Locking Plier,Cr-V,"10""/250MM",,18,0.049,10,images/p010_c1_3.png,high
+010912,Pliers Series,Chain Type Locking Plier,Cr-V,"10""/250MM",,14,0.036,10,images/p010_c2_5.png,high
+020102,Cutting Series,Multifunctional Scissors,Cr-V,"9""/230MM",72/12,20.7,0.037,11,images/p011_c0_1.png,high
+020103,Cutting Series,Multifunctional Scissors,Cr-V,"9""/230MM",72/12,20.7,0.037,11,images/p011_c1_3.png,high
+020301,Cutting Series,Aviation Snips S,Cr-V,10/250MM,36/6,16,0.04,11,images/p011_c0_0.png,high
+020302,Cutting Series,Aviation Snips L,Cr-V,"10""/250MM",36/6,15.5,0.04,11,images/p011_c1_2.png,high
+020303,Cutting Series,Aviation Snips R,Cr-V,"10""/250MM",36/6,15.5,0.04,11,images/p011_c2_4.png,high
+020304,Cutting Series,Aviation Snips S,Cr-V,"12""/300MM",36/6,18,0.042,11,images/p011_c0_0.png,high
+020401,Cutting Series,Tin Cutter,CR-V,"8""/200MM",48/6,16.3,0.033,11,images/p011_c2_5.png,high
+020402,Cutting Series,Tin Cutter,CR-V,"10""/250MM",36/6,21,0.03,11,images/p011_c2_5.png,high
+020403,Cutting Series,Tin Cutter,CR-V,"12""/300MM",36/6,25,0.034,11,images/p011_c2_5.png,high
+011608,Wrench Series,Heavy Duty Pipe Wrench,Iron,"8""/200MM",60/6,24,0.017,12,images/p012_c2_5.png,high
+011610,Wrench Series,Heavy Duty Pipe Wrench,Iron,10°/250MM,48/6,32,0.02,12,images/p012_c2_5.png,high
+011612,Wrench Series,Heavy Duty Pipe Wrench,Iron,12°/300MM,36/6,33,0.019,12,images/p012_c2_5.png,high
+011614,Wrench Series,Heavy Duty Pipe Wrench,Iron,14'/350MM,24/6,29.5,0.02,12,images/p012_c2_5.png,high
+011618,Wrench Series,Heavy Duty Pipe Wrench,Iron,18°/450MM,16/4,30.5,0.02,12,images/p012_c2_5.png,high
+011624,Wrench Series,Heavy Duty Pipe Wrench,Iron,24'/600MM,10/2,29,0.021,12,images/p012_c2_5.png,high
+011636,Wrench Series,Heavy Duty Pipe Wrench,Iron,36°/900MM,6/2,31,0.027,12,images/p012_c2_5.png,high
+011900,Wrench Series,Mini Bolt Cutter,Cr-V,"8""/200MM",60/10,20,0.038,12,images/p012_c1_2.png,high
+011918,Wrench Series,Bolt Cutter,Cr-Mo,18°/450MM,12/1,18.6,0.031,12,images/p012_c2_4.png,high
+011924,Wrench Series,Bolt Cutter,Cr-Mo,24/600MM,8/1,20.5,0.0365,12,images/p012_c2_4.png,high
+011930,Wrench Series,Bolt Cutter,Cr-Mo,30°/750MM,5/1,20,0.032,12,images/p012_c2_4.png,high
+011936,Wrench Series,Bolt Cutter,Cr-Mo,"36""/900MM",4/1,22.5,0.0325,12,images/p012_c2_4.png,high
+011942,Wrench Series,Bolt Cutter,Cr-Mo,42°/1050MM,3/1,25.2,0.042,12,images/p012_c2_4.png,high
+011948,Wrench Series,Bolt Cutter,Cr-Mo,48°/1200MM,2/1,20,0.027,12,images/p012_c2_4.png,high
+020405,Wrench Series,Tin Cutter,CR-V,"10""/250MM",36/6,24,0.03,12,images/p012_c0_0.png,high
+020406,Wrench Series,Tin Cutter,CR-V,"12""/300MM",36/6,27,0.045,12,images/p012_c0_0.png,high
+020407,Wrench Series,Tin Cutter,CR-V,"8""/200MM",48/6,16.7,0.03,12,images/p012_c0_0.png,high
+030102,Wrench Series,Adjustable Wrench,45Steel,"8""/200MM",60/6,16,0.012,12,images/p012_c1_3.png,high
+030103,Wrench Series,Adjustable Wrench,45Steel,"10""/250MM",48/6,22,0.016,12,images/p012_c1_3.png,high
+030104,Wrench Series,Adjustable Wrench,45Steel,"12""/300MM",,17,0.015,12,images/p012_c1_3.png,high
+030105,Wrench Series,Adjustable Wrench,45Steel,"15""/375MM",,21,0.017,12,images/p012_c1_3.png,high
+030108,Wrench Series,Adjustable Wrench,45Steel,"8""/200MM",,19.5,0.015,12,images/p012_c0_1.png,high
+030109,Wrench Series,Adjustable Wrench,45Steel,10*/250MM,48/6,25,0.02,12,images/p012_c0_1.png,high
+030110,Wrench Series,Adjustable Wrench,45Steel,"12""/300MM",24/6,19,0.017,12,images/p012_c0_1.png,high
+030602,Wrench Series,Combination Spanner Set,Cr-V,,,20,0.029,13,images/p013_c0_0.png,high
+030603,Wrench Series,8PCS,,,,10,0.021,13,images/p013_c0_0.png,high
+030604,Wrench Series,10PCS,,,,10,0.032,13,images/p013_c0_0.png,high
+030605,Wrench Series,12PCS,,,,10,0.027,13,images/p013_c0_0.png,high
+030608,Wrench Series,Offset Ring Spanner Set,Cr-V,,,20,0.038,13,images/p013_c1_2.png,high
+030614,Wrench Series,Double Open Spanner Set,Cr-V,,,20,0.023,13,images/p013_c2_4.png,high
+030618,Wrench Series,Combination Spanner Set,Cr-V,,30/5,14,0.043,13,images/p013_c0_1.png,high
+030619,Wrench Series,6PCS,,,,18.5,0.044,13,images/p013_c0_1.png,high
+030620,Wrench Series,8PCS,,,,14,0.031,13,images/p013_c0_1.png,high
+030622,Wrench Series,Offset Ring Spanner Set,Cr-V,,,20.5,0.05,13,images/p013_c1_3.png,high
+030625,Wrench Series,Double Open Spanner Set,Cr-V,,20/5,17,0.036,13,images/p013_c2_5.png,high
+030206,Wrench Series,Combination Spanner,,,,,,14,images/p014_c0_4.png,low
+030208,Wrench Series,Spanner,,,,,,14,,low
+030209,Wrench Series,Spanner,,,,,,14,,low
+030210,Wrench Series,Spanner,,,,,,14,,low
+030211,Wrench Series,Spanner,,,,,,14,,low
+030212,Wrench Series,Spanner,,,,,,14,,low
+030213,Wrench Series,Bend 45°,Cr-V,,,,,14,,low
+030214,Wrench Series,Bend 45°,Cr-V,,,,,14,,low
+030215,Wrench Series,Bend 45°,Cr-V,,,,,14,,low
+030216,Wrench Series,Bend 45°,Cr-V,,,,,14,,low
+030217,Wrench Series,Combination Spanner,,,,,,14,images/p014_c0_5.png,low
+030218,Wrench Series,Spanner,,,,,,14,,low
+030219,Wrench Series,Spanner,,,,,,14,,low
+030221,Wrench Series,Spanner,,,,,,14,,low
+030222,Wrench Series,Spanner,,,,,,14,,low
+030224,Wrench Series,Spanner,,,,,,14,,low
+030227,Wrench Series,Bend 45°,Cr-V,,,,,14,,low
+030230,Wrench Series,Bend 45°,Cr-V,,,,,14,,low
+030232,Wrench Series,Bend 45°,Cr-V,,,,,14,,low
+030236,Wrench Series,Bend 45°,Cr-V,,,,,14,,low
+030301,Wrench Series,,,,,,,14,,low
+030302,Wrench Series,,,,,,,14,,low
+030303,Wrench Series,,,,,,,14,,low
+030304,Wrench Series,WRENCH SERIES,Cr-V,,,,,14,,low
+030305,Wrench Series,WRENCH SERIES,Cr-V,,,,,14,,low
+030306,Wrench Series,Double Open End Spanner,,,,,,14,images/p014_c0_0.png,low
+030307,Wrench Series,Double Open End Spanner,,,,,,14,images/p014_c0_1.png,low
+030308,Wrench Series,Double Open End Spanner,,,,,,14,images/p014_c0_0.png,low
+030309,Wrench Series,,,,,,,14,,low
+030310,Wrench Series,,,,,,,14,,low
+030312,Wrench Series,,,,,,,14,,low
+030313,Wrench Series,WRENCH SERIES,Cr-V,,,,,14,,low
+030314,Wrench Series,WRENCH SERIES,Cr-V,,,,,14,,low
+030316,Wrench Series,Double Open End Spanner,,,,,,14,images/p014_c0_1.png,low
+030317,Wrench Series,,,,,,,14,,low
+030318,Wrench Series,,,,,,,14,,low
+030319,Wrench Series,,,,,,,14,,low
+030320,Wrench Series,,,,,,,14,,low
+030321,Wrench Series,,,,,,,14,,low
+030322,Wrench Series,,,,,,,14,,low
+030324,Wrench Series,WRENCH SERIES,Cr-V,,,,,14,,low
+030325,Wrench Series,WRENCH SERIES,Cr-V,,,,,14,,low
+030327,Wrench Series,WRENCH SERIES,Cr-V,,,,,14,,low
+030330,Wrench Series,WRENCH SERIES,Cr-V,,,,,14,,low
+030332,Wrench Series,WRENCH SERIES,Cr-V,,,,,14,,low
+030401,Wrench Series,Spanner,,,,,,14,,low
+030402,Wrench Series,Bend 45°,Cr-V,,,,,14,,low
+030403,Wrench Series,Offset Ring,,,,,,14,images/p014_c0_3.png,low
+030406,Wrench Series,Offset Ring,,,,,,14,images/p014_c0_2.png,low
+030407,Wrench Series,Offset Ring,,,,,,14,images/p014_c0_2.png,low
+030408,Wrench Series,Spanner,,,,,,14,,low
+030409,Wrench Series,Spanner,,,,,,14,,low
+030410,Wrench Series,Spanner,,,,,,14,,low
+030411,Wrench Series,Spanner,,,,,,14,,low
+030412,Wrench Series,Spanner,,,,,,14,,low
+030413,Wrench Series,Bend 45°,Cr-V,,,,,14,,low
+030414,Wrench Series,Bend 45°,Cr-V,,,,,14,,low
+030415,Wrench Series,Bend 45°,Cr-V,,,,,14,,low
+030416,Wrench Series,Offset Ring,,,,,,14,images/p014_c0_3.png,low
+030417,Wrench Series,Spanner,,,,,,14,,low
+030418,Wrench Series,Spanner,,,,,,14,,low
+030419,Wrench Series,Spanner,,,,,,14,,low
+030420,Wrench Series,Spanner,,,,,,14,,low
+030421,Wrench Series,Spanner,,,,,,14,,low
+030422,Wrench Series,Spanner,,,,,,14,,low
+030424,Wrench Series,Bend 45°,Cr-V,,,,,14,,low
+030425,Wrench Series,Bend 45°,Cr-V,,,,,14,,low
+030427,Wrench Series,Bend 45°,Cr-V,,,,,14,,low
+030430,Wrench Series,Bend 45°,Cr-V,,,,,14,,low
+030432,Wrench Series,Bend 45°,Cr-V,,,,,14,,low
+030240,Wrench Series,Combination S,,,,,,15,images/p015_c0_0.png,low
+030241,Wrench Series,Combination S,,,,,,15,images/p015_c0_0.png,low
+030242,Wrench Series,Spanner,,,,,,15,,low
+030243,Wrench Series,Spanner,,,,,,15,,low
+030244,Wrench Series,Spanner,,,,,,15,,low
+030245,Wrench Series,Spanner,,,,,,15,,low
+030246,Wrench Series,Spanner,,,,,,15,,low
+030247,Wrench Series,,Cr-V,,,,,15,,low
+030248,Wrench Series,,Cr-V,,,,,15,,low
+030249,Wrench Series,,Cr-V,,,,,15,,low
+030250,Wrench Series,Combination S,,,,,,15,images/p015_c0_1.png,low
+030251,Wrench Series,Combination S,,,,,,15,images/p015_c0_1.png,low
+030252,Wrench Series,Spanner,,,,,,15,,low
+030253,Wrench Series,Spanner,,,,,,15,,low
+030254,Wrench Series,Spanner,,,,,,15,,low
+030255,Wrench Series,Spanner,,,,,,15,,low
+030256,Wrench Series,Spanner,,,,,,15,,low
+030257,Wrench Series,,Cr-V,,,,,15,,low
+030258,Wrench Series,,Cr-V,,,,,15,,low
+030259,Wrench Series,,Cr-V,,,,,15,,low
+030260,Wrench Series,,Cr-V,,,,,15,,low
+030706,Wrench Series,Ratchet Combination Spanner,,,,,,15,images/p015_c0_4.png,low
+030707,Wrench Series,Ratchet Combination Spanner,,,,,,15,images/p015_c0_4.png,low
+030708,Wrench Series,Spanner,,,,,,15,,low
+030709,Wrench Series,Spanner,,,,,,15,,low
+030710,Wrench Series,Spanner,,,,,,15,,low
+030711,Wrench Series,Spanner,,,,,,15,,low
+030712,Wrench Series,Spanner,,,,,,15,,low
+030713,Wrench Series,,Cr-V,,,,,15,,low
+030714,Wrench Series,,Cr-V,,,,,15,,low
+030715,Wrench Series,,Cr-V,,,,,15,,low
+030716,Wrench Series,,Cr-V,,,,,15,,low
+030717,Wrench Series,,Cr-V,,,,,15,,low
+030718,Wrench Series,Ratchet Combination Spanner,,,,,,15,images/p015_c0_5.png,low
+030719,Wrench Series,Ratchet Combination Spanner,,,,,,15,images/p015_c0_5.png,low
+030720,Wrench Series,Spanner,,,,,,15,,low
+030721,Wrench Series,Spanner,,,,,,15,,low
+030722,Wrench Series,Spanner,,,,,,15,,low
+030723,Wrench Series,Spanner,,,,,,15,,low
+030724,Wrench Series,Spanner,,,,,,15,,low
+030725,Wrench Series,,Cr-V,,,,,15,,low
+030726,Wrench Series,,Cr-V,,,,,15,,low
+030727,Wrench Series,,Cr-V,,,,,15,,low
+030728,Wrench Series,,Cr-V,,,,,15,,low
+030729,Wrench Series,,Cr-V,,,,,15,,low
+031306,Wrench Series,Ratchet Combination Spanner,,,,,,15,images/p015_c0_2.png,low
+031307,Wrench Series,Ratchet Combination Spanner,,,,,,15,images/p015_c0_2.png,low
+031308,Wrench Series,Spanner,,,,,,15,,low
+031309,Wrench Series,Spanner,,,,,,15,,low
+031310,Wrench Series,Spanner,,,,,,15,,low
+031311,Wrench Series,Spanner,,,,,,15,,low
+031312,Wrench Series,Spanner,,,,,,15,,low
+031313,Wrench Series,,Cr-V,,,,,15,,low
+031314,Wrench Series,,Cr-V,,,,,15,,low
+031315,Wrench Series,,Cr-V,,,,,15,,low
+031316,Wrench Series,,Cr-V,,,,,15,,low
+031317,Wrench Series,,Cr-V,,,,,15,,low
+031318,Wrench Series,Ratchet Combination Spanner,,,,,,15,images/p015_c0_3.png,low
+031319,Wrench Series,Ratchet Combination Spanner,,,,,,15,images/p015_c0_3.png,low
+031320,Wrench Series,Spanner,,,,,,15,,low
+031321,Wrench Series,Spanner,,,,,,15,,low
+031322,Wrench Series,Spanner,,,,,,15,,low
+031323,Wrench Series,Spanner,,,,,,15,,low
+031324,Wrench Series,Spanner,,,,,,15,,low
+031325,Wrench Series,,Cr-V,,,,,15,,low
+031326,Wrench Series,,Cr-V,,,,,15,,low
+031327,Wrench Series,,Cr-V,,,,,15,,low
+031328,Wrench Series,,Cr-V,,,,,15,,low
+031329,Wrench Series,,Cr-V,,,,,15,,low
+031208,Wrench Series,,,,,,,16,images/p016_c0_2.png,low
+031209,Wrench Series,,,,,,,16,,low
+031210,Wrench Series,,,,,,,16,,low
+031211,Wrench Series,,,,,,,16,,low
+031212,Wrench Series,,,,,,,16,,low
+031213,Wrench Series,,,,,,,16,,low
+031214,Wrench Series,WRENCH SERIES,Cr-V,,,,,16,,low
+031215,Wrench Series,WRENCH SERIES,Cr-V,,,,,16,,low
+031216,Wrench Series,WRENCH SERIES,Cr-V,,,,,16,,low
+031217,Wrench Series,,,,,,,16,,low
+031218,Wrench Series,,,,,,,16,,low
+031220,Wrench Series,,,,,,,16,,low
+031221,Wrench Series,,,,,,,16,,low
+031222,Wrench Series,,,,,,,16,,low
+031223,Wrench Series,,,,,,,16,,low
+031224,Wrench Series,WRENCH SERIES,Cr-V,,,,,16,,low
+031227,Wrench Series,WRENCH SERIES,Cr-V,,,,,16,,low
+031230,Wrench Series,WRENCH SERIES,Cr-V,,,,,16,,low
+031232,Wrench Series,WRENCH SERIES,Cr-V,,,,,16,,low
+031906,Wrench Series,,,,,,,16,images/p016_c0_4.png,low
+031907,Wrench Series,L Type Wrench With Hole,,,,,,16,,low
+031908,Wrench Series,L Type Wrench With Hole,,,,,,16,,low
+031909,Wrench Series,L Type Wrench With Hole,,,,,,16,,low
+031910,Wrench Series,L Type Wrench With Hole,,,,,,16,,low
+031911,Wrench Series,L Type Wrench With Hole,,,,,,16,,low
+031912,Wrench Series,WRENCH SERIES,Cr-V,,,,,16,,low
+031913,Wrench Series,WRENCH SERIES,Cr-V,,,,,16,,low
+031914,Wrench Series,WRENCH SERIES,Cr-V,,,,,16,,low
+031915,Wrench Series,,,,,,,16,images/p016_c0_5.png,low
+031916,Wrench Series,L Type Wrench With Hole,,,,,,16,,low
+031917,Wrench Series,L Type Wrench With Hole,,,,,,16,,low
+031918,Wrench Series,L Type Wrench With Hole,,,,,,16,,low
+031919,Wrench Series,L Type Wrench With Hole,,,,,,16,,low
+031920,Wrench Series,L Type Wrench With Hole,,,,,,16,,low
+031921,Wrench Series,WRENCH SERIES,Cr-V,,,,,16,,low
+031922,Wrench Series,WRENCH SERIES,Cr-V,,,,,16,,low
+031923,Wrench Series,WRENCH SERIES,Cr-V,,,,,16,,low
+031924,Wrench Series,WRENCH SERIES,Cr-V,,,,,16,,low
+032408,Wrench Series,,,,,,,16,images/p016_c0_0.png,low
+032409,Wrench Series,,,,,,,16,,low
+032410,Wrench Series,,,,,,,16,,low
+032411,Wrench Series,,,,,,,16,,low
+032412,Wrench Series,,,,,,,16,,low
+032413,Wrench Series,WRENCH SERIES,Cr-V,,,,,16,,low
+032414,Wrench Series,WRENCH SERIES,Cr-V,,,,,16,,low
+032415,Wrench Series,WRENCH SERIES,Cr-V,,,,,16,,low
+032416,Wrench Series,,,,,,,16,images/p016_c0_1.png,low
+032419,Wrench Series,,,,,,,16,,low
+032420,Wrench Series,,,,,,,16,,low
+032421,Wrench Series,WRENCH SERIES,Cr-V,,,,,16,,low
+032422,Wrench Series,WRENCH SERIES,Cr-V,,,,,16,,low
+032430,Wrench Series,WRENCH SERIES,Cr-V,,,,,16,,low
+032432,Wrench Series,WRENCH SERIES,Cr-V,,,,,16,,low
+030501,Wrench Series,Extension Bar,Cr-V,,12/6,17.7,0.02,17,images/p017_c0_1.png,high
+030502,Wrench Series,L Handle Wrench,Cr-V,,12/6,14.3,0.019,17,images/p017_c1_3.png,high
+030503,Wrench Series,Sliding Bar,Cr-V,,,21,0.035,17,images/p017_c2_5.png,high
+030901,Wrench Series,L Handle Wrench,Cr-V,"10""/250MM",48/24,22,0.023,17,images/p017_c1_2.png,high
+030902,Wrench Series,L Handle Wrench,Cr-V,"12""/300MM",48/24,25.6,0.024,17,images/p017_c1_2.png,high
+031802,Wrench Series,Extension Bar,Cr-V,"5""/75MM",96/48,20.6,0.03,17,images/p017_c0_0.png,high
+031803,Wrench Series,Extension Bar,Cr-V,"10""/250MM",48/24,25.6,0.015,17,images/p017_c0_0.png,high
+032001,Wrench Series,Sliding Bar,Cr-V,10*/250MM,,17.3,0.022,17,images/p017_c2_4.png,high
+030504,Wrench Series,ISEUP,Cr-V,,20/10,16,0.035,18,images/p018_c0_0.png,high
+031132,Wrench Series,Ring Slogging Wrench,Cr-V,32MM,,40,0.01,18,images/p018_c2_4.png,high
+031136,Wrench Series,Ring Slogging Wrench,Cr-V,36MM,,20,0.006,18,images/p018_c2_4.png,high
+031141,Wrench Series,Ring Slogging Wrench,Cr-V,41MM,,20,0.008,18,images/p018_c2_4.png,high
+031146,Wrench Series,Ring Slogging Wrench,Cr-V,46MM,,20,0.011,18,images/p018_c2_4.png,high
+031150,Wrench Series,Ring Slogging Wrench,Cr-V,50MM,,12,0.008,18,images/p018_c2_4.png,high
+031401,Wrench Series,Ratchet Wrench,Cr-V,1/2′-12.5MM,,15.5,0.018,18,images/p018_c1_3.png,high
+031410,Wrench Series,Gear Socket Wrench,Cr-V,19*21MM,,22,0.046,18,images/p018_c0_1.png,high
+031411,Wrench Series,Gear Socket Wrench,Cr-V,21*23MM,,23,0.047,18,images/p018_c0_1.png,high
+031601,Wrench Series,Universal Wrench,55#Steel,,,17,0.03,18,images/p018_c2_5.png,high
+061601,Wrench Series,Spark Plug Wrench,Cr-V,14MM,,10.6,0.0153,18,images/p018_c1_2.png,high
+061602,Wrench Series,Spark Plug Wrench,Cr-V,16MM,48/12,13.7,0.044,18,images/p018_c1_2.png,high
+061603,Wrench Series,Spark Plug Wrench,Cr-V,21MM,48/12,15.4,0.044,18,images/p018_c1_2.png,high
+032108,Wrench Series,T-type Wrench,Cr-V,8MM,,28.5,0.05,19,images/p019_c0_0.png,high
+032110,Wrench Series,T-type Wrench,Cr-V,10MM,,29,0.05,19,images/p019_c0_0.png,high
+032112,Wrench Series,T-type Wrench,Cr-V,12MM,,31.5,0.05,19,images/p019_c0_0.png,high
+032114,Wrench Series,T-type Wrench,Cr-V,14MM,,32.5,0.05,19,images/p019_c0_0.png,high
+032212,Wrench Series,Y-type Wrench,Cr-V,8*10*12,80/20,24,0.06,19,images/p019_c1_2.png,high
+032214,Wrench Series,Y-type Wrench,Cr-V,10*12°14,80/20,27.5,0.06,19,images/p019_c1_2.png,high
+063001,Wrench Series,Cross Wrench,Cr-V,"14""/350MM",10/1,12.7,0.017,19,images/p019_c2_4.png,high
+063008,Wrench Series,Cross Wrench,Cr-V,"18""/450MM",,16.4,0.027,19,images/p019_c0_1.png,high
+063201,Wrench Series,Strap Pipe Wrench,Cr-V,"9""/225MM",60/6,12,0.052,19,images/p019_c1_3.png,high
+063202,Wrench Series,Chain Pipe Wrench,Cr-V,"9""/225MM",60/6,12,0.051,19,images/p019_c2_5.png,high
+030627,Wrench Series,S Type Double Ring Spanner,Cr-V,,30/10,18,0.031,21,images/p021_c1_3.png,high
+030628,Wrench Series,C Type Double Ring Spanner,Cr-V,,,18,0.031,21,images/p021_c2_5.png,high
+031301,Wrench Series,WISEUE,,,20/5,20.5,0.04,21,images/p021_c1_2.png,high
+031302,Wrench Series,WISCUP,,,20/5,22.5,0.04,21,images/p021_c2_4.png,high
+031501,Wrench Series,UISEUP,,"1/2"" 0-300N",20/1,18,0.029,21,images/p021_c0_0.png,high
+180125,Wrench Series,Adjust Angle Wrench,Cr-V,,,120,0.051,21,images/p021_c0_1.png,high
+031952,Wrench Set Series,WSEUp,,,,14.4,0.0318,22,images/p022_c1_2.png,high
+031954,Wrench Set Series,9pcs L Type Wrench With Hole,Cr-V,,8/2,15.8,0.042,22,images/p022_c2_4.png,high
+070204,Wrench Set Series,unseup,,"1/2""",12/6,24.5,0.029,22,images/p022_c0_1.png,high
+070205,Wrench Set Series,6PCS,Cr-V,"1/2""",16/4,25.2,0.054,22,images/p022_c1_3.png,high
+070206,Wrench Set Series,UISEUP,Cr-V,"1/2""",,25.1,0.027,22,images/p022_c0_0.png,high
+090503,Wrench Set Series,40pcs Screwdriver Bit Set,Cr-V,,12/1,20.2,0.025,22,images/p022_c2_5.png,high
+070201,Wrench Set Series,2-EXTENSION BAR 5′-10*,,"1/2""",5/1,24.5,0.031,23,images/p023_c0_1.png,high
+070215,Wrench Set Series,Round Head Ratchet,,"3/4"" 15PCS",,12.2,0.04,23,images/p023_c1_2.png,high
+070221,Wrench Set Series,Round Head Ratchet,,"3/4"" 21PCS",,16.1,0.04,23,images/p023_c0_0.png,high
+070226,Wrench Set Series,SHORTBENDING RODFORCELEVERPEAR HEAD RATCHET,,"3/4""26PCS",,17.7,0.024,23,images/p023_c2_4.png,high
+070235,Wrench Set Series,PNEUMATIC LONG SLEEVE,,"1/2""35PCS",3/1,24,0.03,23,images/p023_c1_3.png,high
+101701,Wrench Set Series,9pcs Ratchet Die Stocks,Cr-V,,2/1,12.5,0.023,23,images/p023_c2_5.png,high
+000000,Tool Set Series,76PCS,,,,,,24,images/p024_c1_2.png,low
+070207,Tool Set Series,SL6.6.5.8.PZ3.4.PH3.4,,,,,,24,images/p024_c1_3.png,low
+070208,Tool Set Series,INDUSTRIAL,1PC 3J8°Universal Joint1PC 3/872T Ful Polished&Flexible Desigh,,2/1,,,24,images/p024_c0_1.png,low
+070232,Tool Set Series,INDUSTRIAL,,,6/1,24.8,0.038,24,images/p024_c0_0.png,high
+070276,Tool Set Series,1PC 7°Combinaticn piers  1PC 10′D4 type groove joint pliers,,t0'0,3/1,23,,24,images/p024_c1_2.png,high
+070294,Tool Set Series,HEX8.10.12.14,,,4/1,25,0.04,24,images/p024_c2_4.png,high
+808600,Tool Set Series,INDUSTRIAL,,,,,,24,,low
+032319,Hexagonal Series,Single T Hex Key,Cr-V,2.5MM,,12,0.0552,25,images/p025_c1_3.png,high
+032320,Hexagonal Series,Single T Hex Key,Cr-V,3MM,,11.5,0.056,25,images/p025_c1_3.png,high
+032321,Hexagonal Series,Single T Hex Key,Cr-V,4MM,,13.7,0.056,25,images/p025_c1_3.png,high
+032322,Hexagonal Series,Single T Hex Key,Cr-V,5MM,,17,0.056,25,images/p025_c1_3.png,high
+032323,Hexagonal Series,Single T Hex Key,Cr-V,6MM,,20.5,0.056,25,images/p025_c1_3.png,high
+032324,Hexagonal Series,Single T Hex Key,Cr-V,8MM,,22,0.063,25,images/p025_c1_3.png,high
+032325,Hexagonal Series,Single T Hex Key,Cr-V,10MM,,31,0.063,25,images/p025_c1_3.png,high
+032331,Hexagonal Series,7pcs THexKeySet,Cr-V,,36/6,18.4,0.097,25,images/p025_c2_5.png,high
+032332,Hexagonal Series,8pcs HexKey Set,Cr-V,,60/12,13,0.042,25,images/p025_c0_0.png,high
+032333,Hexagonal Series,T9T10T15T20,,,60/12,12.5,0.042,25,images/p025_c1_2.png,high
+032334,Hexagonal Series,8pcs Folding Hex Key Set,Cr-V,,120/15,13,0.042,25,images/p025_c2_4.png,high
+032335,Hexagonal Series,8pcs Folding Torx Key Set,Cr-V,,,13,0.042,25,images/p025_c0_1.png,high
+032301,Hexagonal Series,wscup,,,72/12,20.5,0.047,26,images/p026_c0_0.png,high
+032302,Hexagonal Series,SHORT,,,,23.5,0.051,26,images/p026_c0_0.png,high
+032303,Hexagonal Series,MEDIUM,,,60/12,28.5,0.059,26,images/p026_c0_0.png,high
+032304,Hexagonal Series,9pcs Torx Key Set,CR-V,,72/12,21.5,0.047,26,images/p026_c1_2.png,high
+032305,Hexagonal Series,SHORT,,,,21.5,0.052,26,images/p026_c1_2.png,high
+032306,Hexagonal Series,MEDIUM,,,60/12,27,0.059,26,images/p026_c1_2.png,high
+032307,Hexagonal Series,CR.V,,,72/12,20.5,0.047,26,images/p026_c2_4.png,high
+032308,Hexagonal Series,SHORT,,,,23.5,0.051,26,images/p026_c2_4.png,high
+032309,Hexagonal Series,MEDIUM,,,60/12,28.5,0.059,26,images/p026_c2_4.png,high
+032327,Hexagonal Series,FLAT,,,60/12,25,0.03,26,images/p026_c0_1.png,high
+032328,Hexagonal Series,FLAT MEDIUM,,,60/12,29,0.03,26,images/p026_c0_1.png,high
+032329,Hexagonal Series,STAR,,,60/12,23,0.03,26,images/p026_c1_3.png,high
+032330,Hexagonal Series,STAR MEDIUM,,,60/12,28,0.03,26,images/p026_c1_3.png,high
+080101,Measurement Series,Industrial,,3M*16MM,,13.5,0.019,27,images/p027_c0_0.png,high
+080102,Measurement Series,Industrial,,5M*19MM,,23.5,0.026,27,images/p027_c0_0.png,high
+080103,Measurement Series,Industrial,,5M*25MM,72/12,17.7,0.022,27,images/p027_c0_0.png,high
+080104,Measurement Series,Industrial,,7.5M*25MM,72/12,26.5,0.028,27,images/p027_c0_0.png,high
+080105,Measurement Series,Industrial,,10M*25MM,48/12,22.8,0.023,27,images/p027_c0_0.png,high
+080106,Measurement Series,Industrial,,3M*16MM,120/12,16,0.028,27,images/p027_c1_2.png,high
+080107,Measurement Series,Industrial,,5M*19MM,120/12,27,0.04,27,images/p027_c1_2.png,high
+080108,Measurement Series,Industrial,,5M*25MM,72/12,22,0.03,27,images/p027_c1_2.png,high
+080109,Measurement Series,Industrial,,7.5M*25MM,72/12,29,0.0365,27,images/p027_c1_2.png,high
+080110,Measurement Series,Industrial,,3M*16MM,,15,0.031,27,images/p027_c2_4.png,high
+080111,Measurement Series,Industrial,,5M*19MM,,26,0.042,27,images/p027_c2_4.png,high
+080112,Measurement Series,Industrial,,5M*25MM,72/12,19.4,0.024,27,images/p027_c2_4.png,high
+080113,Measurement Series,Industrial,,7.5M*25MM,,29.5,0.035,27,images/p027_c2_4.png,high
+080114,Measurement Series,75M品盒,,3M*16MM,,15,0.031,27,images/p027_c0_1.png,high
+080115,Measurement Series,75M品盒,,"5M""19MM",,26,0.042,27,images/p027_c0_1.png,high
+080116,Measurement Series,75M品盒,,5M*25MM,72/12,19.5,0.024,27,images/p027_c0_1.png,high
+080117,Measurement Series,75M品盒,,7.5M*25MM,72/12,29.5,0.035,27,images/p027_c0_1.png,high
+080301,Measurement Series,Industrial,,,,17,0.069,27,images/p027_c1_3.png,high
+080302,Measurement Series,Industrial,,,20/1,23,0.069,27,images/p027_c1_3.png,high
+080303,Measurement Series,Industrial,,,12/1,22,0.033,27,images/p027_c1_3.png,high
+080304,Measurement Series,Industrial,,,,12.5,0.069,27,images/p027_c2_5.png,high
+080305,Measurement Series,Industrial,,,20/1,18,0.069,27,images/p027_c2_5.png,high
+080306,Measurement Series,Industrial,,,12/1,19,0.033,27,images/p027_c2_5.png,high
+080201,Measurement Series,MRSCU,,,,24.3,0.069,28,images/p028_c0_0.png,high
+080202,Measurement Series,MRSCU,,,,18,0.048,28,images/p028_c0_0.png,high
+080203,Measurement Series,rWiseupm,,,,15,0.046,28,images/p028_c2_4.png,high
+080204,Measurement Series,rWiseupm,,,40/1,20.5,0.063,28,images/p028_c2_4.png,high
+080205,Measurement Series,rWiseupm,,,,16,0.044,28,images/p028_c2_4.png,high
+080206,Measurement Series,Fibreglass Measuring Tape,,,40/1,19.6,0.068,28,images/p028_c1_2.png,high
+080207,Measurement Series,Fibreglass Measuring Tape,,,20/1,27,0.051,28,images/p028_c1_2.png,high
+081001,Measurement Series,PRODUCTPARAMETERS,,,,10,0.05,28,images/p028_c0_1.png,high
+081002,Measurement Series,PRODUCTPARAMETERS,,,8/1,10,0.05,28,images/p028_c2_5.png,high
+081005,Measurement Series,PRODUCTPARAMETERS,,,8/1,11,0.053,28,images/p028_c1_3.png,high
+080801,Measurement Series,TECHNICALPARAMETERS,,"12.5""/318MM",6/1,12.5,0.147,29,images/p029_c0_1.png,high
+080802,Measurement Series,UNIT OF MEASUREM,,"12.5""/318MM",6/1,11,0.134,29,images/p029_c1_3.png,high
+080902,Measurement Series,0.05-70M,,,20/1,,0.041,29,images/p029_c2_4.png,high
+080903,Measurement Series,0.05-70M,,,20/1,,0.041,29,images/p029_c2_4.png,high
+081010,Measurement Series,1.5m Tripod,aluminum alloy,,12/1,16.1,0.108,29,images/p029_c1_2.png,high
+081016,Measurement Series,PRODUCTPARAMETERS,,,5/1,10,0.051,29,images/p029_c0_0.png,high
+081203,Measurement Series,uIseup,,,40/1,20.5,0.09,29,images/p029_c2_5.png,high
+081101,Measurement Series,Industrial,,,12/1,19,0.12,30,images/p030_c0_1.png,high
+081102,Measurement Series,10KGS,,,8/1,17,0.14,30,images/p030_c0_1.png,high
+081103,Measurement Series,Industrial,,,,11,0.047,30,images/p030_c1_3.png,high
+081201,Measurement Series,PLEASE ACTIVATE THE BATTERY WITHIN 6 IMONTHS AFTER THE PRODUCTION DATE.,,,6/1,,0.093,30,images/p030_c0_0.png,high
+081202,Measurement Series,PLEASE ACTIVATE THE BATTERY WITHIN 6 MONTHS AFTER THE PRODUCTION DATE.,,,4/1,14.7,0.1,30,images/p030_c1_2.png,high
+081204,Measurement Series,Electronic Clasp Scale,,,,18,0.082,30,images/p030_c2_4.png,high
+081206,Measurement Series,MISELE,,,,14,0.042,30,images/p030_c2_5.png,high
+080405,Measurement Series,Industrial,,300MM,,60,0.029,31,images/p031_c0_1.png,high
+080406,Measurement Series,Industrial,,450MM,,60,0.045,31,images/p031_c0_1.png,high
+080407,Measurement Series,Industrial,,600MM,,60,0.066,31,images/p031_c0_1.png,high
+080408,Measurement Series,Industrial,,900MM,,30,0.05,31,images/p031_c0_1.png,high
+080409,Measurement Series,Industrial,,300MM,,40,0.018,31,images/p031_c2_5.png,high
+080410,Measurement Series,Industrial,,400MM,,40,0.023,31,images/p031_c2_5.png,high
+080411,Measurement Series,Industrial,,500MM,,40,0.028,31,images/p031_c2_5.png,high
+080412,Measurement Series,Industrial,,600MM,,40,0.034,31,images/p031_c2_5.png,high
+080422,Measurement Series,Industrial,,"9""230MM",,19.5,0.043,31,images/p031_c2_4.png,high
+080423,Measurement Series,Industrial,,,,50,0.021,31,images/p031_c1_3.png,high
+080424,Measurement Series,30CM,,,,50,0.027,31,images/p031_c1_3.png,high
+080425,Measurement Series,40CM,,,,50,0.034,31,images/p031_c1_3.png,high
+080426,Measurement Series,50CM,,,,50,0.04,31,images/p031_c1_3.png,high
+080427,Measurement Series,60CM,,,,50,0.028,31,images/p031_c1_3.png,high
+080428,Measurement Series,80CM,,,,50,0.035,31,images/p031_c1_3.png,high
+080429,Measurement Series,100CM,,,,50,0.042,31,images/p031_c1_3.png,high
+081303,Measurement Series,YEAR,,,,13.5,0.087,31,images/p031_c1_2.png,high
+081315,Measurement Series,YEAR,,,,9.2,0.038,31,images/p031_c0_0.png,high
+081330,Measurement Series,150KGS,,,,13.5,0.066,31,images/p031_c0_0.png,high
+080402,Measurement Series,Industrial,,400MM,,40,0.041,32,images/p032_c0_0.png,high
+080403,Measurement Series,Industrial,,600MM,,40,0.058,32,images/p032_c0_0.png,high
+080404,Measurement Series,Industrial,,900MM,,40,0.089,32,images/p032_c0_0.png,high
+080413,Measurement Series,wseup,,"9""/225MM",,11.5,0.032,32,images/p032_c1_2.png,high
+080501,Measurement Series,Combination Ruler,,300MM,,15,0.063,32,images/p032_c2_4.png,high
+080502,Measurement Series,Stainless Angle Squre,Stainless Steel,200*300MM,,100,0.013,32,images/p032_c0_1.png,high
+080503,Measurement Series,Stainless Angle Squre,Stainless Steel,400*600MM,,36,0.025,32,images/p032_c0_1.png,high
+080504,Measurement Series,Black Angle Square,Steel,200*300MM,,100,0.01,32,images/p032_c1_3.png,high
+080505,Measurement Series,Black Angle Square,Steel,400*600MM,,36,0.015,32,images/p032_c1_3.png,high
+080510,Measurement Series,Combination Ruler,Aluminum Square,,60/10,11.3,0.028,32,images/p032_c2_5.png,high
+080511,Measurement Series,25CM,,,60/10,11.8,0.032,32,images/p032_c2_5.png,high
+080512,Measurement Series,30CM,,,60/10,12.5,0.049,32,images/p032_c2_5.png,high
+080513,Measurement Series,40CM,,,60/10,12.9,0.05,32,images/p032_c2_5.png,high
+080514,Measurement Series,INDUSTRIAL,,"8""/200MM",,120,0.042,33,images/p033_c0_0.png,high
+080515,Measurement Series,INDUSTRIAL,,10/250MM,,60,0.042,33,images/p033_c0_0.png,high
+080516,Measurement Series,INDUSTRIAL,,"12""/300MM",,60,0.042,33,images/p033_c0_0.png,high
+080520,Measurement Series,INDUSTRIAL,,90*150MM,,100,0.053,33,images/p033_c1_2.png,high
+080605,Measurement Series,INDUSTRIAL,,"7""/175MM",,100,0.053,33,images/p033_c0_1.png,high
+080610,Measurement Series,WISEUR,,"40""/1000MM",,100,0.1,33,images/p033_c2_4.png,high
+080615,Measurement Series,WISEUR,,"6""/150MM",,500,0.006,33,images/p033_c2_4.png,high
+080630,Measurement Series,WISEUR,,12/300MM,,300,0.008,33,images/p033_c2_4.png,high
+080650,Measurement Series,WISEUR,,"20""/500MM",,200,0.011,33,images/p033_c2_4.png,high
+080701,Measurement Series,Industrial,HIGH QUALITY CARBON STEEL,150MM,,19,0.042,33,images/p033_c2_5.png,high
+080702,Measurement Series,Vernier Caliper,HIGH QUALITY CARBON STEEL,"6""/150MM",50/10,19.8,0.042,33,images/p033_c1_3.png,high
+050101,Hammer Series,,Steel,,48/6,19.5,0.029,34,images/p034_c0_0.png,low
+050102,Hammer Series,,Steel,,36/6,20,0.027,34,images/p034_c0_0.png,low
+050103,Hammer Series,120Z,,,24/6,17.5,0.027,34,images/p034_c0_0.png,high
+050104,Hammer Series,16OZ,,,,20,0.026,34,images/p034_c0_0.png,high
+050106,Hammer Series,WISCLP,,25MM,36/6,25,0.03,34,images/p034_c1_2.png,high
+050107,Hammer Series,WISCLP,,27MM,24/6,18,0.027,34,images/p034_c1_2.png,high
+050108,Hammer Series,WISCLP,,29MM,,20,0.024,34,images/p034_c1_2.png,high
+050109,Hammer Series,200Z,Steel,,,27,0.027,34,images/p034_c0_1.png,high
+050110,Hammer Series,200Z,Steel,,18/6,21,0.012,34,images/p034_c0_1.png,high
+050111,Hammer Series,200Z,Steel,,12/6,26,0.021,34,images/p034_c0_1.png,high
+050112,Hammer Series,200Z,Steel,,4/1,22.5,0.024,34,images/p034_c0_1.png,high
+050113,Hammer Series,10LB,,,2/1,20.5,0.017,34,images/p034_c0_1.png,high
+050114,Hammer Series,UISEUP,,,,,0.02,34,images/p034_c1_3.png,high
+050115,Hammer Series,UISEUP,,,,24,0.025,34,images/p034_c1_3.png,high
+050116,Hammer Series,1.5LB,,,12/6,17,0.018,34,images/p034_c1_3.png,high
+050119,Hammer Series,16OZ,Steel,,48/6,27,0.03,34,images/p034_c2_5.png,high
+050121,Hammer Series,300G,,,,18,0.018,34,images/p034_c2_5.png,high
+050123,Hammer Series,500G,,,18/6,20.5,0.024,34,images/p034_c2_5.png,high
+050124,Hammer Series,800G,,,12/6,17,0.018,34,images/p034_c2_5.png,high
+050125,Hammer Series,1000G,,,12/6,23.2,0.0197,34,images/p034_c2_5.png,high
+050126,Hammer Series,1500G,,,12/6,28.4,0.0252,34,images/p034_c2_5.png,high
+050133,Hammer Series,WISCUP,,,48/6,18.5,0.028,34,images/p034_c2_4.png,high
+050134,Hammer Series,WISCUP,,,24/6,16,0.024,34,images/p034_c2_4.png,high
+050127,Hammer Series,,Steel,,,13.3,0.019,35,images/p035_c1_2.png,low
+050128,Hammer Series,,Rubber,,36/6,14.5,0.035,35,images/p035_c2_4.png,low
+050130,Hammer Series,,Rubber,,24/6,15,0.034,35,images/p035_c2_4.png,low
+050131,Hammer Series,160Z,,,24/6,21.5,0.05,35,images/p035_c2_4.png,high
+050135,Hammer Series,wseup,,,12/6,16,0.014,35,images/p035_c0_1.png,high
+050136,Hammer Series,1000G,,,12/6,21.5,0.015,35,images/p035_c0_1.png,high
+050137,Hammer Series,1500G,,,12/6,28,0.018,35,images/p035_c0_1.png,high
+050140,Hammer Series,,Steel,,,21,0.026,35,images/p035_c0_0.png,low
+050301,Hammer Series,700G,Steel,,24/6,23,0.028,35,images/p035_c1_3.png,high
+050302,Hammer Series,240Z,Steel,,24/6,25,0.03,35,images/p035_c2_5.png,high
+050100,Saw Series,,Steel,,48/6,12,0.01,36,images/p036_c0_0.png,low
+101001,Saw Series,Industrial,,"12""/300MM",36/6,21.4,0.089,36,images/p036_c1_2.png,high
+101002,Saw Series,Industrial,,"12""/300MM",,23,0.044,36,images/p036_c2_4.png,high
+101003,Saw Series,Industrial,,"12""/300MM",48/6,20,0.068,36,images/p036_c0_1.png,high
+101004,Saw Series,Industrial,,"12""/300MM",40/10,26,0.039,36,images/p036_c1_3.png,high
+101005,Saw Series,Industrial,Aluminium Alloy,"12""/300MM",36/6,21,0.067,36,images/p036_c2_5.png,high
+101007,Saw Series,Industrial,,12*/300MM,48/12,24.5,0.047,37,images/p037_c0_0.png,high
+110205,Saw Series,USEUP,,"21""/525MM",12/1,8.2,0.037,37,images/p037_c1_2.png,high
+110206,Saw Series,USEUP,,"24""/600MM",12/1,9.5,0.045,37,images/p037_c1_2.png,high
+110207,Saw Series,USEUP,,"30""/750MM",12/1,10.8,0.055,37,images/p037_c1_2.png,high
+110208,Saw Series,USEUP,,,12/1,12.4,0.065,37,images/p037_c1_2.png,high
+110211,Saw Series,Hand Saw,Cr-V,"18""/450MM",48/12,22,0.075,37,images/p037_c1_3.png,high
+110212,Saw Series,Hand Saw,Cr-V,"20""/500MM",48/12,23.5,0.082,37,images/p037_c1_3.png,high
+110213,Saw Series,Hand Saw,Cr-V,"22""/550MM",48/12,25.5,0.089,37,images/p037_c1_3.png,high
+110214,Saw Series,Hand Saw,Cr-V,24'/600MM,48/12,27.5,0.094,37,images/p037_c1_3.png,high
+110215,Saw Series,Hand Saw,Cr-V,"14""/350MM",,18,0.042,37,images/p037_c2_5.png,high
+110216,Saw Series,Hand Saw,Cr-V,"16""/400MM",,19.6,0.047,37,images/p037_c2_5.png,high
+110217,Saw Series,Hand Saw,Cr-V,"18""/450MM",,21,0.05,37,images/p037_c2_5.png,high
+110218,Saw Series,Hand Saw,Cr-V,"20""/500MM",,23,0.055,37,images/p037_c2_5.png,high
+110219,Saw Series,Hand Saw,Cr-V,"22""/550MM",48/12,24.5,0.059,37,images/p037_c2_5.png,high
+110220,Saw Series,Hand Saw,Cr-V,"24""/600MM",,24.5,0.064,37,images/p037_c2_5.png,high
+110601,Saw Series,Industrial,,"7""/180MM",,17.8,0.05,37,images/p037_c2_4.png,high
+110602,Saw Series,Industrial,,"11""/280MM",36/6,11,0.02,37,images/p037_c0_1.png,high
+110200,Saw Series,Pruning Saw,Cr-V,"17""/430MM",48/12,22,0.05,38,images/p038_c0_0.png,high
+110201,Saw Series,Pruning Saw,Cr-V,"12""/300MM",,16.9,0.07,38,images/p038_c2_5.png,high
+110202,Saw Series,INDUSTRIAL,,13/330MM,48/12,11,0.043,38,images/p038_c1_2.png,high
+110223,Saw Series,USEUR,,12/300MM,48/12,,0.035,38,images/p038_c2_4.png,high
+110224,Saw Series,INDUSTRIAL,,14'/350MM,48/12,,0.059,38,images/p038_c0_1.png,high
+110234,Saw Series,INDUSTRIAL,,12°/300MM,,11,0.059,38,images/p038_c1_3.png,high
+100901,Saw Series,"INDUSTRIAL QUALITY, BIMETAL 18TPI SAW BLADE","STAINLESS STEEL,ALLOY STEEL ETC","12""/300MM",,20.4,0.01,39,images/p039_c2_4.png,high
+100906,Saw Series,T101BR,,4'/100MM,,17,0.014,39,images/p039_c1_2.png,high
+100907,Saw Series,T101BR,,4'/100MM,400/100,15.2,0.014,39,images/p039_c1_2.png,high
+100908,Saw Series,T101BR,,4'/100MM,400/100,17.1,0.015,39,images/p039_c1_2.png,high
+100909,Saw Series,T101BR,,4'/100MM,,15.6,0.014,39,images/p039_c1_2.png,high
+100910,Saw Series,T101BR,,4'/100MM,,14.3,0.014,39,images/p039_c1_2.png,high
+100921,Saw Series,Bi-Metal,,"6""/150MM",,21,0.026,39,images/p039_c0_1.png,high
+100922,Saw Series,Bimetal,,,,14,0.04,39,images/p039_c1_3.png,high
+110221,Saw Series,"WEAR-RESISTING, TIGHT CONNECTION, THE HANDLE IS MADE",OF ABS ENGINEERING PLASTIC +TPR ADHESIVE,12'/300MM,,16,0.098,39,images/p039_c2_5.png,high
+110222,Saw Series,wseup,,"6.5""/165MM",,10,0.051,39,images/p039_c0_0.png,high
+090102,Screwdrivers Series,THE WORK PROCESS IS MORE CONVENIENT,,4'/100MM 6MM-,,11.5,0.023,40,images/p040_c1_3.png,high
+090103,Screwdrivers Series,THE WORK PROCESS IS MORE CONVENIENT,,5°/125MM 6MM-,,12.8,0.025,40,images/p040_c1_3.png,high
+090105,Screwdrivers Series,THE WORK PROCESS IS MORE CONVENIENT,,6°/150MM 6MM-,,13,0.025,40,images/p040_c1_3.png,high
+090106,Screwdrivers Series,THE WORK PROCESS IS MORE CONVENIENT,,8'/200MM 6MM-,,14.5,0.028,40,images/p040_c1_3.png,high
+090108,Screwdrivers Series,THE WORK PROCESS IS MORE CONVENIENT,,4'/100MM 6MM+,,11.5,0.023,40,images/p040_c1_2.png,high
+090109,Screwdrivers Series,THE WORK PROCESS IS MORE CONVENIENT,,5'/125MM 6MM+,,12.8,0.025,40,images/p040_c1_2.png,high
+090110,Screwdrivers Series,THE WORK PROCESS IS MORE CONVENIENT,,6°/150MM 6MM+,,13,0.025,40,images/p040_c1_2.png,high
+090112,Screwdrivers Series,THE WORK PROCESS IS MORE CONVENIENT,,8°/200MM 6MM+,,14.5,0.028,40,images/p040_c1_2.png,high
+090114,Screwdrivers Series,Screwdriver-,"HIGH-QUALITY CR-V STEEL, HIGH HARDNESS","4""/100MM 6MM-",,11.5,0.027,40,images/p040_c2_5.png,high
+090115,Screwdrivers Series,Screwdriver-,"HIGH-QUALITY CR-V STEEL, HIGH HARDNESS","5""/125MM 6MM-",,12,0.027,40,images/p040_c2_5.png,high
+090116,Screwdrivers Series,Screwdriver-,"HIGH-QUALITY CR-V STEEL, HIGH HARDNESS","6""/150MM 6MM",,13,0.029,40,images/p040_c2_5.png,high
+090118,Screwdrivers Series,Screwdriver-,"HIGH-QUALITY CR-V STEEL, HIGH HARDNESS","8""/200MM 6MM-",,14.8,0.035,40,images/p040_c2_5.png,high
+090120,Screwdrivers Series,Screwdriver+,"HIGH-QUALITY CR-V STEEL, HIGH HARDNESS",4°/100MM 6MM+,,11.5,0.027,40,images/p040_c2_4.png,high
+090121,Screwdrivers Series,Screwdriver+,"HIGH-QUALITY CR-V STEEL, HIGH HARDNESS",5'/125MM 6MM+,,12,0.027,40,images/p040_c2_4.png,high
+090122,Screwdrivers Series,Screwdriver+,"HIGH-QUALITY CR-V STEEL, HIGH HARDNESS",,,13,0.029,40,images/p040_c2_4.png,high
+090124,Screwdrivers Series,+WW9 WWOS.9,,8°/200MM 6MM+,,14.8,0.035,40,images/p040_c2_4.png,high
+090125,Screwdrivers Series,THE WORK PROCESS IS MORE CONVENIENT,,6*100MM-,,17.5,0.0223,40,images/p040_c0_1.png,high
+090126,Screwdrivers Series,THE WORK PROCESS IS MORE CONVENIENT,,6*125MM,,18.5,0.0223,40,images/p040_c0_1.png,high
+090127,Screwdrivers Series,THE WORK PROCESS IS MORE CONVENIENT,,6*150MM-,,19,0.024,40,images/p040_c0_1.png,high
+090128,Screwdrivers Series,THE WORK PROCESS IS MORE CONVENIENT,,6*200MM-,,20.5,0.0286,40,images/p040_c0_1.png,high
+090130,Screwdrivers Series,THEWORK PROCESS IS MORECONVENIENT,,PH2*100MM+,,17.5,0.0223,40,images/p040_c0_0.png,high
+090131,Screwdrivers Series,THEWORK PROCESS IS MORECONVENIENT,,PH2*125MM+,,18.5,0.0223,40,images/p040_c0_0.png,high
+090132,Screwdrivers Series,THEWORK PROCESS IS MORECONVENIENT,,PH2*150MM+,,19,0.0244,40,images/p040_c0_0.png,high
+090133,Screwdrivers Series,THEWORK PROCESS IS MORECONVENIENT,,PH2*200MM+,,20.5,0.0286,40,images/p040_c0_0.png,high
+090208,Screwdrivers Series,WISEUR,,160MM,96/12,13,0.0565,41,images/p041_c2_4.png,high
+090209,Screwdrivers Series,+PH1/PH2,,,72/12,14,0.0237,41,images/p041_c1_3.png,high
+090210,Screwdrivers Series,2pcs Screwdriver Set,Cr-V,,48/12,10,0.0237,41,images/p041_c0_0.png,high
+090211,Screwdrivers Series,4pcs Screwdlriver Set,Cr-V,,48/12,15.5,0.044,41,images/p041_c1_2.png,high
+090214,Screwdrivers Series,2pcs Screwdriver Set,Cr-V,,48/12,,0.0237,41,images/p041_c2_5.png,high
+090220,Screwdrivers Series,PH1 PH2 PH3,,,,14.7,0.0468,41,images/p041_c0_1.png,high
+090204,Screwdrivers Series,ERCS SCRIWEEMER SET,,,,13.5,0.062,43,images/p043_c1_3.png,high
+090205,Screwdrivers Series,unSEup,,,,13,0.052,43,images/p043_c2_5.png,high
+090213,Screwdrivers Series,6pcs Screwdriver Set,Cr-V,,24/6,16,0.066,43,images/p043_c2_4.png,high
+090215,Screwdrivers Series,4pcs Screwdriver Set,Cr-V,,,14.5,0.044,43,images/p043_c0_0.png,high
+090223,Screwdrivers Series,8pcs Screwdriver Set,Cr-V,,,20.5,0.068,43,images/p043_c1_2.png,high
+090224,Screwdrivers Series,10pcs Screwdriver Set,Cr-V,,,14.7,0.0468,43,images/p043_c0_1.png,high
+090135,Screwdrivers Series,2In1Screwdriver,Cr-V,3°50MM,288/12,,0.016,44,images/p044_c0_0.png,high
+090136,Screwdrivers Series,2In1Screwdriver,Cr-V,5*75MM,,11,0.018,44,images/p044_c0_0.png,high
+090137,Screwdrivers Series,2In1Screwdriver,Cr-V,6*38MM,,16,0.023,44,images/p044_c0_0.png,high
+090138,Screwdrivers Series,2In1Screwdriver,Cr-V,6*100MM,,16,0.021,44,images/p044_c0_0.png,high
+090206,Screwdrivers Series,PZO/PZ1/PZ2/PZ3/T8/T10/T15/T20/T25/T27/T30VT4C/H1.5/H2/H2.5/H3/H4/H5/H6,,,,13,0.019,44,images/p044_c1_3.png,high
+090212,Screwdrivers Series,*H3.DH4.0 H5.DH6.0,,,,17,0.03,44,images/p044_c2_5.png,high
+090221,Screwdrivers Series,O PZO PZ1 PZ1 PZ2 PZ2 PZ3 PZ3,,,24/6,20.5,0.04,44,images/p044_c2_4.png,high
+090222,Screwdrivers Series,9 In 1 Screwdriver Set,Cr-V,,,14.7,0.0468,44,images/p044_c1_2.png,high
+090302,Screwdrivers Series,1pc 4./60 Css,,,,11,0.0265,44,images/p044_c0_1.png,high
+040901,Screwdrivers Series,Test Pen,"STEELFOR.AWIDE RANGE ABS HAND LEVER,OOMFORTABLEGRIP",3X140MM,,15.6,0.056,45,images/p045_c0_1.png,high
+040902,Screwdrivers Series,Test Pen,"STEEL,FOR AWIDE RANGE ABS HAND LEVER,OOMFORTABLEGRIP",4X180MM,,26.2,0.086,45,images/p045_c1_3.png,high
+040903,Screwdrivers Series,"DIFFERENT REQUIREMENTS, DIFFERENT TEST SCHEMES CAN BE SELECTED",,,,17,0.074,45,images/p045_c2_4.png,high
+090207,Screwdrivers Series,Electrician Screwdriver Set,TWO-COLOR INSULATED TPR+PP RUBBERIZED HANDLE,,36/12,18,0.05,45,images/p045_c2_5.png,high
+090300,Screwdrivers Series,UISEUP,,,48/12,9.5,0.031,45,images/p045_c0_0.png,high
+090301,Screwdrivers Series,SL1.4 SL2.0 SL2.4 SL3.0 PHO PH1,,,48/12,12,0.033,45,images/p045_c1_2.png,high
+040601,Electrician Series,ELECTRICIANSERIES,CORROSION RESISTANT STAINLESS STEEL CASING,,,18.2,0.11,46,images/p046_c2_4.png,high
+040602,Electrician Series,ELECTRICIANSERIES,CORROSION RESISTANT STAINLESS STEEL CASING,,,18.7,0.11,46,images/p046_c2_4.png,high
+040603,Electrician Series,ELECTRICIANSERIES,CORROSION RESISTANT STAINLESS STEEL CASING,,,19.3,0.11,46,images/p046_c2_4.png,high
+040605,Electrician Series,Industrial,CORROSION RESISTANT STAINLESS STEEL CASING,,,20,0.136,46,images/p046_c0_1.png,high
+040606,Electrician Series,Industrial,CORROSION RESISTANT STAINLESS STEEL CASING,,,22.2,0.136,46,images/p046_c0_1.png,high
+040801,Electrician Series,"[3] SIMPLE OPERATION, EASY TO COMPLETE WELDING WORK",,1.0MM*100G(60%),60/10,7.9,0.028,46,images/p046_c1_3.png,high
+040802,Electrician Series,"[3] SIMPLE OPERATION, EASY TO COMPLETE WELDING WORK",,1.6MM*200G(60%),60/10,13.9,0.028,46,images/p046_c1_3.png,high
+040803,Electrician Series,"[3] SIMPLE OPERATION, EASY TO COMPLETE WELDING WORK",,1.6MM*200G(70%),120/20,13.9,0.015,46,images/p046_c1_3.png,high
+040805,Electrician Series,INDUSTRIAL,,0.8mm/5KG,,22,0.024,46,images/p046_c2_5.png,high
+040806,Electrician Series,INDUSTRIAL,,0.8mm/1KG,,20,0.024,46,images/p046_c2_5.png,high
+040904,Electrician Series,Industrial,,,96/12,,0.041,46,images/p046_c0_0.png,high
+040905,Electrician Series,THE SCREWIDRIVER WITH IMIAGNETLEASY TO ATTRACT SMALL SCEWS THE ROD MADE CF,"HIGH QUALITY CR-V STEEL,HIGH HARONESS,ERGONOMIC DESIGN,BEAUTIFULAND DURABLE",,120/12,13.5,0.033,46,images/p046_c1_2.png,high
+010501,Electrician Series,Industrial,,8°/200MM,,19.1,0.045,47,images/p047_c1_2.png,high
+010502,Electrician Series,Industrial,,"8""/200MM",72/12,17.3,0.039,47,images/p047_c2_4.png,high
+010503,Electrician Series,65Mn,ALLOY STEEL PP+TPR HANDLE,"7""/175MM",,15,0.037,47,images/p047_c0_1.png,high
+010504,Electrician Series,Industrial,ALLOY STEEL PP+TPR HANDLE,7°/175MM,48/6,,0.047,47,images/p047_c1_3.png,high
+010505,Electrician Series,Industrial,ALLOY STEEL PP+TPR HANDLE,180MM,40/10,17,0.046,47,images/p047_c2_5.png,high
+040604,Electrician Series,"[3] SIMPLE OPERATION, EASY TO COMPLETE WELDING WORK",,0.8-2MM/80W,48/12,17.5,0.02,47,images/p047_c0_0.png,high
+010506,Electrician Series,Industrial,,0.2-6MM,,15,0.042,48,images/p048_c0_0.png,high
+020201,Electrician Series,Cable Cutter,Cr-V,6°/150MM,120/6,25.7,0.059,48,images/p048_c2_4.png,high
+020202,Electrician Series,Cable Cutter,Cr-V,8°/200MM,60/6,17.2,0.039,48,images/p048_c2_4.png,high
+020203,Electrician Series,Cable Cutter,Cr-V,"10""/250MM",60/6,20.5,0.04,48,images/p048_c2_4.png,high
+020218,Electrician Series,INDUSTRIAL,,"18""/450MM",,12,0.053,48,images/p048_c0_1.png,high
+020224,Electrician Series,INDUSTRIAL,,"24""/600MM",,10,0.043,48,images/p048_c0_1.png,high
+020232,Electrician Series,INDUSTRIAL,,"32""/800MM",,12.6,0.052,48,images/p048_c0_1.png,high
+020236,Electrician Series,INDUSTRIAL,,"36""/900MM",,12.7,0.054,48,images/p048_c0_1.png,high
+020242,Electrician Series,INDUSTRIAL,,"42""/1050MM",,10,0.056,48,images/p048_c0_1.png,high
+040401,Electrician Series,WISEP,,7'/175MM,,22,0.045,48,images/p048_c1_2.png,high
+041001,Electrician Series,ARTSENNE CE,,,30/5,,0.03,48,images/p048_c1_3.png,high
+041002,Electrician Series,HTEUCETROECEP,,,,15,0.06,48,images/p048_c2_5.png,high
+040501,Electrician Series,WGOUP,,,,17,0.14,49,images/p049_c0_1.png,high
+040502,Electrician Series,Glue Gun,,,36/12,16.5,0.133,49,images/p049_c1_3.png,high
+040503,Electrician Series,Glue Gun,,,,11.2,0.09,49,images/p049_c2_5.png,high
+041003,Electrician Series,ISEUP,,,,16,0.06,49,images/p049_c0_0.png,high
+041004,Electrician Series,AC 600A,,,,12,0.051,49,images/p049_c1_2.png,high
+041101,Electrician Series,Glue Stick,,11°200MM,,50,0.033,49,images/p049_c2_4.png,high
+050901,Electrician Series,4 Blades,Cr-V,18X100MM,,17,0.069,50,images/p050_c0_1.png,high
+050930,Electrician Series,Metal Scraper,Cr-V,"12""/300MM",60/10,16.3,0.126,50,images/p050_c2_4.png,high
+050960,Electrician Series,Metal Scraper,Cr-V,"24""/600MM",,21,0.126,50,images/p050_c2_4.png,high
+100601,Electrician Series,ElectricianKnife,Cr-V,7'/175MM,,16.6,0.041,50,images/p050_c2_5.png,high
+100602,Electrician Series,UISEU,,"7""/175MM",,16.6,0.041,50,images/p050_c1_3.png,high
+140101,Electrician Series,WISEUE,,,,17,0.041,50,images/p050_c0_0.png,high
+140102,Electrician Series,Electric Welding Pliers,Copper,,48/1,17,0.03,50,images/p050_c1_2.png,high
+140103,Electrician Series,300A,,,36/1,18,0.034,50,images/p050_c1_2.png,high
+140104,Electrician Series,500A,,,36/1,20,0.04,50,images/p050_c1_2.png,high
+100101,Electrician Series,5Blades,,19MM,,13,0.069,51,images/p051_c0_0.png,high
+100103,Electrician Series,3Blades,,0.5MM,240/12,24,0.089,51,images/p051_c1_2.png,high
+100104,Electrician Series,3 Blades,,19MM,120/12,14,0.05,51,images/p051_c2_4.png,high
+100106,Electrician Series,3 Blades,,18X0.5MM,,14,0.053,51,images/p051_c0_1.png,high
+100107,Electrician Series,3Blades,Cr-V,18X0.5MM,,15,0.053,51,images/p051_c1_3.png,high
+100108,Electrician Series,6Blades,,19X61X0.5MM,,16,0.059,51,images/p051_c2_5.png,high
+050902,Cutting Tool Series,BERCRRHE TYFE,,50X20MM,,7.5,0.052,52,images/p052_c0_1.png,high
+100109,Cutting Tool Series,4 Blades,,19X61X0.6MM,72/12,11.5,0.052,52,images/p052_c0_0.png,high
+100110,Cutting Tool Series,4 Blades,,19X61X0.6MM,72/6,12.5,0.065,52,images/p052_c1_2.png,high
+100111,Cutting Tool Series,Utility Knife,Cr-V,9X0.4MM,1200/300,20,0.038,52,images/p052_c2_4.png,high
+100112,Cutting Tool Series,Sk-5,,25*1.0MM,96/12,18,0.062,52,images/p052_c1_3.png,high
+100501,Cutting Tool Series,Glass Cutter,Alloy Steel,"7""/175MM",,24.5,0.059,52,images/p052_c2_5.png,high
+100801,Pipe Cutting Knife Series,PIPECUTTINGKNIFESERIES,Cr-V,36MM,72/12,16,0.042,53,images/p053_c0_0.png,high
+100802,Pipe Cutting Knife Series,,Cr-V,42MM,48/6,18,0.047,53,images/p053_c1_2.png,low
+100803,Pipe Cutting Knife Series,,Cr-V,42MM,36/6,,0.049,53,images/p053_c2_4.png,low
+100804,Pipe Cutting Knife Series,PIPECUTTINGKNIFESERIES,Cr-V,63MM,72/6,19,0.055,53,images/p053_c0_1.png,high
+100810,Pipe Cutting Knife Series,Tube Cutter,Cr-V,3-32MM,,14,0.046,53,images/p053_c1_3.png,high
+100811,Pipe Cutting Knife Series,Tube Cutter,Cr-V,3-22MM,,12,0.032,53,images/p053_c2_5.png,high
+011508,Clamping Series,INDUSTRIAL,,"9""/230MM",,12.6,0.058,54,images/p054_c0_0.png,high
+011702,Clamping Series,TNDUSTRIAL,,"2""50MM",72/12,18,0.016,54,images/p054_c2_4.png,high
+011703,Clamping Series,TNDUSTRIAL,,"3"" 75MM",36/6,18,0.016,54,images/p054_c2_4.png,high
+011704,Clamping Series,TNDUSTRIAL,,"4""/100MM",32/8,18,0.016,54,images/p054_c2_4.png,high
+011705,Clamping Series,TNDUSTRIAL,,"5""/125MM",,18,0.016,54,images/p054_c2_4.png,high
+011706,Clamping Series,TNDUSTRIAL,,"6""/150MM",12/6,18,0.016,54,images/p054_c2_4.png,high
+011804,Clamping Series,Replaceable,Steel Jaws,"4""/100MM",4/1,26.5,0.03,54,images/p054_c2_5.png,high
+011805,Clamping Series,Replaceable,Steel Jaws,"5""/125MM",2/1,16,0.02,54,images/p054_c2_5.png,high
+011806,Clamping Series,Replaceable,Steel Jaws,"6""/150MM",2/1,21.5,0.033,54,images/p054_c2_5.png,high
+011808,Clamping Series,Replaceable,Steel Jaws,"8""/200MM",,18.5,0.022,54,images/p054_c2_5.png,high
+100812,Clamping Series,INDUSTRIAL,,25-75MM,10/1,21,0.023,54,images/p054_c1_2.png,high
+140106,Clamping Series,Earth Clamp,,,,18,0.075,54,images/p054_c0_1.png,high
+140107,Clamping Series,Earth Clamp,,,,18,0.049,54,images/p054_c1_3.png,high
+011710,Rivet Gun Series,Suite of iqual material or different thickness in right angles,,"3""/75MM",72/12,18,0.016,55,images/p055_c2_4.png,high
+011713,Rivet Gun Series,ANGLE FOR,,,24/6,21,0.089,55,images/p055_c1_2.png,high
+011812,Rivet Gun Series,INDUSTRIAL,,10-80MM,6/1,27,0.03,55,images/p055_c0_0.png,high
+011813,Rivet Gun Series,INDUSTRIAL,,15-100MM,4/1,29,0.029,55,images/p055_c0_0.png,high
+012301,Rivet Gun Series,F-Clamp,Cr-V,50*150MM,,13.5,0.017,55,images/p055_c0_1.png,high
+012302,Rivet Gun Series,F-Clamp,Cr-V,50*250MM,,15.9,0.02,55,images/p055_c0_1.png,high
+012303,Rivet Gun Series,F-Clamp,Cr-V,80*300MM,,30,0.018,55,images/p055_c0_1.png,high
+012304,Rivet Gun Series,F-Clamp,Cr-V,120*300MM,,20,0.025,55,images/p055_c0_1.png,high
+012305,Rivet Gun Series,F-Clamp,Cr-V,120*500MM,,10,0.016,55,images/p055_c0_1.png,high
+012306,Rivet Gun Series,F-Clamp,Cr-V,120*800MM,,9.3,0.02,55,images/p055_c0_1.png,high
+012401,Rivet Gun Series,INDUSTRIAL,,50X150MM,,18,0.016,55,images/p055_c1_3.png,high
+012402,Rivet Gun Series,INDUSTRIAL,,50X250MM,,18,0.016,55,images/p055_c1_3.png,high
+012403,Rivet Gun Series,INDUSTRIAL,,80X300MM,20/10,18,0.016,55,images/p055_c1_3.png,high
+012404,Rivet Gun Series,INDUSTRIAL,,120X300MM,12/6,18,0.016,55,images/p055_c1_3.png,high
+012405,Rivet Gun Series,INDUSTRIAL,,120X500MM,10/5,18,0.016,55,images/p055_c1_3.png,high
+012406,Rivet Gun Series,INDUSTRIAL,,120X800MM,8/4,18,0.016,55,images/p055_c1_3.png,high
+121201,Rivet Gun Series,Industrial,,"3""-25LBS",72/6,25,0.024,55,images/p055_c2_5.png,high
+121202,Rivet Gun Series,Industrial,,4'-50LBS,36/6,25,0.019,55,images/p055_c2_5.png,high
+121203,Rivet Gun Series,Industrial,,,18/6,21,0.021,55,images/p055_c2_5.png,high
+011711,Glue Gun Series,INOUSTRIAL,,2X70MM,,16,0.016,56,images/p056_c1_3.png,high
+011712,Glue Gun Series,INDUSTRIAL,,,,21,0.1,56,images/p056_c2_5.png,high
+012101,Glue Gun Series,INDUSTRIAL,,,12/3,21,0.07,56,images/p056_c1_2.png,high
+012106,Glue Gun Series,Quick Ratchet Bar Clamp,,"6""X63MM",,15,0.033,56,images/p056_c0_0.png,high
+012112,Glue Gun Series,Quick Ratchet Bar Clamp,,"12""X63MM",,16,0.046,56,images/p056_c0_0.png,high
+012118,Glue Gun Series,Quick Ratchet Bar Clamp,,"18""X63MM",,17,0.06,56,images/p056_c0_0.png,high
+012124,Glue Gun Series,Quick Ratchet Bar Clamp,,"24""/175MM",12/6,15,0.037,56,images/p056_c0_0.png,high
+012200,Glue Gun Series,INDUSTRIAL,,"3""/4""/6""",,21,0.08,56,images/p056_c0_1.png,high
+012204,Glue Gun Series,Spring Clamp,,4°/100MM,,16,0.038,56,images/p056_c2_4.png,high
+012206,Glue Gun Series,Spring Clamp,,6°/150MM,,15,0.079,56,images/p056_c2_4.png,high
+012209,Glue Gun Series,Spring Clamp,,"9""/255MM",,,0.1,56,images/p056_c2_4.png,high
+120101,Glue Gun Series,URSCUD,,"11""/280MM",24/6,,0.052,57,images/p057_c0_0.png,high
+120102,Glue Gun Series,MSCUP,,"11""/280MM",24/6,18,0.043,57,images/p057_c1_2.png,high
+120103,Glue Gun Series,Hand Riveter,,10/250MM,36/6,19,0.062,57,images/p057_c2_4.png,high
+120104,Glue Gun Series,Hand Riveter,,10.5'/265MM,36/6,22.8,0.066,57,images/p057_c0_1.png,high
+120105,Glue Gun Series,Hand Riveter,,32°/800MM,,16.8,0.019,57,images/p057_c2_5.png,high
+120107,Glue Gun Series,URSCUP,,8°/200MM,,18,0.036,57,images/p057_c1_3.png,high
+064101,Glue Gun Series,Grease Gun,,,,16.2,0.05,58,images/p058_c0_1.png,high
+064102,Glue Gun Series,uiscup,,,20/1,24,0.065,58,images/p058_c1_3.png,high
+120106,Glue Gun Series,Hand Riveter,,11/280MM,16/1,22.8,,58,images/p058_c0_0.png,high
+120108,Glue Gun Series,Hand Nut Riveter,,"14""/400MM",6/1,15,0.061,58,images/p058_c1_2.png,high
+120109,Glue Gun Series,Double Lever Rivet Gun,,18*/450MM,,17.6,0.054,58,images/p058_c2_4.png,high
+064325,Glue Gun Series,2*LONGER LIFE,,25MM,10/1,15,0.099,59,images/p059_c2_5.png,high
+064332,Glue Gun Series,2*LONGER LIFE,,32MM,10/1,16,0.111,59,images/p059_c2_5.png,high
+120501,Glue Gun Series,Caulking Gun,,"9""/225MM",,18.1,,59,images/p059_c0_0.png,high
+120503,Glue Gun Series,Caulking Gun,,"9""/225MM",,13,0.034,59,images/p059_c1_2.png,high
+120505,Glue Gun Series,Caulking Gun,,"9""/225MM",,11,0.024,59,images/p059_c2_4.png,high
+120506,Glue Gun Series,Caulking Gun,,"9""/225MM",,20.5,0.086,59,images/p059_c0_1.png,high
+120507,Glue Gun Series,Caulking Gun,,"g""/225MM",24/2,15.6,0.087,59,images/p059_c1_3.png,high
+120508,Glue Gun Series,Caulking Gun,,"15""/375MM",24/2,19.9,0.132,59,images/p059_c1_3.png,high
+063701,Spray Gun Series,Oil Pot,,,,14,0.098,61,images/p061_c0_0.png,high
+120401,Spray Gun Series,400ml,,1.5MM,30/1,16.7,0.085,61,images/p061_c1_2.png,high
+120402,Spray Gun Series,WISCUP,,1.5MM,,18.8,0.1,61,images/p061_c2_4.png,high
+120403,Spray Gun Series,WISCUP,,1.4MM,,16.2,0.11,61,images/p061_c0_1.png,high
+120404,Spray Gun Series,600ml,,1.4MM,20/1,14.7,0.08,61,images/p061_c1_3.png,high
+120405,Spray Gun Series,600CC,,1.5MM,20/1,15,0.074,61,images/p061_c2_5.png,high
+064003,Spray Gun Series,Air Blow Gun Kit,,,96/12,16.5,0.051,62,images/p062_c0_1.png,high
+120406,Spray Gun Series,750CC,,1.5MM,,16,0.074,62,images/p062_c0_0.png,high
+120407,Spray Gun Series,100CC,,0.5MM,40/1,22,0.057,62,images/p062_c1_2.png,high
+120408,Spray Gun Series,1000CC,,1.8MM,,,0.05,62,images/p062_c2_4.png,high
+120509,Spray Gun Series,Foam Gun,,,40/2,12,0.051,62,images/p062_c1_3.png,high
+120510,Spray Gun Series,No-Clean Foam Gun,,,28/1,030,0.084,62,images/p062_c2_5.png,high
+050601,Decoration Series,Wooden Trowel,Carbon Steel,280*120*0.7,60/12,21.5,0.08,63,images/p063_c0_0.png,high
+050602,Decoration Series,Wooden Trowel,Carbon Steel,280*120*0.7,60/12,21.5,0.08,63,images/p063_c1_2.png,high
+050603,Decoration Series,Plastering Trowel,Stainless Steel,130*300*0.7,60/12,24,0.1,63,images/p063_c2_4.png,high
+050604,Decoration Series,Plastering Trowel,Stainless Steel,130*300*0.7,60/12,24,0.1,63,images/p063_c0_1.png,high
+050605,Decoration Series,Plastering Trowel,Carbon Steel,280*120*0.7,60/12,19,0.084,63,images/p063_c1_3.png,high
+050606,Decoration Series,Plastering Trowel,Carbon Steel,280*120*0.8,60/12,18,0.084,63,images/p063_c2_5.png,high
+050607,Decoration Series,Plastering Trowel,Stainless Steel,28X12CM,60/12,21.5,0.08,64,images/p064_c0_0.png,high
+050608,Decoration Series,Plastering Trowel,Stainless Steel,28X12CM,60/12,21.5,0.08,64,images/p064_c1_2.png,high
+050801,Decoration Series,useup,,"160MM6""",48/12,10.5,0.036,64,images/p064_c0_1.png,high
+050802,Decoration Series,useup,,"180MM 7""",48/12,11,0.036,64,images/p064_c0_1.png,high
+050803,Decoration Series,useup,,"200MM 8""",48/12,12.5,0.036,64,images/p064_c0_1.png,high
+050804,Decoration Series,useup,,"225MM g""",48/12,13,0.036,64,images/p064_c0_1.png,high
+050805,Decoration Series,Bricklaying Trowel,Steel,"160MM 6""",48/12,13,0.026,64,images/p064_c1_3.png,high
+050806,Decoration Series,Bricklaying Trowel,Steel,"180MM 7""",48/12,15,0.034,64,images/p064_c1_3.png,high
+050807,Decoration Series,Bricklaying Trowel,Steel,"200MM 8""",48/12,17,0.038,64,images/p064_c1_3.png,high
+050808,Decoration Series,Bricklaying Trowel,Steel,"225MM 9""",48/12,,0.044,64,images/p064_c1_3.png,high
+050809,Decoration Series,Bricklaying Trowel,Steel,"160MM 6""",48/12,11.5,0.049,64,images/p064_c2_5.png,high
+050810,Decoration Series,Bricklaying Trowel,Steel,"180MM 7""",48/12,12.3,0.049,64,images/p064_c2_5.png,high
+050811,Decoration Series,Bricklaying Trowel,Steel,"200MM 8""",48/12,13.5,0.049,64,images/p064_c2_5.png,high
+050812,Decoration Series,Bricklaying Trowel,Steel,"225MM 9""",48/12,14.5,0.049,64,images/p064_c2_5.png,high
+050813,Decoration Series,Bricklaying Trowel,Steel,"160MM 6""",48/12,14,0.056,64,images/p064_c2_4.png,high
+050814,Decoration Series,Bricklaying Trowel,Steel,180MM 7,48/12,15.3,0.056,64,images/p064_c2_4.png,high
+050815,Decoration Series,Bricklaying Trowel,Steel,"200MM 8""",48/12,17,0.056,64,images/p064_c2_4.png,high
+050816,Decoration Series,Bricklaying Trowel,Steel,"220MM 9""",48/12,19.2,0.056,64,images/p064_c2_4.png,high
+050703,Decoration Series,Putty Knife,Stainless Steel,"2""",,21,0.048,65,images/p065_c1_2.png,high
+050704,Decoration Series,Putty Knife,Stainless Steel,"2.5""",,22,0.048,65,images/p065_c1_2.png,high
+050705,Decoration Series,Putty Knife,Stainless Steel,"3""",,23.5,0.048,65,images/p065_c1_2.png,high
+050707,Decoration Series,Putty Knife,Stainless Steel,"4""",,26,0.058,65,images/p065_c1_2.png,high
+050708,Decoration Series,Putty Knife,Stainless Steel,"5""",,29,0.058,65,images/p065_c1_2.png,high
+050709,Decoration Series,Putty Knife,Stainless Steel,"6""",,31.5,0.068,65,images/p065_c1_2.png,high
+050712,Decoration Series,Putty Knife,Stainless Steel,"2""",,18.5,0.025,65,images/p065_c0_0.png,high
+050713,Decoration Series,Putty Knife,Stainless Steel,"2.5""",240/12,19,0.025,65,images/p065_c0_0.png,high
+050714,Decoration Series,Putty Knife,Stainless Steel,"3""",240/12,20,0.03,65,images/p065_c0_0.png,high
+050716,Decoration Series,Putty Knife,Stainless Steel,"4""",240/12,24.5,0.04,65,images/p065_c0_0.png,high
+050717,Decoration Series,Putty Knife,Stainless Steel,"5""",,26,0.04,65,images/p065_c0_0.png,high
+050718,Decoration Series,Putty Knife,Stainless Steel,"6""",240/12,29,0.0413,65,images/p065_c0_0.png,high
+050719,Decoration Series,Scraper,Stainless Steel,100MM,,12,0.035,65,images/p065_c2_4.png,high
+050720,Decoration Series,Scraper,Stainless Steel,120MM,96/12,12.8,0.035,65,images/p065_c2_4.png,high
+050721,Decoration Series,Scraper,Stainless Steel,140MM,96/12,13.6,0.04,65,images/p065_c2_4.png,high
+050722,Decoration Series,Scraper,Stainless Steel,160MM,,15.2,0.046,65,images/p065_c2_4.png,high
+050723,Decoration Series,Scraper,Stainless Steel,180MM,,16,0.053,65,images/p065_c2_4.png,high
+050724,Decoration Series,Scraper,Stainless Steel,200MM,,17.6,0.057,65,images/p065_c2_4.png,high
+050725,Decoration Series,Scraper,Stainless Steel,220MM,96/12,18.2,0.062,65,images/p065_c2_4.png,high
+050726,Decoration Series,Scraper,Stainless Steel,240MM,,20.8,0.073,65,images/p065_c2_4.png,high
+150401,Decoration Series,6600LB / 3000KGS,,"2""/50MM*10M",,20,0.042,65,images/p065_c0_1.png,high
+150402,Decoration Series,11000LB / 5000KGS,,"2""50MM*10M",5/1,11,0.022,65,images/p065_c1_3.png,high
+150406,Decoration Series,Tow Rope,,"2""/50MM*5M",,2.35,0.022,65,images/p065_c2_5.png,high
+064201,Jack Series,wIscup,,,,,0.0126,66,images/p066_c0_1.png,high
+064203,Jack Series,HEIGHT,,,10/1,23,0.029,66,images/p066_c1_3.png,high
+064204,Jack Series,HEIGHT,,,5/1,13.6,0.017,66,images/p066_c1_3.png,high
+064205,Jack Series,HEIGHT,,,5/1,19.7,0.023,66,images/p066_c1_3.png,high
+064206,Jack Series,HEIGHT,,,4/1,25.4,0.028,66,images/p066_c1_3.png,high
+064207,Jack Series,HEIGHT,,,2/1,15.4,0.015,66,images/p066_c1_3.png,high
+064208,Jack Series,HEIGHT,,,2/1,20.3,0.019,66,images/p066_c1_3.png,high
+064209,Jack Series,HEIGHT,,,,18.8,0.01,66,images/p066_c1_3.png,high
+064220,Jack Series,HEIGHT,,,,14.2,0.014,66,images/p066_c2_5.png,high
+064221,Jack Series,HEIGHT,,,,16.5,0.018,66,images/p066_c2_5.png,high
+064222,Jack Series,HEIGHT,,,,21,0.017,66,images/p066_c2_5.png,high
+064223,Jack Series,HEIGHT,,,,14.8,0.011,66,images/p066_c2_5.png,high
+064224,Jack Series,HEIGHT,,,,19.8,0.015,66,images/p066_c2_5.png,high
+064225,Jack Series,HEIGHT,,,,23.1,0.019,66,images/p066_c2_5.png,high
+064226,Jack Series,HEIGHT,,,,21,0.014,66,images/p066_c2_5.png,high
+064601,Jack Series,Booster Cable,,,10/1,11.6,0.029,66,images/p066_c2_4.png,high
+064602,Jack Series,500AMP,,,10/1,20.8,0.05,66,images/p066_c2_4.png,high
+150412,Jack Series,600KGS/1320LBS,,,10/1,15,0.023,66,images/p066_c1_2.png,high
+150414,Jack Series,2PC*25MIM6M,,4PC*25MM6M,5/1,18,0.02,66,images/p066_c1_2.png,high
+150420,Jack Series,Bungee Cord,Core 100% Rubber,2PC*8MM*60CM,,13,0.019,66,images/p066_c0_0.png,high
+150421,Jack Series,Bungee Cord,Core 100% Rubber,2PC*8MM*100CM,,12.4,0.024,66,images/p066_c0_0.png,high
+063901,Jack Series,WSEUPN,,43MM*570MM,10/5,9.3,0.013,67,images/p067_c1_3.png,high
+063904,Jack Series,"FRANCE, AND THE US",,38*600MM,,9.3,0.013,67,images/p067_c2_5.png,high
+064210,Jack Series,Jacks Stand,,,4/1,21,0.068,67,images/p067_c0_1.png,high
+064211,Jack Series,Jacks Stand,,,2/1,20,0.07,67,images/p067_c0_1.png,high
+064230,Jack Series,UISEUP,,,,33,0.062,67,images/p067_c1_2.png,high
+064231,Jack Series,RISING RANGE 140-465MIM,,,,24.7,0.052,67,images/p067_c2_4.png,high
+064235,Jack Series,Scissor Jacks,,,10/1,17.2,0.033,67,images/p067_c0_0.png,high
+064236,Jack Series,Scissor Jacks,,,10/1,21.2,0.042,67,images/p067_c0_0.png,high
+064237,Jack Series,1.5T,,,10/1,24.5,0.053,67,images/p067_c0_0.png,high
+063902,Auto Repair Series,"FRANCE, AND THE US",,26°280MM,48/6,9.3,0.013,68,images/p068_c0_0.png,high
+063903,Auto Repair Series,Foot Pump,,46*160MM,,48,0.013,68,images/p068_c1_2.png,high
+064501,Auto Repair Series,uccuP,,"40""",,3.8,0.045,68,images/p068_c0_1.png,high
+064505,Auto Repair Series,Auto Repair And Beauty Stool,,45X33X64CM,,6.4,0.046,68,images/p068_c2_5.png,high
+064506,Auto Repair Series,360 DEGREE ROTATING COMFORTABLE LEATHER SEAT,,120MM,,5.8,0.024,68,images/p068_c1_3.png,high
+150110,Auto Repair Series,Three Tray Tools Cart,IRON360°WHEEL,72*35*5CM,,13,0.05,68,images/p068_c2_4.png,high
+063501,Auto Repair Series,Tire Pressure Gun,,,50/10,20.8,0.106,69,images/p069_c0_0.png,high
+063502,Auto Repair Series,Tire Pressure Gun,,,40/10,23,0.084,69,images/p069_c1_2.png,high
+120201,Auto Repair Series,12-5M,,,24/6,18,0.04,69,images/p069_c2_5.png,high
+120202,Auto Repair Series,WISCUP,,,,17.5,0.037,69,images/p069_c0_1.png,high
+120203,Auto Repair Series,1B-16VN,,,,23,0.054,69,images/p069_c1_3.png,high
+120204,Auto Repair Series,1 Way,,,,17.5,0.037,69,images/p069_c2_4.png,high
+060701,Decoration Series,Two Jaws Gear Puller,Cr-V,3'75MM,,10.5,0.04,70,images/p070_c2_5.png,high
+060702,Decoration Series,Two Jaws Gear Puller,Cr-V,4'/100MM,,19.5,0.055,70,images/p070_c2_5.png,high
+060703,Decoration Series,Two Jaws Gear Puller,Cr-V,6°/150MM,12/1,24.5,0.065,70,images/p070_c2_5.png,high
+121501,Decoration Series,120BOXS,,1.2*8*11.3MM,,14.9,0.012,70,images/p070_c0_0.png,high
+121502,Decoration Series,200BOXS,,0.7*8*11.3MM,,14.5,0.013,70,images/p070_c1_2.png,high
+121503,Decoration Series,120BOXS,,1.2*12*6.3MM,,15.9,0.012,70,images/p070_c2_4.png,high
+121504,Decoration Series,120BOXS,,1.2*10*2MM,,10.3,0.013,70,images/p070_c0_1.png,high
+130301,Decoration Series,WISCUP,,"4""*3""*2""",,19,0.0355,70,images/p070_c1_3.png,high
+130302,Decoration Series,WISCUP,,"5""*3*2.5""",,28.5,0.0355,70,images/p070_c1_3.png,high
+060707,Decoration Series,Three Jaws Gear Puller,Cr-V,3'/75MM,,13.5,0.052,71,images/p071_c0_0.png,high
+060708,Decoration Series,Three Jaws Gear Puller,Cr-V,4'/100MM,10/1,13,0.033,71,images/p071_c0_0.png,high
+060709,Decoration Series,Three Jaws Gear Puller,Cr-V,6°/150MM,6/1,17,0.038,71,images/p071_c0_0.png,high
+060713,Decoration Series,MISEUP,,90*100MM,,20,0.017,71,images/p071_c1_2.png,high
+060714,Decoration Series,MISEUP,,130*100MM,,25,0.025,71,images/p071_c1_2.png,high
+060715,Decoration Series,MISEUP,,160*150MM,6/1,18,0.015,71,images/p071_c1_2.png,high
+140801,Decoration Series,INDUSTRIAL,,,,11,0.07,71,images/p071_c2_4.png,high
+140802,Decoration Series,INDUSTRIAL,,,,11,0.051,71,images/p071_c0_1.png,high
+140803,Decoration Series,Cotton/polyester,,10°/250MM,,13.5,0.068,71,images/p071_c1_3.png,high
+140804,Decoration Series,INDUSTRIAL,,,,11,0.052,71,images/p071_c2_5.png,high
+140701,Labor Protection Series,OCEX,,"10.5""/265MM",,31,0.067,72,images/p072_c1_3.png,high
+140702,Labor Protection Series,Cowhide,,14°/350MM,,25,0.067,72,images/p072_c2_5.png,high
+140805,Labor Protection Series,INDUSTRIAL,,,,11,0.052,72,images/p072_c0_0.png,high
+140806,Labor Protection Series,INDUSTRIAL,,"9""/L",,11,0.052,72,images/p072_c1_2.png,high
+140807,Labor Protection Series,INDUSTRIAL,,"11""/XL",,,0.052,72,images/p072_c2_4.png,high
+140808,Labor Protection Series,INDUSTRIAL,,"11""/XL",,11,0.052,72,images/p072_c0_1.png,high
+140203,Labor Protection Series,Welding Goggle,,,,13,0.114,73,images/p073_c1_3.png,high
+140206,Labor Protection Series,Safety Glasses,,,96/24,,0.076,73,images/p073_c1_2.png,high
+140207,Labor Protection Series,Safety Goggle,,,96/24,,0.076,73,images/p073_c2_4.png,high
+140208,Labor Protection Series,Safety Glasses,,,,10,0.08,73,images/p073_c0_1.png,high
+140306,Labor Protection Series,FaceshieldVisor,,,,13.5,0.12,73,images/p073_c2_5.png,high
+140402,Labor Protection Series,Cowhide,,"14""/240G",,14.5,0.0529,73,images/p073_c0_0.png,high
+140301,Labor Protection Series,Din3/9-13,,90X35MM,12/1,8.8,0.753,74,images/p074_c1_3.png,high
+140302,Labor Protection Series,Welding Helmet,Abs,108X50MM,,13,0.11,74,images/p074_c2_5.png,high
+141201,Labor Protection Series,C6H6,,,50/1,9.5,0.068,74,images/p074_c2_4.png,high
+141202,Labor Protection Series,C6H6,,,50/1,14.5,0.108,74,images/p074_c0_1.png,high
+141901,Labor Protection Series,EarDefenders,Abs+pu,,,10,0.116,74,images/p074_c0_0.png,high
+141906,Labor Protection Series,Ear Plug,,,,,0.09,74,images/p074_c1_2.png,high
+140201,Labor Protection Series,PRODUCT PARAMETER,,100X35MM,48/1,11,0.078,75,images/p075_c2_4.png,high
+140202,Labor Protection Series,Weldling Safety Goggles,Abs,100X35MM,48/12,,0.036,75,images/p075_c1_2.png,high
+140303,Labor Protection Series,Welding Helmet,Abs,108X50MM,,14,0.1,75,images/p075_c0_0.png,high
+140501,Labor Protection Series,5362 CM HIGH QUAUTY PE,,,,,0.067,75,images/p075_c0_1.png,high
+140502,Labor Protection Series,5362 CM HIGH QUALITY PE,,,,,0.067,75,images/p075_c1_3.png,high
+140504,Labor Protection Series,5362 CM  HIGH QUALITY PE,,,20/1,,0.067,75,images/p075_c2_5.png,high
+140307,Labor Protection Series,INDUSTRIAL,,,,30,0.13,76,images/p076_c1_3.png,high
+140308,Labor Protection Series,INDUSTRIAL,,,,30,0.13,76,images/p076_c1_2.png,high
+140309,Labor Protection Series,INDUSTRIAL,,,,30,0.13,76,images/p076_c2_4.png,high
+140310,Labor Protection Series,INDUSTRIAL,,,,30,0.13,76,images/p076_c0_1.png,high
+140505,Labor Protection Series,5362 CM HIGH QUALTY PE,,,,,0.067,76,images/p076_c0_0.png,high
+141139,Labor Protection Series,Anti Puncture,Steel Bottom,,10/1,39,0.077,77,images/p077_c2_4.png,high
+141140,Labor Protection Series,Anti Puncture,Steel Bottom,,10/1,40,0.077,77,images/p077_c2_4.png,high
+141141,Labor Protection Series,Anti Puncture,Steel Bottom,,,41,0.087,77,images/p077_c2_4.png,high
+141142,Labor Protection Series,Anti Puncture,Steel Bottom,,,42,0.087,77,images/p077_c2_4.png,high
+141143,Labor Protection Series,Anti Puncture,Steel Bottom,,10/1,43,0.088,77,images/p077_c2_4.png,high
+141144,Labor Protection Series,Anti Puncture,Steel Bottom,,,44,0.11,77,images/p077_c2_4.png,high
+141145,Labor Protection Series,Anti Puncture,Steel Bottom,,,45,0.11,77,images/p077_c2_4.png,high
+142039,Labor Protection Series,Anti Puncture,Steel Bottom,,10/1,39,0.077,77,images/p077_c0_0.png,high
+142040,Labor Protection Series,Anti Puncture,Steel Bottom,,,40,0.077,77,images/p077_c0_0.png,high
+142041,Labor Protection Series,Anti Puncture,Steel Bottom,,,41,0.087,77,images/p077_c0_0.png,high
+142042,Labor Protection Series,Anti Puncture,Steel Bottom,,10/1,42,0.087,77,images/p077_c0_0.png,high
+142043,Labor Protection Series,Anti Puncture,Steel Bottom,,10/1,43,0.088,77,images/p077_c0_0.png,high
+142044,Labor Protection Series,Anti Puncture,Steel Bottom,,,44,0.11,77,images/p077_c0_0.png,high
+142045,Labor Protection Series,Anti Puncture,Steel Bottom,,,45,0.11,77,images/p077_c0_0.png,high
+142139,Labor Protection Series,UNSEUP,,,10/1,39,0.077,77,images/p077_c0_1.png,high
+142140,Labor Protection Series,UNSEUP,,,10/1,40,0.077,77,images/p077_c0_1.png,high
+142141,Labor Protection Series,UNSEUP,,,10/1,41,0.087,77,images/p077_c0_1.png,high
+142142,Labor Protection Series,UNSEUP,,,10/1,42,0.087,77,images/p077_c0_1.png,high
+142143,Labor Protection Series,UNSEUP,,,10/1,43,0.088,77,images/p077_c0_1.png,high
+142144,Labor Protection Series,UNSEUP,,,10/1,44,0.11,77,images/p077_c0_1.png,high
+142145,Labor Protection Series,UNSEUP,,,10/1,45,0.11,77,images/p077_c0_1.png,high
+142239,Labor Protection Series,Safety Boots,,,10/1,39,0.077,77,images/p077_c1_3.png,high
+142240,Labor Protection Series,Safety Boots,,,10/1,40,0.077,77,images/p077_c1_3.png,high
+142241,Labor Protection Series,Safety Boots,,,10/1,41,0.087,77,images/p077_c1_3.png,high
+142242,Labor Protection Series,Safety Boots,,,10/1,42,0.087,77,images/p077_c1_3.png,high
+142243,Labor Protection Series,Safety Boots,,,10/1,43,0.088,77,images/p077_c1_3.png,high
+142244,Labor Protection Series,Safety Boots,,,10/1,44,0.11,77,images/p077_c1_3.png,high
+142245,Labor Protection Series,Safety Boots,,,10/1,45,0.11,77,images/p077_c1_3.png,high
+142339,Labor Protection Series,Waterproof,,,,39,0.077,77,images/p077_c2_5.png,high
+142340,Labor Protection Series,Waterproof,,,,40,0.077,77,images/p077_c2_5.png,high
+142341,Labor Protection Series,Waterproof,,,,41,0.087,77,images/p077_c2_5.png,high
+142342,Labor Protection Series,Waterproof,,,,42,0.087,77,images/p077_c2_5.png,high
+142343,Labor Protection Series,Waterproof,,,,43,0.088,77,images/p077_c2_5.png,high
+142344,Labor Protection Series,Waterproof,,,,44,0.11,77,images/p077_c2_5.png,high
+142345,Labor Protection Series,Waterproof,,,,45,0.11,77,images/p077_c2_5.png,high
+121905,Labor Protection Series,StyLE,,5X8MM*5M,,80,0.09,78,images/p078_c2_5.png,high
+121910,Labor Protection Series,StyLE,,5X8MM*10M,,40,0.09,78,images/p078_c2_5.png,high
+121915,Labor Protection Series,StyLE,,5X8MM*15M,,25,0.08,78,images/p078_c2_5.png,high
+141301,Labor Protection Series,Safety Harness,,45MM,,,0.057,78,images/p078_c0_1.png,high
+141302,Labor Protection Series,Safety Harness,,45MM,,,0.057,78,images/p078_c1_3.png,high
+141840,Labor Protection Series,Rain Boots,,,,40,0.043,78,images/p078_c0_0.png,high
+141841,Labor Protection Series,6 PAIRS,,,,41,0.043,78,images/p078_c0_0.png,high
+141842,Labor Protection Series,6 PAIRS,,,,42,0.043,78,images/p078_c0_0.png,high
+141843,Labor Protection Series,6 PAIRS,,,,43,0.043,78,images/p078_c0_0.png,high
+141844,Labor Protection Series,6 PAIRS,,,,44,0.0488,78,images/p078_c0_0.png,high
+141845,Labor Protection Series,6 PAIRS,,,,45,0.0488,78,images/p078_c0_0.png,high
+051801,Decoration Series,Wheel Barrow,,,,17,0.034,80,images/p080_c1_2.png,high
+051901,Decoration Series,150/300Kgs,,,,7.5,0.035,80,images/p080_c2_5.png,high
+051902,Decoration Series,150/300Kgs,,,,8.5,0.042,80,images/p080_c2_5.png,high
+051906,Decoration Series,useup,,,4/1,13.5,0.054,80,images/p080_c1_3.png,high
+051907,Decoration Series,50 Kgs,,,,13.5,0.065,80,images/p080_c0_1.png,high
+051910,Decoration Series,INDUSTRIAL,,,,70,0.066,80,images/p080_c2_4.png,high
+141702,Decoration Series,Safety Ladder,,,4/1,18.5,0.124,80,images/p080_c0_0.png,high
+141703,Decoration Series,2 STEPS,,,4/1,25.5,0.158,80,images/p080_c0_0.png,high
+141704,Decoration Series,3STEPS,,,4/1,33,0.191,80,images/p080_c0_0.png,high
+141705,Decoration Series,4 STEPS,,,2/1,20.5,0.11,80,images/p080_c0_0.png,high
+141706,Decoration Series,5 STEPS,,,2/1,24,0.126,80,images/p080_c0_0.png,high
+110101,Garden Series,uiseup,,"8""/200MM",,18.7,0.042,81,images/p081_c0_0.png,high
+110102,Garden Series,Pruning Shears,Cr-V,7.5/185MM,,11.6,0.037,81,images/p081_c1_2.png,high
+110103,Garden Series,wseup,,"8""/200MM",60/6,18.9,0.033,81,images/p081_c2_4.png,high
+110104,Garden Series,wseup,,"10""/250MM",48/6,24.2,0.039,81,images/p081_c2_4.png,high
+110106,Garden Series,Sk-5,,"8""/200MM",72/6,22.3,0.056,81,images/p081_c0_1.png,high
+110107,Garden Series,3cr13,,"7""/175MM",,20,0.065,81,images/p081_c1_3.png,high
+110108,Garden Series,3cr13,,"7""/175MM",,20,0.065,81,images/p081_c2_5.png,high
+020501,Garden Series,Fence Cutter,Cr-v,"10""/200MM",,22.5,0.037,82,images/p082_c0_1.png,high
+020502,Garden Series,Adjustable,,12'/300MM,12/1,16,0.035,82,images/p082_c1_3.png,high
+020503,Garden Series,Adjustable,,"12""/300MM",,32.5,0.084,82,images/p082_c2_5.png,high
+110109,Garden Series,Industrial,,"9""225MM",60/6,17.6,0.039,82,images/p082_c0_0.png,high
+110110,Garden Series,Pruning Shears,Cr-v,8.5/210MM,72/6,21,0.056,82,images/p082_c1_2.png,high
+020504,Garden Series,Sk-5,,31'/765MM,,19,0.034,83,images/p083_c0_0.png,high
+020505,Garden Series,Garden Scissors,,"39""/980MM",12/1,21,0.048,83,images/p083_c1_2.png,high
+020506,Garden Series,Garden Scissors,,"38""/940MM",12/1,20.2,0.048,83,images/p083_c2_4.png,high
+020507,Garden Series,Mini Type Fence Cutter,Cr-V,20°/480MM,,10,0.022,83,images/p083_c0_1.png,high
+110901,Garden Series,WRSCUP,,1/2*/12.5MM,48/12,8.5,0.071,83,images/p083_c1_3.png,high
+110902,Garden Series,Skin Card,,"1/2""/12.5MM",48/12,10,0.088,83,images/p083_c2_5.png,high
+110903,Garden Series,SCUP,,"3/4""-12.5MM",,7.5,0.079,84,images/p084_c0_0.png,high
+110905,Garden Series,,Abs,"1/2""&3/4""",,240,0.057,84,images/p084_c1_2.png,low
+110906,Garden Series,URSEUP,,"1/2""12.5MM",48/12,4.4,0.0334,84,images/p084_c2_4.png,high
+110907,Garden Series,TA CIRCLE,,"11""/280MM",,9.2,0.074,84,images/p084_c0_1.png,high
+110909,Garden Series,THREE WAY HOSE COUPLING,,"1/2""",,240,0.086,84,images/p084_c1_3.png,high
+110910,Garden Series,THREE WAY HOSE COUPLING,,"1/2""",,240,0.053,84,images/p084_c2_5.png,high
+110911,Garden Series,THREE WAY HOSE COUPLING,,"1/2""",,240,0.086,85,images/p085_c0_0.png,high
+110912,Garden Series,THREE WAY HOSE COUPLING,,"1/2""",,240,0.052,85,images/p085_c1_2.png,high
+110913,Garden Series,THREE WAY HOSE COUPLING,,"1/2""& 3/4",,240,0.057,85,images/p085_c2_4.png,high
+111315,Garden Series,Water,,,,,0.04,85,images/p085_c0_1.png,high
+111320,Garden Series,Air Hose Reel,,,,7.5,0.04,85,images/p085_c2_5.png,high
+111330,Garden Series,Water,HOSE MATERIAL-PVC,"30M+2M-1/2""",,13,0.07,85,images/p085_c1_3.png,high
+110701,Garden Series,UISEUP,,,,2.5,0.036,86,images/p086_c0_1.png,high
+110702,Garden Series,sprayer,,,6/1,4.4,0.03,86,images/p086_c0_0.png,high
+110703,Garden Series,aasm,,,,12,0.03,86,images/p086_c1_2.png,high
+110716,Garden Series,16L BATTERY,,,,6.8,0.035,86,images/p086_c1_3.png,high
+110720,Garden Series,20L BATTERY,,,,6.8,0.035,86,images/p086_c2_5.png,high
+111001,Garden Series,EASY ASSEMBLY WITHOUT TOOLSWITH 2 WHEEL,,"1/2""-13MM",5/1,11,0.097,86,images/p086_c2_4.png,high
+110401,Garden Series,Shovel,Steel+fiberglass,,6/1,12,0.01,88,images/p088_c2_5.png,high
+111101,Garden Series,Stainless Transplanter,Stainless Steel,33X8.2CM,48/12,12.5,0.035,88,images/p088_c0_0.png,high
+111102,Garden Series,Stainless Transplanter,Stainless Steel,32.8X8CM,48/12,13.8,0.035,88,images/p088_c1_2.png,high
+111103,Garden Series,UISEUP,,30.8X7.5CM,48/12,10.5,0.028,88,images/p088_c2_4.png,high
+111104,Garden Series,Stainless Cultivator,Stainless Steel,31.5X8.5CM,48/12,13.8,0.041,88,images/p088_c0_1.png,high
+111105,Garden Series,WSCUP,,32.5X18.9CM,48/12,17.8,0.07,88,images/p088_c1_3.png,high
+110402,Decoration Series,NOT EASILY DAMAGED,,,6/1,13,0.01,89,images/p089_c0_0.png,high
+110403,Decoration Series,NOT EASILY DAMAGED,,,6/1,13,0.013,89,images/p089_c1_2.png,high
+110404,Decoration Series,NOT EASILY DAMAGED,,,6/1,14,0.015,89,images/p089_c2_4.png,high
+110405,Decoration Series,Shovel Head,Steel,,,13,0.01,89,images/p089_c0_1.png,high
+110802,Decoration Series,AND RAKING THE GROUND IN LARGE AREAS,,,,13,0.029,89,images/p089_c1_3.png,high
+110803,Decoration Series,12 TEETH,,,24/1,15,0.033,89,images/p089_c1_3.png,high
+141726,Decoration Series,Safety Ladder,Aluminum,,,18.5,0.124,89,images/p089_c2_5.png,high
+141732,Decoration Series,2.6M,,,,24,0.126,89,images/p089_c2_6.png,high
+130602,Decoration Series,wiscup,,"3""/75MM",48/12,14.5,0.044,90,images/p090_c1_2.png,high
+130603,Decoration Series,wiscup,,4'/100MM,48/6,24.5,0.077,90,images/p090_c1_2.png,high
+130604,Decoration Series,wiscup,,"5""/125MM",24/6,17,0.074,90,images/p090_c1_2.png,high
+130607,Decoration Series,wIscup,,"3""/75MM",48/12,12,0.041,90,images/p090_c0_0.png,high
+130608,Decoration Series,wIscup,,"4""/100MM",48/6,22,0.046,90,images/p090_c0_0.png,high
+130609,Decoration Series,wIscup,,"5""/125MM",,15,0.07,90,images/p090_c0_0.png,high
+130611,Decoration Series,1PC CIRCULAR BRUSH 2(25MIM),,,,15.2,0.081,90,images/p090_c1_3.png,high
+130612,Decoration Series,WISCUP,,,,18,0.081,90,images/p090_c2_5.png,high
+130801,Decoration Series,"15ROWS,1ROW,6GROUPS",,"11""/275MM",,16.8,0.053,90,images/p090_c2_4.png,high
+130901,Decoration Series,"15ROWS,1ROW,6GROUPS",,"10""/250MM",72/12,17,0.049,90,images/p090_c0_1.png,high
+190102,Decoration Series,PSEPO,,32MM,120/6,12.5,0.009,91,images/p091_c0_0.png,high
+190103,Decoration Series,PSEPO,,38MM,120/6,18.9,0.012,91,images/p091_c0_0.png,high
+190104,Decoration Series,PSEPO,,50MM,60/6,18.5,0.012,91,images/p091_c0_0.png,high
+190105,Decoration Series,PSEPO,,63MM,36/6,19,0.011,91,images/p091_c0_0.png,high
+190106,Decoration Series,PSEPO,,75MM,,17.9,0.01,91,images/p091_c0_0.png,high
+190202,Decoration Series,SATETY EVELYOWY,SOLID PURE COPPER,25MM,120/12,10.6,0.035,91,images/p091_c1_2.png,high
+190203,Decoration Series,SATETY EVELYOWY,SOLID PURE COPPER,30MM,,14.5,0.035,91,images/p091_c1_2.png,high
+190204,Decoration Series,SATETY EVELYOWY,SOLID PURE COPPER,40MM,60/12,22.2,0.038,91,images/p091_c1_2.png,high
+190205,Decoration Series,SATETY EVELYOWY,SOLID PURE COPPER,50MM,36/6,18.8,0.028,91,images/p091_c1_2.png,high
+190206,Decoration Series,SATETY EVELYOWY,SOLID PURE COPPER,63MM,,14.5,0.018,91,images/p091_c1_2.png,high
+190207,Decoration Series,SATETY EVELYOWY,SOLID PURE COPPER,70MM,24/6,17,0.017,91,images/p091_c1_2.png,high
+190208,Decoration Series,65uu,,65MM,48/6,18.5,0.01,91,images/p091_c2_4.png,high
+190209,Decoration Series,65uu,,75MM,48/6,21,0.008,91,images/p091_c2_4.png,high
+190210,Decoration Series,65uu,,90MM,36/6,23,0.009,91,images/p091_c2_4.png,high
+190301,Decoration Series,LOCK HEAD,,Φ1.2X120CM,48/12,14.5,0.039,91,images/p091_c2_5.png,high
+190302,Decoration Series,Unlock,,p1.2X120CM,48/12,14.5,0.039,91,images/p091_c1_3.png,high
+190303,Decoration Series,THE CYLINDER ANTI-WATER DESIGN MOREDURABLE,,p14X142X72MM,48/12,16.3,0.024,91,images/p091_c0_1.png,high
+121406,Polishing Series,Expand Plugs,,6MM,,,0.038,92,images/p092_c2_2.png,high
+121407,Polishing Series,100BOX/100PCS,,7MM,,8.6,0.038,92,images/p092_c2_2.png,high
+121408,Polishing Series,100BOX/100PCS,,8MM,,9.2,0.038,92,images/p092_c2_2.png,high
+121410,Polishing Series,100BOX/100PCS,,10MM,,6.3,0.038,92,images/p092_c2_2.png,high
+121412,Polishing Series,100BOX/50PCS,,12MM,,7.3,0.038,92,images/p092_c2_2.png,high
+150509,Polishing Series,WPEUP,,3.6*150MM,,8.9,0.033,92,images/p092_c0_0.png,high
+150510,Polishing Series,100BAGS/100PCS,,3.6*200MM,,8.9,0.033,92,images/p092_c0_0.png,high
+150511,Polishing Series,100BAGS/10000PCS,,3.6*250MM,,8.9,0.033,92,images/p092_c0_0.png,high
+150517,Polishing Series,80BAGS/8000PCS,,4.8*300MM,,9.8,0.032,92,images/p092_c0_0.png,high
+150518,Polishing Series,50BAGS/5000PCS,,4.8*350MM,,9.8,0.032,92,images/p092_c0_0.png,high
+150519,Polishing Series,50BAGS/5000PCS,,4.8*40DMM,,10.5,0.033,92,images/p092_c0_0.png,high
+150520,Polishing Series,40BAGS/4000PCS,,4.8*450MM,,9.8,0.032,92,images/p092_c0_0.png,high
+150521,Polishing Series,40BAGS/4000PCS,,4.8*500MM,,10.4,0.038,92,images/p092_c0_0.png,high
+150522,Polishing Series,30BAGS/3000PCS,,5.2*250MM,,9.8,0.032,92,images/p092_c0_0.png,high
+150523,Polishing Series,125BAGS/6250PCS,,5.2*300MM,,9.8,0.032,92,images/p092_c0_0.png,high
+150524,Polishing Series,100BAGS/5000PCS,,5.2*350MM,,9.8,0.032,92,images/p092_c0_0.png,high
+150525,Polishing Series,100BAGS/5000PCS,,5.2*400MM,,9.8,0.032,92,images/p092_c0_0.png,high
+150526,Polishing Series,90BAGS/4500PCS,,5.2*450MM,,9.8,0.032,92,images/p092_c0_0.png,high
+150527,Polishing Series,50BAGS/2500PCS,,5.2*500MM,,9.8,0.032,92,images/p092_c0_0.png,high
+150528,Polishing Series,60BAGS/3000PCS,,7.6*300MM,,9.8,0.032,92,images/p092_c0_0.png,high
+150529,Polishing Series,60BAGS/3000PCS,,7.6*350MM,,9.8,0.032,92,images/p092_c0_0.png,high
+150530,Polishing Series,50BAGS/3000PCS,,7.6*40MM,,9.8,0.032,92,images/p092_c0_0.png,high
+150531,Polishing Series,40BAGS/2000PCS,,7.6*450MM,,9.8,0.032,92,images/p092_c0_0.png,high
+150532,Polishing Series,40BAGS/2000PCS,,7.6*500MM,,9.8,0.032,92,images/p092_c0_0.png,high
+150533,Polishing Series,30BAGS/1500PCS,,7.6*550MM,,9.8,0.032,92,images/p092_c0_0.png,high
+150534,Polishing Series,30BAGS/1500PCS,,7.6*600MM,,9.8,0.032,92,images/p092_c0_0.png,high
+150806,Polishing Series,1BOX=100PCS,,6MM,,22,0.051,92,images/p092_c2_3.png,high
+150807,Polishing Series,300BOXS,,7MM,,24,0.051,92,images/p092_c2_3.png,high
+150808,Polishing Series,300BOXS,,8MM,,20,0.051,92,images/p092_c2_3.png,high
+150809,Polishing Series,200BOXS,,9MM,,23,0.051,92,images/p092_c2_3.png,high
+150810,Polishing Series,200BOXS,,10MM,,24,0.051,92,images/p092_c2_3.png,high
+150812,Polishing Series,200BOXS,,12MM,,17,0.043,92,images/p092_c2_3.png,high
+120601,Glass Suction Cup Series,LIFT EDGE TO RELEASE SUCTION ALSO WORKS AS O GLASS HOLDER,,120MM[4-3/4′],30/1,11,0.04,93,images/p093_c0_0.png,high
+120602,Glass Suction Cup Series,LIFT EDGE TO RELEASE SUCTION ALSO WORKS AS O GLASS HOLDER,,120MM[4-3/4'],20/1,13.2,0.089,93,images/p093_c1_2.png,high
+120603,Glass Suction Cup Series,LIFT EDGE TO RELEASE SUCTION ALSO WORKS AS O GLASS HOLDER,,120MM[4-3/4'],10/1,13.5,0.08,93,images/p093_c2_4.png,high
+120607,Glass Suction Cup Series,INDUSTRIAL,,8°/200MM,,12,0.051,93,images/p093_c1_3.png,high
+120608,Glass Suction Cup Series,160KGS,,"8""/200MM",,12,0.051,93,images/p093_c0_1.png,high
+120610,Glass Suction Cup Series,INDUSTRIAL,,650X65MM,,36,0.092,93,images/p093_c2_5.png,high
+160101,Roller Brush Series,RollerBrush,,"7""/175MM",,14.5,0.074,94,images/p094_c0_0.png,high
+160102,Roller Brush Series,RollerBrush,,"9""/225MM",60/1,17,0.075,94,images/p094_c0_0.png,high
+160103,Roller Brush Series,Roller Brush,,"7""/175MM",,13.7,0.074,94,images/p094_c1_2.png,high
+160104,Roller Brush Series,Roller Brush,,"9""/225MM",60/1,15.6,0.075,94,images/p094_c1_2.png,high
+160106,Roller Brush Series,ROLLERBRUSHSERIES,,"10""/250MM",,24,0.057,94,images/p094_c2_4.png,high
+160202,Roller Brush Series,10Pcs,,"4""/100MM",,,0.048,94,images/p094_c0_1.png,high
+160203,Roller Brush Series,8Pcs,,9°225MM,8/1,,0.085,94,images/p094_c1_3.png,high
+160205,Roller Brush Series,WISEUPM,,"4""/100MM",,,0.069,94,images/p094_c2_5.png,high
+051501,Roller Brush Series,WITH 1BOTTLE CHALK 115G,,,48/12,14,0.08,96,images/p096_c1_3.png,high
+090701,Roller Brush Series,SCUP,,3*70MM,96/12,10.4,0.05,96,images/p096_c2_5.png,high
+160105,Roller Brush Series,MiniRollerBrush,,"4""/100MM",,16.3,0.064,96,images/p096_c1_2.png,high
+160201,Roller Brush Series,10Pcs,,"4""/100MM",50/1,7.5,0.066,96,images/p096_c0_0.png,high
+160301,Roller Brush Series,Paint Brash,,,600/12,20,0.05,96,images/p096_c2_4.png,high
+160302,Roller Brush Series,Paint Brash,,,,18,0.06,96,images/p096_c2_4.png,high
+160303,Roller Brush Series,Paint Brash,,,240/12,23,0.06,96,images/p096_c2_4.png,high
+160304,Roller Brush Series,Paint Brash,,,120/12,18,0.06,96,images/p096_c2_4.png,high
+160315,Roller Brush Series,Paint Brash,,"1.5""",,15,0.063,96,images/p096_c2_4.png,high
+160325,Roller Brush Series,Paint Brash,,"2.5""",,15,0.06,96,images/p096_c2_4.png,high
+160401,Roller Brush Series,30% Pig Hair,,,600/12,22,0.05,96,images/p096_c0_1.png,high
+160402,Roller Brush Series,30% Pig Hair,,,360/12,20,0.06,96,images/p096_c0_1.png,high
+160403,Roller Brush Series,30% Pig Hair,,"3""",,25,0.06,96,images/p096_c0_1.png,high
+160404,Roller Brush Series,30% Pig Hair,,,120/12,20,0.06,96,images/p096_c0_1.png,high
+160415,Roller Brush Series,30% Pig Hair,,,360/12,1.5,0.063,96,images/p096_c0_1.png,high
+160425,Roller Brush Series,30% Pig Hair,,"2.5""",300/12,17,0.06,96,images/p096_c0_1.png,high
+041401,Adhesive Tape Series,useup,,19MMX9.15M,,400,0.032,97,images/p097_c2_5.png,high
+121001,Adhesive Tape Series,"INDUSTRIAL-GRADE QUALITY, ACCURATE SCALE, EASY TO USE",,1.5MMX50MMX10M,,24,0.043,97,images/p097_c0_0.png,high
+121002,Adhesive Tape Series,"INDUSTRIAL-GRADE QUALITY, ACCURATE SCALE, EASY TO USE",,1.5MMX75MMX10M,,16,0.043,97,images/p097_c0_0.png,high
+121004,Adhesive Tape Series,"SPRAY SHIELDING,AND OTHER PURPOSES",,24MM*15M,,288,0.068,97,images/p097_c1_2.png,high
+121005,Adhesive Tape Series,"SPRAY SHIELDING,AND OTHER PURPOSES",,24MM*40M,,144,0.05,97,images/p097_c1_2.png,high
+121006,Adhesive Tape Series,"SPRAY SHIELDING,AND OTHER PURPOSES",,48MM*15M,,144,0.068,97,images/p097_c1_2.png,high
+121007,Adhesive Tape Series,"SPRAY SHIELDING,AND OTHER PURPOSES",,48MM*40M,,72,0.049,97,images/p097_c1_2.png,high
+121008,Adhesive Tape Series,WISEUR,,48MMX9M,,72,0.035,97,images/p097_c2_4.png,high
+121009,Adhesive Tape Series,"QUICK AND EASY JOINT, SUPER STRONG SELF ADHESIVE FIBERGLASS",,50MMX45M,,144,0.106,97,images/p097_c0_1.png,high
+121010,Adhesive Tape Series,"QUICK AND EASY JOINT, SUPER STRONG SELF ADHESIVE FIBERGLASS",,50MMX90M,,72,0.09,97,images/p097_c0_1.png,high
+121015,Adhesive Tape Series,UISEUP,,1.0mmx5cmx10m,,24,0.029,97,images/p097_c1_3.png,high
+121016,Adhesive Tape Series,UISEUP,,1.0mmx7.5cmx10m,,16,0.029,97,images/p097_c1_3.png,high
+121017,Adhesive Tape Series,UISEUP,,1.0mmx10cmx10m,,12,0.029,97,images/p097_c1_3.png,high
+051301,File/Polishing Series,4pcs Wood Chisel,Cr-V,6/12/19/25MM,,21,0.05,98,images/p098_c0_1.png,high
+051306,File/Polishing Series,Wood Chisel,Cr-V,6MM,,14.5,0.056,98,images/p098_c0_0.png,high
+051312,File/Polishing Series,Wood Chisel,Cr-V,12MM,,16,0.056,98,images/p098_c0_0.png,high
+051314,File/Polishing Series,Wood Chisel,Cr-V,14MM,72/12,18,0.056,98,images/p098_c0_0.png,high
+051316,File/Polishing Series,Wood Chisel,Cr-V,16MM,,18,0.056,98,images/p098_c0_0.png,high
+051319,File/Polishing Series,Wood Chisel,Cr-V,19MM,,18.5,0.056,98,images/p098_c0_0.png,high
+051325,File/Polishing Series,Wood Chisel,Cr-V,25MM,,20.5,0.056,98,images/p098_c0_0.png,high
+051332,File/Polishing Series,Wood Chisel,Cr-V,32MM,72/12,22.7,0.056,98,images/p098_c0_0.png,high
+051338,File/Polishing Series,Wood Chisel,Cr-V,38MM,72/12,25,0.056,98,images/p098_c0_0.png,high
+100401,File/Polishing Series,Wood File,,"HALF ROUND/8""",96/12,23,0.066,98,images/p098_c1_2.png,high
+100402,File/Polishing Series,Wood File,,"FIAT/8""",96/12,22,0.066,98,images/p098_c1_2.png,high
+100403,File/Polishing Series,Wood File,,"ROUND /8""",96/12,17,0.066,98,images/p098_c1_2.png,high
+100404,File/Polishing Series,,Steel File,"HALF ROUND/8""",96/12,22,0.066,98,images/p098_c2_4.png,low
+100405,File/Polishing Series,,Steel File,"FIAT/8""",,22.2,0.066,98,images/p098_c2_4.png,low
+100406,File/Polishing Series,,Steel File,"ROUND /8""",96/12,15.8,0.066,98,images/p098_c2_4.png,low
+100407,File/Polishing Series,,3pcs Steel File,8°/200MM,,40,0.06,98,images/p098_c2_5.png,low
+100408,File/Polishing Series,3pcs Wood File,,8°/200MM,,40,0.06,98,images/p098_c1_3.png,high
+051103,File/Polishing Series,Stone Chisel,Steel,,,15.3,0.0277,99,images/p099_c2_4.png,high
+051104,File/Polishing Series,Stone Chisel,Steel,,,15.8,0.027,99,images/p099_c2_4.png,high
+051105,File/Polishing Series,Stone Chisel,Steel,,24/6,17.8,0.027,99,images/p099_c2_4.png,high
+051106,File/Polishing Series,Stone Chisel,Steel,,24/6,18.2,0.027,99,images/p099_c2_4.png,high
+051109,File/Polishing Series,AND IS NOT EASILY DEFORMED AFTER LONG-TERM USE,,"-8""/200MM",,18.7,0.028,99,images/p099_c0_1.png,high
+051110,File/Polishing Series,AND IS NOT EASILY DEFORMED AFTER LONG-TERM USE,,"-12""/300MM",48/12,27,0.027,99,images/p099_c0_1.png,high
+051120,File/Polishing Series,3pcs Cold Chisel Set,Cr-V,,,14.5,0.021,99,images/p099_c1_3.png,high
+051121,File/Polishing Series,6pcs Cold Chisel Set,Cr-V,,40/10,17,0.02,99,images/p099_c2_5.png,high
+100409,File/Polishing Series,INDUSTRIAL,,"8""/200MM",,11,0.066,99,images/p099_c0_0.png,high
+100413,File/Polishing Series,6pcs NeedleFileSets,,3'X160MM,,10,0.042,99,images/p099_c1_2.png,high
+051122,Decorative Accessories Series,Gpcs Punch&chisel Set,Cr-V,,40/10,20.2,0.02,100,images/p100_c0_0.png,high
+051123,Decorative Accessories Series,12pcs Cold Chisel Set,Cr-V,,20/5,20,0.0375,100,images/p100_c1_2.png,high
+102801,Decorative Accessories Series,M10 M12 M3-12,,,,60,0.0336,100,images/p100_c1_3.png,high
+102802,Decorative Accessories Series,M10 M12 M3-12,,,,60,0.0338,100,images/p100_c2_5.png,high
+102810,Decorative Accessories Series,INDUSTRIAL,,,,100,0.053,100,images/p100_c0_1.png,high
+102811,Decorative Accessories Series,INDUSTRIAL,,,,100,0.053,100,images/p100_c2_4.png,high
+061902,Decorative Accessories Series,INDUSTRIAL,,2#12-16MM,20/10,18,0.016,101,images/p101_c0_0.png,high
+062505,Decorative Accessories Series,40C8-4,,3-18MM,100/10,18,0.037,101,images/p101_c1_2.png,high
+062506,Decorative Accessories Series,40CR-4,,3-22MM,,18,0.037,101,images/p101_c2_4.png,high
+102803,Decorative Accessories Series,INDUSTRIAL,,,3/1,15,0.04,101,images/p101_c2_5.png,high
+102820,Decorative Accessories Series,"M6.M7,MB,M9,M10,M12+M25 DIAMETER HINGE",,,,24,0.018,101,images/p101_c0_1.png,high
+102840,Decorative Accessories Series,1 T-SHAPED STRANGLER / 1 SCREVWDRIVER / 1 TOOTH GAUGE,,,10/1,14.7,0.031,101,images/p101_c1_3.png,high
+100102,Decoration Series,Ck75,,100X18MM,,23,0.016,102,images/p102_c2_5.png,high
+100105,Decoration Series,Ck75,,61X19MM,,16,0.012,102,images/p102_c1_3.png,high
+100113,Decoration Series,300BOX/20BOX,,100X25MM,,22,0.011,102,images/p102_c2_5.png,high
+101901,Decoration Series,High Quality,,400MM,4/1,26.2,0.0138,102,images/p102_c0_0.png,high
+101902,Decoration Series,High Quality,,600MM,2/1,17.5,0.0927,102,images/p102_c0_0.png,high
+101903,Decoration Series,High Quality,,800MM,2/1,19,0.115,102,images/p102_c0_0.png,high
+101905,Decoration Series,Laserfunction,,800MM,,32.5,0.1,102,images/p102_c1_2.png,high
+101906,Decoration Series,Laserfunction,,1200MM,,21,0.07,102,images/p102_c1_2.png,high
+101910,Decoration Series,BALL BEARING CUTTING WHEEL,,22X6X6MM,,1.2,0.033,102,images/p102_c0_1.png,high
+130201,Decoration Series,Gate Roller,Steel,50MM,,80,0.006,102,images/p102_c2_4.png,high
+130202,Decoration Series,Gate Roller,Steel,60MM,,60,0.007,102,images/p102_c2_4.png,high
+130203,Decoration Series,Gate Roller,Steel,70MM,,36,0.008,102,images/p102_c2_4.png,high
+130204,Decoration Series,Gate Roller,Steel,80MM,,30,0.009,102,images/p102_c2_4.png,high
+150101,Tool Kit Series,"BETTER LOAD-BEARING EFFECT, DURABLE",,14',,17,0.17,103,images/p103_c0_0.png,high
+150102,Tool Kit Series,"BETTER LOAD-BEARING EFFECT, DURABLE",,17',12/1,16.5,0.21,103,images/p103_c0_0.png,high
+150103,Tool Kit Series,"BETTER LOAD-BEARING EFFECT, DURABLE",,"20""",6/1,13.5,0.19,103,images/p103_c0_0.png,high
+150104,Tool Kit Series,"BETTER LOAD-BEARING EFFECT, DURABLE",,,2/1,,0.12,103,images/p103_c0_0.png,high
+150105,Tool Kit Series,SURFACE IS SPRAYED WITH RUST PROOF PAINT.,,430MM,4/1,13.2,0.097,103,images/p103_c1_2.png,high
+150106,Tool Kit Series,SURFACE IS SPRAYED WITH RUST PROOF PAINT.,,530MM,4/1,15.2,0.12,103,images/p103_c1_2.png,high
+150201,Tool Kit Series,SURFACE IS SPRAYED WITH RUST PROOF PAINT.,,"16""/400MM",10/1,13.5,0.08,103,images/p103_c2_4.png,high
+150202,Tool Kit Series,"EASILY ORGANIZE WITHOUT DISORDER,",,"16""/400MM",6/1,12,0.064,103,images/p103_c0_1.png,high
+150203,Tool Kit Series,"EASILY ORGANIZE WITHOUT DISORDER,",,"16""",10/1,12.7,0.066,103,images/p103_c1_3.png,high
+150204,Tool Kit Series,"EASILY ORGANIZE WITHOUT DISORDER,",,25X28CM,,11,0.067,103,images/p103_c2_5.png,high
+150205,Tool Kit Series,EASILY ORGANIZE WITHOUT DISORDER,,11X24CM,,,0.041,104,images/p104_c0_0.png,high
+150206,Tool Kit Series,"EASILY ORGANIZE WITHOUT DISORDER,",,36.5*19*52CM,6/1,11.8,0.14,104,images/p104_c1_2.png,high
+150207,Tool Kit Series,"EASILY ORGANIZE WITHOUT DISORDER,",,58*26CM,,9.5,0.036,104,images/p104_c2_5.png,high
+150208,Tool Kit Series,Cloth,,,,13,0.066,104,images/p104_c0_1.png,high
+150209,Tool Kit Series,Drill Bag,,27*16CM,100/1,9.7,0.057,104,images/p104_c1_3.png,high
+150210,Tool Kit Series,useup,,13/325MM,,20,0.042,104,images/p104_c2_4.png,high
+064606,Tool Kit Series,THERMAL PROTECTOR,,,2/1,10.7,0.052,105,images/p105_c1_2.png,high
+064607,Tool Kit Series,25M/2.5M2,,,2/1,15,0.052,105,images/p105_c1_2.png,high
+120801,Tool Kit Series,Blender,,,12/1,16.5,0.11,105,images/p105_c2_4.png,high
+121301,Tool Kit Series,AND DRY PLACE BELOW 27 C FOR A STORAGE PERIOD OF 12 MONTHS.,,,,24,0.014,105,images/p105_c0_1.png,high
+121302,Tool Kit Series,TRANSPARENT,,,,24,0.014,105,images/p105_c0_1.png,high
+121303,Tool Kit Series,WHITE,,,,24,0.014,105,images/p105_c0_1.png,high
+121311,Tool Kit Series,1BOXS=24CARD=288PCS,,,,10,0.067,105,images/p105_c2_5.png,high
+121315,Tool Kit Series,AUTOMOBILEAND MOTORCYCLE,,,,,0.035,105,images/p105_c1_3.png,high
+150218,Tool Kit Series,Draw-Bar Tools Bag,,46X23X34CM,2/1,,0.099,105,images/p105_c0_0.png,high
+051601,Decorative Accessories Series,INDUSTRIAL,,13X7X176MM,120/12,20,0.035,106,images/p106_c1_3.png,high
+051602,Decorative Accessories Series,INDUSTRIAL,,10X7.5X176MM,,12,0.025,106,images/p106_c2_5.png,high
+070110,Decorative Accessories Series,CANVAS BAG,,,,18,0.039,106,images/p106_c0_1.png,high
+141401,Decorative Accessories Series,Round,,,12/6,15,0.067,106,images/p106_c0_0.png,high
+141402,Decorative Accessories Series,"INTEGRATED MOLDING, THICKENED MATERIAL_ NOT EASILY DAMAGED",,,12/6,10.2,0.036,106,images/p106_c1_2.png,high
+141403,Decorative Accessories Series,UIsUP,,72X6CM,,15.3,0.12,106,images/p106_c2_4.png,high
+102001,Drilling Series,M2 Hss Twist Drill Bit Split Point,,,,,,108,images/p108_c0_0.png,low
+102002,Drilling Series,M2 Hss Twist Drill Bit Split Point,,,,,,108,images/p108_c0_0.png,low
+102003,Drilling Series,M2 Hss Twist Drill Bit Split Point,,,,,,108,images/p108_c0_0.png,low
+102004,Drilling Series,M2 Din338,,,,,,108,,low
+102005,Drilling Series,M2 Din338,,,,,,108,,low
+102006,Drilling Series,M2 Din338,,,,,,108,,low
+102007,Drilling Series,M2 Din338,,,,,,108,,low
+102008,Drilling Series,M2 Din338,,,,,,108,,low
+102009,Drilling Series,M2 Din338,,,,,,108,,low
+102010,Drilling Series,SEIF-CBITBINS,,,,,,108,,low
+102011,Drilling Series,SEIF-CBITBINS,,,,,,108,,low
+102012,Drilling Series,SEIF-CBITBINS,,,,,,108,,low
+102013,Drilling Series,SEIF-CBITBINS,,,,,,108,,low
+102014,Drilling Series,SEIF-CBITBINS,,,,,,108,,low
+102015,Drilling Series,2PCS,,,,,,108,images/p108_c0_1.png,low
+102016,Drilling Series,2PCS,,,,,,108,images/p108_c0_1.png,low
+102017,Drilling Series,2PCS,,,,,,108,images/p108_c0_1.png,low
+102018,Drilling Series,2PCS,,,,,,108,,low
+102019,Drilling Series,2PCS,,,,,,108,,low
+102020,Drilling Series,2PCS,,,,,,108,,low
+102021,Drilling Series,2PCS,,,,,,108,,low
+102022,Drilling Series,2PCS,,,,,,108,,low
+102023,Drilling Series,2PCS,,,,,,108,,low
+102024,Drilling Series,SEIF-CBITBINS,,,,,,108,,low
+102025,Drilling Series,SEIF-CBITBINS,,,,,,108,,low
+102026,Drilling Series,SEIF-CBITBINS,,,,,,108,,low
+102027,Drilling Series,SEIF-CBITBINS,,,,,,108,,low
+102028,Drilling Series,SEIF-CBITBINS,,,,,,108,,low
+102050,Drilling Series,M2 Hss Twist Drill Bit Split Point,,,,,,108,images/p108_c0_2.png,low
+102051,Drilling Series,M2 Hss Twist Drill Bit Split Point,,,,,,108,images/p108_c0_2.png,low
+102052,Drilling Series,M2 Din338,,,,,,108,,low
+102053,Drilling Series,M2 Din338,,,,,,108,,low
+102054,Drilling Series,M2 Din338,,,,,,108,,low
+102055,Drilling Series,M2 Din338,,,,,,108,,low
+102056,Drilling Series,M2 Din338,,,,,,108,,low
+102057,Drilling Series,M2 Din338,,,,,,108,,low
+102058,Drilling Series,SEIF-CBITBINS,,,,,,108,,low
+102059,Drilling Series,SEIF-CBITBINS,,,,,,108,,low
+102060,Drilling Series,SEIF-CBITBINS,,,,,,108,,low
+102061,Drilling Series,SEIF-CBITBINS,,,,,,108,,low
+102062,Drilling Series,SEIF-CBITBINS,,,,,,108,,low
+102063,Drilling Series,M2 Hss Twist Drill Bit Split Point,,,,,,108,images/p108_c0_3.png,low
+102064,Drilling Series,M2 Hss Twist Drill Bit Split Point,,,,,,108,images/p108_c0_3.png,low
+102065,Drilling Series,M2 Din338,,,,,,108,,low
+102066,Drilling Series,M2 Din338,,,,,,108,,low
+102067,Drilling Series,M2 Din338,,,,,,108,,low
+102068,Drilling Series,M2 Din338,,,,,,108,,low
+102069,Drilling Series,M2 Din338,,,,,,108,,low
+102070,Drilling Series,M2 Din338,,,,,,108,,low
+102071,Drilling Series,SEIF-CBITBINS,,,,,,108,,low
+102072,Drilling Series,SEIF-CBITBINS,,,,,,108,,low
+102073,Drilling Series,SEIF-CBITBINS,,,,,,108,,low
+102074,Drilling Series,SEIF-CBITBINS,,,,,,108,,low
+102101,Drilling Series,HSS TWIST DRILL BITS,,,,,,108,images/p108_c0_4.png,low
+102102,Drilling Series,HSS TWIST DRILL BITS,,,,,,108,images/p108_c0_4.png,low
+102103,Drilling Series,HSS TWIST DRILL BITS,,,,,,108,images/p108_c0_4.png,low
+102104,Drilling Series,M2 Din338,,,,,,108,,low
+102105,Drilling Series,M2 Din338,,,,,,108,,low
+102106,Drilling Series,M2 Din338,,,,,,108,,low
+102107,Drilling Series,M2 Din338,,,,,,108,,low
+102108,Drilling Series,M2 Din338,,,,,,108,,low
+102110,Drilling Series,M2 Din338,,,,,,108,,low
+102111,Drilling Series,SEIF-CENTEBIRS,,,,,,108,,low
+102112,Drilling Series,SEIF-CENTEBIRS,,,,,,108,,low
+102113,Drilling Series,SEIF-CENTEBIRS,,,,,,108,,low
+102114,Drilling Series,SEIF-CENTEBIRS,,,,,,108,,low
+102115,Drilling Series,HSS TWIST DRILL BITS,,,,,,108,images/p108_c0_5.png,low
+102116,Drilling Series,HSS TWIST DRILL BITS,,,,,,108,images/p108_c0_5.png,low
+102117,Drilling Series,HSS TWIST DRILL BITS,,,,,,108,images/p108_c0_5.png,low
+102118,Drilling Series,M2 Din338,,,,,,108,,low
+102119,Drilling Series,M2 Din338,,,,,,108,,low
+102120,Drilling Series,M2 Din338,,,,,,108,,low
+102121,Drilling Series,M2 Din338,,,,,,108,,low
+102122,Drilling Series,M2 Din338,,,,,,108,,low
+102123,Drilling Series,M2 Din338,,,,,,108,,low
+102124,Drilling Series,SEIF-CENTEBIRS,,,,,,108,,low
+102125,Drilling Series,SEIF-CENTEBIRS,,,,,,108,,low
+102126,Drilling Series,SEIF-CENTEBIRS,,,,,,108,,low
+102127,Drilling Series,SEIF-CENTEBIRS,,,,,,108,,low
+102128,Drilling Series,SEIF-CENTEBIRS,,,,,,108,,low
+101404,Drilling Series,DRILLING SERIES,,,,,,109,images/p109_c0_0.png,low
+101412,Drilling Series,DIN8035,,,,,,109,,low
+101413,Drilling Series,SAND BLASTING FINISHING,,,,,,109,,low
+101414,Drilling Series,SAND BLASTING FINISHING,,,,,,109,,low
+101415,Drilling Series,SAND BLASTING FINISHING,,,,,,109,,low
+101416,Drilling Series,DRILLING SERIES,,,,,,109,images/p109_c0_1.png,low
+101417,Drilling Series,DIN8035,,,,,,109,,low
+101418,Drilling Series,DIN8035,,,,,,109,,low
+101419,Drilling Series,DIN8035,,,,,,109,,low
+101427,Drilling Series,DIN8035,,,,,,109,,low
+101433,Drilling Series,SAND BLASTING FINISHING,,,,,,109,,low
+101434,Drilling Series,SAND BLASTING FINISHING,,,,,,109,,low
+101435,Drilling Series,SAND BLASTING FINISHING,,,,,,109,,low
+101436,Drilling Series,SAND BLASTING FINISHING,,,,,,109,,low
+101437,Drilling Series,SAND BLASTING FINISHING,,,,,,109,,low
+101438,Drilling Series,DIN8035,,,,,,109,,low
+101439,Drilling Series,DIN8035,,,,,,109,,low
+101440,Drilling Series,SAND BLASTING FINISHING,,,,,,109,,low
+101441,Drilling Series,SAND BLASTING FINISHING,,,,,,109,,low
+101442,Drilling Series,SAND BLASTING FINISHING,,,,,,109,,low
+101443,Drilling Series,DRILLING SERIES,,,,,,109,images/p109_c0_1.png,low
+101444,Drilling Series,DRILLING SERIES,,,,,,109,images/p109_c0_1.png,low
+101445,Drilling Series,DIN8035,,,,,,109,,low
+101446,Drilling Series,DIN8035,,,,,,109,,low
+101448,Drilling Series,SAND BLASTING FINISHING,,,,,,109,,low
+101449,Drilling Series,INDUSTRIAL,,,,,,109,images/p109_c0_2.png,low
+101450,Drilling Series,INDUSTRIAL,,,,,,109,images/p109_c0_2.png,low
+101451,Drilling Series,INDUSTRIAL,,,,,,109,images/p109_c0_2.png,low
+101452,Drilling Series,DIN8035,,,,,,109,,low
+101453,Drilling Series,SAND BLASTING FINISHING,,,,,,109,,low
+101454,Drilling Series,SAND BLASTING FINISHING,,,,,,109,,low
+101455,Drilling Series,SAND BLASTING FINISHING,,,,,,109,,low
+101456,Drilling Series,SAND BLASTING FINISHING,,,,,,109,,low
+101457,Drilling Series,SAND BLASTING FINISHING,,,,,,109,,low
+102401,Drilling Series,SELF-CEITERINS,,,,10.2,0.026,109,images/p109_c0_3.png,high
+102402,Drilling Series,SBLF-CBITERINS,,,,14.2,0.026,109,images/p109_c1_4.png,high
+102403,Drilling Series,SELF-CENTERINE,,,32/16,16,0.026,109,images/p109_c2_5.png,high
+101216,Hole Series,Iseup,,16MM,,200,0.11,110,images/p110_c2_4.png,high
+101218,Hole Series,Iseup,,18MM,,200,0.11,110,images/p110_c2_4.png,high
+101220,Hole Series,Iseup,,20MM,,200,0.11,110,images/p110_c2_4.png,high
+101222,Hole Series,Iseup,,22MM,,200,0.11,110,images/p110_c2_4.png,high
+101225,Hole Series,Iseup,,25MM,,200,0.11,110,images/p110_c2_4.png,high
+101402,Hole Series,Iseup,,6*110MM,,21.2,0.024,110,images/p110_c2_5.png,high
+101403,Hole Series,D.027,,7*110MM,,25,0.0245,110,images/p110_c2_5.png,high
+101407,Hole Series,Iseup,,6*160MM,,25,,110,images/p110_c2_5.png,high
+101408,Hole Series,D.027,,7*160MM,,22,0.0245,110,images/p110_c2_5.png,high
+101409,Hole Series,D.027,,8°160MM,,24.2,0.0245,110,images/p110_c2_5.png,high
+101410,Hole Series,D.027,,10*160MM,,17.7,0.015,110,images/p110_c2_5.png,high
+101411,Hole Series,D.027,,12*160MM,,20,0.015,110,images/p110_c2_5.png,high
+102303,Hole Series,Masonry Drill,,3MM,800/200,,0.021,110,images/p110_c1_3.png,high
+102304,Hole Series,Masonry Drill,,4MM,,12,0.021,110,images/p110_c1_3.png,high
+102305,Hole Series,Masonry Drill,,5MM,,13,0.021,110,images/p110_c1_3.png,high
+102306,Hole Series,Masonry Drill,,6MM,,18.5,0.021,110,images/p110_c1_3.png,high
+102307,Hole Series,Masonry Drill,,7MM,,19,0.021,110,images/p110_c1_3.png,high
+102308,Hole Series,Masonry Drill,,8MM,,19,0.021,110,images/p110_c1_3.png,high
+102309,Hole Series,Masonry Drill,,9MM,,21.5,0.021,110,images/p110_c1_3.png,high
+102310,Hole Series,Masonry Drill,,10MM,,21.5,0.021,110,images/p110_c1_3.png,high
+102312,Hole Series,Masonry Drill,,12MM,260/65,21,0.021,110,images/p110_c1_3.png,high
+102404,Hole Series,DRILL BIT SET,,,60/30,14.5,0.0248,110,images/p110_c0_0.png,high
+102406,Hole Series,5pcs Sds Drill Bits Set,,,,20,0.017,110,images/p110_c0_1.png,high
+103006,Hole Series,Yg6x,,6MM,,1000,0.033,110,images/p110_c1_2.png,high
+103008,Hole Series,Yg6x,,8MM,,1000,0.033,110,images/p110_c1_2.png,high
+103010,Hole Series,Yg6x,,10MM,,800,0.033,110,images/p110_c1_2.png,high
+103012,Hole Series,Yg6x,,12MM,,600,0.033,110,images/p110_c1_2.png,high
+101506,Hole Series,STONE,,6MM-2PCS 1/4*,1200/100,11.2,0.037,111,images/p111_c1_1.png,high
+101508,Hole Series,STONE,,"8MM-2PCS 5/16""",,12.3,0.037,111,images/p111_c1_1.png,high
+101510,Hole Series,STONE,,"10MIM-2PCS 3/8""",,11.6,0.037,111,images/p111_c1_1.png,high
+101512,Hole Series,STONE,,"12MIM-2PCS 1/2""",,12.6,0.037,111,images/p111_c1_1.png,high
+101514,Hole Series,STONE,,14MM-2PCS 9/16,,14,0.037,111,images/p111_c1_1.png,high
+101516,Hole Series,STONE,,"16MM-2PCS 5/8""",600/50,13.8,0.037,111,images/p111_c1_1.png,high
+101518,Hole Series,STONE,,"18MM 11/16""",300/25,10.4,0.037,111,images/p111_c1_1.png,high
+101520,Hole Series,STONE,,"20MM 25/32""",300/25,10.8,0.037,111,images/p111_c1_1.png,high
+101522,Hole Series,STONE,,"22MM 25/32""",300/25,11.9,0.037,111,images/p111_c1_1.png,high
+101525,Hole Series,STONE,,"25MM1""",216/18,10.1,0.037,111,images/p111_c1_1.png,high
+101530,Hole Series,STONE,,"30MM 1-1/8""",,9.6,0.037,111,images/p111_c1_1.png,high
+101535,Hole Series,STONE,,"30MM 1-3/8""",,9.3,0.037,111,images/p111_c1_1.png,high
+101540,Hole Series,STONE,,"40MM 1-1/2""",,8.4,0.037,111,images/p111_c1_1.png,high
+101545,Hole Series,STONE,,"45MM 1-3/4""",96/8,8.9,0.037,111,images/p111_c1_1.png,high
+101550,Hole Series,STONE,,"50MM2""",72/6,9.1,0.037,111,images/p111_c1_1.png,high
+102701,Hole Series,5pc Auger Bit Set,Carbon Steel,10-13-16-19-25MM,,17,0.01,111,images/p111_c1_2.png,high
+102916,Hole Series,Sand,,16*80MM,,20.4,0.04,111,images/p111_c2_4.png,high
+102920,Hole Series,Sand,,20*80MM,,26.4,0.04,111,images/p111_c2_4.png,high
+102922,Hole Series,Sand,,22*80MM,,26.4,0.04,111,images/p111_c2_4.png,high
+102925,Hole Series,Sand,,25*80MM,,20.8,0.04,111,images/p111_c2_4.png,high
+102930,Hole Series,Sand,,30*80MM,,20.2,0.04,111,images/p111_c2_4.png,high
+102940,Hole Series,Sand,,40*80MM,100/10,15.4,0.04,111,images/p111_c2_4.png,high
+102950,Hole Series,Sand,,50*80MM,100/5,21.8,0.04,111,images/p111_c2_4.png,high
+102960,Hole Series,Sand,,60*80MM,80/5,27.6,0.04,111,images/p111_c2_4.png,high
+102965,Hole Series,Sand,,65*80MM,80/5,16.1,0.04,111,images/p111_c2_4.png,high
+103618,Hole Series,STAINLESS,STEEL,18MM 11/16*,300/30,16,0.036,111,images/p111_c2_3.png,high
+103620,Hole Series,STAINLESS,STEEL,"20MM 25/32""",300/30,16,0.036,111,images/p111_c2_3.png,high
+103622,Hole Series,STAINLESS,STEEL,"22MM 27/32""",,16,0.036,111,images/p111_c2_3.png,high
+103625,Hole Series,STAINLESS,STEEL,"25MM 15/16""",300/30,16,0.036,111,images/p111_c2_3.png,high
+103628,Hole Series,STAINLESS,STEEL,"28MM 1-1/16""",,16,0.031,111,images/p111_c2_3.png,high
+103630,Hole Series,STAINLESS,STEEL,"30MM 1-1/8""",180/18,16,0.031,111,images/p111_c2_3.png,high
+103635,Hole Series,STAINLESS,STEEL,35MM 1-3/8*,,16,0.039,111,images/p111_c2_3.png,high
+103640,Hole Series,STAINLESS,STEEL,"40MM 1-9/16""",120/12,16,0.039,111,images/p111_c2_3.png,high
+103645,Hole Series,STAINLESS,STEEL,50MM 1-3/4*,,16,0.039,111,images/p111_c2_3.png,high
+103650,Hole Series,STAINLESS,STEEL,"50MM2""",100/10,16,0.045,111,images/p111_c2_3.png,high
+103655,Hole Series,STAINLESS,STEEL,55MM 2-1/8*,,16,0.045,111,images/p111_c2_3.png,high
+103660,Hole Series,STAINLESS,STEEL,"60MM 2-3/8""",,16,0.045,111,images/p111_c2_3.png,high
+103670,Hole Series,STAINLESS,STEEL,70MM 2-3/4,80/8,16,0.039,111,images/p111_c2_3.png,high
+103680,Hole Series,STAINLESS,STEEL,"80MM 3-1/8""",80/8,16,0.039,111,images/p111_c2_3.png,high
+103690,Hole Series,STAINLESS,STEEL,"90MM 3-1/2""",80/8,16,0.039,111,images/p111_c2_3.png,high
+101301,Hole Series,POSITIONING,,18MM,300/25,18.7,0.052,112,images/p112_c2_4.png,high
+101302,Hole Series,POSITIONING,,19MM,,18.9,0.052,112,images/p112_c2_4.png,high
+101303,Hole Series,POSITIONING,,20MM,,19.3,0.052,112,images/p112_c2_4.png,high
+101304,Hole Series,POSITIONING,,22MM,,20.1,0.052,112,images/p112_c2_4.png,high
+101305,Hole Series,POSITIONING,,25MM,,21.3,0.052,112,images/p112_c2_4.png,high
+101306,Hole Series,POSITIONING,,30MM,,25.9,0.052,112,images/p112_c2_4.png,high
+101307,Hole Series,POSITIONING,,32MM,240/20,26.5,0.052,112,images/p112_c2_4.png,high
+101308,Hole Series,POSITIONING,,35MM,,27.6,0.052,112,images/p112_c2_4.png,high
+101314,Hole Series,Alloy,,35MM,,27,0.52,112,images/p112_c1_2.png,high
+101315,Hole Series,Alloy,,35MM,,27,0.52,112,images/p112_c0_0.png,high
+103105,Hole Series,1PCARBORS1PCFALTBIT,,,,60,0.048,112,images/p112_c2_5.png,high
+103201,Hole Series,SDS-HEX,,,,18,0.047,112,images/p112_c1_3.png,high
+103210,Hole Series,SDS-HEX,,10MM,,21,0.044,112,images/p112_c0_1.png,high
+103212,Hole Series,SDS-HEX,,12MM,,21.2,0.044,112,images/p112_c0_1.png,high
+103214,Hole Series,SDS-HEX,,14MM,,22,0.044,112,images/p112_c0_1.png,high
+103218,Hole Series,SDS-HEX,,18MM,,22.6,0.044,112,images/p112_c0_1.png,high
+103220,Hole Series,SDS-HEX,,20MM,,22.6,0.044,112,images/p112_c0_1.png,high
+103222,Hole Series,SDS-HEX,,22MM,,23.6,0.044,112,images/p112_c0_1.png,high
+103225,Hole Series,SDS-HEX,,25MM,,24.6,0.044,112,images/p112_c0_1.png,high
+103226,Hole Series,SDS-HEX,,26MM,,25.6,0.044,112,images/p112_c0_1.png,high
+103228,Hole Series,SDS-HEX,,28MM,400/100,26.6,0.044,112,images/p112_c0_1.png,high
+101620,Hole Series,useup,,20MM,,26,0.0335,113,images/p113_c0_0.png,high
+101625,Hole Series,useup,,25MM,,28.6,0.0335,113,images/p113_c0_0.png,high
+101630,Hole Series,useup,,30MM,,32.1,0.0335,113,images/p113_c0_0.png,high
+101635,Hole Series,useup,,35MM,120/10,23.9,0.035,113,images/p113_c0_0.png,high
+101640,Hole Series,useup,,40MM,120/10,25.8,0.035,113,images/p113_c0_0.png,high
+101650,Hole Series,useup,,50MM,60/6,17.5,0.044,113,images/p113_c0_0.png,high
+102410,Hole Series,COATED,,4-32MM,,14,0.038,113,images/p113_c1_3.png,high
+102718,Hole Series,Four Slot Working Drill,PVC,18MM,240/10,20,0.015,113,images/p113_c2_4.png,high
+102720,Hole Series,Four Slot Working Drill,PVC,20MM,,21,0.016,113,images/p113_c2_4.png,high
+102722,Hole Series,Four Slot Working Drill,PVC,22MM,240/10,22,0.017,113,images/p113_c2_4.png,high
+102725,Hole Series,Four Slot Working Drill,PVC,25MM,,23,0.018,113,images/p113_c2_4.png,high
+103312,Hole Series,COATED,,4-12MM,300/30,18,0.01,113,images/p113_c0_1.png,high
+103320,Hole Series,COATED,,4-20MM,,17,0.01,113,images/p113_c0_1.png,high
+103332,Hole Series,COATED,,4-32MM,,16,0.01,113,images/p113_c0_1.png,high
+103401,Hole Series,DRILL BIT HSS 4341 ROLLING,,3/8*-14X30MM,,5.5,0.023,113,images/p113_c2_5.png,high
+103510,Hole Series,INDUSTRIAL,,100MM,,16,0.029,113,images/p113_c1_2.png,high
+103511,Hole Series,INDUSTRIAL,,110MM,,12,0.032,113,images/p113_c1_2.png,high
+103550,Hole Series,INDUSTRIAL,,50MM,,28,0.018,113,images/p113_c1_2.png,high
+103565,Hole Series,INDUSTRIAL,,65MM,,20,0.02,113,images/p113_c1_2.png,high
+103580,Hole Series,INDUSTRIAL,,80MM,,20,0.026,113,images/p113_c1_2.png,high
+090501,Woodworking Hole Series,10pcs Screwdriver Bit,,6.3*65MM,,20,0.014,114,images/p114_c2_5.png,high
+090502,Woodworking Hole Series,WSCUP,,6.5X65/+-IMM,,20.2,0.015,114,images/p114_c1_3.png,high
+090808,Woodworking Hole Series,Magnetic Nut Driver,,"8X65MM5/16""",,16,0.024,114,images/p114_c0_1.png,high
+090810,Woodworking Hole Series,Magnetic Nut Driver,,"10X65MM 25/64""",800/40,17,0.024,114,images/p114_c0_1.png,high
+090812,Woodworking Hole Series,Magnetic Nut Driver,,"12X65MM 15/32""",500/25,18,0.024,114,images/p114_c0_1.png,high
+090813,Woodworking Hole Series,Magnetic Nut Driver,,"13X65MM1/2""",500/25,19,0.024,114,images/p114_c0_1.png,high
+103106,Woodworking Hole Series,5pcsWood Hole SawSet,Carbon Steel,,,48,0.046,114,images/p114_c1_2.png,high
+103402,Woodworking Hole Series,DRILL BIT HSS 4341 ROLLING,,7/16*-32X152MM,,14.6,0.035,114,images/p114_c0_0.png,high
+103411,Woodworking Hole Series,"1PC HEXAGONAL WRENCH,",,,16/1,20,0.047,114,images/p114_c2_4.png,high
+103102,Woodworking Hole Series,INDUSTRIAL,,,,40,0.046,115,images/p115_c1_2.png,high
+103103,Woodworking Hole Series,INDUSTRIAL,,,,13,0.042,115,images/p115_c2_4.png,high
+103107,Woodworking Hole Series,11PCS,Carbon Steel,,,13,0.075,115,images/p115_c1_3.png,high
+103108,Woodworking Hole Series,16PCS,Carbon Steel,,60/10,17,0.068,115,images/p115_c2_5.png,high
+103407,Woodworking Hole Series,1pc Thread Conversion,,,20/5,,0.034,115,images/p115_c0_1.png,high
+103410,Woodworking Hole Series,TEETH M42,,"102MM 4""",36/4,14.5,0.049,115,images/p115_c0_0.png,high
+103420,Woodworking Hole Series,TEETH M42,,"20MM 3/4""",200/10,14.5,0.06,115,images/p115_c0_0.png,high
+103422,Woodworking Hole Series,TEETH M42,,"22MM 7/8""",,14.5,0.06,115,images/p115_c0_0.png,high
+103425,Woodworking Hole Series,TEETH M42,,"25MM 1""",,14.5,0.06,115,images/p115_c0_0.png,high
+103429,Woodworking Hole Series,TEETH M42,,"29MM 1-1/8""",,14.5,0.095,115,images/p115_c0_0.png,high
+103435,Woodworking Hole Series,TEETH M42,,"35MM 1-3/8""",,14.5,0.095,115,images/p115_c0_0.png,high
+103438,Woodworking Hole Series,TEETH M42,,"38MM 1-1/2""",,14.5,0.083,115,images/p115_c0_0.png,high
+103444,Woodworking Hole Series,TEETH M42,,"44MM 1-3/4""",,14.5,0.083,115,images/p115_c0_0.png,high
+103451,Woodworking Hole Series,TEETH M42,,"51MM 2""",100/10,14.5,0.083,115,images/p115_c0_0.png,high
+103464,Woodworking Hole Series,TEETH M42,,"64MM 2-1/2""",48/6,14.5,0.039,115,images/p115_c0_0.png,high
+103476,Woodworking Hole Series,TEETH M42,,"76MM 3""",48/6,14.5,0.039,115,images/p115_c0_0.png,high
+103483,Woodworking Hole Series,TEETH M42,,"83MM 3-1/4""",36/4,14.5,0.049,115,images/p115_c0_0.png,high
+051001,Hole Series,S0S-PLUS,,14*250MM+,80/10,20,0.015,116,images/p116_c2_4.png,high
+051002,Hole Series,SSS-PUUS,,14*250MM,80/10,21,0.015,116,images/p116_c0_1.png,high
+051003,Hole Series,DEGREES,CR-V,30X400MM,,20,0.057,116,images/p116_c1_3.png,high
+051004,Hole Series,DEGREES,CR-V,30X400MM,,11,0.057,116,images/p116_c2_5.png,high
+051005,Hole Series,DEGREES,CR-V,30X400X75MM,,10,0.057,117,images/p117_c0_0.png,high
+051006,Hole Series,DEGREES,CR-V,18MMX280MM,,60,0.057,117,images/p117_c1_2.png,high
+051007,Hole Series,DEGREES,CR-V,18MMX280MM,,60,0.057,117,images/p117_c2_4.png,high
+051008,Hole Series,DEGREES,CR-V,18X400X50MM,,60,0.057,117,images/p117_c0_1.png,high
+051009,Hole Series,DEGREES,CR-V,18X280X75MM,,60,0.057,117,images/p117_c1_3.png,high
+051010,Hole Series,DEGREES,CR-V,18MMX280MM,,60,0.057,117,images/p117_c2_5.png,high
+051011,Hole Series,DEGREES,CR-V,18MMX280MM,,60,0.057,118,images/p118_c0_0.png,high
+051012,Hole Series,DEGREES,CR-V,14X250X50MM,,80,0.057,118,images/p118_c1_2.png,high
+051013,Hole Series,DEGREES,CR-V,14X250X70MM,,50,0.057,118,images/p118_c2_3.png,high
+051201,Hole Series,INDUSTRIAL,,"18""",,24,0.013,118,images/p118_c0_1.png,high
+051202,Hole Series,INDUSTRIAL,,24',,31,0.0167,118,images/p118_c0_1.png,high
+051203,Hole Series,INDUSTRIAL,,"30""",,39,0.02,118,images/p118_c0_1.png,high
+101810,Cutting/Grinding Disc Series,INDUSTRIAL,,"4.5""/115MM",,16,0.013,119,images/p119_c2_5.png,high
+101811,Cutting/Grinding Disc Series,INDUSTRIAL,,"7""/180MM",,21,0.034,119,images/p119_c2_5.png,high
+101812,Cutting/Grinding Disc Series,INDUSTRIAL,,"9""/230MM",25/5,16,0.013,119,images/p119_c2_5.png,high
+130101,Cutting/Grinding Disc Series,EN12413,,"4""X6.0X16",,17,0.015,119,images/p119_c1_2.png,high
+130102,Cutting/Grinding Disc Series,EN12413,,"4.5""X6.0X22.23",,15.3,0.014,119,images/p119_c1_2.png,high
+130103,Cutting/Grinding Disc Series,EN12413,,"7""X6.0X22.23",,19,0.015,119,images/p119_c1_2.png,high
+130104,Cutting/Grinding Disc Series,EN12413,,"9""X6.0X22.23",,25,0.025,119,images/p119_c1_2.png,high
+130401,Cutting/Grinding Disc Series,EN12413,STEEL CUTING DISC,4'X1.2X16,,20.6,0.02,119,images/p119_c0_0.png,high
+130402,Cutting/Grinding Disc Series,EN12413,STEEL CUTING DISC,4.5'X1.2X22.23,,18,0.018,119,images/p119_c0_0.png,high
+130403,Cutting/Grinding Disc Series,EN12413,STEEL CUTING DISC,7'X3.0X22.23,,17.8,0.016,119,images/p119_c0_0.png,high
+130404,Cutting/Grinding Disc Series,EN12413,STEEL CUTING DISC,"9""X3.0X22.23",,15.5,0.014,119,images/p119_c0_0.png,high
+130405,Cutting/Grinding Disc Series,EN12413,STEEL CUTING DISC,14X1.6X22.23,,25,0.016,119,images/p119_c0_0.png,high
+130406,Cutting/Grinding Disc Series,EN12413,STEEL CUTING DISC,7'X1.6X22.23,,18,0.018,119,images/p119_c0_0.png,high
+130407,Cutting/Grinding Disc Series,EN12413,STEEL CUTING DISC,"9""X2.0X22.23",,19,0.017,119,images/p119_c0_0.png,high
+130408,Cutting/Grinding Disc Series,EN12413,STEEL CUTING DISC,"5""X1.2X22.23",600/50,20.4,0.022,119,images/p119_c0_0.png,high
+130410,Cutting/Grinding Disc Series,EN12413,USEOFSTEEL,4X1.2X16,,20.8,0.02,119,images/p119_c2_4.png,high
+130411,Cutting/Grinding Disc Series,EN12413,USEOFSTEEL,"4.5""X1.2X22.23",,18,0.018,119,images/p119_c2_4.png,high
+130412,Cutting/Grinding Disc Series,EN12413,USEOFSTEEL,"7""X3.0X22.23",,17.8,0.016,119,images/p119_c2_4.png,high
+130413,Cutting/Grinding Disc Series,EN12413,USEOFSTEEL,"9""X3.0X22.23",,15.5,0.015,119,images/p119_c2_4.png,high
+130416,Cutting/Grinding Disc Series,EN12413,USEOFSTEEL,"9""X1.6X22.23",,15.5,0.015,119,images/p119_c2_4.png,high
+130501,Cutting/Grinding Disc Series,FLAP DISC,,"4""/100 - P40",,14.8,0.043,119,images/p119_c0_1.png,high
+130502,Cutting/Grinding Disc Series,FLAP DISC,,"4""/100 - P60",,14,0.043,119,images/p119_c0_1.png,high
+130503,Cutting/Grinding Disc Series,FLAP DISC,,"4""/100 - P80",,13.3,0.043,119,images/p119_c0_1.png,high
+130504,Cutting/Grinding Disc Series,FLAP DISC,,"4""/100 - P100",,12,0.043,119,images/p119_c0_1.png,high
+130505,Cutting/Grinding Disc Series,FLAP DISC,,"4""/100 - P120",,11.8,0.043,119,images/p119_c0_1.png,high
+130510,Cutting/Grinding Disc Series,FLAP DISC,,"4.5""/115 - P40",,19.6,0.04,119,images/p119_c0_1.png,high
+130511,Cutting/Grinding Disc Series,FLAP DISC,,"4.5""/115 - P60",,18.5,0.04,119,images/p119_c0_1.png,high
+130512,Cutting/Grinding Disc Series,FLAP DISC,,"4.5""/115 - P80",,17,0.04,119,images/p119_c0_1.png,high
+130513,Cutting/Grinding Disc Series,FLAP DISC,,"4.5""/115 - P100",,16.1,0.04,119,images/p119_c0_1.png,high
+130514,Cutting/Grinding Disc Series,FLAP DISC,,4.5'/115 - P120,,15.3,0.04,119,images/p119_c0_1.png,high
+130526,Cutting/Grinding Disc Series,FLAP DISC,,"4.5""/115 - P40",,19.6,0.04,119,images/p119_c1_3.png,high
+130527,Cutting/Grinding Disc Series,FLAP DISC,,"4.5""/115 - P60",,18.5,0.04,119,images/p119_c1_3.png,high
+130528,Cutting/Grinding Disc Series,FLAP DISC,,"4.5""/115 - P80",,17,0.04,119,images/p119_c1_3.png,high
+130529,Cutting/Grinding Disc Series,FLAP DISC,,,,16.1,0.04,119,images/p119_c1_3.png,high
+130530,Cutting/Grinding Disc Series,4.5/115 - P100,,4.5'/115 - P120,,15.3,0.04,119,images/p119_c1_3.png,high
+133001,Cutting/Grinding Disc Series,EN12413,ISEOFSTEEL,,,,,119,,low
+152000,Cutting/Grinding Disc Series,1GNAT,,,,,,119,images/p119_c1_2.png,low
+101801,Cutting/Grinding Disc Series,STONE,,"4""/110MM*7MM",100/10,12.5,0.02,120,images/p120_c1_3.png,high
+101802,Cutting/Grinding Disc Series,STONE,,4.5/115MM7MM,100/10,13.2,0.02,120,images/p120_c1_3.png,high
+101803,Cutting/Grinding Disc Series,STONE,,"7""/180MM*7MM",50/5,19.8,0.023,120,images/p120_c1_3.png,high
+101804,Cutting/Grinding Disc Series,STONE,,"9""/230MM*7MM",25/5,18,0.018,120,images/p120_c1_3.png,high
+101805,Cutting/Grinding Disc Series,CONCRETE,,105*7*20MM,100/25,12.4,0.02,120,images/p120_c2_4.png,high
+101806,Cutting/Grinding Disc Series,CONCRETE,,115*7*22.23MM,100/25,13.2,0.02,120,images/p120_c2_4.png,high
+101807,Cutting/Grinding Disc Series,CONCRETE,,180*7*22.23MM,,19.7,0.024,120,images/p120_c2_4.png,high
+101808,Cutting/Grinding Disc Series,CONCRETE,,230*7*22.23MM,24/8,18,0.018,120,images/p120_c2_4.png,high
+101813,Cutting/Grinding Disc Series,CONCRETE,,"4""/105MM*20MM",,8.5,0.02,120,images/p120_c0_0.png,high
+101814,Cutting/Grinding Disc Series,CONCRETE,,"4.5""/115MM*22.23MM",,10,0.02,120,images/p120_c0_0.png,high
+101815,Cutting/Grinding Disc Series,CONCRETE,,115*12*22.23MM,,15,0.02,120,images/p120_c0_1.png,high
+101817,Cutting/Grinding Disc Series,CONCRETE,,230*12*22.23MM,,21,0.018,120,images/p120_c0_1.png,high
+101820,Cutting/Grinding Disc Series,INDUSTRIAL,,"4.5""/115MM",,16,0.013,120,images/p120_c1_2.png,high
+131015,Cutting/Grinding Disc Series,TILE,,115*22.23,20/1,,0.01,120,images/p120_c2_5.png,high
+101101,Cutting/Grinding Disc Series,40TH,,"4""/105MM*30T",,10.5,0.021,121,images/p121_c1_2.png,high
+101102,Cutting/Grinding Disc Series,40TH,,"4.5""/115MM*30T",,11,0.021,121,images/p121_c1_2.png,high
+101103,Cutting/Grinding Disc Series,40TH,,"7""/180MM*40T",50/5,15,0.019,121,images/p121_c1_2.png,high
+101104,Cutting/Grinding Disc Series,40TH,,"7""/180MM*60T",50/5,15.5,0.019,121,images/p121_c1_2.png,high
+101105,Cutting/Grinding Disc Series,40TH,,"9""/230MM*40T",25/5,15,0.014,121,images/p121_c1_2.png,high
+101106,Cutting/Grinding Disc Series,40TH,,"9""/230MM*60T",25/5,15.5,0.014,121,images/p121_c1_2.png,high
+101107,Cutting/Grinding Disc Series,WHEEL FOR STONE,,254*60T,25/5,21.1,0.019,121,images/p121_c2_4.png,high
+101108,Cutting/Grinding Disc Series,WHEEL FOR STONE,,254*100T,25/5,21.5,0.019,121,images/p121_c2_4.png,high
+131010,Cutting/Grinding Disc Series,WHEEL FOR STONE,,4.5/115MM,,9.2,0.01,121,images/p121_c0_0.png,high
+171404,Lithium Battery Tool Series,CLOTE BAG +1,,10MM/12V,10/1,16,0.041,122,images/p122_c0_0.png,high
+171413,Lithium Battery Tool Series,"SL3, SL4, SL5, SL6, SLB; PZ1, PZ2, PZ3;","BPCS 1/4 SLEEVE CRV MATERIAL, STEEL STAMP",,12/1,16.8,0.043,122,images/p122_c1_2.png,high
+171414,Lithium Battery Tool Series,UISEUPS-,,10MM/2.0AH,5/1,19.2,0.066,122,images/p122_c2_4.png,high
+171416,Lithium Battery Tool Series,2.0AH,,13MM/2.0AH,5/1,23,0.095,122,images/p122_c0_1.png,high
+171417,Lithium Battery Tool Series,WITH START SLOWLY FUNCTION,,4.5*/115MM,4/1,11.5,0.025,122,images/p122_c1_3.png,high
+171420,Lithium Battery Tool Series,4.0AR,,,5/1,25,0.066,122,images/p122_c2_5.png,high
+171421,Lithium Battery Tool Series,WISCUP,,,5/1,22,0.059,123,images/p123_c0_0.png,high
+171422,Lithium Battery Tool Series,4.0AH,,165MM/4.0AH,4/1,17,0.081,123,images/p123_c1_2.png,high
+171425,Lithium Battery Tool Series,2.0AR,,30MM/2.0AH,8/1,11,0.069,123,images/p123_c2_4.png,high
+171426,Lithium Battery Tool Series,"MANUAL PUMP OIL,EMERGENCY SWITCH STOP",,"8""200MM",6/1,10,0.064,123,images/p123_c0_1.png,high
+171427,Lithium Battery Tool Series,2.0AH,,255MM/2.0AH,5/1,15.5,0.051,123,images/p123_c1_3.png,high
+171428,Lithium Battery Tool Series,2OAR,,,6/1,16.5,0.067,123,images/p123_c2_5.png,high
+171406,Lithium Battery Tool Series,4.0ah,,,3/1,16.5,0.056,124,images/p124_c1_3.png,high
+171410,Lithium Battery Tool Series,3.0ah,COPPSR,,6/1,14,0.07,124,images/p124_c2_5.png,high
+171430,Lithium Battery Tool Series,MOTOR,,,4/1,16.5,0.066,124,images/p124_c0_0.png,high
+171432,Lithium Battery Tool Series,WISEUPa,,,5/1,20.3,0.066,124,images/p124_c1_2.png,high
+171433,Lithium Battery Tool Series,4.0ah,,245MM/4.0AH,4/1,,0.143,124,images/p124_c2_4.png,high
+171434,Lithium Battery Tool Series,2.DAR,,,6/1,14.5,0.051,124,images/p124_c0_1.png,high
+171411,Lithium Battery Tool Series,BLOWING RATE 0-9M3/MIN,,,4/1,13,0.09,125,images/p125_c0_0.png,high
+171423,Lithium Battery Tool Series,MISEUR,,,4/1,10.5,0.068,125,images/p125_c0_1.png,high
+171424,Lithium Battery Tool Series,FAST CHARGE,,4.8°/123MM,6/1,20,0.12,125,images/p125_c1_2.png,high
+171431,Lithium Battery Tool Series,FUSE*1 / AIR NOZZLE*3,,,,15,0.087,125,images/p125_c2_4.png,high
+200312,Lithium Battery Tool Series,WITH 100CM CABLE,,,,12,0.038,125,images/p125_c2_5.png,high
+200301,Lithium Battery Tool Series,MAGNETIC,,,,,0.032,126,images/p126_c1_0.png,high
+200302,Lithium Battery Tool Series,UNSEUP,,,,10,0.05,126,images/p126_c2_2.png,high
+200310,Lithium Battery Tool Series,NAGNETIC,,,,4.3,0.017,126,images/p126_c1_1.png,high
+200311,Lithium Battery Tool Series,Butterfly Worklight,,2*5W,,10,0.033,126,images/p126_c2_3.png,high
+171401,Electric Drill/Pickaxe Series,Cordless Drill,,,8/1,9.6,0.024,128,images/p128_c0_0.png,high
+171402,Electric Drill/Pickaxe Series,Cordless Drill,,,5/1,16.5,0.04,128,images/p128_c0_1.png,high
+170201,Electric Drill/Pickaxe Series,0~2800R/MIN,,850W/13MM,6/1,14.4,0.0448,130,images/p130_c0_0.png,high
+170202,Electric Drill/Pickaxe Series,0~3000R/MIN,,710W/13MM,,21.2,0.067,130,images/p130_c1_2.png,high
+170203,Electric Drill/Pickaxe Series,0~4300RIMIN,,,,15.5,0.04,130,images/p130_c2_4.png,high
+170204,Electric Drill/Pickaxe Series,0~3300R/MIN,,450W/10MM,10/1,16.8,0.0397,130,images/p130_c0_1.png,high
+170205,Electric Drill/Pickaxe Series,0~2800RIMIN,,1100W/13MM,6/1,17,0.071,130,images/p130_c1_3.png,high
+170206,Electric Drill/Pickaxe Series,50160OHz MAX DRILL DIAMETER WOOD,,1200W/16MM,5/1,22.3,0.079,130,images/p130_c2_5.png,high
+170907,Electric Drill/Pickaxe Series,CONTAINS,1.OIL1PC 2.ACIXILIARY HANDLE 1PC 3.HCINCIAL 1PC4.CARBON BRUSH 1PAIR,1500W/32MM,3/1,23,0.055,131,images/p131_c0_1.png,high
+170908,Electric Drill/Pickaxe Series,1.0IL1P2.AUXILIARY HANDLE IPC3.MUINUAL1PC,,,3/1,23,0.053,131,images/p131_c1_3.png,high
+170909,Electric Drill/Pickaxe Series,1.0IL IPC 2.AUXILIARY HANDLE1PC 3.MUNUAL1PC,,,3/1,23,0.062,131,images/p131_c2_5.png,high
+172313,Electric Drill/Pickaxe Series,Bench Drill,,13MM/350W-580MM,,15,0.033,131,images/p131_c0_0.png,high
+172316,Electric Drill/Pickaxe Series,ECCINTE,,16MM/500W-680MM,,26,0.037,131,images/p131_c1_2.png,high
+172320,Electric Drill/Pickaxe Series,Bench Drill,,20MM/750W-1000MM,,75,0.15,131,images/p131_c2_4.png,high
+170901,Electric Drill/Pickaxe Series,,,1050W/26MM,3/1,20.2,0.048,132,images/p132_c1_3.png,low
+170902,Electric Drill/Pickaxe Series,,,26MM-800W,4/1,22,0.071,132,images/p132_c1_2.png,low
+170903,Electric Drill/Pickaxe Series,WEUP,,,,13,0.044,132,images/p132_c0_0.png,high
+170905,Electric Drill/Pickaxe Series,170M,,1250W/17MM,3/1,27,0.082,132,images/p132_c0_1.png,high
+170906,Electric Drill/Pickaxe Series,DXFFER,,1500W/30MM,,21,0.055,132,images/p132_c2_5.png,high
+170928,Electric Drill/Pickaxe Series,IMPACT ENERGY PER,,28MM/1100W,,23,0.079,132,images/p132_c2_4.png,high
+196039,Electric Drill/Pickaxe Series,WEUP,,,,,,132,,low
+121801,Electric Drill/Pickaxe Series,2800N.m,,"2800N.m-1""",,16,0.031,134,images/p134_c0_1.png,high
+121802,Electric Drill/Pickaxe Series,WIN HAMIMER/FRONT EXHAUST,,"640N.m-1/2""",8/1,24,0.033,134,images/p134_c1_3.png,high
+170210,Electric Drill/Pickaxe Series,400N.M,,,5/1,15.5,0.035,134,images/p134_c2_5.png,high
+170910,Electric Drill/Pickaxe Series,1.OIL 1PC 2.ALIXILUARY HANDLE IPC 3.MUNUAL 1PC,,,,23,0.034,134,images/p134_c0_0.png,high
+170911,Electric Drill/Pickaxe Series,CONTAINS,CARBON BR(ISH1PAIR / MUNCIAL 1PC / SPANNER 1PC,,,23,0.034,134,images/p134_c1_2.png,high
+170912,Electric Drill/Pickaxe Series,CONTAINS,CARBON BR(ISH 1PAIR / MUNCIAL1PC / SPANNER 1PC,,,23,0.034,134,images/p134_c2_4.png,high
+171901,Electric Drill/Pickaxe Series,1PC MANDRELS FOR WHEEL,,,,13,0.051,135,images/p135_c0_0.png,high
+171910,Electric Drill/Pickaxe Series,1PCS HSS CUTTERS10PCS DIAMOND CUTTERS,2PCS WIRE POLISHING BRUSH,,,10,0.054,135,images/p135_c1_2.png,high
+180105,Electric Drill/Pickaxe Series,30N/M,,10MM,,8.3,0.041,135,images/p135_c2_6.png,high
+180106,Electric Drill/Pickaxe Series,30N/M,,13MM,,12,0.041,135,images/p135_c2_6.png,high
+180107,Electric Drill/Pickaxe Series,30N/M,,16MM,200/40,13,0.041,135,images/p135_c2_6.png,high
+180115,Electric Drill/Pickaxe Series,THREAD,,10MM,,12,0.047,135,images/p135_c1_3.png,high
+180116,Electric Drill/Pickaxe Series,1/2-20UNF,,13MM,60/10,,0.047,135,images/p135_c2_4.png,high
+180117,Electric Drill/Pickaxe Series,1PC KEY+1PC SDS-PLUS ADAPTER,,13MM,,8.1,0.047,135,images/p135_c0_1.png,high
+180118,Electric Drill/Pickaxe Series,1/2-20UNF,,16MM,48/8,7.2,0.047,135,images/p135_c2_5.png,high
+170101,Polishing Series,11000R/MIN,,100MM/M10,10/1,23,0.0511,137,images/p137_c2_4.png,high
+170102,Polishing Series,LOCS-,,115MM/M14,10/1,24,0.053,137,images/p137_c0_1.png,high
+170103,Polishing Series,6500R/MIN,,180MM/M14,4/1,16.5,0.04,137,images/p137_c1_3.png,high
+170104,Polishing Series,6500R/MIN,,230MM/M14,2/1,13.3,0.031,137,images/p137_c2_5.png,high
+170105,Polishing Series,11000R/MIN,,100MM-850W,10/1,21,0.05,137,images/p137_c0_0.png,high
+170106,Polishing Series,11000R/MIN,,115MM-850W,10/1,21,0.05,137,images/p137_c1_2.png,high
+170107,Polishing Series,11000R/MIN,,125MM-850W,,21,0.05,137,images/p137_c1_2.png,high
+171002,Polishing Series,QUICK CHUCK,,800W/100MM,10/1,14.5,0.046,138,images/p138_c0_1.png,high
+171102,Polishing Series,CPER,,150MM,4/1,20,0.012,138,images/p138_c1_3.png,high
+171106,Polishing Series,209A,,125MM-280W,4/1,7.5,0.012,138,images/p138_c2_5.png,high
+171107,Polishing Series,Palm Sander,,110*100MM-230W,10/1,15.6,0.047,138,images/p138_c1_2.png,high
+171108,Polishing Series,Orbital Sander,,93*185MM-320W,,20.6,0.051,138,images/p138_c2_4.png,high
+171113,Polishing Series,2M CABLE,,1400W/180MM,4/1,14.5,0.046,138,images/p138_c0_0.png,high
+130011,Cutting Tool Series,Gasoline Brush Cutter,,,,1.4518,,139,images/p139_c1_2.png,high
+170701,Cutting Tool Series,"IS NOT FALSELY MARKED, INDUSTRIAL QUALITY.",,,4/1,41.5,0.21,139,images/p139_c0_1.png,high
+170702,Cutting Tool Series,FIR SAING,,,2/1,20,0.076,139,images/p139_c1_3.png,high
+171801,Cutting Tool Series,CO2PER,,120MM-1400W,2/1,11.5,0.05,139,images/p139_c2_5.png,high
+171902,Cutting Tool Series,2M CABLE,,710W/25MM,6/1,14.5,0.046,139,images/p139_c0_0.png,high
+172201,Cutting Tool Series,Dry Wall Sander,,900W-180MM,4/1,16,0.112,139,images/p139_c1_2.png,high
+172202,Cutting Tool Series,Dry Wall Sander,,880W-215MM,,,0.065,139,images/p139_c2_4.png,high
+170302,Cutting Tool Series,NO-X301,,185MM/1400W,2/1,12.4,0.064,140,images/p140_c0_1.png,high
+170304,Cutting Tool Series,SAECK,,230MM/2200W,2/1,19,0.045,140,images/p140_c1_3.png,high
+170306,Cutting Tool Series,1X RIP FENCEGUIDED ON BOTH SIDES,,10′/255MM,,23,0.189,140,images/p140_c2_5.png,high
+170308,Cutting Tool Series,0.8MPA(100PSI),,355MM-2500W,,16,0.07,140,images/p140_c2_4.png,high
+170310,Cutting Tool Series,Marble Cutter,,115MM/1380W,4/1,15,0.044,140,images/p140_c1_2.png,high
+172101,Cutting Tool Series,TCT BLADE,,82MM*1MM,4/1,15,0.045,140,images/p140_c0_0.png,high
+170309,Cutting Tool Series,1PC M6 HEX WRENCH 1PC DCIST BAG,,10/255MM,,23,0.112,141,images/p141_c0_0.png,high
+170311,Cutting Tool Series,IPC M6 HEX WRENCH1PC DCIST BAG1PC CLAMPING BLOCK COMPONENTS,ZPCS WINGS (LEFT AND RIGHT)1PAIR OF CARBON BRUSH,"10""/255MM",,23,0.09,141,images/p141_c1_2.png,high
+170312,Cutting Tool Series,IPC M6 HEX WRENCH,,10/255MM,,23,0.09,141,images/p141_c2_4.png,high
+171005,Cutting Tool Series,2M CABLE,,750W/115MM,5/1,14.5,0.046,141,images/p141_c0_1.png,high
+172002,Cutting Tool Series,1F/21,,"18""/450MM",2/1,16,0.084,141,images/p141_c1_3.png,high
+172003,Cutting Tool Series,1F/21,,"20""/500MM",2/1,17,0.094,141,images/p141_c1_3.png,high
+172016,Cutting Tool Series,Electric Chain Saw,CPPE,"16""/400MM",4/1,24.5,0.076,141,images/p141_c2_5.png,high
+121113,Electric Spray Gun/Blower Series,DURABLE 12.9 GRADE HIGH STRENGTH HEXAGON,LIGHT WEIGHT DIE CAST ALUMINUMALLOY BODY,,,10,0.026,142,images/p142_c2_4.png,high
+121116,Electric Spray Gun/Blower Series,DURABLE 12.9 GRADE HIGH STRENGTH HEXAGON,LIGHT WEIGHT DIE CAST ALUMINUM ALLOY BODY,,,10,0.026,142,images/p142_c0_1.png,high
+121130,Electric Spray Gun/Blower Series,DURABLE 12.9 GRADE HIGH STRENGTH HEXAGON,LIGHT WEIGHT DIE CAST ALUMINUM ALLOY BODY,,,10,0.035,142,images/p142_c1_3.png,high
+121150,Electric Spray Gun/Blower Series,DURABLE 12.9 GRADE HIGH STRENGTH HEXAGON,LIGHT WEIGHT DIE CAST ALUMINUM ALLOY BODY,,,10,0.046,142,images/p142_c2_5.png,high
+171601,Electric Spray Gun/Blower Series,,,6MM-550W,10/1,22,0.042,142,images/p142_c1_2.png,low
+171602,Electric Spray Gun/Blower Series,Router Machine,,12MM-2200W,4/1,27,0.066,142,images/p142_c0_0.png,high
+041201,Electric Spray Gun/Blower Series,WSELD,,20-63MM/1500W,5/1,20.5,0.032,143,images/p143_c0_1.png,high
+064301,Electric Spray Gun/Blower Series,Dc Liquid Adding Pump,,12V-25MM,6/1,22,0.62,143,images/p143_c2_4.png,high
+121601,Electric Spray Gun/Blower Series,Staple,,0.95*1.25*29.5MM,,15,0.015,143,images/p143_c1_2.png,high
+121602,Electric Spray Gun/Blower Series,Staple,,0.95*1.25*39.5MM,,10,0.015,143,images/p143_c1_2.png,high
+121603,Electric Spray Gun/Blower Series,Staple,,0.95*1.25*49.5MM,,10,0.015,143,images/p143_c1_2.png,high
+121604,Electric Spray Gun/Blower Series,Staple,,0.6*0.95*9.5MM,,20,0.016,143,images/p143_c0_0.png,high
+121605,Electric Spray Gun/Blower Series,Staple,,0.6*0.95*15.5MM,,12,0.016,143,images/p143_c0_0.png,high
+170401,Electric Spray Gun/Blower Series,Hot Air Gun,,,10/1,9.8,0.069,143,images/p143_c1_3.png,high
+170402,Electric Spray Gun/Blower Series,UISEUP,,,5/1,7.5,0.04,143,images/p143_c2_5.png,high
+120301,Electric Spray Gun/Blower Series,Electric Spray Gun,,,5/1,10,0.048,144,images/p144_c0_0.png,high
+120302,Electric Spray Gun/Blower Series,SEUP,,,6/1,11.25,0.055,144,images/p144_c1_2.png,high
+120303,Electric Spray Gun/Blower Series,Electric Spray Gun,,,4/1,11,0.07,144,images/p144_c2_4.png,high
+170403,Electric Spray Gun/Blower Series,Blower,,,8/1,12.9,0.075,144,images/p144_c1_3.png,high
+170404,Electric Spray Gun/Blower Series,S50N,,,4/1,12.7,0.098,144,images/p144_c0_1.png,high
+170405,Electric Spray Gun/Blower Series,Blower,,,6/1,12.2,0.055,144,images/p144_c2_5.png,high
+172801,Decoration Tool Series,Vibrator,,,,14,0.053,145,images/p145_c2_5.png,high
+172802,Decoration Tool Series,Concrete Vibrator,,,,10,0.053,145,images/p145_c1_2.png,high
+172803,Decoration Tool Series,"SINGLE CYLINDER,4STROKE ,FORCED AIR COOLING",,,,21.5,0.053,145,images/p145_c0_0.png,high
+172835,Decoration Tool Series,INDUSTRIAL,,,,21.5,0.015,145,images/p145_c2_4.png,high
+172838,Decoration Tool Series,INDUSTRIAL,,,,15,0.053,145,images/p145_c0_1.png,high
+172845,Decoration Tool Series,INDUSTRIAL,,,,16,0.053,145,images/p145_c1_3.png,high
+171303,Vacuum/Cleaning Series,High Pressure Washer,,,20/1,28,0.09,146,images/p146_c2_5.png,high
+171304,Vacuum/Cleaning Series,High Pressure Washer,,,20/1,29,0.011,146,images/p146_c1_3.png,high
+172721,Vacuum/Cleaning Series,Durm opening,,1280*890*1350mm,,64,,146,images/p146_c0_0.png,high
+172735,Vacuum/Cleaning Series,Maximum outer diameter 800MIM,,2540*1260*1420MM,,239,,146,images/p146_c1_2.png,high
+172901,Vacuum/Cleaning Series,SINGLE CULINDER.4 STROKE.FORCED AIR COOLING,,,,66,0.053,146,images/p146_c0_1.png,high
+172906,Vacuum/Cleaning Series,RECOIL START,,,,80,0.053,146,images/p146_c2_4.png,high
+063801,Vacuum/Cleaning Series,WISEUPE,,,6/1,19,0.054,147,images/p147_c2_5.png,high
+171305,Vacuum/Cleaning Series,High Pressure Washer,,,,7.8,0.031,147,images/p147_c1_3.png,high
+171306,Vacuum/Cleaning Series,WSEUP,,,,,0.04,147,images/p147_c0_0.png,high
+171307,Vacuum/Cleaning Series,Max Presure(bar) 170,,,,9.8,0.063,147,images/p147_c1_2.png,high
+171308,Vacuum/Cleaning Series,Max Presure(bar),,,,13.1,0.08,147,images/p147_c2_4.png,high
+171415,Vacuum/Cleaning Series,Cordless Pressure Washer,,,5/1,18,0.075,147,images/p147_c0_1.png,high
+131102,Vacuum/Cleaning Series,INDUSTRIAL,,4.5/115MM,120/12,16,0.049,148,images/p148_c2_5.png,high
+131103,Vacuum/Cleaning Series,INDUSTRIAL,,"5""/125MM",120/12,16,0.057,148,images/p148_c2_5.png,high
+131104,Vacuum/Cleaning Series,INDUSTRIAL,,"7""/180MM",72/12,16,0.049,148,images/p148_c2_5.png,high
+170506,Vacuum/Cleaning Series,wseup,,,4/1,24.5,0.052,148,images/p148_c1_3.png,high
+170507,Vacuum/Cleaning Series,750Ah,,,,5.5,0.027,148,images/p148_c0_1.png,high
+172415,Vacuum/Cleaning Series,DUAL USE,,,,6.2,0.044,148,images/p148_c0_0.png,high
+172430,Vacuum/Cleaning Series,WISED,,,,8.9,0.073,148,images/p148_c1_2.png,high
+172470,Vacuum/Cleaning Series,DUAL USE,,,,17,0.171,148,images/p148_c2_4.png,high
+170601,Air Compressor Series,0.8MPA(100PSI),,,,24,0.086,149,images/p149_c0_0.png,high
+170602,Air Compressor Series,0.8MPA(100PSI),,,,30,0.128,149,images/p149_c1_2.png,high
+170603,Air Compressor Series,0.8MPA(100PSI),,,,15,0.044,149,images/p149_c2_4.png,high
+170604,Air Compressor Series,Air Compressor,,,,19.5,0.08,149,images/p149_c0_1.png,high
+170605,Air Compressor Series,STAR,,,,36.5,0.135,149,images/p149_c1_3.png,high
+170501,Welding Machine Series,160a,,MMA-160,,4.2,0.02,150,images/p150_c2_5.png,high
+170502,Welding Machine Series,UMSEUP,,MMA-200,,4.7,0.02,150,images/p150_c1_4.png,high
+170503,Welding Machine Series,10-258A,,MMA-250,,6.9,0.029,150,images/p150_c2_6.png,high
+170508,Welding Machine Series,Mask,,MMA-160,,4.1,0.012,150,images/p150_c0_0.png,high
+170509,Welding Machine Series,Mask,,MMA-200,,4.4,0.012,150,images/p150_c0_1.png,high
+170510,Welding Machine Series,Mask,,MMA-250,,4.9,0.012,150,images/p150_c0_2.png,high
+170513,Welding Machine Series,"MASK, HARMIMER/BRUSH",,,,16,0.053,150,images/p150_c1_3.png,high
+170500,Welding Machine Series,20-120A,,MMA-120A,4/1,10,0.027,151,images/p151_c0_0.png,high
+170511,Welding Machine Series,160a,,,,12.5,0.067,151,images/p151_c1_2.png,high
+170512,Welding Machine Series,120a,,,,,0.023,151,images/p151_c2_4.png,high
+170816,Welding Machine Series,1.5BAR,,,12/1,17,0.1,151,images/p151_c2_5.png,high
+170817,Welding Machine Series,UNSEUP,,,12/1,15,0.064,151,images/p151_c1_3.png,high
+170819,Welding Machine Series,Float Switch,,,20/1,14,0.045,151,images/p151_c0_1.png,high
+170820,Welding Machine Series,Float Switch,,,20/1,15.5,0.047,151,images/p151_c0_1.png,high
+170821,Welding Machine Series,Float Switch,,,20/1,19,0.045,151,images/p151_c0_1.png,high
+170801,Water Pump Series,Clean Water Pump,,"QB60/1""X1""",4/1,22.5,0.033,152,images/p152_c0_0.png,high
+170802,Water Pump Series,Clean Water Pump,,"CPM158/1""X1""",,12.9,0.02,152,images/p152_c1_4.png,high
+170803,Water Pump Series,Clean Water Pump,,"JET-100L/1""X1""",,14,0.021,152,images/p152_c2_6.png,high
+170804,Water Pump Series,Clean Water Pump,,"JSW45/1""X1""",,14,0.021,152,images/p152_c0_3.png,high
+170805,Water Pump Series,Clean Water Pump,,"JSW551""X1""",,14.3,0.021,152,images/p152_c1_5.png,high
+170806,Water Pump Series,UISEUP,,"AUPS126/1""X1""",,9.4,0.021,152,images/p152_c2_7.png,high
+170823,Water Pump Series,QB60,,"QB70/1""X1""",,,0.0128,152,images/p152_c0_1.png,high
+170824,Water Pump Series,Q MAX-42L/MIN,,"QB80/1""X1""",,,0.0128,152,images/p152_c0_2.png,high
+170810,Water Pump Series,Clean Water Pump,,"STP50/1""X1""",,8.6,0.22,153,images/p153_c1_3.png,high
+170825,Water Pump Series,WITH THERMAL PROTECTION,,1'- 400W,,9.9,0.017,153,images/p153_c0_0.png,high
+170826,Water Pump Series,Q MAX.450L/MIN,,,,19.6,0.031,153,images/p153_c1_2.png,high
+170827,Water Pump Series,Q MAX.65L/MIN,,1'-370W,,8.4,0.01,153,images/p153_c2_4.png,high
+170828,Water Pump Series,WITH THERMAL PROTECTION,,1'-550W,,8.9,0.01,153,images/p153_c2_5.png,high
+170829,Water Pump Series,WITH THERMAL PROTECTION,,"1""-750W",,19.8,0.08,153,images/p153_c0_1.png,high
+170840,Water Pump Series,180L/MIN,,"370W / 0.5HP 1.2""",,10.8,0.0146,153,images/p153_c2_6.png,high
+170841,Water Pump Series,180L/MIN,,"550W / 0.75HP 1.2""",,11.8,0.0163,153,images/p153_c2_6.png,high
+170842,Water Pump Series,180L/MIN,,"750W / 1.0HP 1.2""",,13.8,0.018,153,images/p153_c2_6.png,high
+170843,Water Pump Series,180L/MIN,,"1100W / 1.5HP 2""",,15.8,0.019,153,images/p153_c2_6.png,high
+170844,Water Pump Series,180L/MIN,,"1500W / 2.0HP 2""",,18.5,0.02,153,images/p153_c2_6.png,high
+170845,Water Pump Series,180L/MIN,,"2200W/3.0HP2""",,25.4,0.032,153,images/p153_c2_6.png,high
+170807,,SELE,,"QDX1.5/1""X1""",,7.3,0.017,154,images/p154_c0_0.png,high
+170809,,120/V,,"QDX1.5/1""X1""",,12.85,0.022,154,images/p154_c1_2.png,high
+170812,,Dirty Water Pump,,V750Q/50MM,,18.5,0.024,154,images/p154_c2_4.png,high
+170814,,Dirty Water Pump,,V1500/50MM,,20.5,0.032,154,images/p154_c0_1.png,high
+170850,,INPUT,,"400W-1.25""X1""",4/1,12.95,0.0448,154,images/p154_c1_3.png,high
+170851,,HUSS RIN,,"750W-1.25""X1*",4/1,15,0.0448,154,images/p154_c2_5.png,high
+170831,,Gasoline Water Pump,,"7HP / 2""",,20.5,0.074,155,images/p155_c2_5.png,high
+170832,,Gasoline Water Pump,,"7HP / 3""",,22,0.081,155,images/p155_c2_5.png,high
+170860,,Automatic Booster Pump,,,,20,0.045,155,images/p155_c0_0.png,high
+170861,,Automatic Booster Pump,,,,22,0.05,155,images/p155_c0_1.png,high
+171201,,GENERATON,,,,16.5,0.04,155,images/p155_c1_3.png,high
+171205,,Gasoline Generator (Silent),,,,23,0.85,155,images/p155_c2_6.png,high
+171217,,72dB,,,,157,0.44,155,images/p155_c1_4.png,high
+172701,,WSEUP,,,,18,0.45,155,images/p155_c0_2.png,high
+171202,Generator Series,Gasoline Generator,,,,37.6,0.126,156,images/p156_c2_5.png,high
+171206,Generator Series,Gasoline Generator (Silent),,,,45,0.149,156,images/p156_c0_0.png,high
+171207,Generator Series,63dB,,,,44,0.161,156,images/p156_c1_2.png,high
+171208,Generator Series,Gasoline Welder/Generator,,,,45,0.161,156,images/p156_c2_4.png,high
+171209,Generator Series,Gasoline Welder/Generator,,,,44,0.161,156,images/p156_c0_1.png,high
+171216,Generator Series,Diesel Generator,,,,100,0.247,156,images/p156_c1_3.png,high
+171203,Generator Series,UISEUP,,,,42.2,0.126,157,images/p157_c0_0.png,high
+171204,Generator Series,unseup,,,,85.5,0.25,157,images/p157_c1_1.png,high
+171210,Generator Series,CURRENT 190A,,,,97,0.25,157,images/p157_c2_2.png,high
