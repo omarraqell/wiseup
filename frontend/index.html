@@ -164,6 +164,14 @@ fetch('/series').then(r => r.json()).then(list => {
 
 function linkifyCodes(t){ return (t||'').replace(/\b(\d{6})\b/g,'<span class="font-mono bg-white px-1 py-0.5 border border-gray-200 rounded">$1</span>'); }
 
+function stripMarkdown(s){
+  return (s || '')
+    .replace(/\*\*(.*?)\*\*/g, '$1')        // **bold** -> bold
+    .replace(/(^|\s)\*(\S.*?)\*/g, '$1$2')  // *italic* -> italic
+    .replace(/^\s*[-*]\s+/gm, '')           // leading bullet markers
+    .replace(/^\s*\d+\.\s+/gm, '');         // leading "1. " numbering
+}
+
 function card(p, i){
   const img = p.image_url
     ? `<img src="${p.image_url}" alt="${p.product_name}" class="w-full h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-300" onerror="this.parentElement.innerHTML='<span class=\\'material-symbols-outlined text-gray-400 text-6xl\\'>build</span>'"/>`
@@ -204,7 +212,7 @@ async function search(){
     });
     const data = await res.json();
     // conversational / product answer text
-    if(data.answer){ $('#answer-panel').classList.remove('hidden'); $('#answer-text').innerHTML = linkifyCodes(data.answer); }
+    if(data.answer){ $('#answer-panel').classList.remove('hidden'); $('#answer-text').innerHTML = linkifyCodes(stripMarkdown(data.answer)); }
     else $('#answer-panel').classList.add('hidden');
     // products only when there are real matches
     if(data.products.length){
