@@ -4,13 +4,14 @@ import os
 import time
 import datetime
 from typing import Optional
+from dotenv import load_dotenv
+load_dotenv()
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from langchain_core.messages import HumanMessage
 from agent_graph import graph
-from tools import to_card
 
 app = FastAPI(title="WISEUP Catalog Assistant")
 app.mount("/images", StaticFiles(directory="images"), name="images")
