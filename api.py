@@ -4,12 +4,14 @@ import os
 import time
 import datetime
 from typing import Optional
+from dotenv import load_dotenv
+load_dotenv()
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
-import rag
-import memory
+from langchain_core.messages import HumanMessage
+from agent_graph import graph
 
 app = FastAPI(title="WISEUP Catalog Assistant")
 app.mount("/images", StaticFiles(directory="images"), name="images")
@@ -48,28 +50,6 @@ class ResetReq(BaseModel):
     session_id: str
 
 
-def to_card(doc, score):
-    m = doc.metadata
-    img = m.get("image", "")
-    return {
-        "item_no": m.get("item_no", ""),
-        "product_name": m.get("product_name") or "Product",
-        "product_name_ar": m.get("product_name_ar", ""),
-        "series": m.get("series", ""),
-        "series_ar": m.get("series_ar", ""),
-        "material": m.get("material", ""),
-        "material_ar": m.get("material_ar", ""),
-        "size": m.get("size", ""),
-        "packing": m.get("packing", ""),
-        "gross_weight": m.get("gross_weight", ""),
-        "cbm": m.get("cbm", ""),
-        "pdf_page": m.get("pdf_page", ""),
-        "image_url": ("/" + img.replace("\\", "/")) if img else "",
-        # Chroma returns L2 distance (smaller = closer); map to a 0-100 feel
-        "relevance": max(5, min(100, round((1 - score / 2) * 100))),
-    }
-
-
 @app.get("/")
 def index():
     return FileResponse("frontend/index.html")
@@ -83,20 +63,18 @@ def series():
 @app.post("/ask")
 def ask(req: AskReq):
     t0 = time.time()
-    history = memory.short_term(req.session_id) if req.session_id else []
-    answer, results, search_q = rag.answer_with_memory(
-        req.query, history, k=req.k, series=req.series, generate=req.generate)
-    products = [to_card(d, s) for d, s in results]
-    top_score = round(results[0][1], 3) if results else None
-    # record the turn (long-term memory)
-    if req.session_id:
-        memory.add(req.session_id, "user", req.query)
-        memory.add(req.session_id, "assistant", answer or f"(showed {len(products)} products)")
+    thread = req.session_id or "default"
+    config = {"configurable": {"thread_id": thread}}
+    state = graph.invoke(
+        {"messages": [HumanMessage(req.query)], "session_id": thread}, config)
+    answer = state["messages"][-1].content
+    products = state.get("retrieved_products", [])
+    top_score = products[0].get("relevance") if products else None
     log_interaction(req, answer, len(products), top_score, int((time.time() - t0) * 1000))
-    return {"answer": answer, "products": products, "search_query": search_q}
+    return {"answer": answer, "products": products}
 
 
 @app.post("/reset")
 def reset(req: ResetReq):
-    memory.reset(req.session_id)
-    return {"ok": True}
+    # With the checkpointer, "resetting" means the client starts a new thread id.
+    return {"ok": True, "session_id": req.session_id}
