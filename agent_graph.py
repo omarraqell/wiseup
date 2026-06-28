@@ -1,4 +1,6 @@
 """Agentic RAG graph for WISEUP: agent <-> tools loop on LangGraph."""
+import os
+import datetime
 from typing import Annotated, TypedDict
 from langchain_core.messages import BaseMessage, SystemMessage
 from langchain_openai import ChatOpenAI
@@ -7,6 +9,8 @@ from langgraph.graph.message import add_messages
 from langgraph.prebuilt import ToolNode, tools_condition
 from langgraph.checkpoint.memory import MemorySaver
 from tools import TOOLS
+
+GRAPH_LOG = os.path.join("logs", "graph_compile.log")
 
 SYSTEM_PROMPT = """You are the WISEUP tools catalog assistant, a friendly B2B assistant \
 for a hand-tools and power-tools brand.
@@ -49,4 +53,41 @@ def _build_graph():
     return builder.compile(checkpointer=MemorySaver())
 
 
+def _log_graph_compile(compiled):
+    """Write the compiled graph's structure to logs/graph_compile.log on startup.
+
+    Records the nodes, edges (marking conditional ones), the bound tools, and a
+    Mermaid + ASCII rendering, so you can see exactly how the graph compiled.
+    Wrapped so a logging failure can never break app startup.
+    """
+    try:
+        os.makedirs("logs", exist_ok=True)
+        g = compiled.get_graph()
+        nodes = list(g.nodes)
+        lines = [
+            "=" * 72,
+            f"[{datetime.datetime.now().isoformat(timespec='seconds')}] GRAPH COMPILED OK",
+            f"Nodes ({len(nodes)}): {nodes}",
+            "Edges:",
+        ]
+        for e in g.edges:
+            cond = "  (conditional)" if getattr(e, "conditional", False) else ""
+            lines.append(f"  {getattr(e, 'source', '?')} -> {getattr(e, 'target', '?')}{cond}")
+        lines.append("Tools bound: " + ", ".join(t.name for t in TOOLS))
+        try:
+            lines += ["", "Mermaid:", g.draw_mermaid()]
+        except Exception as ex:
+            lines.append(f"(mermaid render failed: {ex})")
+        try:
+            lines += ["", "ASCII:", g.draw_ascii()]
+        except Exception as ex:
+            lines.append(f"(ascii render needs the 'grandalf' package; skipped: {ex})")
+        lines.append("")
+        with open(GRAPH_LOG, "a", encoding="utf-8") as f:
+            f.write("\n".join(lines) + "\n")
+    except Exception as ex:  # never break startup over a log line
+        print(f"[graph_compile log] skipped: {ex}")
+
+
 graph = _build_graph()
+_log_graph_compile(graph)
