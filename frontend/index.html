@@ -47,7 +47,7 @@
     <h1 class="font-headline uppercase font-bold tracking-tight text-text text-xl">Catalog Assistant</h1>
   </div>
   <div class="flex items-center gap-6">
-    <div class="text-sm font-medium text-text-muted"><span id="stat-products">1,700</span> products &middot; <span id="stat-series">43</span> series</div>
+    <div class="text-sm font-medium text-text-muted"><span id="stat-products">1,700</span> products</div>
     <button id="new-chat" class="flex items-center gap-1 text-sm font-bold uppercase tracking-wide text-text hover:text-brand transition-colors">
       <span class="material-symbols-outlined text-lg">refresh</span> New chat
     </button>
@@ -125,7 +125,6 @@
 
 <script>
 const $ = s => document.querySelector(s);
-let selectedSeries = new Set();
 
 // session id for conversation memory (persisted in the browser)
 let SID = localStorage.getItem('wiseup_sid');
@@ -148,20 +147,6 @@ $('#ai-toggle').addEventListener('click', () => {
 });
 $('#k-slider').addEventListener('input', e => $('#k-val').textContent = e.target.value);
 
-// load series into sidebar
-fetch('/series').then(r => r.json()).then(list => {
-  $('#stat-series').textContent = list.length;
-  const c = $('#series-list');
-  c.innerHTML = list.map(s => `
-    <label class="flex items-center gap-3 p-2 hover:bg-gray-200 rounded-sm cursor-pointer transition-colors group">
-      <input type="checkbox" value="${s}" class="series-cb w-4 h-4 text-brand rounded-sm border-gray-400 focus:ring-brand"/>
-      <span class="text-sm font-medium group-hover:text-brand">${s.replace(/ Series$/,'')}</span>
-    </label>`).join('');
-  c.querySelectorAll('.series-cb').forEach(cb => cb.addEventListener('change', e => {
-    e.target.checked ? selectedSeries.add(e.target.value) : selectedSeries.delete(e.target.value);
-  }));
-});
-
 function linkifyCodes(t){ return (t||'').replace(/\b(\d{6})\b/g,'<span class="font-mono bg-white px-1 py-0.5 border border-gray-200 rounded">$1</span>'); }
 
 function stripMarkdown(s){
@@ -174,26 +159,19 @@ function stripMarkdown(s){
 
 function card(p, i){
   const img = p.image_url
-    ? `<img src="${p.image_url}" alt="${p.product_name}" class="w-full h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-300" onerror="this.parentElement.innerHTML='<span class=\\'material-symbols-outlined text-gray-400 text-6xl\\'>build</span>'"/>`
+    ? `<img src="${p.image_url}" alt="${p.name_ar}" class="w-full h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-300" onerror="this.parentElement.innerHTML='<span class=\\'material-symbols-outlined text-gray-400 text-6xl\\'>build</span>'"/>`
     : `<span class="material-symbols-outlined text-gray-400 text-6xl">build</span>`;
-  const spec = (l,v) => v ? `<div class="flex items-center gap-2"><span class="text-text-muted">${l}:</span> <span class="font-medium">${v}</span></div>` : '';
   return `
   <article class="card-in bg-white border border-gray-200 rounded-lg overflow-hidden flex flex-col group hover:shadow-md transition-shadow relative" style="animation-delay:${i*40}ms">
-    <div class="absolute top-3 left-3 z-10 bg-brand text-white text-[10px] font-bold px-2 py-1 uppercase tracking-wider rounded-sm shadow-sm">${(p.series||'').toUpperCase()}</div>
-    <div class="aspect-square bg-surface-alt p-6 flex items-center justify-center relative overflow-hidden border-b border-gray-100">${img}</div>
-    <div class="p-5 flex flex-col flex-1">
-      <h3 class="font-headline font-bold text-xl uppercase tracking-tight mb-3">${(p.product_name||'Product').toUpperCase()}</h3>
-      <div class="grid grid-cols-2 gap-2 text-sm mb-4 bg-surface-alt p-3 rounded-sm border border-gray-100">
-        ${spec('Size',p.size)} ${spec('Mat',p.material)} ${spec('Pack',p.packing)} ${spec('G.W.',p.gross_weight)} ${spec('CBM',p.cbm)} ${spec('Page',p.pdf_page)}
+    <div class="aspect-square bg-gray-50 flex items-center justify-center p-4">${img}</div>
+    <div class="p-3 flex flex-col gap-2" dir="rtl">
+      <h3 class="text-sm font-medium leading-snug">${p.name_ar || 'منتج'}</h3>
+      <div class="flex items-center justify-between">
+        <span class="text-base font-bold text-brand">${p.price_jod} JOD</span>
+        <span class="text-xs text-text-muted">${p.unit || ''}</span>
       </div>
-      <div class="mt-auto pt-4 flex items-center justify-between border-t border-gray-100">
-        <div class="font-mono text-lg font-bold bg-gray-100 px-2 py-1 rounded-sm tracking-wider">
-          <span class="text-xs text-text-muted block leading-none mb-1">ITEM NO:</span>${p.item_no}
-        </div>
-        <button class="w-10 h-10 flex items-center justify-center rounded-sm bg-gray-100 text-text hover:bg-brand hover:text-white transition-colors"><span class="material-symbols-outlined">add</span></button>
-      </div>
+      <span class="text-xs text-text-muted font-mono" dir="ltr">كود: ${p.code}</span>
     </div>
-    <div class="h-1 w-full bg-gray-100"><div class="h-full bg-brand" style="width:${p.relevance}%"></div></div>
   </article>`;
 }
 
@@ -208,7 +186,7 @@ async function search(){
   try {
     const res = await fetch('/ask', {
       method:'POST', headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({ query:q, k:parseInt($('#k-slider').value), series:[...selectedSeries], generate:gen, session_id: SID })
+      body: JSON.stringify({ query:q, k:parseInt($('#k-slider').value), generate:gen, session_id: SID })
     });
     const data = await res.json();
     // conversational / product answer text
