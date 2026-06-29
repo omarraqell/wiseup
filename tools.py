@@ -84,31 +84,46 @@ def search_wiseup_web(query: str) -> str:
 OWNER_EMAIL = "omaraqel270@gmail.com"
 
 
-def _format_email(products, customer_message) -> str:
-    lines = ["A customer is interested in the following WISEUP products:", ""]
+def _format_email(products, customer_name, customer_phone, customer_email, customer_message) -> str:
+    lines = [
+        "New customer lead",
+        f"Name:  {customer_name}",
+        f"Phone: {customer_phone or '—'}",
+        f"Email: {customer_email or '—'}",
+        "",
+        f"Interested in ({len(products)} product(s)):",
+    ]
     for p in products:
         lines.append(
             f"- {p.get('product_name','Product')} | item_no: {p.get('item_no','')} | "
             f"size: {p.get('size','')} | material: {p.get('material','')} | "
             f"packing: {p.get('packing','')}")
-    lines += ["", f"Customer message: {customer_message}"]
+    lines += ["", f"Message: {customer_message or '(none)'}"]
     return "\n".join(lines)
 
 
 @tool
-def email_owner(item_nos: list[str], customer_message: str) -> str:
-    """Email the selected products' full details to the WISEUP owner.
-    ONLY call this AFTER the customer has explicitly confirmed (said yes)."""
-    log(f"🔧 TOOL email_owner(item_nos={item_nos})")
+def email_owner(item_nos: list[str], customer_name: str,
+                customer_phone: str = "", customer_email: str = "",
+                customer_message: str = "") -> str:
+    """Email the customer's selected products and contact details to the WISEUP owner as a
+    lead. Requires the customer's name and at least one of phone or email. Call ONLY after
+    the customer has given their contact details AND explicitly confirmed (said yes)."""
+    log(f"🔧 TOOL email_owner(item_nos={item_nos}, name={customer_name!r})")
+    if not customer_name.strip() or not (customer_phone.strip() or customer_email.strip()):
+        log("🔧 TOOL email_owner → missing contact info; nothing sent")
+        return ("Missing contact info: I need the customer's name and at least a phone "
+                "number or an email address before sending.")
     products = _lookup_products(item_nos)
     if not products:
         log("🔧 TOOL email_owner → no matching item numbers; nothing sent")
         return "No matching products found for those item numbers; nothing sent."
     msg = EmailMessage()
-    msg["Subject"] = f"New customer interest - {len(products)} product(s)"
+    msg["Subject"] = f"New customer lead - {len(products)} product(s) from {customer_name}"
     msg["From"] = OWNER_EMAIL
     msg["To"] = OWNER_EMAIL
-    msg.set_content(_format_email(products, customer_message))
+    msg.set_content(_format_email(products, customer_name, customer_phone,
+                                  customer_email, customer_message))
     ctx = ssl.create_default_context()
     with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=ctx) as s:
         s.login(OWNER_EMAIL, os.environ["GMAIL_APP_PASSWORD"])
