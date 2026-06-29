@@ -2,15 +2,16 @@ from langchain_core.documents import Document
 import tools
 
 
-def test_to_card_maps_metadata_and_image():
+def test_to_card_maps_new_schema_and_image():
     doc = Document(page_content="x", metadata={
-        "item_no": "010801", "product_name": "Circlip Pliers",
-        "series": "Pliers Series", "size": "7\"/175MM",
-        "image": "images\\p1.png"})
+        "code": "10101", "name_ar": "زرادية كهرباء صناعي 6\"", "unit": "pcs",
+        "price_jod": 2.5, "image": "images/10101.png"})
     card = tools.to_card(doc, 0.4)
-    assert card["item_no"] == "010801"
-    assert card["product_name"] == "Circlip Pliers"
-    assert card["image_url"] == "/images/p1.png"
+    assert card["code"] == "10101"
+    assert card["name_ar"].startswith("زرادية")
+    assert card["price_jod"] == 2.5
+    assert card["unit"] == "pcs"
+    assert card["image_url"] == "/images/10101.png"
     assert 5 <= card["relevance"] <= 100
 
 

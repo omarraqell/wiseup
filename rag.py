@@ -74,18 +74,8 @@ def chat(user_text, system=None, max_tokens=400, temperature=0.3):
     return (ai.content or "").strip()
 
 
-def retrieve(query, k=8, series=None):
-    flt = {"series": {"$in": series}} if series else None
-    # The index is bilingual (EN + AR doc per product), so over-fetch then
-    # dedupe by item_no, keeping each product's best (smallest) distance.
-    raw = get_store().similarity_search_with_score(query, k=k * 3, filter=flt)
-    best = {}
-    for doc, score in raw:
-        key = doc.metadata.get("item_no") or id(doc)
-        if key not in best or score < best[key][1]:
-            best[key] = (doc, score)
-    out = sorted(best.values(), key=lambda x: x[1])
-    return out[:k]
+def retrieve(query, k=8):
+    return get_store().similarity_search_with_score(query, k=k)
 
 
 def build_context(results):
@@ -93,11 +83,8 @@ def build_context(results):
     for doc, _ in results:
         m = doc.metadata
         lines.append(
-            f"- {m.get('product_name') or 'Product'} | series: {m.get('series','')} | "
-            f"material: {m.get('material','')} | size: {m.get('size','')} | "
-            f"packing: {m.get('packing','')} | G.W.: {m.get('gross_weight','')} | "
-            f"CBM: {m.get('cbm','')} | item_no: {m.get('item_no','')} | page: {m.get('pdf_page','')}"
-        )
+            f"- {m.get('name_ar','')} | السعر: {m.get('price_jod','')} JOD | "
+            f"الوحدة: {m.get('unit','')} | كود: {m.get('code','')}")
     return "\n".join(lines)
 
 
