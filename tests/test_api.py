@@ -15,3 +15,9 @@ def test_ask_returns_answer_and_products(monkeypatch):
     body = r.json()
     assert body["answer"] == "Here are circlip pliers."
     assert body["products"][0]["item_no"] == "010801"
+
+
+def test_series_route_removed():
+    from fastapi.testclient import TestClient
+    client = TestClient(api.app)
+    assert client.get("/series").status_code == 404
