@@ -4,7 +4,7 @@ import os
 import ssl
 import smtplib
 import rag
-from typing import Annotated, Optional
+from typing import Annotated
 from email.message import EmailMessage
 from langchain_core.tools import tool, InjectedToolCallId
 from langchain_core.messages import ToolMessage
@@ -13,25 +13,17 @@ from langchain_tavily import TavilySearch
 from runlog import log
 
 _PRODUCTS = json.load(open("products.json", encoding="utf-8"))
-_BY_ITEM = {str(p["item_no"]): p for p in _PRODUCTS if p.get("item_no")}
+_BY_ITEM = {str(p["code"]): p for p in _PRODUCTS if p.get("code")}
 
 
 def to_card(doc, score):
     m = doc.metadata
     img = m.get("image", "")
     return {
-        "item_no": m.get("item_no", ""),
-        "product_name": m.get("product_name") or "Product",
-        "product_name_ar": m.get("product_name_ar", ""),
-        "series": m.get("series", ""),
-        "series_ar": m.get("series_ar", ""),
-        "material": m.get("material", ""),
-        "material_ar": m.get("material_ar", ""),
-        "size": m.get("size", ""),
-        "packing": m.get("packing", ""),
-        "gross_weight": m.get("gross_weight", ""),
-        "cbm": m.get("cbm", ""),
-        "pdf_page": m.get("pdf_page", ""),
+        "code": m.get("code", ""),
+        "name_ar": m.get("name_ar", ""),
+        "price_jod": m.get("price_jod", 0),
+        "unit": m.get("unit", ""),
         "image_url": ("/" + img.replace("\\", "/")) if img else "",
         "relevance": max(5, min(100, round((1 - score / 2) * 100))),
     }
@@ -42,13 +34,12 @@ def _lookup_products(item_nos):
 
 
 @tool
-def retrieve_products(query: str, series: Optional[str],
+def retrieve_products(query: str,
                       tool_call_id: Annotated[str, InjectedToolCallId]) -> Command:
-    """Search the WISEUP product catalog for tools matching the query.
-    Use for any question about specific products, sizes, materials, or item numbers.
-    Optionally filter by a product series name."""
-    log(f"🔧 TOOL retrieve_products(query={query!r}, series={series!r})")
-    results = rag.gate(rag.retrieve(query, k=8, series=[series] if series else None))
+    """Search the WISEUP Arabic product catalog (with JOD prices) for tools matching the
+    query. Use for any question about specific products, prices, or codes."""
+    log(f"🔧 TOOL retrieve_products(query={query!r})")
+    results = rag.gate(rag.retrieve(query, k=8))
     cards = [to_card(d, s) for d, s in results]
     log(f"🔧 TOOL retrieve_products → found {len(cards)} product(s)")
     summary = rag.build_context(results) or "No matching products found."
@@ -93,12 +84,14 @@ def _format_email(products, customer_name, customer_phone, customer_email, custo
         "",
         f"Interested in ({len(products)} product(s)):",
     ]
+    total = 0.0
     for p in products:
+        price = p.get("price_jod", 0) or 0
+        total += float(price)
         lines.append(
-            f"- {p.get('product_name','Product')} | item_no: {p.get('item_no','')} | "
-            f"size: {p.get('size','')} | material: {p.get('material','')} | "
-            f"packing: {p.get('packing','')}")
-    lines += ["", f"Message: {customer_message or '(none)'}"]
+            f"- {p.get('name_ar','')} | كود: {p.get('code','')} | "
+            f"الوحدة: {p.get('unit','')} | السعر: {price} JOD")
+    lines += ["", f"Total: {round(total, 2)} JOD", "", f"Message: {customer_message or '(none)'}"]
     return "\n".join(lines)
 
 

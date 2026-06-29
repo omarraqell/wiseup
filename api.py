@@ -23,7 +23,7 @@ os.makedirs("logs", exist_ok=True)
 def log_interaction(req, answer, n_products, top_score, latency_ms):
     rec = {
         "ts": datetime.datetime.now().isoformat(timespec="seconds"),
-        "query": req.query, "k": req.k, "series": req.series, "generate": req.generate,
+        "query": req.query, "k": req.k, "generate": req.generate,
         "n_products": n_products, "top_score": top_score, "latency_ms": latency_ms,
         "answer": answer,
     }
@@ -35,14 +35,10 @@ def log_interaction(req, answer, n_products, top_score, latency_ms):
         if answer:
             f.write(f"           A: {answer}\n")
 
-_products = json.load(open("products.json", encoding="utf-8"))
-SERIES = sorted({p["series"] for p in _products if p.get("series")})
-
 
 class AskReq(BaseModel):
     query: str
     k: int = 9
-    series: Optional[list[str]] = None
     generate: bool = True
     session_id: Optional[str] = None
 
@@ -54,11 +50,6 @@ class ResetReq(BaseModel):
 @app.get("/")
 def index():
     return FileResponse("frontend/index.html")
-
-
-@app.get("/series")
-def series():
-    return SERIES
 
 
 @app.post("/ask")

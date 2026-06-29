@@ -4,17 +4,17 @@ import tools
 
 
 def test_retrieve_products_returns_command_with_cards(monkeypatch):
-    doc = Document(page_content="Circlip Pliers", metadata={
-        "item_no": "010801", "product_name": "Circlip Pliers",
-        "series": "Pliers Series", "size": "7\"/175MM", "image": "images\\a.png"})
-    monkeypatch.setattr(tools.rag, "retrieve", lambda q, k=8, series=None: [(doc, 0.4)])
+    doc = Document(page_content="زرادية", metadata={
+        "code": "10101", "name_ar": "زرادية كهرباء صناعي 6\"", "unit": "pcs",
+        "price_jod": 2.5, "image": "images/10101.png"})
+    monkeypatch.setattr(tools.rag, "retrieve", lambda q, k=8: [(doc, 0.4)])
     monkeypatch.setattr(tools.rag, "gate", lambda results: results)
 
-    cmd = tools.retrieve_products.func(
-        query="circlip pliers", series=None, tool_call_id="tc1")
+    cmd = tools.retrieve_products.func(query="زرادية", tool_call_id="tc1")
 
     assert isinstance(cmd, Command)
-    assert cmd.update["retrieved_products"][0]["item_no"] == "010801"
+    assert cmd.update["retrieved_products"][0]["code"] == "10101"
+    assert cmd.update["retrieved_products"][0]["price_jod"] == 2.5
     msg = cmd.update["messages"][0]
     assert msg.tool_call_id == "tc1"
-    assert "Circlip Pliers" in msg.content
+    assert "زرادية" in msg.content

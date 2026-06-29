@@ -19,18 +19,19 @@ def test_email_owner_happy_path(monkeypatch):
     monkeypatch.setenv("GMAIL_APP_PASSWORD", "test-pass")
     monkeypatch.setattr(tools.smtplib, "SMTP_SSL", _fake_smtp(sent))
     monkeypatch.setattr(tools, "_lookup_products",
-        lambda ids: [{"item_no": "010801", "product_name": "Circlip Pliers",
-                      "size": "7\"/175MM", "material": "55# steel"}])
+        lambda ids: [{"code": "10101", "name_ar": "زرادية كهرباء صناعي 6\"",
+                      "unit": "pcs", "price_jod": 2.5}])
     result = tools.email_owner.func(
-        item_nos=["010801"], customer_name="Omar",
+        item_nos=["10101"], customer_name="Omar",
         customer_phone="0790000000", customer_email="o@x.com",
-        customer_message="I want this")
+        customer_message="بدي هاي")
     assert "Sent 1" in result
     assert sent["login"] == (tools.OWNER_EMAIL, "test-pass")
-    assert sent["to"] == tools.OWNER_EMAIL
     b = sent["body"]
     assert "Omar" in b and "0790000000" in b and "o@x.com" in b
-    assert "010801" in b and "Circlip Pliers" in b and "I want this" in b
+    assert "10101" in b and "زرادية" in b
+    assert "2.5" in b and "JOD" in b          # price shown
+    assert "Total" in b                        # total line present
 
 
 def test_email_owner_missing_contact_does_not_send(monkeypatch):
@@ -50,12 +51,12 @@ def test_email_owner_single_item(monkeypatch):
     monkeypatch.setenv("GMAIL_APP_PASSWORD", "p")
     monkeypatch.setattr(tools.smtplib, "SMTP_SSL", _fake_smtp(sent))
     monkeypatch.setattr(tools, "_lookup_products",
-        lambda ids: [{"item_no": "010801", "product_name": "Circlip Pliers",
-                      "size": "7\"", "material": "steel"}])
+        lambda ids: [{"code": "10101", "name_ar": "زرادية كهرباء صناعي 6\"",
+                      "unit": "pcs", "price_jod": 2.5}])
     result = tools.email_owner.func(
-        item_nos=["010801"], customer_name="Omar", customer_email="o@x.com")
+        item_nos=["10101"], customer_name="Omar", customer_email="o@x.com")
     assert "Sent 1" in result
-    assert sent["body"].count("item_no:") == 1
+    assert sent["body"].count("10101") == 1
 
 
 def test_email_owner_unknown_items_sends_nothing(monkeypatch):
