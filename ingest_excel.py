@@ -28,6 +28,8 @@ def main():
         code, name, unit, price = row[2].value, row[3].value, row[4].value, row[5].value
         if not is_product(name, price):
             continue
+        if code is None or not str(code).strip():
+            continue  # a product must have a code
         code = str(code).strip()
         products.append({
             "code": code,
