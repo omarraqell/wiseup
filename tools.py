@@ -13,7 +13,7 @@ from langchain_tavily import TavilySearch
 from runlog import log
 
 _PRODUCTS = json.load(open("products.json", encoding="utf-8"))
-_BY_ITEM = {str(p["item_no"]): p for p in _PRODUCTS if p.get("item_no")}
+_BY_ITEM = {str(p["code"]): p for p in _PRODUCTS if p.get("code")}
 
 
 def to_card(doc, score):

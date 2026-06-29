@@ -15,9 +15,8 @@ def test_to_card_maps_metadata_and_image():
 
 
 def test_lookup_products_returns_known_item():
-    # pick the first real item number from the catalog
     import json
     rows = json.load(open("products.json", encoding="utf-8"))
-    item = next(str(r["item_no"]) for r in rows if r.get("item_no"))
-    found = tools._lookup_products([item])
-    assert found and str(found[0]["item_no"]) == item
+    code = str(rows[0]["code"])
+    found = tools._lookup_products([code])
+    assert found and str(found[0]["code"]) == code
