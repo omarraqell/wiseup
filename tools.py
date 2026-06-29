@@ -84,12 +84,14 @@ def _format_email(products, customer_name, customer_phone, customer_email, custo
         "",
         f"Interested in ({len(products)} product(s)):",
     ]
+    total = 0.0
     for p in products:
+        price = p.get("price_jod", 0) or 0
+        total += float(price)
         lines.append(
-            f"- {p.get('product_name','Product')} | item_no: {p.get('item_no','')} | "
-            f"size: {p.get('size','')} | material: {p.get('material','')} | "
-            f"packing: {p.get('packing','')}")
-    lines += ["", f"Message: {customer_message or '(none)'}"]
+            f"- {p.get('name_ar','')} | كود: {p.get('code','')} | "
+            f"الوحدة: {p.get('unit','')} | السعر: {price} JOD")
+    lines += ["", f"Total: {round(total, 2)} JOD", "", f"Message: {customer_message or '(none)'}"]
     return "\n".join(lines)
 
 
