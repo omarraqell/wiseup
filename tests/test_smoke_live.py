@@ -9,7 +9,7 @@ def test_catalog_question_returns_products():
     from langchain_core.messages import HumanMessage
     from agent_graph import graph
     state = graph.invoke(
-        {"messages": [HumanMessage("what circlip pliers do you have?")], "session_id": "live1"},
+        {"messages": [HumanMessage("زرادية كهربا")], "session_id": "live1"},
         {"configurable": {"thread_id": "live1"}})
     assert state["messages"][-1].content
     assert state.get("retrieved_products")

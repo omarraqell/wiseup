@@ -4,7 +4,7 @@ import os
 import ssl
 import smtplib
 import rag
-from typing import Annotated, Optional
+from typing import Annotated
 from email.message import EmailMessage
 from langchain_core.tools import tool, InjectedToolCallId
 from langchain_core.messages import ToolMessage
