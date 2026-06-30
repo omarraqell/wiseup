@@ -48,10 +48,21 @@ General:
 - Prices are in JOD. Keep replies concise and friendly; reply in the customer's language."""
 
 
+def _latest_products(old: list[dict], new: list[dict]) -> list[dict]:
+    """Reducer for retrieved_products: the most recent retrieval wins.
+
+    If the model fires retrieve_products several times in one step, each tool's
+    Command writes this key; without a reducer LangGraph raises InvalidUpdateError
+    and poisons the session. Folding 'take the newer value' makes concurrent and
+    cross-turn writes both resolve to the latest cards.
+    """
+    return new
+
+
 class AgentState(TypedDict):
     messages: Annotated[list[BaseMessage], add_messages]
     session_id: str
-    retrieved_products: list[dict]
+    retrieved_products: Annotated[list[dict], _latest_products]
 
 
 def agent_node(state: AgentState) -> dict:
