@@ -9,9 +9,26 @@ switching does NOT require deleting the other index.
 import os
 from langchain_chroma import Chroma
 
+PRODUCTS_PATH = "products.json"
+
 EMBED_BACKEND = os.environ.get("WISEUP_EMBED_BACKEND", "openai").lower()  # "openai" | "hf"
 HF_EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 OPENAI_EMBED_MODEL = os.environ.get("WISEUP_EMBED_MODEL", "text-embedding-3-small")
+
+
+def describe(p):
+    return f"{p['name_ar']} (كود {p['code']})"
+
+
+def clean_meta(p):
+    return {
+        "code": p.get("code", ""),
+        "name_ar": p.get("name_ar", ""),
+        "unit": p.get("unit", ""),
+        "price_jod": p.get("price_jod", 0),
+        "image": p.get("image", ""),
+    }
+
 
 _store = None
 
