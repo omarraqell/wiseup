@@ -42,13 +42,17 @@ from either retriever.
 
 ## 4. `rag.py` changes
 
-### 4.1 Arabic normalization for BM25
-Default whitespace tokenization mistokenizes Arabic + punctuation (`(كود`, `10104)`). Add:
+### 4.1 BM25 tokenizer
+BM25Retriever's default tokenizer only splits on whitespace, so the indexed text `name (كود
+10104)` yields the token `10104)` (paren attached) and an exact-code query fails. Add a small
+tokenizer:
 
-- `_ar_normalize(text) -> str` — strip tatweel (ـ) and Arabic diacritics; unify alef forms
-  (أ إ آ → ا) and (ى → ي, ة → ه); lowercase Latin; collapse whitespace.
-- `_bm25_preprocess(text) -> list[str]` — `_ar_normalize`, replace non-alphanumeric (keep Arabic
-  letters + digits) with spaces, split on whitespace. Codes like `10104` survive as one token.
+- `_bm25_preprocess(text) -> list[str]` — lowercase, then keep runs of digits/Latin/Arabic
+  letters: `re.findall(r"[0-9a-z؀-ۿ]+", text.lower())`. Codes like `10104` tokenize
+  cleanly.
+
+No diacritic/tatweel/alef folding — negligible for this (unvoweled) catalog, and it avoids fragile
+combining-mark regexes. Revisit only if Arabic keyword recall looks short.
 
 ### 4.2 Retrievers (built once at import, in-memory)
 - `_products()` — load `products.json`.
@@ -85,15 +89,12 @@ Default whitespace tokenization mistokenizes Arabic + punctuation (`(كود`, `1
 
 ## 6. Dependencies
 
-Add to `requirements.txt`: `rank_bm25` (BM25Retriever backend). Confirm `langchain`
-(`EnsembleRetriever`) and `langchain_community` (`BM25Retriever`) are installed; pin the import
-paths against the installed versions during planning (these classes have moved between releases).
+Add to `requirements.txt`: `rank-bm25` (BM25Retriever backend), `langchain-community` (`BM25Retriever`), and `langchain-classic` (`EnsembleRetriever`). NOTE (verified in this env, langchain 1.3.11): `EnsembleRetriever` lives in `langchain_classic.retrievers`, NOT `langchain.retrievers` — the skill's path is outdated.
 
 ## 7. Tests (all network-free)
 
 - `tests/test_rag_hybrid.py` (new):
-  - `_ar_normalize` / `_bm25_preprocess` — diacritics/tatweel stripped, alef unified, a code stays
-    one token.
+  - `_bm25_preprocess` — punctuation stripped, lowercased, a code stays one token.
   - BM25-only: build from a small product set; an exact-code query ranks that product first.
   - Ensemble: real BM25 + a **fake dense retriever** (returns fixed Documents, no network); an
     exact-code query surfaces the code doc at/near top; identical `page_content` ⇒ no duplicates.
