@@ -59,6 +59,57 @@ def test_email_owner_single_item(monkeypatch):
     assert sent["body"].count("10101") == 1
 
 
+def test_email_owner_bad_phone_does_not_send(monkeypatch):
+    used = {"smtp": False}
+    class Guard:
+        def __init__(self, *a, **k): used["smtp"] = True
+    monkeypatch.setattr(tools.smtplib, "SMTP_SSL", Guard)
+    result = tools.email_owner.func(
+        item_nos=["10101"], customer_name="Omar",
+        customer_phone="0712345678", customer_email="")   # 071 is not a mobile prefix
+    assert "phone" in result.lower()
+    assert used["smtp"] is False
+
+
+def test_email_owner_bad_email_does_not_send(monkeypatch):
+    used = {"smtp": False}
+    class Guard:
+        def __init__(self, *a, **k): used["smtp"] = True
+    monkeypatch.setattr(tools.smtplib, "SMTP_SSL", Guard)
+    result = tools.email_owner.func(
+        item_nos=["10101"], customer_name="Omar",
+        customer_phone="", customer_email="omar-at-x.com")  # no @
+    assert "email" in result.lower()
+    assert used["smtp"] is False
+
+
+def test_email_owner_accepts_077_078_079(monkeypatch):
+    for phone in ("0771234567", "0781234567", "0791234567"):
+        sent = {}
+        monkeypatch.setenv("GMAIL_APP_PASSWORD", "p")
+        monkeypatch.setattr(tools.smtplib, "SMTP_SSL", _fake_smtp(sent))
+        monkeypatch.setattr(tools, "_lookup_products",
+            lambda ids: [{"code": "10101", "name_ar": "x", "unit": "pcs", "price_jod": 2.5}])
+        result = tools.email_owner.func(
+            item_nos=["10101"], customer_name="Omar", customer_phone=phone)
+        assert "Sent 1" in result, phone
+
+
+def test_email_owner_schema_pattern_rejects_bad_phone(monkeypatch):
+    # The Pydantic args schema (used by ToolNode in production) rejects a bad phone
+    # BEFORE the body runs. Mock SMTP+env so the only failure source is the pattern.
+    from pydantic import ValidationError
+    import pytest
+    monkeypatch.setenv("GMAIL_APP_PASSWORD", "p")
+    monkeypatch.setattr(tools.smtplib, "SMTP_SSL", _fake_smtp({}))
+    monkeypatch.setattr(tools, "_lookup_products",
+        lambda ids: [{"code": "10101", "name_ar": "x", "unit": "pcs", "price_jod": 2.5}])
+    with pytest.raises(ValidationError):
+        tools.email_owner.invoke(
+            {"item_nos": ["10101"], "customer_name": "Omar",
+             "customer_phone": "0712345678"})
+
+
 def test_email_owner_unknown_items_sends_nothing(monkeypatch):
     used = {"smtp": False}
     class Guard:

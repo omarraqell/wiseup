@@ -1,11 +1,13 @@
 """Agent tools + shared helpers for the WISEUP agentic RAG."""
 import json
 import os
+import re
 import ssl
 import smtplib
 import rag
 from typing import Annotated
 from email.message import EmailMessage
+from pydantic import Field
 from langchain_core.tools import tool, InjectedToolCallId
 from langchain_core.messages import ToolMessage
 from langgraph.types import Command
@@ -74,6 +76,19 @@ def search_wiseup_web(query: str) -> str:
 
 OWNER_EMAIL = "omaraqel270@gmail.com"
 
+# Contact-field formats (kept in sync with the Field(pattern=...) on email_owner).
+# Jordanian mobile: local 0 + 77/78/79 + 7 digits. Email: must contain '@' and a dot.
+_PHONE_RE = re.compile(r"^(077|078|079)\d{7}$")
+_EMAIL_RE = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
+
+
+def _valid_phone(p: str) -> bool:
+    return bool(_PHONE_RE.match(p.strip()))
+
+
+def _valid_email(e: str) -> bool:
+    return bool(_EMAIL_RE.match(e.strip()))
+
 
 def _format_email(products, customer_name, customer_phone, customer_email, customer_message) -> str:
     lines = [
@@ -96,17 +111,34 @@ def _format_email(products, customer_name, customer_phone, customer_email, custo
 
 
 @tool
-def email_owner(item_nos: list[str], customer_name: str,
-                customer_phone: str = "", customer_email: str = "",
-                customer_message: str = "") -> str:
+def email_owner(
+    item_nos: list[str],
+    customer_name: str,
+    customer_phone: Annotated[str, Field(
+        description="Jordan mobile, starts 077/078/079",
+        pattern=r"^$|^(077|078|079)\d{7}$")] = "",
+    customer_email: Annotated[str, Field(
+        description="Customer email, must contain @ and a dot",
+        pattern=r"^$|^[^@\s]+@[^@\s]+\.[^@\s]+$")] = "",
+    customer_message: str = "",
+) -> str:
     """Email the customer's selected products and contact details to the WISEUP owner as a
-    lead. Requires the customer's name and at least one of phone or email. Call ONLY after
+    lead. Requires the customer's name and at least one of phone or email. Phone must be a
+    Jordanian mobile starting 077/078/079; email must contain @ and a dot. Call ONLY after
     the customer has given their contact details AND explicitly confirmed (said yes)."""
     log(f"🔧 TOOL email_owner(item_nos={item_nos}, name={customer_name!r})")
     if not customer_name.strip() or not (customer_phone.strip() or customer_email.strip()):
         log("🔧 TOOL email_owner → missing contact info; nothing sent")
         return ("Missing contact info: I need the customer's name and at least a phone "
                 "number or an email address before sending.")
+    if customer_phone.strip() and not _valid_phone(customer_phone):
+        log("🔧 TOOL email_owner → invalid phone; nothing sent")
+        return ("Invalid phone number: a Jordanian mobile must start with 077, 078, or 079 "
+                "and be 10 digits (e.g. 0791234567). Please ask the customer to re-check.")
+    if customer_email.strip() and not _valid_email(customer_email):
+        log("🔧 TOOL email_owner → invalid email; nothing sent")
+        return ("Invalid email address: it must contain '@' and a domain like "
+                "name@example.com. Please ask the customer to re-check.")
     products = _lookup_products(item_nos)
     if not products:
         log("🔧 TOOL email_owner → no matching item numbers; nothing sent")

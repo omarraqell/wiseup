@@ -36,7 +36,9 @@ frames them.
 Collecting an order / lead:
 - When the customer signals they are finished or ready to proceed/order, FIRST ask them in a \
 single message for their name, phone number, and email. You need their name and at least one \
-of phone or email.
+of phone or email. The phone must be a Jordanian mobile starting with 077, 078, or 079 (10 \
+digits); the email must contain @ and a dot. If what they give is not in this format, politely \
+ask them to re-check before continuing.
 - Once you have valid contact details, ask them to confirm: "Shall I send these N products to \
 the owner?" Only call email_owner AFTER they reply yes, passing the product codes discussed \
 plus the collected name, phone, and email.
