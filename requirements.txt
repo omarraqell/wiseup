@@ -5,3 +5,6 @@ langchain-tavily
 langchain-chroma
 python-dotenv
 pytest
+langchain-community
+langchain-classic
+rank-bm25

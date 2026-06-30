@@ -6,9 +6,13 @@ Embeddings are pluggable via WISEUP_EMBED_BACKEND:
 Each backend has its own Chroma folder/collection (vector spaces differ), so
 switching does NOT require deleting the other index.
 """
+import json
 import os
 import re
 from langchain_chroma import Chroma
+from langchain_core.documents import Document
+from langchain_community.retrievers import BM25Retriever
+from langchain_classic.retrievers import EnsembleRetriever
 
 PRODUCTS_PATH = "products.json"
 
@@ -65,6 +69,65 @@ def get_store():
         _store = Chroma(persist_directory=persist, collection_name=collection,
                         embedding_function=get_embeddings())
     return _store
+
+
+K = int(os.environ.get("WISEUP_RETRIEVE_K", "8"))
+
+_products = None
+_bm25 = None
+_ensemble = None
+
+
+def _load_products():
+    global _products
+    if _products is None:
+        _products = json.load(open(PRODUCTS_PATH, encoding="utf-8"))
+    return _products
+
+
+def _get_bm25():
+    global _bm25
+    if _bm25 is None:
+        docs = [Document(page_content=describe(p), metadata=clean_meta(p))
+                for p in _load_products()]
+        _bm25 = BM25Retriever.from_documents(docs, preprocess_func=_bm25_preprocess)
+        _bm25.k = K
+    return _bm25
+
+
+def _get_dense():
+    return get_store().as_retriever(search_kwargs={"k": K})
+
+
+def _weights():
+    raw = os.environ.get("WISEUP_HYBRID_WEIGHTS", "0.5,0.5")
+    kw, vec = (float(x) for x in raw.split(","))
+    return [kw, vec]
+
+
+def _get_ensemble():
+    global _ensemble
+    if _ensemble is None:
+        _ensemble = EnsembleRetriever(
+            retrievers=[_get_bm25(), _get_dense()], weights=_weights())
+    return _ensemble
+
+
+def _dense_scored(query, k=1):
+    return get_store().similarity_search_with_score(query, k=k)
+
+
+def gate_ok(query) -> bool:
+    """Greeting/off-topic gate: pass only if the best dense match is close enough."""
+    scored = _dense_scored(query, k=1)
+    return bool(scored) and scored[0][1] <= RELEVANCE_THRESHOLD
+
+
+def hybrid_retrieve(query, k=K):
+    """Hybrid BM25+dense retrieval. Returns [] for off-topic queries (gate)."""
+    if not gate_ok(query):
+        return []
+    return _get_ensemble().invoke(query)[:k]
 
 
 def retrieve(query, k=8):

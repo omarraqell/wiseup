@@ -1,5 +1,9 @@
+import json
 import rag
 import build_index
+from langchain_core.documents import Document
+from langchain_core.retrievers import BaseRetriever
+from typing import List
 
 
 def test_describe_and_clean_meta():
@@ -23,3 +27,44 @@ def test_bm25_preprocess_tokenizes_code_and_lowercases():
     assert "كود" in toks
     assert "(كود" not in toks and "10104)" not in toks     # punctuation stripped
     assert rag._bm25_preprocess("ABC") == ["abc"]          # lowercased
+
+
+def _first_code():
+    rows = json.load(open("products.json", encoding="utf-8"))
+    return str(rows[0]["code"])
+
+
+def test_bm25_ranks_exact_code_first():
+    code = _first_code()
+    docs = rag._get_bm25().invoke(code)
+    assert docs and str(docs[0].metadata["code"]) == code
+
+
+def test_hybrid_retrieve_returns_empty_when_gate_fails(monkeypatch):
+    monkeypatch.setattr(rag, "gate_ok", lambda q: False)
+    assert rag.hybrid_retrieve("مرحبا") == []
+
+
+def test_hybrid_retrieve_fuses_bm25_and_dense(monkeypatch):
+    code = _first_code()
+
+    class FakeDense(BaseRetriever):
+        def _get_relevant_documents(self, query, *, run_manager=None) -> List[Document]:
+            # pretend semantic order: unrelated doc first
+            return [Document(page_content="other (كود 00000)",
+                             metadata={"code": "00000", "name_ar": "x",
+                                       "unit": "", "price_jod": 0, "image": ""})]
+
+    monkeypatch.setattr(rag, "gate_ok", lambda q: True)
+    monkeypatch.setattr(rag, "_get_dense", lambda: FakeDense())
+    # Bias toward BM25 so the exact-code match (BM25-only) deterministically beats the
+    # FakeDense doc (dense-only) instead of tying on RRF; reset the cached ensemble so
+    # the new weights take effect.
+    monkeypatch.setenv("WISEUP_HYBRID_WEIGHTS", "0.9,0.1")
+    monkeypatch.setattr(rag, "_ensemble", None, raising=False)
+
+    docs = rag.hybrid_retrieve(code, k=8)
+    codes = [str(d.metadata["code"]) for d in docs]
+    assert code in codes
+    assert codes[0] == code                      # exact code fused to the top
+    assert len(codes) == len(set(codes))         # no duplicate products
