@@ -81,7 +81,8 @@ _ensemble = None
 def _load_products():
     global _products
     if _products is None:
-        _products = json.load(open(PRODUCTS_PATH, encoding="utf-8"))
+        with open(PRODUCTS_PATH, encoding="utf-8") as f:
+            _products = json.load(f)
     return _products
 
 
@@ -117,13 +118,13 @@ def _dense_scored(query, k=1):
     return get_store().similarity_search_with_score(query, k=k)
 
 
-def gate_ok(query) -> bool:
+def gate_ok(query: str) -> bool:
     """Greeting/off-topic gate: pass only if the best dense match is close enough."""
     scored = _dense_scored(query, k=1)
     return bool(scored) and scored[0][1] <= RELEVANCE_THRESHOLD
 
 
-def hybrid_retrieve(query, k=K):
+def hybrid_retrieve(query: str, k: int = K) -> list[Document]:
     """Hybrid BM25+dense retrieval. Returns [] for off-topic queries (gate)."""
     if not gate_ok(query):
         return []
