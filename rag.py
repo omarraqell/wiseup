@@ -131,13 +131,9 @@ def hybrid_retrieve(query: str, k: int = K) -> list[Document]:
     return _get_ensemble().invoke(query)[:k]
 
 
-def retrieve(query, k=8):
-    return get_store().similarity_search_with_score(query, k=k)
-
-
-def build_context(results):
+def build_context(docs):
     lines = []
-    for doc, _ in results:
+    for doc in docs:
         m = doc.metadata
         lines.append(
             f"- {m.get('name_ar','')} | السعر: {m.get('price_jod','')} JOD | "
@@ -149,8 +145,3 @@ def build_context(results):
 # Tuned per embedding backend (different models -> different distance scales).
 RELEVANCE_THRESHOLD = float(os.environ.get(
     "WISEUP_REL_THRESHOLD", "1.35" if EMBED_BACKEND == "openai" else "1.2"))
-
-
-def gate(results):
-    """Keep only genuine product matches (distance below threshold)."""
-    return [(d, s) for d, s in results if s <= RELEVANCE_THRESHOLD]

@@ -21,9 +21,8 @@ def test_graph_survives_two_parallel_retrieve_calls(monkeypatch):
     """The model can fire retrieve_products twice in one step; both tool calls
     write retrieved_products. Without a reducer this raises InvalidUpdateError and
     poisons the session. The state key must merge concurrent writes cleanly."""
-    monkeypatch.setattr(rag, "retrieve", lambda q, k=8: [])
-    monkeypatch.setattr(rag, "gate", lambda results: results)
-    monkeypatch.setattr(rag, "build_context", lambda results: "ctx")
+    monkeypatch.setattr(rag, "hybrid_retrieve", lambda q, k=8: [])
+    monkeypatch.setattr(rag, "build_context", lambda docs: "ctx")
 
     class FakeLLM:
         calls = 0

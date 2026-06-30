@@ -18,7 +18,7 @@ _PRODUCTS = json.load(open("products.json", encoding="utf-8"))
 _BY_ITEM = {str(p["code"]): p for p in _PRODUCTS if p.get("code")}
 
 
-def to_card(doc, score):
+def to_card(doc, relevance):
     m = doc.metadata
     img = m.get("image", "")
     return {
@@ -27,8 +27,15 @@ def to_card(doc, score):
         "price_jod": m.get("price_jod", 0),
         "unit": m.get("unit", ""),
         "image_url": ("/" + img.replace("\\", "/")) if img else "",
-        "relevance": max(5, min(100, round((1 - score / 2) * 100))),
+        "relevance": int(relevance),
     }
+
+
+def _rank_relevance(i, n):
+    """Map rank position 0..n-1 to a 95..55 badge (UI nicety; order is what matters)."""
+    if n <= 1:
+        return 95
+    return round(95 - (i / (n - 1)) * 40)
 
 
 def _lookup_products(item_nos):
@@ -41,10 +48,10 @@ def retrieve_products(query: str,
     """Search the WISEUP Arabic product catalog (with JOD prices) for tools matching the
     query. Use for any question about specific products, prices, or codes."""
     log(f"🔧 TOOL retrieve_products(query={query!r})")
-    results = rag.gate(rag.retrieve(query, k=8))
-    cards = [to_card(d, s) for d, s in results]
+    docs = rag.hybrid_retrieve(query, k=8)
+    cards = [to_card(d, _rank_relevance(i, len(docs))) for i, d in enumerate(docs)]
     log(f"🔧 TOOL retrieve_products → found {len(cards)} product(s)")
-    summary = rag.build_context(results) or "No matching products found."
+    summary = rag.build_context(docs) or "No matching products found."
     return Command(update={
         "retrieved_products": cards,
         "messages": [ToolMessage(summary, tool_call_id=tool_call_id)],
