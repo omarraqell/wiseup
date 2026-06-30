@@ -7,6 +7,7 @@ Each backend has its own Chroma folder/collection (vector spaces differ), so
 switching does NOT require deleting the other index.
 """
 import os
+import re
 from langchain_chroma import Chroma
 
 PRODUCTS_PATH = "products.json"
@@ -14,6 +15,12 @@ PRODUCTS_PATH = "products.json"
 EMBED_BACKEND = os.environ.get("WISEUP_EMBED_BACKEND", "openai").lower()  # "openai" | "hf"
 HF_EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 OPENAI_EMBED_MODEL = os.environ.get("WISEUP_EMBED_MODEL", "text-embedding-3-small")
+
+
+def _bm25_preprocess(text: str) -> list[str]:
+    """Lowercase + keep runs of digits/Latin/Arabic letters so codes like 10104
+    tokenize cleanly. No diacritic/alef folding (negligible for this catalog)."""
+    return re.findall(r"[0-9a-z؀-ۿ]+", (text or "").lower())
 
 
 def describe(p):
