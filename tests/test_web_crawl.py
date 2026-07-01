@@ -55,3 +55,53 @@ def test_to_web_card_maps_fields_and_missing_price():
     assert card["source_url"] == "https://x/pl"
     assert card["code"] == "" and card["unit"] == ""
     assert card["relevance"] == 80
+
+
+from langgraph.types import Command
+
+
+def test_browse_returns_command_with_web_cards(monkeypatch):
+    monkeypatch.setattr(tools, "_get_crawler",
+                        lambda: type("C", (), {"invoke": lambda self, p: {"results": [{"url": "u"}]}})())
+    monkeypatch.setattr(tools, "_extract_web_products", lambda res, q: [
+        {"name": "Screwdriver", "price": None,
+         "image_url": "https://x/s.png", "source_url": "https://x/p"}])
+
+    cmd = tools.browse_wiseup_website.func(query="screwdriver", tool_call_id="t1")
+
+    assert isinstance(cmd, Command)
+    card = cmd.update["retrieved_products"][0]
+    assert card["name_ar"] == "Screwdriver"
+    assert card["image_url"] == "https://x/s.png"
+    assert card["price_jod"] is None and card["code"] == ""
+    assert cmd.update["messages"][0].tool_call_id == "t1"
+
+
+def test_browse_no_products_does_not_wipe_cards(monkeypatch):
+    monkeypatch.setattr(tools, "_get_crawler",
+                        lambda: type("C", (), {"invoke": lambda self, p: {"results": []}})())
+    monkeypatch.setattr(tools, "_extract_web_products", lambda res, q: [])
+
+    cmd = tools.browse_wiseup_website.func(query="nothing", tool_call_id="t2")
+
+    assert "retrieved_products" not in cmd.update            # existing cards preserved
+    assert cmd.update["messages"][0].tool_call_id == "t2"
+    assert "couldn't find" in cmd.update["messages"][0].content.lower()
+
+
+def test_browse_crawler_exception_is_handled(monkeypatch):
+    def boom():
+        class C:
+            def invoke(self, p): raise RuntimeError("crawl failed")
+        return C()
+    monkeypatch.setattr(tools, "_get_crawler", boom)
+
+    cmd = tools.browse_wiseup_website.func(query="q", tool_call_id="t3")
+    assert "retrieved_products" not in cmd.update
+    assert cmd.update["messages"][0].tool_call_id == "t3"
+
+
+def test_tools_list_swapped():
+    names = [t.name for t in tools.TOOLS]
+    assert "browse_wiseup_website" in names
+    assert "search_wiseup_web" not in names

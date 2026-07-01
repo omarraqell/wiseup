@@ -11,7 +11,7 @@ from pydantic import Field
 from langchain_core.tools import tool, InjectedToolCallId
 from langchain_core.messages import ToolMessage, SystemMessage, HumanMessage
 from langgraph.types import Command
-from langchain_tavily import TavilySearch
+from langchain_tavily import TavilyCrawl
 from runlog import log
 
 _PRODUCTS = json.load(open("products.json", encoding="utf-8"))
@@ -68,19 +68,6 @@ def _format_tavily(res) -> str:
     for r in items:
         lines.append(f"- {r.get('title','')} ({r.get('url','')})\n  {r.get('content','')}")
     return "\n".join(lines)
-
-
-@tool
-def search_wiseup_web(query: str) -> str:
-    """Search the official WISEUP website (wiseuptools.com) for company or
-    product-page information that is NOT in the local catalog — e.g. about the
-    company, contact details, certifications, or specific web pages."""
-    log(f"🔧 TOOL search_wiseup_web(query={query!r}) [domain-locked: wiseuptools.com]")
-    tav = TavilySearch(max_results=5, include_domains=["wiseuptools.com"])
-    out = _format_tavily(tav.invoke({"query": query}))
-    log("🔧 TOOL search_wiseup_web → got results" if "No results" not in out
-        else "🔧 TOOL search_wiseup_web → no results")
-    return out
 
 
 OWNER_EMAIL = "omaraqel270@gmail.com"
@@ -229,4 +216,43 @@ def to_web_card(rec: dict, relevance: int) -> dict:
     }
 
 
-TOOLS = [retrieve_products, search_wiseup_web, email_owner]
+_crawler = None
+
+
+def _get_crawler():
+    global _crawler
+    if _crawler is None:
+        _crawler = TavilyCrawl()
+    return _crawler
+
+
+@tool
+def browse_wiseup_website(query: str,
+                          tool_call_id: Annotated[str, InjectedToolCallId]) -> Command:
+    """Crawl the live WISEUP website (wiseuptools.com) for products or company info that is NOT
+    in the local catalog, or when the customer explicitly asks about the website. Prefer
+    retrieve_products first; only use this when the catalog has nothing relevant."""
+    log(f"🔧 TOOL browse_wiseup_website(query={query!r}) [crawl {SITE_URL}]")
+    try:
+        res = _get_crawler().invoke({
+            "url": SITE_URL, "instructions": query, "include_images": True,
+            "extract_depth": "advanced", "format": "markdown", "max_depth": 2, "limit": 15,
+        })
+        recs = _extract_web_products(res, query)
+    except Exception as e:
+        log(f"🔧 TOOL browse_wiseup_website → error: {e}")
+        recs = []
+    if not recs:
+        log("🔧 TOOL browse_wiseup_website → no products found")
+        return Command(update={"messages": [ToolMessage(
+            "I couldn't find that on the WISEUP website.", tool_call_id=tool_call_id)]})
+    cards = [to_web_card(r, _rank_relevance(i, len(recs))) for i, r in enumerate(recs)]
+    log(f"🔧 TOOL browse_wiseup_website → {len(cards)} product(s) from the website")
+    return Command(update={
+        "retrieved_products": cards,
+        "messages": [ToolMessage(
+            f"Found {len(cards)} product(s) on the WISEUP website.", tool_call_id=tool_call_id)],
+    })
+
+
+TOOLS = [retrieve_products, browse_wiseup_website, email_owner]
