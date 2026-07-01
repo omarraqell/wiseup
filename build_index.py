@@ -5,26 +5,11 @@ import shutil
 from langchain_chroma import Chroma
 from langchain_core.documents import Document
 import rag
-
-PRODUCTS = "products.json"
-
-
-def describe(p):
-    return f"{p['name_ar']} (كود {p['code']})"
-
-
-def clean_meta(p):
-    return {
-        "code": p.get("code", ""),
-        "name_ar": p.get("name_ar", ""),
-        "unit": p.get("unit", ""),
-        "price_jod": p.get("price_jod", 0),
-        "image": p.get("image", ""),
-    }
+from rag import describe, clean_meta
 
 
 def main():
-    products = json.load(open(PRODUCTS, encoding="utf-8"))
+    products = json.load(open(rag.PRODUCTS_PATH, encoding="utf-8"))
     docs = [Document(page_content=describe(p), metadata=clean_meta(p)) for p in products]
     persist, collection = rag.store_config()
     embeddings = rag.get_embeddings()
