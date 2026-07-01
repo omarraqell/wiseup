@@ -205,10 +205,12 @@ def _extract_web_products(res, query: str) -> list:
 
 
 def to_web_card(rec: dict, relevance: int) -> dict:
+    price = rec.get("price")
+    price = price if isinstance(price, (int, float)) and not isinstance(price, bool) else None
     return {
         "code": "",
         "name_ar": rec.get("name", "") or "",
-        "price_jod": rec.get("price"),
+        "price_jod": price,
         "unit": "",
         "image_url": rec.get("image_url", "") or "",
         "source_url": rec.get("source_url", "") or "",

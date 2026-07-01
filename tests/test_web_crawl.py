@@ -118,3 +118,12 @@ def test_browse_does_not_pass_format_to_invoke(monkeypatch):
     tools.browse_wiseup_website.func(query="q", tool_call_id="t")
     assert "format" not in seen                       # format is constructor-only
     assert seen["url"] == tools.SITE_URL and seen["max_depth"] == 2 and seen["limit"] == 15
+
+
+def test_to_web_card_price_coerced_to_number_or_none():
+    assert tools.to_web_card({"name": "X", "price": 2.5}, 90)["price_jod"] == 2.5
+    assert tools.to_web_card({"name": "X", "price": 3}, 90)["price_jod"] == 3
+    # non-numeric (e.g. an injected string) or bool -> None
+    assert tools.to_web_card({"name": "X", "price": "<img onerror=alert(1)>"}, 90)["price_jod"] is None
+    assert tools.to_web_card({"name": "X", "price": True}, 90)["price_jod"] is None
+    assert tools.to_web_card({"name": "X"}, 90)["price_jod"] is None
