@@ -163,10 +163,14 @@ function card(p, i){
     <div class="p-3 flex flex-col gap-2" dir="rtl">
       <h3 class="text-sm font-medium leading-snug">${p.name_ar || 'منتج'}</h3>
       <div class="flex items-center justify-between">
-        <span class="text-base font-bold text-brand">${p.price_jod} JOD</span>
+        <span class="text-base font-bold text-brand">${p.price_jod != null ? p.price_jod + ' JOD' : ''}</span>
         <span class="text-xs text-text-muted">${p.unit || ''}</span>
       </div>
-      <span class="text-xs text-text-muted font-mono" dir="ltr">كود: ${p.code}</span>
+      ${p.code
+        ? `<span class="text-xs text-text-muted font-mono" dir="ltr">كود: ${p.code}</span>`
+        : (p.source_url
+            ? `<a href="${p.source_url}" target="_blank" rel="noopener" class="text-xs text-brand underline" dir="rtl">عرض على الموقع</a>`
+            : '')}
     </div>
   </article>`;
 }
