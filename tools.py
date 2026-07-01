@@ -59,7 +59,9 @@ def retrieve_products(query: str,
 
 
 def _format_tavily(res) -> str:
-    items = res.get("results", []) if isinstance(res, dict) else res
+    if isinstance(res, str):
+        return res.strip() or "No results found on the WISEUP website."
+    items = res.get("results", []) if isinstance(res, dict) else (res or [])
     if not items:
         return "No results found on the WISEUP website."
     lines = []
