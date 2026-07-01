@@ -105,3 +105,16 @@ def test_tools_list_swapped():
     names = [t.name for t in tools.TOOLS]
     assert "browse_wiseup_website" in names
     assert "search_wiseup_web" not in names
+
+
+def test_browse_does_not_pass_format_to_invoke(monkeypatch):
+    seen = {}
+    class C:
+        def invoke(self, p):
+            seen.update(p)
+            return {"results": [{"url": "u", "raw_content": "x"}]}
+    monkeypatch.setattr(tools, "_get_crawler", lambda: C())
+    monkeypatch.setattr(tools, "_extract_web_products", lambda res, q: [])
+    tools.browse_wiseup_website.func(query="q", tool_call_id="t")
+    assert "format" not in seen                       # format is constructor-only
+    assert seen["url"] == tools.SITE_URL and seen["max_depth"] == 2 and seen["limit"] == 15

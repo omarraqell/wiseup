@@ -187,7 +187,7 @@ def _strip_fences(s: str) -> str:
 
 
 def _extract_web_products(res, query: str) -> list:
-    if not res or isinstance(res, str):
+    if not res or not isinstance(res, dict):
         return []
     images = _collect_images(res)
     raw = "\n\n".join(
@@ -222,7 +222,7 @@ _crawler = None
 def _get_crawler():
     global _crawler
     if _crawler is None:
-        _crawler = TavilyCrawl()
+        _crawler = TavilyCrawl(format="markdown")
     return _crawler
 
 
@@ -236,7 +236,7 @@ def browse_wiseup_website(query: str,
     try:
         res = _get_crawler().invoke({
             "url": SITE_URL, "instructions": query, "include_images": True,
-            "extract_depth": "advanced", "format": "markdown", "max_depth": 2, "limit": 15,
+            "extract_depth": "advanced", "max_depth": 2, "limit": 15,
         })
         recs = _extract_web_products(res, query)
     except Exception as e:
