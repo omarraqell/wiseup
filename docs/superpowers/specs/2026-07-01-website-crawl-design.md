@@ -34,15 +34,18 @@ The agentic graph, lead flow, and hybrid retrieval are unchanged. This changes `
 `_get_crawler()` singleton so importing `tools` needs no key and tests can monkeypatch it):
 ```python
 res = _get_crawler().invoke({
-    "url": SITE_URL,               # products category page (§7)
-    "instructions": query,         # natural-language steer
+    "url": SITE_URL,               # category index (§7) — links to ~28 series pages
+    "instructions": query,         # steers the crawler to the relevant series (e.g. مفكات → Screwdriver series)
     "include_images": True,
     "extract_depth": "advanced",
     "format": "markdown",
-    "max_depth": 1,                # keep it shallow (latency/credits)
-    "limit": 10,
+    "max_depth": 2,                # index → series page → products; kept shallow for latency/credits
+    "limit": 15,
 })
 ```
+The seed is the category **index**, so `max_depth: 2` lets the crawler follow index → the series
+page matching the query → its product entries. `instructions=query` keeps it from crawling all
+28 series.
 
 **Extraction step** — `_extract_web_products(res, query) -> list[dict]`:
 - Pull the crawled page text + image URLs out of `res` (handle dict/list/str shapes; reuse the
@@ -101,8 +104,9 @@ Catalog cards (with `code`, `price_jod`) render exactly as today.
 
 ## 7. Config
 
-- `SITE_URL` constant in `tools.py`, env-overridable `WISEUP_SITE_URL`, default the products
-  category page `https://www.wiseuptools.com/h-pr--0_415_19.html`.
+- `SITE_URL` constant in `tools.py`, env-overridable `WISEUP_SITE_URL`, default the product
+  **category index** `https://www.wiseuptools.com/h-col-103.html` (links to all ~28 product series:
+  Pliers, Wrench, Screwdriver, Hammer, Electric drill, …).
 - Reuses `TAVILY_API_KEY` (crawl) and OpenAI (extraction). No new keys.
 
 ## 8. Error handling
@@ -128,7 +132,7 @@ Catalog cards (with `code`, `price_jod`) render exactly as today.
 
 ## 10. Out of scope (YAGNI)
 
-- Caching crawl results; crawling beyond the seed category (`max_depth: 1`, `limit: 10`).
+- Caching crawl results; crawling beyond `max_depth: 2` / `limit: 15` from the seed index.
 - Ingesting crawled products into the local Chroma/BM25 index (a separate, larger feature).
 - Firecrawl / structured-extraction API (revisit only if Tavily's image↔product mapping proves too
   unreliable in live testing).
