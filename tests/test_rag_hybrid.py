@@ -46,14 +46,13 @@ def test_hybrid_retrieve_returns_empty_when_gate_fails(monkeypatch):
 
 
 def test_hybrid_retrieve_fuses_bm25_and_dense(monkeypatch):
-    code = _first_code()
+    first = json.load(open("products.json", encoding="utf-8"))[0]
+    code = str(first["code"])
+    same = Document(page_content=rag.describe(first), metadata=rag.clean_meta(first))
 
     class FakeDense(BaseRetriever):
         def _get_relevant_documents(self, query, *, run_manager=None) -> List[Document]:
-            # pretend semantic order: unrelated doc first
-            return [Document(page_content="other (كود 00000)",
-                             metadata={"code": "00000", "name_ar": "x",
-                                       "unit": "", "price_jod": 0, "image": ""})]
+            return [same]
 
     monkeypatch.setattr(rag, "gate_ok", lambda q: True)
     monkeypatch.setattr(rag, "_get_dense", lambda: FakeDense())
@@ -67,4 +66,5 @@ def test_hybrid_retrieve_fuses_bm25_and_dense(monkeypatch):
     codes = [str(d.metadata["code"]) for d in docs]
     assert code in codes
     assert codes[0] == code                      # exact code fused to the top
+    assert codes.count(code) == 1                # same product from both retrievers appears exactly once
     assert len(codes) == len(set(codes))         # no duplicate products

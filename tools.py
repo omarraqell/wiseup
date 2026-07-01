@@ -31,7 +31,7 @@ def to_card(doc, relevance):
     }
 
 
-def _rank_relevance(i, n):
+def _rank_relevance(i: int, n: int) -> int:
     """Map rank position 0..n-1 to a 95..55 badge (UI nicety; order is what matters)."""
     if n <= 1:
         return 95

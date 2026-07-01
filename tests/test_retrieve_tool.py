@@ -14,7 +14,7 @@ def test_retrieve_products_returns_command_with_cards(monkeypatch):
     assert isinstance(cmd, Command)
     assert cmd.update["retrieved_products"][0]["code"] == "10101"
     assert cmd.update["retrieved_products"][0]["price_jod"] == 2.5
-    assert 5 <= cmd.update["retrieved_products"][0]["relevance"] <= 100
+    assert cmd.update["retrieved_products"][0]["relevance"] == 95
     msg = cmd.update["messages"][0]
     assert msg.tool_call_id == "tc1"
     assert "زرادية" in msg.content
