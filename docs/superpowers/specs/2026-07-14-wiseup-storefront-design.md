@@ -70,6 +70,12 @@ only users and orders.
 
 ## The price rule (load-bearing)
 
+> **Implemented in Phase 3, not in this slice.** Phase 2 ships prices publicly because no
+> accounts exist yet, so there is no role to enforce. This section is recorded now because
+> it is binding on the Phase 2 API shape: product-serving endpoints must route through a
+> single serializer from day one, so Phase 3 has one place to add the rule rather than
+> retrofitting every endpoint.
+
 **Hiding prices in HTML does not hide them.** A business user opening DevTools would see
 any price the server sent. Therefore:
 
@@ -142,7 +148,9 @@ Four independent builds, each with its own spec → plan → implement cycle.
 
 ### Phase 1 — Data foundation (no UI)
 
-- Crawl 28 series names (AR/EN) from wiseuptools.com.
+- Crawl the series names (AR/EN) from wiseuptools.com. The count is whatever the crawl
+  finds — "28" is the owner's recollection and ~29 code prefixes corroborate it, but the
+  crawl is the source of truth, not a target to hit.
 - Map all 633 products into categories (code prefix + LLM for stragglers).
 - Translate 633 `name_ar` → `name_en`.
 - Output: enriched `products.json`.
@@ -151,7 +159,9 @@ Four independent builds, each with its own spec → plan → implement cycle.
 
 - Stitch screens: `index.html` (landing), `catalog.html`, `category.html`, `product.html`.
 - Bilingual AR/EN toggle, RTL.
-- Prices visible to everyone (no auth exists yet).
+- Prices visible to everyone — correct for this phase, since no accounts exist yet.
+- All product-serving endpoints route through a single serializer (see "The price rule"),
+  so Phase 3 adds role-based omission in one place.
 - AI chat widget on every page.
 
 ### Phase 3 — Auth + roles (later spec)
