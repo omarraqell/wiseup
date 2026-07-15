@@ -11,11 +11,9 @@ def test_describe_and_clean_meta():
          "price_jod": 1.85, "image": "images/10104.png"}
     assert rag.describe(p) == "زرادية كهرباء (كود 10104)"
     meta = rag.clean_meta(p)
-    assert meta["code"] == "10104"
-    assert meta["name_ar"] == "زرادية كهرباء"
-    assert meta["unit"] == "pcs"
-    assert meta["price_jod"] == 1.85
-    assert meta["image"] == "images/10104.png"
+    assert meta == {"code": "10104", "name_ar": "زرادية كهرباء", "name_en": "",
+                    "category_id": 0, "unit": "pcs", "price_jod": 1.85,
+                    "image": "images/10104.png"}
 
 
 def test_build_index_uses_shared_builders():
