@@ -69,3 +69,28 @@ def test_merge_translations_raises_on_missing_translation():
            {"id": 6, "name_en": "Measurement series", "url": "u2"}]
     with pytest.raises(ValueError, match="6"):
         merge_translations(raw, {"5": "سلسلة الزراديات"})
+
+
+from scripts.translate_products import chunked, validate_names
+
+
+def test_chunked_splits_evenly_and_keeps_remainder():
+    assert list(chunked([1, 2, 3, 4, 5], 2)) == [[1, 2], [3, 4], [5]]
+
+
+def test_validate_names_passes_when_every_code_has_a_name():
+    products = [{"code": "10101", "name_ar": "زرادية"}]
+    validate_names(products, {"10101": "Pliers"})
+
+
+def test_validate_names_raises_on_missing_code():
+    products = [{"code": "10101", "name_ar": "زرادية"},
+                {"code": "10102", "name_ar": "بكس"}]
+    with pytest.raises(ValueError, match="10102"):
+        validate_names(products, {"10101": "Pliers"})
+
+
+def test_validate_names_raises_on_blank_name():
+    products = [{"code": "10101", "name_ar": "زرادية"}]
+    with pytest.raises(ValueError, match="10101"):
+        validate_names(products, {"10101": "   "})
