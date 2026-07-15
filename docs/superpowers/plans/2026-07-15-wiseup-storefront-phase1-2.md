@@ -18,7 +18,13 @@ These were verified by fetching the live site during planning. They change Phase
 1. **The site has no Arabic.** `https://www.wiseuptools.com/h-col-103.html` and its category pages are English-only. The spec's Phase 1 says "Crawl the series names (AR/EN)" — **only `name_en` is crawlable.** `category_ar` must be LLM-translated (Task 2), not crawled.
 2. **The site shows no product codes.** Category pages list product *names* only (e.g. `/h-pr--0_415_5.html` → "Pliers series" → 12 names, no codes). So the crawl **cannot** give us a product→category mapping. It gives category *names* and nothing else. Mapping stays code-prefix + LLM, exactly as the spec's "Category derivation" section assumed.
 3. **The site catalog is far smaller than `products.json`.** "Pliers series" lists 12 products; the internal catalog has 633 total. The site is a marketing catalog, not inventory. Do not expect site counts to reconcile with catalog counts.
-4. **The real count is 27, not 28.** Category IDs run 5–32 with 29 absent. The owner's "28" and the ~29 code prefixes are both close but neither is exact. Per the spec, the crawl is the source of truth.
+4. **The real count is 27, not 28** — and after owner review, **26**. Category IDs run 5–32
+   with 29 absent, giving 27 crawled series. The owner's "28" and the ~29 code prefixes were
+   both close but neither exact. Per the spec, the crawl is the source of truth.
+   > **Amended 2026-07-15.** Task 4's distribution showed "Cutting and polishing" (id 22)
+   > held a single product while "Cutting" (36) and "Polishing" (27) sat beside it in the
+   > menu — the site's own English overlaps. The owner merged id 22 into "Polishing series"
+   > (id 8) and dropped it. **The live count is 26**, ids 5–21 and 23–28, 30–32.
 
 5. **Deviation from the spec's data model — categories are normalized.** The spec's table
    puts `category` (English string) and `category_ar` (Arabic string) on every product.
@@ -31,7 +37,16 @@ These were verified by fetching the live site during planning. They change Phase
 
 ## Global Constraints
 
-- **Product count is exactly 633, before and after enrichment.** Any script that changes this count is broken.
+- **Product count is exactly 632, before and after enrichment.** Any script that changes this
+  count is broken.
+  > **Amended 2026-07-15 (was 633).** The catalog shipped 633 rows but only 632 unique codes:
+  > code `81103` appeared twice («ميزان تعليق 100 كيلو» with no image, and «… جديد» with one).
+  > A code-keyed catalog cannot hold both, and `/product?code=81103` would have served the
+  > imageless row. The owner chose to delete the imageless duplicate. From Task 5 onward the
+  > count is **632** and **codes are unique** — that uniqueness is now a real invariant worth
+  > testing, not an assumption.
+  > **This deletion is not durable yet:** `data/wiseup_prices.xlsx` still holds the duplicate,
+  > so re-running `ingest_excel.py` reintroduces it. See "Known follow-ups".
 - **No product may lose `code`, `price_jod`, `image`, `unit`, or `name_ar`.** Enrichment is additive only.
 - **Every product ends with a non-empty `name_en` and exactly one `category_id`.**
 - **All product-serving paths call `catalog.serialize_product()`.** Never hand-build a product dict in a route. This is the Phase 3 price-rule chokepoint (spec: "The price rule").
@@ -904,7 +919,7 @@ Expected: PASS (5 tests)
 - [ ] **Step 5: Apply the enrichment**
 
 Run: `python -m scripts.apply_enrichment`
-Expected: `enriched 633 products (backup at data/products.backup.json)`
+Expected: `enriched 632 products (backup at data/products.backup.json)`
 
 - [ ] **Step 6: Verify the catalog against the spec's Phase 1 acceptance criteria**
 
@@ -917,13 +932,15 @@ from collections import Counter
 p = json.load(open('products.json', encoding='utf-8'))
 c = json.load(open('data/categories.json', encoding='utf-8'))
 ids = {x['id'] for x in c}
-assert len(p) == 633, f'count is {len(p)}, expected 633'
+assert len(p) == 632, f'count is {len(p)}, expected 632'
+codes = [str(x['code']) for x in p]
+assert len(codes) == len(set(codes)), 'product codes are not unique'
 assert all(x.get('name_en','').strip() for x in p), 'a product has no name_en'
 assert all(x.get('category_id') in ids for x in p), 'a product has a bad category_id'
 assert all(x.get('code') and x.get('image') for x in p), 'a product lost code/image'
 assert all('price_jod' in x for x in p), 'a product lost price_jod'
 used = set(Counter(x['category_id'] for x in p))
-print('633 products OK; categories used:', len(used), 'of', len(ids))
+print('632 products OK; categories used:', len(used), 'of', len(ids))
 print('EMPTY categories:', [x['name_en'] for x in c if x['id'] not in used] or 'none')
 "
 ```
@@ -1024,7 +1041,7 @@ Expected: PASS (3 tests)
 - [ ] **Step 5: Rebuild the index**
 
 Run: `python build_index.py`
-Expected: `indexed 633 products into ./chroma_db_openai/wiseup_products_openai`
+Expected: `indexed 632 products into ./chroma_db_openai/wiseup_products_openai`
 
 This deletes and recreates the index and costs OpenAI embedding spend. If it fails
 partway, the assistant has no index until you re-run it successfully.
@@ -1169,8 +1186,15 @@ def test_list_categories_counts_products(monkeypatch):
 
 def test_the_real_catalog_loads_and_every_product_serializes():
     products = catalog.list_products()
-    assert len(products) == 633
+    assert len(products) == 632
     assert all(p["name_en"] and p["image_url"] for p in products)
+
+
+def test_the_real_catalog_has_unique_codes():
+    # get_product() returns the first match, so a duplicate code silently shadows a
+    # product. One duplicate (81103) already shipped and was removed by hand in Task 4.
+    codes = [p["code"] for p in catalog.list_products()]
+    assert len(codes) == len(set(codes))
 ```
 
 - [ ] **Step 2: Run the test to verify it fails**
@@ -1378,7 +1402,7 @@ def test_categories_endpoint_returns_every_crawled_category():
 def test_products_endpoint_returns_the_whole_catalog():
     r = client.get("/api/products")
     assert r.status_code == 200
-    assert len(r.json()["products"]) == 633
+    assert len(r.json()["products"]) == 632
 
 
 def test_products_endpoint_filters_by_category():
@@ -1522,7 +1546,7 @@ These match the brand red and Oswald headline already in `frontend/index.html`.
 `generate_screen_from_text` with `modelId: GEMINI_3_1_PRO`, `deviceType: DESKTOP`, once per
 screen. Tell it the catalog is Arabic-first and right-to-left:
 
-- **Landing** — hero for WISEUP hand tools, a grid of 27 tool-category cards, a featured-products
+- **Landing** — hero for WISEUP hand tools, a grid of 26 tool-category cards, a featured-products
   strip, footer. Arabic-first, RTL, with an AR/EN toggle in the header.
 - **Catalog** — every product in a responsive card grid; each card shows an image, name,
   code, unit and price; a category filter sidebar; a search box.
@@ -1758,7 +1782,7 @@ The markup must provide `#category-name`, `#product-count`, and `#product-grid`.
 - [ ] **Step 3: Verify both pages in a browser**
 
 With the server running, open:
-- http://127.0.0.1:8001/catalog — 633 cards; the filter narrows them; search works in
+- http://127.0.0.1:8001/catalog — 632 cards; the filter narrows them; search works in
   Arabic and English; the page reads right-to-left.
 - http://127.0.0.1:8001/category?id=5 — only that series' products; the count matches.
 - http://127.0.0.1:8001/category?id=999 — "Category not found", no crash.
@@ -1896,7 +1920,7 @@ Expected: all pass, 1 skipped.
 
 With the server running at http://127.0.0.1:8001 :
 
-- `/` — hero, 27 category cards with counts, chat widget opens and answers «عندك مفكات؟»
+- `/` — hero, 26 category cards with counts, chat widget opens and answers «عندك مفكات؟»
   with product cards.
 - Click a category card → `/category?id=N` shows that series.
 - Click a product → `/product?code=X` shows the detail page and related products.
@@ -1916,15 +1940,33 @@ git commit -m "feat: product detail page and Stitch landing page with chat widge
 ## Done means
 
 - `python -m pytest -q` passes (1 skipped).
-- `products.json` holds exactly 633 products, each with a non-empty `name_en` and a
-  `category_id` pointing at a real crawled category; no product lost `code`, `price_jod`,
-  `unit`, `name_ar`, or `image`.
+- `products.json` holds exactly 632 products with unique codes, each with a non-empty
+  `name_en` and a `category_id` pointing at a real crawled category; no product lost `code`,
+  `price_jod`, `unit`, `name_ar`, or `image`.
 - `rag.hybrid_retrieve("pliers")` returns products — the index is bilingual.
 - `/`, `/catalog`, `/category?id=N`, `/product?code=X` all render; unknown ids and codes
   degrade to a message rather than a crash.
 - Every product JSON in every response came out of `catalog.serialize_product()`.
-- The owner has reviewed the 27 Arabic category names (Task 2), a sample of the English
-  product names (Task 3), and the category distribution (Task 4).
+- The owner has reviewed the Arabic category names (Task 2), a sample of the English
+  product names (Task 3), and the category distribution (Task 4). **All three gates passed
+  on 2026-07-15**, with these owner decisions applied:
+  - id 5 → `سلسلة الزراديات` (not `الكماشة` — that word appears in 0 products)
+  - id 18 → `مستلزمات السلامة` (the site's "Labor Insurance" is a bad translation of 劳保/PPE)
+  - id 22 "Cutting and polishing" merged into id 8 "Polishing series" and dropped → **26 categories**
+  - the imageless duplicate `81103` row deleted → **632 products, unique codes**
+  - explicitly left alone: ids 10 vs 11 read near-identically in Arabic; the
+    cutting/shearing overlap between ids 14 and 23.
+
+## Known follow-ups (not in this plan)
+
+- **`data/wiseup_prices.xlsx` still contains the duplicate `81103` row**, and it still lacks
+  any `name_en`/`category_id` column. `ingest_excel.py` rebuilds `products.json` from that
+  spreadsheet with only `code`, `name_ar`, `unit`, `price_jod`, `image` — so the next price
+  update run **silently wipes every English name and category and reintroduces the duplicate**.
+  The enrichment artifacts in `data/` make this cheap to repair (both scripts skip cached
+  work, so only genuinely new products cost an LLM call), but the chain has to be wired up
+  and `ingest_excel.py` has to stop being safe to run alone. Raised with the owner
+  2026-07-15; deferred, not resolved.
 
 ## Deliberately not in this plan
 
