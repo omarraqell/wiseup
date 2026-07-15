@@ -94,3 +94,37 @@ def test_validate_names_raises_on_blank_name():
     products = [{"code": "10101", "name_ar": "زرادية"}]
     with pytest.raises(ValueError, match="10101"):
         validate_names(products, {"10101": "   "})
+
+
+from scripts.assign_categories import prefix_of, group_by_prefix, validate_assignments
+
+
+def test_prefix_of_takes_first_two_characters():
+    assert prefix_of("10101") == "10"
+    assert prefix_of("B1234") == "B1"
+
+
+def test_prefix_of_handles_short_codes():
+    assert prefix_of("7") == "7"
+
+
+def test_group_by_prefix_buckets_products():
+    products = [{"code": "10101"}, {"code": "10999"}, {"code": "64001"}]
+    groups = group_by_prefix(products)
+    assert [p["code"] for p in groups["10"]] == ["10101", "10999"]
+    assert [p["code"] for p in groups["64"]] == ["64001"]
+
+
+def test_validate_assignments_passes_when_all_assigned_to_known_ids():
+    validate_assignments([{"code": "10101"}], {"10101": 5}, {5, 6})
+
+
+def test_validate_assignments_raises_on_unassigned_product():
+    with pytest.raises(ValueError, match="10102"):
+        validate_assignments([{"code": "10101"}, {"code": "10102"}],
+                             {"10101": 5}, {5, 6})
+
+
+def test_validate_assignments_raises_on_unknown_category_id():
+    with pytest.raises(ValueError, match="99"):
+        validate_assignments([{"code": "10101"}], {"10101": 99}, {5, 6})
