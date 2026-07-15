@@ -47,7 +47,11 @@ These were verified by fetching the live site during planning. They change Phase
   > testing, not an assumption.
   > **This deletion is not durable yet:** `data/wiseup_prices.xlsx` still holds the duplicate,
   > so re-running `ingest_excel.py` reintroduces it. See "Known follow-ups".
-- **No product may lose `code`, `price_jod`, `image`, `unit`, or `name_ar`.** Enrichment is additive only.
+- **No product may lose `code`, `price_jod`, `image`, `unit`, or `name_ar`.** Enrichment is
+  additive only — every pre-existing field must stay byte-identical. Note "lose" means
+  *changed from what it was*, not *empty*: `81006` has `image: ""` in the source data and
+  must still have `image: ""` afterwards. Verify against `data/products.backup.json`, not
+  against truthiness.
 - **Every product ends with a non-empty `name_en` and exactly one `category_id`.**
 - **All product-serving paths call `catalog.serialize_product()`.** Never hand-build a product dict in a route. This is the Phase 3 price-rule chokepoint (spec: "The price rule").
 - **`products.json` is written atomically** (temp file + `os.replace`), never truncated in place. It is the only copy of the catalog.
@@ -931,22 +935,43 @@ import json
 from collections import Counter
 p = json.load(open('products.json', encoding='utf-8'))
 c = json.load(open('data/categories.json', encoding='utf-8'))
+before = {str(x['code']): x for x in json.load(open('data/products.backup.json', encoding='utf-8'))}
 ids = {x['id'] for x in c}
+
+# the enrichment added what it promised
 assert len(p) == 632, f'count is {len(p)}, expected 632'
 codes = [str(x['code']) for x in p]
 assert len(codes) == len(set(codes)), 'product codes are not unique'
 assert all(x.get('name_en','').strip() for x in p), 'a product has no name_en'
 assert all(x.get('category_id') in ids for x in p), 'a product has a bad category_id'
-assert all(x.get('code') and x.get('image') for x in p), 'a product lost code/image'
-assert all('price_jod' in x for x in p), 'a product lost price_jod'
+
+# ...and changed nothing else. 'Additive only' means every pre-existing field is
+# byte-identical to the backup — NOT that every field is non-empty. One product
+# (81006 قاعدة لفل) has always had image='' and legitimately still does.
+assert set(before) == set(codes), 'the set of product codes changed'
+for x in p:
+    o = before[str(x['code'])]
+    for f in ('name_ar', 'unit', 'price_jod', 'image'):
+        assert x[f] == o[f], f'enrichment CHANGED {f} on product {x[\"code\"]}'
+
 used = set(Counter(x['category_id'] for x in p))
-print('632 products OK; categories used:', len(used), 'of', len(ids))
+print('632 products OK, all pre-existing fields unchanged')
+print('categories used:', len(used), 'of', len(ids))
+print('products with no image:', sum(1 for x in p if not x['image']), '(expected 1: 81006)')
 print('EMPTY categories:', [x['name_en'] for x in c if x['id'] not in used] or 'none')
 "
 ```
 
-Expected: all asserts pass. Empty categories are a warning, not a failure — report them to
-the owner; an empty category will render as an empty page in Phase 2.
+Expected: all asserts pass; `products with no image: 1`. Empty categories are a warning, not
+a failure — report them to the owner; an empty category renders as an empty page in Phase 2.
+
+> **Why this checks the backup rather than checking for non-empty values.** The Global
+> Constraint is "no product may *lose* `code`, `price_jod`, `image`, `unit`, or `name_ar`
+> — enrichment is additive only". Asserting `x['image']` is truthy tests a different and
+> false claim: the catalog ships 631 images for 632 products (see the Data model table), so
+> `81006` has no image and never did. An earlier version of this block conflated the two
+> and blocked Task 5 on data that was correct. Diffing against `data/products.backup.json`
+> tests the real invariant.
 
 - [ ] **Step 7: Commit**
 
