@@ -226,22 +226,55 @@ git commit -m "feat: crawl WISEUP series names from live site"
 ### Task 2: Translate category names to Arabic
 
 **Files:**
+- Create: `scripts/_llm.py` (shared by Tasks 2, 3, 4)
 - Create: `scripts/translate_categories.py`
 - Create: `data/categories.json` (script output — commit it)
 - Test: `tests/test_enrichment.py`
 
 **Interfaces:**
 - Consumes: `data/categories.raw.json` from Task 1.
-- Produces: `data/categories.json` — the same list with `name_ar` added to each entry.
-  This file is the **canonical category list** consumed by `catalog.py` (Task 7).
-  `merge_translations(raw: list[dict], names_ar: dict[str, str]) -> list[dict]`.
+- Produces:
+  - `scripts/_llm.py`: `call_json(llm, prompt: str) -> dict` (invokes and parses, tolerating
+    a markdown-fenced reply) and `save_json(path: str, data) -> None`. **Tasks 3 and 4
+    import these — do not re-implement them there.**
+  - `data/categories.json` — the crawled list with `name_ar` added to each entry. This file
+    is the **canonical category list** consumed by `catalog.py` (Task 7).
+  - `merge_translations(raw: list[dict], names_ar: dict[str, str]) -> list[dict]`.
 
 - [ ] **Step 1: Write the failing test**
 
 Append to `tests/test_enrichment.py`:
 
 ```python
+import pytest
+from scripts._llm import call_json, save_json
 from scripts.translate_categories import merge_translations
+
+
+class _FakeLLM:
+    def __init__(self, content):
+        self._content = content
+
+    def invoke(self, _prompt):
+        return type("R", (), {"content": self._content})()
+
+
+def test_call_json_parses_a_plain_json_reply():
+    assert call_json(_FakeLLM('{"5": "أ"}'), "p") == {"5": "أ"}
+
+
+def test_call_json_parses_a_markdown_fenced_reply():
+    assert call_json(_FakeLLM('```json\n{"5": "أ"}\n```'), "p") == {"5": "أ"}
+
+
+def test_call_json_parses_a_bare_fenced_reply():
+    assert call_json(_FakeLLM('```\n{"5": "أ"}\n```'), "p") == {"5": "أ"}
+
+
+def test_save_json_round_trips_arabic_unescaped(tmp_path):
+    target = tmp_path / "sub" / "out.json"
+    save_json(str(target), {"5": "زرادية"})
+    assert "زرادية" in target.read_text(encoding="utf-8")
 
 
 def test_merge_translations_attaches_arabic_by_id():
@@ -254,20 +287,51 @@ def test_merge_translations_attaches_arabic_by_id():
 def test_merge_translations_raises_on_missing_translation():
     raw = [{"id": 5, "name_en": "Pliers series", "url": "u"},
            {"id": 6, "name_en": "Measurement series", "url": "u2"}]
-    try:
+    with pytest.raises(ValueError, match="6"):
         merge_translations(raw, {"5": "سلسلة الزراديات"})
-    except ValueError as e:
-        assert "6" in str(e)
-    else:
-        raise AssertionError("expected ValueError for the untranslated category")
 ```
 
 - [ ] **Step 2: Run the test to verify it fails**
 
-Run: `python -m pytest tests/test_enrichment.py -k translations -v`
-Expected: FAIL — `ModuleNotFoundError: No module named 'scripts.translate_categories'`
+Run: `python -m pytest tests/test_enrichment.py -k "call_json or save_json or translations" -v`
+Expected: FAIL — `ModuleNotFoundError: No module named 'scripts._llm'`
 
-- [ ] **Step 3: Write the translator**
+- [ ] **Step 3: Write the shared LLM helper**
+
+Create `scripts/_llm.py`:
+
+```python
+"""Shared helpers for the one-shot enrichment scripts (Tasks 2, 3, 4)."""
+import json
+import os
+
+
+def call_json(llm, prompt: str) -> dict:
+    """Invoke the model and parse its reply as JSON.
+
+    Models wrap JSON in markdown fences unpredictably regardless of instructions,
+    so strip them before parsing.
+    """
+    text = llm.invoke(prompt).content.strip()
+    if text.startswith("```"):
+        text = text.split("\n", 1)[1] if "\n" in text else text[3:]
+        text = text.rsplit("```", 1)[0]
+    return json.loads(text.strip())
+
+
+def save_json(path: str, data) -> None:
+    """Write JSON, creating the parent directory. Arabic stays readable in the file."""
+    parent = os.path.dirname(path)
+    if parent:
+        os.makedirs(parent, exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+```
+
+Note `call_json` strips the fence by line, so a ` ```json ` opener is handled without
+chaining `removeprefix` calls.
+
+- [ ] **Step 4: Write the translator**
 
 Create `scripts/translate_categories.py`:
 
@@ -278,10 +342,10 @@ The site has no Arabic, so category_ar is translated, not crawled.
 27 items = one LLM call. Owner reviews data/categories.json afterwards.
 """
 import json
-import os
 from dotenv import load_dotenv
 load_dotenv()
 from langchain_openai import ChatOpenAI
+from scripts._llm import call_json, save_json
 
 IN_PATH = "data/categories.raw.json"
 OUT_PATH = "data/categories.json"
@@ -314,12 +378,8 @@ def main():
     raw = json.load(open(IN_PATH, encoding="utf-8"))
     items = "\n".join(f'{c["id"]}: {c["name_en"]}' for c in raw)
     llm = ChatOpenAI(model="gpt-4o", temperature=0)
-    resp = llm.invoke(PROMPT.format(items=items))
-    text = resp.content.strip().removeprefix("```json").removeprefix("```").removesuffix("```")
-    out = merge_translations(raw, json.loads(text))
-    os.makedirs("data", exist_ok=True)
-    with open(OUT_PATH, "w", encoding="utf-8") as f:
-        json.dump(out, f, ensure_ascii=False, indent=2)
+    out = merge_translations(raw, call_json(llm, PROMPT.format(items=items)))
+    save_json(OUT_PATH, out)
     print(f"wrote {len(out)} categories with Arabic names to {OUT_PATH}")
 
 
@@ -327,17 +387,17 @@ if __name__ == "__main__":
     main()
 ```
 
-- [ ] **Step 4: Run the test to verify it passes**
+- [ ] **Step 5: Run the test to verify it passes**
 
-Run: `python -m pytest tests/test_enrichment.py -k translations -v`
-Expected: PASS (2 tests)
+Run: `python -m pytest tests/test_enrichment.py -k "call_json or save_json or translations" -v`
+Expected: PASS (6 tests)
 
-- [ ] **Step 5: Run the translator**
+- [ ] **Step 6: Run the translator**
 
 Run: `python -m scripts.translate_categories`
 Expected: `wrote 27 categories with Arabic names to data/categories.json`
 
-- [ ] **Step 6: Print the result for owner review**
+- [ ] **Step 7: Print the result for owner review**
 
 Run: `python -c "import json;[print(f\"{c['id']:>3} {c['name_en']:<28} {c['name_ar']}\") for c in json.load(open('data/categories.json',encoding='utf-8'))]"`
 
@@ -345,10 +405,10 @@ Run: `python -c "import json;[print(f\"{c['id']:>3} {c['name_en']:<28} {c['name_
 a wrong one is visible forever. The spec flags trade jargon as an open risk. Do not
 proceed to Task 3 until the owner confirms.
 
-- [ ] **Step 7: Commit**
+- [ ] **Step 8: Commit**
 
 ```bash
-git add scripts/translate_categories.py data/categories.json tests/test_enrichment.py
+git add scripts/_llm.py scripts/translate_categories.py data/categories.json tests/test_enrichment.py
 git commit -m "feat: Arabic names for the 27 crawled categories"
 ```
 
@@ -372,7 +432,6 @@ git commit -m "feat: Arabic names for the 27 crawled categories"
 Append to `tests/test_enrichment.py`:
 
 ```python
-import pytest
 from scripts.translate_products import chunked, validate_names
 
 
@@ -418,6 +477,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 from langchain_openai import ChatOpenAI
+from scripts._llm import call_json, save_json
 
 PRODUCTS_PATH = "products.json"
 OUT_PATH = "data/names_en.json"
@@ -456,12 +516,6 @@ def _load_cache() -> dict:
     return {}
 
 
-def _save(names: dict) -> None:
-    os.makedirs("data", exist_ok=True)
-    with open(OUT_PATH, "w", encoding="utf-8") as f:
-        json.dump(names, f, ensure_ascii=False, indent=2)
-
-
 def main():
     products = json.load(open(PRODUCTS_PATH, encoding="utf-8"))
     names = _load_cache()
@@ -470,13 +524,11 @@ def main():
     llm = ChatOpenAI(model="gpt-4o", temperature=0)
     for i, batch in enumerate(chunked(todo, BATCH), 1):
         items = "\n".join(f'{p["code"]}: {p["name_ar"]}' for p in batch)
-        resp = llm.invoke(PROMPT.format(items=items))
-        text = resp.content.strip().removeprefix("```json").removeprefix("```").removesuffix("```")
-        names.update(json.loads(text))
-        _save(names)
+        names.update(call_json(llm, PROMPT.format(items=items)))
+        save_json(OUT_PATH, names)  # cache after every batch: a crash resumes, not restarts
         print(f"batch {i}: {len(names)}/{len(products)} translated")
     validate_names(products, names)
-    _save(names)
+    save_json(OUT_PATH, names)
     print(f"wrote {len(names)} English names to {OUT_PATH}")
 
 
@@ -593,6 +645,7 @@ from collections import defaultdict
 from dotenv import load_dotenv
 load_dotenv()
 from langchain_openai import ChatOpenAI
+from scripts._llm import call_json, save_json
 
 PRODUCTS_PATH = "products.json"
 CATEGORIES_PATH = "data/categories.json"
@@ -639,12 +692,6 @@ def validate_assignments(products: list[dict], assignments: dict,
                          f"{dict(list(bad.items())[:10])}")
 
 
-def _save(assignments: dict) -> None:
-    os.makedirs("data", exist_ok=True)
-    with open(OUT_PATH, "w", encoding="utf-8") as f:
-        json.dump(assignments, f, ensure_ascii=False, indent=2)
-
-
 def main():
     products = json.load(open(PRODUCTS_PATH, encoding="utf-8"))
     categories = json.load(open(CATEGORIES_PATH, encoding="utf-8"))
@@ -661,15 +708,14 @@ def main():
         items = "\n".join(
             f'{p["code"]}: {names_en.get(str(p["code"]), "")} | {p["name_ar"]}'
             for p in group)
-        resp = llm.invoke(PROMPT.format(categories=cat_list, items=items))
-        text = resp.content.strip().removeprefix("```json").removeprefix("```").removesuffix("```")
-        assignments.update({str(k): int(v) for k, v in json.loads(text).items()})
-        _save(assignments)
+        reply = call_json(llm, PROMPT.format(categories=cat_list, items=items))
+        assignments.update({str(k): int(v) for k, v in reply.items()})
+        save_json(OUT_PATH, assignments)  # cache per group: a crash resumes, not restarts
         print(f"prefix {prefix}: {len(group)} product(s) → "
               f"{len(assignments)}/{len(products)} assigned")
 
     validate_assignments(products, assignments, valid_ids)
-    _save(assignments)
+    save_json(OUT_PATH, assignments)
     print(f"wrote {len(assignments)} assignments to {OUT_PATH}")
 
 
