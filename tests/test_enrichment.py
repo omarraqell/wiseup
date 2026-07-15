@@ -128,3 +128,49 @@ def test_validate_assignments_raises_on_unassigned_product():
 def test_validate_assignments_raises_on_unknown_category_id():
     with pytest.raises(ValueError, match="99"):
         validate_assignments([{"code": "10101"}], {"10101": 99}, {5, 6})
+
+
+import json as _json
+from scripts.apply_enrichment import enrich, write_atomic
+
+_BASE = [{"code": "10101", "name_ar": "زرادية", "unit": "pcs",
+          "price_jod": 2.5, "image": "images/10101.png"}]
+
+
+def test_enrich_adds_name_en_and_category_id():
+    out = enrich(_BASE, {"10101": "Pliers"}, {"10101": 5})
+    assert out[0]["name_en"] == "Pliers"
+    assert out[0]["category_id"] == 5
+
+
+def test_enrich_preserves_every_existing_field():
+    out = enrich(_BASE, {"10101": "Pliers"}, {"10101": 5})
+    for key, value in _BASE[0].items():
+        assert out[0][key] == value
+
+
+def test_enrich_preserves_product_count_and_order():
+    base = _BASE + [{"code": "10102", "name_ar": "بكس", "unit": "pcs",
+                     "price_jod": 1.0, "image": "images/10102.png"}]
+    out = enrich(base, {"10101": "Pliers", "10102": "Socket"},
+                 {"10101": 5, "10102": 6})
+    assert [p["code"] for p in out] == ["10101", "10102"]
+
+
+def test_enrich_raises_rather_than_writing_a_partial_catalog():
+    with pytest.raises(ValueError, match="10101"):
+        enrich(_BASE, {}, {"10101": 5})
+
+
+def test_write_atomic_leaves_the_original_intact_on_failure(tmp_path):
+    target = tmp_path / "products.json"
+    target.write_text('["original"]', encoding="utf-8")
+
+    class Unserializable:
+        pass
+
+    try:
+        write_atomic(str(target), [Unserializable()])
+    except TypeError:
+        pass
+    assert _json.loads(target.read_text(encoding="utf-8")) == ["original"]
