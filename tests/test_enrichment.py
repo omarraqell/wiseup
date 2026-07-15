@@ -28,7 +28,7 @@ def test_parse_categories_dedupes_repeated_links():
 
 import pytest
 from scripts._llm import call_json, save_json
-from scripts.translate_categories import merge_translations
+from scripts.translate_categories import apply_overrides, merge_translations
 
 
 class _FakeLLM:
@@ -69,6 +69,42 @@ def test_merge_translations_raises_on_missing_translation():
            {"id": 6, "name_en": "Measurement series", "url": "u2"}]
     with pytest.raises(ValueError, match="6"):
         merge_translations(raw, {"5": "سلسلة الزراديات"})
+
+
+def test_apply_overrides_drops_a_listed_id():
+    cats = [{"id": 5, "name_ar": "أ"}, {"id": 22, "name_ar": "ب"}]
+    out = apply_overrides(cats, {"drop": [22]})
+    assert [c["id"] for c in out] == [5]
+
+
+def test_apply_overrides_replaces_a_listed_name_ar_and_leaves_others_alone():
+    cats = [{"id": 5, "name_ar": "old-5"}, {"id": 18, "name_ar": "old-18"},
+            {"id": 6, "name_ar": "unchanged"}]
+    out = apply_overrides(cats, {"name_ar": {"5": "سلسلة الزراديات",
+                                              "18": "مستلزمات السلامة"}})
+    by_id = {c["id"]: c["name_ar"] for c in out}
+    assert by_id[5] == "سلسلة الزراديات"
+    assert by_id[18] == "مستلزمات السلامة"
+    assert by_id[6] == "unchanged"
+
+
+def test_apply_overrides_empty_dict_is_a_no_op():
+    cats = [{"id": 5, "name_ar": "أ"}, {"id": 22, "name_ar": "ب"}]
+    assert apply_overrides(cats, {}) == cats
+
+
+def test_owner_corrections_are_reflected_in_committed_categories_json():
+    raw = _json.load(open("data/categories.raw.json", encoding="utf-8"))
+    cats = _json.load(open("data/categories.json", encoding="utf-8"))
+
+    assert len(raw) == 27
+    assert any(c["id"] == 22 for c in raw)
+
+    assert len(cats) == 26
+    assert all(c["id"] != 22 for c in cats)
+    by_id = {c["id"]: c["name_ar"] for c in cats}
+    assert by_id[5] == "سلسلة الزراديات"
+    assert by_id[18] == "مستلزمات السلامة"
 
 
 from scripts.translate_products import chunked, validate_names
