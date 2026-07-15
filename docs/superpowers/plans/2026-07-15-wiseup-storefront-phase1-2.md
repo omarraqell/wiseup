@@ -38,7 +38,10 @@ These were verified by fetching the live site during planning. They change Phase
 - **`products.json` is written atomically** (temp file + `os.replace`), never truncated in place. It is the only copy of the catalog.
 - Prices are visible to everyone in Phase 2 — correct, no accounts exist yet.
 - Secrets stay in gitignored `.env`. Never commit `OPENAI_API_KEY` or `TAVILY_API_KEY`.
-- Existing tests must keep passing: `python -m pytest -q` (8 passed, 1 skipped).
+- Existing tests must keep passing: `python -m pytest -q`. The baseline at the start of
+  Phase 1 is **34 passed, 1 skipped** (the skip is `tests/test_smoke_live.py`, opt-in via
+  `RUN_LIVE=1`). This count grows as tasks add tests; what matters is that nothing that
+  passed before starts failing.
 - Commit after every task.
 
 ## File Structure
