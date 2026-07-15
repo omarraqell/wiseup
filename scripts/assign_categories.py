@@ -1,4 +1,4 @@
-"""One-shot: assign each of the 633 products to exactly one crawled category.
+"""One-shot: assign each of the 632 (was 633; a duplicate-code row was removed) products to exactly one crawled category.
 
 Products are sent to the LLM grouped by code prefix, so sibling products land in
 the same series. The prefix is a hint, not the decision — prefix group 17 alone

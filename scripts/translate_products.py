@@ -1,4 +1,4 @@
-"""One-shot: translate the 633 Arabic product names to English.
+"""One-shot: translate the 632 (was 633; a duplicate-code row was removed) Arabic product names to English.
 
 Batched at 25/call and cached to data/names_en.json after every batch, so an
 interrupted run resumes instead of re-paying for completed batches.
