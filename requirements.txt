@@ -8,3 +8,5 @@ pytest
 langchain-community
 langchain-classic
 rank-bm25
+requests
+beautifulsoup4
