@@ -11,8 +11,11 @@ def test_describe_and_clean_meta():
          "price_jod": 1.85, "image": "images/10104.png"}
     assert rag.describe(p) == "زرادية كهرباء (كود 10104)"
     meta = rag.clean_meta(p)
-    assert meta == {"code": "10104", "name_ar": "زرادية كهرباء", "unit": "pcs",
-                    "price_jod": 1.85, "image": "images/10104.png"}
+    assert meta["code"] == "10104"
+    assert meta["name_ar"] == "زرادية كهرباء"
+    assert meta["unit"] == "pcs"
+    assert meta["price_jod"] == 1.85
+    assert meta["image"] == "images/10104.png"
 
 
 def test_build_index_uses_shared_builders():
@@ -68,3 +71,24 @@ def test_hybrid_retrieve_fuses_bm25_and_dense(monkeypatch):
     assert codes[0] == code                      # exact code fused to the top
     assert codes.count(code) == 1                # same product from both retrievers appears exactly once
     assert len(codes) == len(set(codes))         # no duplicate products
+
+
+def test_clean_meta_carries_name_en_and_category_id():
+    meta = rag.clean_meta({"code": "10101", "name_ar": "زرادية", "unit": "pcs",
+                           "price_jod": 2.5, "image": "images/10101.png",
+                           "name_en": "Pliers", "category_id": 5})
+    assert meta["name_en"] == "Pliers"
+    assert meta["category_id"] == 5
+
+
+def test_clean_meta_tolerates_products_missing_the_new_fields():
+    meta = rag.clean_meta({"code": "10101", "name_ar": "زرادية"})
+    assert meta["name_en"] == ""
+    assert meta["category_id"] == 0
+
+
+def test_describe_includes_both_languages_so_english_queries_retrieve():
+    text = rag.describe({"code": "10101", "name_ar": "زرادية", "name_en": "Pliers"})
+    assert "زرادية" in text
+    assert "Pliers" in text
+    assert "10101" in text

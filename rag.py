@@ -28,13 +28,18 @@ def _bm25_preprocess(text: str) -> list[str]:
 
 
 def describe(p):
-    return f"{p['name_ar']} (كود {p['code']})"
+    """Indexed text. Both languages, so English queries retrieve Arabic-named products."""
+    name_en = (p.get("name_en") or "").strip()
+    tail = f" / {name_en}" if name_en else ""
+    return f"{p['name_ar']}{tail} (كود {p['code']})"
 
 
 def clean_meta(p):
     return {
         "code": p.get("code", ""),
         "name_ar": p.get("name_ar", ""),
+        "name_en": p.get("name_en", ""),
+        "category_id": p.get("category_id", 0),
         "unit": p.get("unit", ""),
         "price_jod": p.get("price_jod", 0),
         "image": p.get("image", ""),
