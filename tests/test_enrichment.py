@@ -131,7 +131,8 @@ def test_validate_assignments_raises_on_unknown_category_id():
 
 
 import json as _json
-from scripts.apply_enrichment import enrich, write_atomic
+import scripts.apply_enrichment as _apply_enrichment
+from scripts.apply_enrichment import enrich, ensure_backup, write_atomic
 
 _BASE = [{"code": "10101", "name_ar": "زرادية", "unit": "pcs",
           "price_jod": 2.5, "image": "images/10101.png"}]
@@ -174,3 +175,17 @@ def test_write_atomic_leaves_the_original_intact_on_failure(tmp_path):
     except TypeError:
         pass
     assert _json.loads(target.read_text(encoding="utf-8")) == ["original"]
+
+
+def test_ensure_backup_does_not_overwrite_an_existing_pristine_backup(tmp_path, monkeypatch):
+    products_path = tmp_path / "products.json"
+    backup_path = tmp_path / "products.backup.json"
+    products_path.write_text('["enriched-already"]', encoding="utf-8")
+    backup_path.write_text('["pristine-sentinel"]', encoding="utf-8")
+
+    monkeypatch.setattr(_apply_enrichment, "PRODUCTS_PATH", str(products_path))
+    monkeypatch.setattr(_apply_enrichment, "BACKUP_PATH", str(backup_path))
+
+    ensure_backup()
+
+    assert backup_path.read_text(encoding="utf-8") == '["pristine-sentinel"]'

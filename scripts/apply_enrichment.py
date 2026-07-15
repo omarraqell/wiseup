@@ -43,14 +43,25 @@ def write_atomic(path: str, data) -> None:
         raise
 
 
+def ensure_backup() -> None:
+    """Create the pristine pre-enrichment backup, but never clobber one that already exists.
+
+    On a re-run, PRODUCTS_PATH is already enriched, so unconditionally overwriting
+    BACKUP_PATH would destroy the only pristine copy and turn the additive-diff
+    safety gate into a self-comparison.
+    """
+    os.makedirs(os.path.dirname(os.path.abspath(BACKUP_PATH)), exist_ok=True)
+    if not os.path.exists(BACKUP_PATH):
+        shutil.copyfile(PRODUCTS_PATH, BACKUP_PATH)
+
+
 def main():
     products = json.load(open(PRODUCTS_PATH, encoding="utf-8"))
     names_en = json.load(open(NAMES_PATH, encoding="utf-8"))
     assignments = json.load(open(ASSIGNMENTS_PATH, encoding="utf-8"))
     before = len(products)
 
-    os.makedirs("data", exist_ok=True)
-    shutil.copyfile(PRODUCTS_PATH, BACKUP_PATH)
+    ensure_backup()
 
     enriched = enrich(products, names_en, assignments)
     if len(enriched) != before:
