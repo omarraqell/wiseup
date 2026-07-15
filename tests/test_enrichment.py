@@ -206,10 +206,8 @@ def test_write_atomic_leaves_the_original_intact_on_failure(tmp_path):
     class Unserializable:
         pass
 
-    try:
+    with pytest.raises(TypeError):
         write_atomic(str(target), [Unserializable()])
-    except TypeError:
-        pass
     assert _json.loads(target.read_text(encoding="utf-8")) == ["original"]
 
 
