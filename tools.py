@@ -5,6 +5,7 @@ import re
 import ssl
 import smtplib
 import rag
+import catalog
 from typing import Annotated
 from email.message import EmailMessage
 from pydantic import Field
@@ -18,17 +19,16 @@ _PRODUCTS = json.load(open("products.json", encoding="utf-8"))
 _BY_ITEM = {str(p["code"]): p for p in _PRODUCTS if p.get("code")}
 
 
-def to_card(doc, relevance):
-    m = doc.metadata
-    img = m.get("image", "")
-    return {
-        "code": m.get("code", ""),
-        "name_ar": m.get("name_ar", ""),
-        "price_jod": m.get("price_jod", 0),
-        "unit": m.get("unit", ""),
-        "image_url": ("/" + img.replace("\\", "/")) if img else "",
-        "relevance": int(relevance),
-    }
+def to_card(doc, relevance, include_price: bool = True):
+    """Build a product card from a retrieved doc.
+
+    Delegates to catalog.serialize_product so the agent cannot drift from the API's
+    idea of what a product looks like — and so Phase 3's price rule covers the agent
+    by construction. See the spec's "The price rule".
+    """
+    card = catalog.serialize_product(doc.metadata, include_price=include_price)
+    card["relevance"] = int(relevance)
+    return card
 
 
 def _rank_relevance(i: int, n: int) -> int:
