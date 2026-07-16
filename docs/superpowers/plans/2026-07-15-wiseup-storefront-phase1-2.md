@@ -1212,7 +1212,10 @@ def test_list_categories_counts_products(monkeypatch):
 def test_the_real_catalog_loads_and_every_product_serializes():
     products = catalog.list_products()
     assert len(products) == 632
-    assert all(p["name_en"] and p["image_url"] for p in products)
+    assert all(p["name_en"] for p in products)
+    # 81006 (قاعدة لفل) has no source image — an owner-accepted gap ("Known
+    # follow-ups"). Pin it exactly so any OTHER product losing its image fails.
+    assert [p["code"] for p in products if not p["image_url"]] == ["81006"]
 
 
 def test_the_real_catalog_has_unique_codes():
