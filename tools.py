@@ -10,9 +10,9 @@ from typing import Annotated
 from email.message import EmailMessage
 from pydantic import Field
 from langchain_core.tools import tool, InjectedToolCallId
-from langchain_core.messages import ToolMessage
+from langchain_core.messages import ToolMessage, SystemMessage, HumanMessage
 from langgraph.types import Command
-from langchain_tavily import TavilySearch
+from langchain_tavily import TavilyCrawl
 from runlog import log
 
 _PRODUCTS = json.load(open("products.json", encoding="utf-8"))
@@ -59,26 +59,15 @@ def retrieve_products(query: str,
 
 
 def _format_tavily(res) -> str:
-    items = res.get("results", []) if isinstance(res, dict) else res
+    if isinstance(res, str):
+        return res.strip() or "No results found on the WISEUP website."
+    items = res.get("results", []) if isinstance(res, dict) else (res or [])
     if not items:
         return "No results found on the WISEUP website."
     lines = []
     for r in items:
         lines.append(f"- {r.get('title','')} ({r.get('url','')})\n  {r.get('content','')}")
     return "\n".join(lines)
-
-
-@tool
-def search_wiseup_web(query: str) -> str:
-    """Search the official WISEUP website (wiseuptools.com) for company or
-    product-page information that is NOT in the local catalog — e.g. about the
-    company, contact details, certifications, or specific web pages."""
-    log(f"🔧 TOOL search_wiseup_web(query={query!r}) [domain-locked: wiseuptools.com]")
-    tav = TavilySearch(max_results=5, include_domains=["wiseuptools.com"])
-    out = _format_tavily(tav.invoke({"query": query}))
-    log("🔧 TOOL search_wiseup_web → got results" if "No results" not in out
-        else "🔧 TOOL search_wiseup_web → no results")
-    return out
 
 
 OWNER_EMAIL = "omaraqel270@gmail.com"
@@ -164,4 +153,108 @@ def email_owner(
     return f"Sent {len(products)} product(s) to the owner."
 
 
-TOOLS = [retrieve_products, search_wiseup_web, email_owner]
+SITE_URL = os.environ.get("WISEUP_SITE_URL", "https://www.wiseuptools.com/h-col-103.html")
+
+_WEB_EXTRACT_SYS = (
+    "You extract products from crawled web page content of a hand-tools store. "
+    "Return ONLY a JSON array (no prose, no markdown) of objects with keys: "
+    "name (string), price (number or null), image_url (absolute URL string or empty), "
+    "source_url (absolute product URL string or empty). If there are no products, return []."
+)
+
+
+def _web_llm():
+    from langchain_openai import ChatOpenAI
+    return ChatOpenAI(model="gpt-4o-mini", temperature=0)
+
+
+def _collect_images(res) -> list:
+    imgs = []
+    if isinstance(res, dict):
+        imgs += [u for u in res.get("images", []) or [] if isinstance(u, str)]
+        for r in res.get("results", []) or []:
+            if isinstance(r, dict):
+                imgs += [u for u in r.get("images", []) or [] if isinstance(u, str)]
+    return imgs
+
+
+def _strip_fences(s: str) -> str:
+    s = s.strip()
+    if s.startswith("```"):
+        s = s.split("\n", 1)[-1] if "\n" in s else s[3:]
+        s = s.rsplit("```", 1)[0]
+    return s.strip()
+
+
+def _extract_web_products(res, query: str) -> list:
+    if not res or not isinstance(res, dict):
+        return []
+    images = _collect_images(res)
+    raw = "\n\n".join(
+        r.get("raw_content", "") for r in (res.get("results", []) or []) if isinstance(r, dict))
+    text = raw or _format_tavily(res)   # prefer real page text; fall back to the summary
+    human = (f"Query: {query}\n\nPage content:\n{text}\n\n"
+             f"Image URLs found:\n" + "\n".join(images))
+    try:
+        raw = _web_llm().invoke(
+            [SystemMessage(content=_WEB_EXTRACT_SYS), HumanMessage(content=human)]).content
+        data = json.loads(_strip_fences(raw))
+        return [d for d in data if isinstance(d, dict)] if isinstance(data, list) else []
+    except Exception:
+        return []
+
+
+def to_web_card(rec: dict, relevance: int) -> dict:
+    price = rec.get("price")
+    price = price if isinstance(price, (int, float)) and not isinstance(price, bool) else None
+    return {
+        "code": "",
+        "name_ar": rec.get("name", "") or "",
+        "price_jod": price,
+        "unit": "",
+        "image_url": rec.get("image_url", "") or "",
+        "source_url": rec.get("source_url", "") or "",
+        "relevance": int(relevance),
+    }
+
+
+_crawler = None
+
+
+def _get_crawler():
+    global _crawler
+    if _crawler is None:
+        _crawler = TavilyCrawl(format="markdown")
+    return _crawler
+
+
+@tool
+def browse_wiseup_website(query: str,
+                          tool_call_id: Annotated[str, InjectedToolCallId]) -> Command:
+    """Crawl the live WISEUP website (wiseuptools.com) for products or company info that is NOT
+    in the local catalog, or when the customer explicitly asks about the website. Prefer
+    retrieve_products first; only use this when the catalog has nothing relevant."""
+    log(f"🔧 TOOL browse_wiseup_website(query={query!r}) [crawl {SITE_URL}]")
+    try:
+        res = _get_crawler().invoke({
+            "url": SITE_URL, "instructions": query, "include_images": True,
+            "extract_depth": "advanced", "max_depth": 2, "limit": 15,
+        })
+        recs = _extract_web_products(res, query)
+    except Exception as e:
+        log(f"🔧 TOOL browse_wiseup_website → error: {e}")
+        recs = []
+    if not recs:
+        log("🔧 TOOL browse_wiseup_website → no products found")
+        return Command(update={"messages": [ToolMessage(
+            "I couldn't find that on the WISEUP website.", tool_call_id=tool_call_id)]})
+    cards = [to_web_card(r, _rank_relevance(i, len(recs))) for i, r in enumerate(recs)]
+    log(f"🔧 TOOL browse_wiseup_website → {len(cards)} product(s) from the website")
+    return Command(update={
+        "retrieved_products": cards,
+        "messages": [ToolMessage(
+            f"Found {len(cards)} product(s) on the WISEUP website.", tool_call_id=tool_call_id)],
+    })
+
+
+TOOLS = [retrieve_products, browse_wiseup_website, email_owner]

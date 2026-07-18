@@ -327,20 +327,27 @@ function stripMarkdown(s){
     .replace(/^\s*\d+\.\s+/gm, '');         // leading "1. " numbering
 }
 
+function esc(s){ return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function safeUrl(u){ return (typeof u === 'string' && (u.startsWith('/') || /^https?:\/\//i.test(u))) ? u : ''; }
+
 function card(p, i){
   const img = p.image_url
-    ? `<img src="${p.image_url}" alt="${p.name_ar}" class="w-full h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-300" onerror="this.parentElement.innerHTML='<span class=\\'material-symbols-outlined text-gray-400 text-6xl\\'>build</span>'"/>`
+    ? `<img src="${safeUrl(p.image_url)}" alt="${esc(p.name_ar)}" class="w-full h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-300" onerror="this.parentElement.innerHTML='<span class=\\'material-symbols-outlined text-gray-400 text-6xl\\'>build</span>'"/>`
     : `<span class="material-symbols-outlined text-gray-400 text-6xl">build</span>`;
   return `
   <article class="card-in bg-white border border-gray-200 rounded-lg overflow-hidden flex flex-col group hover:shadow-md transition-shadow relative" style="animation-delay:${i*40}ms">
     <div class="aspect-square bg-gray-50 flex items-center justify-center p-4">${img}</div>
     <div class="p-3 flex flex-col gap-2" dir="rtl">
-      <h3 class="text-sm font-medium leading-snug">${p.name_ar || 'منتج'}</h3>
+      <h3 class="text-sm font-medium leading-snug">${esc(p.name_ar) || 'منتج'}</h3>
       <div class="flex items-center justify-between">
-        <span class="text-base font-bold text-brand">${p.price_jod} JOD</span>
+        <span class="text-base font-bold text-brand">${p.price_jod != null ? p.price_jod + ' JOD' : ''}</span>
         <span class="text-xs text-text-muted">${p.unit || ''}</span>
       </div>
-      <span class="text-xs text-text-muted font-mono" dir="ltr">كود: ${p.code}</span>
+      ${p.code
+        ? `<span class="text-xs text-text-muted font-mono" dir="ltr">كود: ${p.code}</span>`
+        : (p.source_url
+            ? `<a href="${safeUrl(p.source_url)}" target="_blank" rel="noopener" class="text-xs text-brand underline" dir="rtl">عرض على الموقع</a>`
+            : '')}
     </div>
   </article>`;
 }
