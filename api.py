@@ -6,16 +6,18 @@ import datetime
 from typing import Optional
 from dotenv import load_dotenv
 load_dotenv()
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from langchain_core.messages import HumanMessage
 from agent_graph import graph
 from runlog import log, new_run
+import catalog
 
 app = FastAPI(title="WISEUP Catalog Assistant")
 app.mount("/images", StaticFiles(directory="images"), name="images")
+app.mount("/static", StaticFiles(directory="frontend/static"), name="static")
 
 os.makedirs("logs", exist_ok=True)
 
@@ -50,6 +52,41 @@ class ResetReq(BaseModel):
 @app.get("/")
 def index():
     return FileResponse("frontend/index.html")
+
+
+@app.get("/catalog")
+def catalog_page():
+    return FileResponse("frontend/catalog.html")
+
+
+@app.get("/category")
+def category_page():
+    return FileResponse("frontend/category.html")
+
+
+@app.get("/product")
+def product_page():
+    return FileResponse("frontend/product.html")
+
+
+@app.get("/api/categories")
+def api_categories():
+    return {"categories": catalog.list_categories()}
+
+
+@app.get("/api/products")
+def api_products(category_id: Optional[int] = None):
+    # include_price is unconditional in Phase 2 — no accounts exist yet. Phase 3
+    # resolves it from the caller's role and passes it straight through.
+    return {"products": catalog.list_products(category_id=category_id)}
+
+
+@app.get("/api/products/{code}")
+def api_product(code: str):
+    product = catalog.get_product(code)
+    if product is None:
+        raise HTTPException(status_code=404, detail="product not found")
+    return product
 
 
 @app.post("/ask")

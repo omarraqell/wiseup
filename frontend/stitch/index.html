@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>WISEUP - متجر الأدوات اليدوية</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Oswald:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#636262",
+                        "surface-container-high": "#ffe2de",
+                        "primary-fixed": "#ffdad5",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "brand-red": "#E60616",
+                        "surface-variant": "#ffdad6",
+                        "background": "#fff8f7",
+                        "surface-bright": "#fff8f7",
+                        "border-light": "#E5E5E5",
+                        "surface": "#fff8f7",
+                        "tertiary-container": "#0073d2",
+                        "surface-container": "#ffe9e6",
+                        "outline-variant": "#e9bcb6",
+                        "surface-container-highest": "#ffdad6",
+                        "on-secondary-fixed-variant": "#474746",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "secondary-container": "#e2dfde",
+                        "on-tertiary-fixed-variant": "#004786",
+                        "on-primary-fixed-variant": "#930008",
+                        "surface-container-low": "#fff0ee",
+                        "on-tertiary-container": "#f8f8ff",
+                        "on-primary-container": "#fff8f7",
+                        "on-background": "#2a1614",
+                        "tertiary-fixed-dim": "#a5c8ff",
+                        "on-surface-variant": "#5e3f3b",
+                        "outline": "#936e69",
+                        "error": "#ba1a1a",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff",
+                        "primary-fixed-dim": "#ffb4aa",
+                        "primary": "#b8000e",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#e5e2e1",
+                        "inverse-surface": "#412b28",
+                        "error-container": "#ffdad6",
+                        "on-surface": "#2a1614",
+                        "inverse-primary": "#ffb4aa",
+                        "primary-container": "#e60616",
+                        "on-primary-fixed": "#410001",
+                        "surface-tint": "#c0000f",
+                        "on-tertiary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "surface-dim": "#f6d2cd",
+                        "inverse-on-surface": "#ffedea",
+                        "surface-subtle": "#F5F5F5",
+                        "secondary": "#5f5e5e",
+                        "on-tertiary-fixed": "#001c3a",
+                        "tertiary-fixed": "#d4e3ff",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#005aa7"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-page": "24px",
+                        "stack-lg": "32px",
+                        "gutter": "16px",
+                        "stack-md": "16px",
+                        "stack-sm": "8px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Inter"],
+                        "button": ["Inter"],
+                        "headline-sm": ["Oswald"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Oswald"],
+                        "body-sm": ["Inter"],
+                        "headline-xl": ["Oswald"],
+                        "headline-lg": ["Oswald"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "button": ["16px", { "lineHeight": "1", "fontWeight": "600" }],
+                        "headline-sm": ["20px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "1.4", "fontWeight": "400" }],
+                        "headline-xl": ["48px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #fff8f7; color: #2a1614; }
+        h1, h2, h3, h4, h5, h6, .oswald { font-family: 'Oswald', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased rtl flex flex-col min-h-screen">
+<!-- Header: TopNavBar -->
+<header class="sticky top-0 z-50 bg-surface dark:bg-surface-dim border-b border-border-light dark:border-outline-variant w-full">
+<div class="flex flex-row-reverse justify-between items-center w-full px-margin-page max-w-7xl mx-auto h-20">
+<!-- Brand Logo -->
+<div class="font-headline-lg text-brand-red dark:text-primary-fixed">WISEUP</div>
+<!-- Navigation Links (Desktop) -->
+<nav class="hidden md:flex flex-row-reverse gap-8 font-headline-md">
+<a class="text-brand-red dark:text-primary-fixed font-bold border-b-2 border-brand-red scale-95 active:opacity-80 transition-all hover:text-brand-red dark:hover:text-primary-fixed" href="#">المتجر</a>
+<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant scale-95 active:opacity-80 transition-all hover:text-brand-red dark:hover:text-primary-fixed" href="#">الأدوات اليدوية</a>
+<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant scale-95 active:opacity-80 transition-all hover:text-brand-red dark:hover:text-primary-fixed" href="#">المجموعات</a>
+<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant scale-95 active:opacity-80 transition-all hover:text-brand-red dark:hover:text-primary-fixed" href="#">العروض</a>
+<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant scale-95 active:opacity-80 transition-all hover:text-brand-red dark:hover:text-primary-fixed" href="#">من نحن</a>
+</nav>
+<!-- Trailing Icons -->
+<div class="flex gap-4">
+<button class="text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-brand-red dark:hover:text-primary-fixed transition-colors">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<button class="text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-brand-red dark:hover:text-primary-fixed transition-colors">
+<span class="material-symbols-outlined" data-icon="language">language</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative w-full h-[600px] flex items-center justify-center bg-surface-container-low overflow-hidden">
+<div class="absolute inset-0 w-full h-full" data-alt="A highly professional, well-lit studio photograph of premium heavy-duty hand tools including red-handled wrenches, screwdrivers, and pliers arranged neatly on a clean white industrial workshop table. High contrast, sharp focus on the metallic textures, modern light-mode aesthetic with brand red accents." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBcYkX7iITBDFF3yMVt96q8GuoPd0Go9gJVG6CogWUFOwUQ_W37ofRdO5Gctp1TsBUIDERYLKb4EWmgHndrmmcv91yAXuTkqj0aHqW4-HHPZQLs824T1eAIh8mTFdGggcJj0HmdzVzmMltyo_L7wgoBSUOvx_dXaSqKx2hWVdVKDdFhuT0ySPIqwKf-2XKzt-4HSulToCKpz67Z5uiU0CU-Ug3EbSWEJGLlCRUgT2btzm3Z_gbm5rMw_rKFvRggd3gYeqk09-aA-R0')"></div>
+<div class="relative z-10 text-center px-margin-page max-w-4xl bg-surface/80 backdrop-blur-sm p-stack-lg rounded-lg border border-border-light shadow-lg">
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-stack-md">WISEUP - القوة في يديك</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg">أدوات صناعية عالية الجودة للمحترفين. متانة لا تضاهى وأداء يثق به الخبراء.</p>
+<button class="bg-brand-red text-on-primary font-button px-8 py-4 rounded hover:bg-surface-tint transition-colors shadow-md hover:shadow-lg">
+                    تسوق الآن
+                </button>
+</div>
+</section>
+<!-- Category Grid -->
+<section class="max-w-7xl mx-auto px-margin-page py-stack-lg">
+<div class="flex justify-between items-end mb-stack-lg border-b border-border-light pb-4">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">تصفح الفئات</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-gutter">
+<!-- Example Categories (Duplicated to represent 26, showing a few for structure) -->
+<a class="flex flex-col items-center justify-center p-stack-md bg-surface border border-border-light rounded-lg hover:border-brand-red hover:shadow-sm transition-all group" href="#">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant group-hover:text-brand-red mb-2 transition-colors" data-icon="build">build</span>
+<span class="font-headline-sm text-headline-sm text-center">المفاتيح</span>
+</a>
+<a class="flex flex-col items-center justify-center p-stack-md bg-surface border border-border-light rounded-lg hover:border-brand-red hover:shadow-sm transition-all group" href="#">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant group-hover:text-brand-red mb-2 transition-colors" data-icon="hardware">hardware</span>
+<span class="font-headline-sm text-headline-sm text-center">المطارق</span>
+</a>
+<a class="flex flex-col items-center justify-center p-stack-md bg-surface border border-border-light rounded-lg hover:border-brand-red hover:shadow-sm transition-all group" href="#">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant group-hover:text-brand-red mb-2 transition-colors" data-icon="handyman">handyman</span>
+<span class="font-headline-sm text-headline-sm text-center">المفكات</span>
+</a>
+<a class="flex flex-col items-center justify-center p-stack-md bg-surface border border-border-light rounded-lg hover:border-brand-red hover:shadow-sm transition-all group" href="#">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant group-hover:text-brand-red mb-2 transition-colors" data-icon="straighten">straighten</span>
+<span class="font-headline-sm text-headline-sm text-center">أدوات القياس</span>
+</a>
+<a class="flex flex-col items-center justify-center p-stack-md bg-surface border border-border-light rounded-lg hover:border-brand-red hover:shadow-sm transition-all group" href="#">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant group-hover:text-brand-red mb-2 transition-colors" data-icon="cut">cut</span>
+<span class="font-headline-sm text-headline-sm text-center">أدوات القطع</span>
+</a>
+<a class="flex flex-col items-center justify-center p-stack-md bg-surface border border-border-light rounded-lg hover:border-brand-red hover:shadow-sm transition-all group" href="#">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant group-hover:text-brand-red mb-2 transition-colors" data-icon="plumbing">plumbing</span>
+<span class="font-headline-sm text-headline-sm text-center">أدوات السباكة</span>
+</a>
+</div>
+</section>
+<!-- Featured Products -->
+<section class="max-w-7xl mx-auto px-margin-page py-stack-lg mb-stack-lg">
+<div class="flex justify-between items-end mb-stack-lg border-b border-border-light pb-4">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">منتجات مميزة</h2>
+<a class="font-label-md text-label-md text-brand-red hover:underline" href="#">عرض الكل</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Product Card 1 -->
+<div class="bg-surface border border-border-light rounded-lg overflow-hidden flex flex-col hover:shadow-md transition-shadow">
+<div class="w-full h-48 bg-surface-container-low flex items-center justify-center p-4">
+<img class="object-contain h-full w-full" data-alt="A clean, studio-lit product shot of a high-quality red and black handled adjustable wrench on a pure white background. Sharp focus, professional industrial aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvoWi8ClnWC1MguOZ3Hc0OEL-8YdKHz5p4J9Y1jwnrOrcZ6wS3iE6xdUnijmSEMugTFhhMcW3ePbSB4Wfzqq8e7GznIMjbjkYishFDrYj2ImXwCX3qawtuaMrxZWR2QlOqPpVKiQVh2PrHCej_RwY63PG8J33-thQcz2VvV7GoVN25xrFh5Pl-7gIKHNt95_YPyzKWq1FgPBSeGl-Rpn7am2qe_iPpuvuXhIKaHywKuf5o_7FF2bgJewVtGCwbDv9GZDkesKhZHc4"/>
+</div>
+<div class="p-4 flex flex-col flex-grow">
+<div class="text-xs text-on-surface-variant mb-1 font-label-md">مفاتيح</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 line-clamp-2">مفتاح قابل للتعديل 10 بوصة للخدمة الشاقة</h3>
+<div class="mt-auto">
+<div class="font-headline-md text-headline-md text-brand-red mb-4">45.00 ر.س</div>
+<button class="w-full bg-surface border border-brand-red text-brand-red font-button py-2 rounded hover:bg-brand-red hover:text-on-primary transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="add_shopping_cart">add_shopping_cart</span>
+                                أضف إلى السلة
+                            </button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="bg-surface border border-border-light rounded-lg overflow-hidden flex flex-col hover:shadow-md transition-shadow">
+<div class="w-full h-48 bg-surface-container-low flex items-center justify-center p-4">
+<img class="object-contain h-full w-full" data-alt="A clean, studio-lit product shot of a professional-grade claw hammer with a red and black rubberized grip on a pure white background. Sharp focus, professional industrial aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVZK1jy1hLRXMFexBYKo12glbdsCX3svdxVz5PhaV9uw4Gixq_gP6Ogovgyv0JarpwvPI7n4YyS7GMobwqeYAEwQO7Y_Y_Y5bvm3N2QXtedy4z-tGT1NkfvU8Q6Z5KXjKb5bpncWRJg_h_hetUreIRuRUZb-n9YdgV3wVfmgxSE5lU1W9AuNU0cjICOXfjdyj3zIs6gsFMZ5GInCBLAoWeCFmuW0FZxSHuIDSLsR6Cmu9rQiP2Vv8Uy6NQt8UJzjygSHw1TpTTfgs"/>
+</div>
+<div class="p-4 flex flex-col flex-grow">
+<div class="text-xs text-on-surface-variant mb-1 font-label-md">مطارق</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 line-clamp-2">مطرقة مخلبية بمقبض مطاطي مانع للانزلاق</h3>
+<div class="mt-auto">
+<div class="font-headline-md text-headline-md text-brand-red mb-4">32.50 ر.س</div>
+<button class="w-full bg-surface border border-brand-red text-brand-red font-button py-2 rounded hover:bg-brand-red hover:text-on-primary transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="add_shopping_cart">add_shopping_cart</span>
+                                أضف إلى السلة
+                            </button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="bg-surface border border-border-light rounded-lg overflow-hidden flex flex-col hover:shadow-md transition-shadow">
+<div class="w-full h-48 bg-surface-container-low flex items-center justify-center p-4">
+<img class="object-contain h-full w-full" data-alt="A clean, studio-lit product shot of a 10-piece screwdriver set with magnetic tips and red handles, arranged neatly on a pure white background. Sharp focus, professional industrial aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfVhQa2NxzuUrZmgMNe2FabbjT2SsDYEcrd5xmDdku_nPXTSTq15gZB4Niu-8-B0DeAurWEnb6dbhTXGWK8Tsl4GxUPe8Il2E_05A8IvHNs0t1rWusrLhrzx2TAaLx0L80yQdsM5MY6ROPOEtcu8Nvq02u0wQBnYuthsPHLe-7c-AKtOs1CYeaAJpUcyzu-GukB6FP6k5pj2SuM_iojdYdc3ZAfeMlFFu2DN2wJRhu4CmHNaZYDNlV1q0zfwyMBhYUmUsO5VpagOs"/>
+</div>
+<div class="p-4 flex flex-col flex-grow">
+<div class="text-xs text-on-surface-variant mb-1 font-label-md">أطقم</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 line-clamp-2">طقم مفكات براغي مغناطيسية 10 قطع</h3>
+<div class="mt-auto">
+<div class="font-headline-md text-headline-md text-brand-red mb-4">85.00 ر.س</div>
+<button class="w-full bg-surface border border-brand-red text-brand-red font-button py-2 rounded hover:bg-brand-red hover:text-on-primary transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="add_shopping_cart">add_shopping_cart</span>
+                                أضف إلى السلة
+                            </button>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="bg-surface border border-border-light rounded-lg overflow-hidden flex flex-col hover:shadow-md transition-shadow relative">
+<div class="absolute top-2 right-2 bg-brand-red text-on-primary font-label-md px-2 py-1 rounded-sm text-xs z-10">جديد</div>
+<div class="w-full h-48 bg-surface-container-low flex items-center justify-center p-4">
+<img class="object-contain h-full w-full" data-alt="A clean, studio-lit product shot of a heavy-duty digital caliper tool with a clear LCD screen on a pure white background. Sharp focus, professional industrial aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTxmgjje_aSahpkflYQ15P8DQOdMko0kWtFcDW8OFPqs-mOtkXhz0z2s_CF0tfzkczq1raeaOhKf0eIxH5wrVuuAmbOS-p7MDQPsxQPdoQKdlGOksQOKOLLStSw00JnVtH2e49VpyYm66-i37HpAruRJrDuVHzZvRZwiSpm2xYLq8OWcOfvh6QnUJHbaYo6h-WQQBz_-j-z0Ci069Itm6gpCWpo-rOG3kWXzBKwv3BjIOevY1CbmLc5hMNuRJ0mcrLqFsNFgUZw84"/>
+</div>
+<div class="p-4 flex flex-col flex-grow">
+<div class="text-xs text-on-surface-variant mb-1 font-label-md">أدوات قياس</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 line-clamp-2">مقياس قدمة ذات ورنية رقمية دقيقة</h3>
+<div class="mt-auto">
+<div class="font-headline-md text-headline-md text-brand-red mb-4">120.00 ر.س</div>
+<button class="w-full bg-surface border border-brand-red text-brand-red font-button py-2 rounded hover:bg-brand-red hover:text-on-primary transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="add_shopping_cart">add_shopping_cart</span>
+                                أضف إلى السلة
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-on-secondary-fixed dark:bg-on-background w-full mt-auto">
+<div class="w-full py-stack-lg px-margin-page grid grid-cols-1 md:grid-cols-4 gap-gutter text-right rtl max-w-7xl mx-auto border-t border-outline dark:border-outline-variant opacity-90 hover:opacity-100">
+<!-- Brand -->
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-md text-headline-md text-surface-bright mb-4">WISEUP</div>
+<p class="font-body-sm text-body-sm text-surface-bright dark:text-surface-container-low mb-4">
+                    أدوات احترافية للمهام الصعبة.
+                </p>
+<p class="font-body-sm text-body-sm text-secondary-fixed dark:text-secondary-fixed-dim">
+                    © 2024 WISEUP. جميع الحقوق محفوظة.
+                </p>
+</div>
+<!-- Links -->
+<div class="col-span-1 md:col-span-3 flex flex-col md:flex-row gap-8 justify-end font-body-sm text-body-sm">
+<a class="text-secondary-fixed dark:text-secondary-fixed-dim hover:text-brand-red transition-colors" href="#">الخصوصية</a>
+<a class="text-secondary-fixed dark:text-secondary-fixed-dim hover:text-brand-red transition-colors" href="#">الشروط والأحكام</a>
+<a class="text-secondary-fixed dark:text-secondary-fixed-dim hover:text-brand-red transition-colors" href="#">سياسة التوصيل</a>
+<a class="text-secondary-fixed dark:text-secondary-fixed-dim hover:text-brand-red transition-colors" href="#">تواصل معنا</a>
+</div>
+</div>
+</footer>
+</body></html>

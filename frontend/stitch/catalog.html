@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>WISEUP - المتجر</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Oswald:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary": "#ffffff",
+                      "on-primary-fixed": "#410001",
+                      "error": "#ba1a1a",
+                      "primary": "#b8000e",
+                      "background": "#fff8f7",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-bright": "#fff8f7",
+                      "surface-dim": "#f6d2cd",
+                      "tertiary": "#005aa7",
+                      "secondary-fixed-dim": "#c8c6c5",
+                      "tertiary-container": "#0073d2",
+                      "primary-fixed-dim": "#ffb4aa",
+                      "surface-tint": "#c0000f",
+                      "on-surface-variant": "#5e3f3b",
+                      "on-surface": "#2a1614",
+                      "surface-container-low": "#fff0ee",
+                      "surface-subtle": "#F5F5F5",
+                      "on-error-container": "#93000a",
+                      "inverse-on-surface": "#ffedea",
+                      "surface-container-highest": "#ffdad6",
+                      "on-secondary-container": "#636262",
+                      "secondary-container": "#e2dfde",
+                      "tertiary-fixed": "#d4e3ff",
+                      "outline-variant": "#e9bcb6",
+                      "brand-red": "#E60616",
+                      "surface": "#fff8f7",
+                      "outline": "#936e69",
+                      "primary-fixed": "#ffdad5",
+                      "on-secondary-fixed": "#1c1b1b",
+                      "secondary": "#5f5e5e",
+                      "border-light": "#E5E5E5",
+                      "on-tertiary-fixed-variant": "#004786",
+                      "on-primary-fixed-variant": "#930008",
+                      "on-secondary-fixed-variant": "#474746",
+                      "inverse-surface": "#412b28",
+                      "on-background": "#2a1614",
+                      "on-error": "#ffffff",
+                      "on-tertiary-container": "#f8f8ff",
+                      "on-primary": "#ffffff",
+                      "on-tertiary-fixed": "#001c3a",
+                      "surface-container": "#ffe9e6",
+                      "tertiary-fixed-dim": "#a5c8ff",
+                      "on-primary-container": "#fff8f7",
+                      "secondary-fixed": "#e5e2e1",
+                      "inverse-primary": "#ffb4aa",
+                      "error-container": "#ffdad6",
+                      "surface-variant": "#ffdad6",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-high": "#ffe2de",
+                      "primary-container": "#e60616"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin-page": "24px",
+                      "stack-lg": "32px",
+                      "stack-sm": "8px",
+                      "stack-md": "16px",
+                      "gutter": "16px"
+              },
+              "fontFamily": {
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "headline-xl": [
+                              "Oswald"
+                      ],
+                      "button": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Oswald"
+                      ],
+                      "body-sm": [
+                              "Inter"
+                      ],
+                      "headline-sm": [
+                              "Oswald"
+                      ],
+                      "headline-md": [
+                              "Oswald"
+                      ]
+              },
+              "fontSize": {
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-xl": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "button": [
+                              "16px",
+                              {
+                                      "lineHeight": "1",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-sm": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-sm": [
+                              "20px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        body {
+            background-color: #fff8f7; /* background */
+            color: #2a1614; /* on-background */
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        [data-weight="fill"] {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-surface dark:bg-surface-dim docked full-width top-0 border-b border-border-light dark:border-outline-variant flat no shadows">
+<div class="flex flex-row-reverse justify-between items-center w-full px-margin-page max-w-7xl mx-auto h-20">
+<!-- Brand Logo -->
+<div class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-brand-red dark:text-primary-fixed">
+                WISEUP
+            </div>
+<!-- Navigation Links -->
+<nav class="hidden md:flex gap-gutter items-center h-full">
+<a class="h-full flex items-center px-2 text-brand-red dark:text-primary-fixed font-bold border-b-2 border-brand-red font-headline-sm text-headline-sm-mobile md:font-headline-md md:text-headline-md scale-95 active:opacity-80 transition-all hover:text-brand-red dark:hover:text-primary-fixed transition-colors" href="#">
+                    المتجر
+                </a>
+<a class="h-full flex items-center px-2 text-on-surface-variant dark:text-on-secondary-fixed-variant font-headline-sm text-headline-sm-mobile md:font-headline-md md:text-headline-md scale-95 active:opacity-80 transition-all hover:text-brand-red dark:hover:text-primary-fixed transition-colors" href="#">
+                    الأدوات اليدوية
+                </a>
+<a class="h-full flex items-center px-2 text-on-surface-variant dark:text-on-secondary-fixed-variant font-headline-sm text-headline-sm-mobile md:font-headline-md md:text-headline-md scale-95 active:opacity-80 transition-all hover:text-brand-red dark:hover:text-primary-fixed transition-colors" href="#">
+                    المجموعات
+                </a>
+<a class="h-full flex items-center px-2 text-on-surface-variant dark:text-on-secondary-fixed-variant font-headline-sm text-headline-sm-mobile md:font-headline-md md:text-headline-md scale-95 active:opacity-80 transition-all hover:text-brand-red dark:hover:text-primary-fixed transition-colors" href="#">
+                    العروض
+                </a>
+<a class="h-full flex items-center px-2 text-on-surface-variant dark:text-on-secondary-fixed-variant font-headline-sm text-headline-sm-mobile md:font-headline-md md:text-headline-md scale-95 active:opacity-80 transition-all hover:text-brand-red dark:hover:text-primary-fixed transition-colors" href="#">
+                    من نحن
+                </a>
+</nav>
+<!-- Trailing Icons -->
+<div class="flex gap-stack-sm text-primary dark:text-primary-fixed">
+<button class="p-2 hover:bg-surface-subtle rounded-DEFAULT scale-95 active:opacity-80 transition-all hover:text-brand-red dark:hover:text-primary-fixed transition-colors">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<button class="p-2 hover:bg-surface-subtle rounded-DEFAULT scale-95 active:opacity-80 transition-all hover:text-brand-red dark:hover:text-primary-fixed transition-colors">
+<span class="material-symbols-outlined" data-icon="language">language</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-7xl mx-auto px-margin-page py-stack-lg flex flex-col md:flex-row gap-gutter">
+<!-- Sidebar (Filters) -->
+<aside class="w-full md:w-1/4 shrink-0 flex flex-col gap-stack-md">
+<!-- Search -->
+<div class="relative">
+<label class="sr-only" for="search">ابحث عن منتج</label>
+<input class="w-full h-12 pl-4 pr-10 border border-border-light rounded-DEFAULT focus:border-brand-red focus:ring-1 focus:ring-brand-red font-body-md text-body-md bg-surface-container-lowest" id="search" placeholder="ابحث..." type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-3 text-secondary" data-icon="magnifying_glass">search</span>
+</div>
+<!-- Categories -->
+<div class="bg-surface-container-lowest border border-border-light rounded-lg p-stack-md">
+<h3 class="font-headline-sm text-headline-sm mb-stack-sm text-on-surface">الفئات</h3>
+<ul class="flex flex-col gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<li><a class="block py-1 hover:text-brand-red transition-colors" href="#">الأدوات اليدوية</a></li>
+<li><a class="block py-1 hover:text-brand-red transition-colors" href="#">أدوات القياس</a></li>
+<li><a class="block py-1 hover:text-brand-red transition-colors" href="#">أطقم الأدوات</a></li>
+<li><a class="block py-1 hover:text-brand-red transition-colors" href="#">ملحقات الأدوات الكهربائية</a></li>
+</ul>
+</div>
+<!-- Price Filter -->
+<div class="bg-surface-container-lowest border border-border-light rounded-lg p-stack-md">
+<h3 class="font-headline-sm text-headline-sm mb-stack-sm text-on-surface">السعر (ر.س)</h3>
+<div class="flex gap-2 items-center">
+<input class="w-full h-10 border border-border-light rounded-DEFAULT focus:border-brand-red focus:ring-0 font-body-sm text-body-sm" placeholder="من" type="number"/>
+<span class="text-secondary">-</span>
+<input class="w-full h-10 border border-border-light rounded-DEFAULT focus:border-brand-red focus:ring-0 font-body-sm text-body-sm" placeholder="إلى" type="number"/>
+</div>
+<button class="w-full mt-stack-sm bg-surface-container-lowest border border-brand-red text-brand-red font-button text-button h-10 rounded-DEFAULT hover:bg-brand-red hover:text-on-primary transition-colors">
+                    تطبيق
+                </button>
+</div>
+</aside>
+<!-- Product Grid -->
+<section class="w-full md:w-3/4">
+<!-- Grid Header -->
+<div class="flex justify-between items-center mb-stack-md">
+<h1 class="font-headline-lg text-headline-lg text-on-surface">جميع المنتجات</h1>
+<span class="font-body-sm text-body-sm text-secondary">عرض 1-12 من 45</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-gutter">
+<!-- Product Card 1 -->
+<div class="bg-surface-container-lowest border border-border-light rounded-DEFAULT overflow-hidden group hover:shadow-md transition-shadow flex flex-col">
+<div class="aspect-square bg-surface-subtle relative p-4 flex items-center justify-center">
+<img class="object-contain w-full h-full mix-blend-multiply" data-alt="A professional studio photo of a highly detailed, rugged magnetic screwdriver with a bright red and black ergonomic handle, isolated on a stark white background. Sharp focus, high contrast lighting highlighting the metallic tip." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaTmrSQ-eRuOFtwe6SXlfvKcy22C1h_o7-HGVtNN3ZSuA_urN8U-RwlJ0qvxjXvkpeb5bWn7J-pRJumr0xm97BiysCPXouNN4nb6_cur5v8fQnfqniLcL5c2hecJ5xtsBzVYEBvlTwhQIm31_EeCcVfg-bA_rLVvGXSWHVR03o_daogcTOtIBNeH86-RCOdWH6Z363yuOZjPE7mu95BLn196DjILeHtPtA8VMMyWJ7hgG646oWOyl7iJy4Z_ih8eAGQd8PwUMuCh4"/>
+</div>
+<div class="p-stack-sm flex flex-col flex-grow">
+<span class="font-body-sm text-body-sm text-secondary mb-1">WS-1024 • قطعة واحدة</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-2 line-clamp-2">مفك براغي مغناطيسي مع مقبض مريح</h2>
+<div class="mt-auto flex items-end justify-between">
+<span class="font-headline-md text-headline-md text-brand-red">45.00 ر.س</span>
+</div>
+<button class="mt-stack-sm w-full bg-brand-red text-on-primary font-button text-button h-10 rounded-DEFAULT flex items-center justify-center gap-2 hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="shopping_cart">shopping_cart</span>
+                            أضف إلى السلة
+                        </button>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="bg-surface-container-lowest border border-border-light rounded-DEFAULT overflow-hidden group hover:shadow-md transition-shadow flex flex-col">
+<div class="aspect-square bg-surface-subtle relative p-4 flex items-center justify-center">
+<img class="object-contain w-full h-full mix-blend-multiply" data-alt="A professional studio photo of a heavy-duty steel claw hammer with a thick red rubber grip, resting diagonally on a clean white surface. Industrial aesthetic, bright even lighting, sharp details on the metal grain." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxzQV5gpSffb3thFury-kNvYqXKDj4VAZuHq_Gt8c6TJAjNdMhI9aZF8E9GfOAKyeVfiJPP1oyX_9L5GrGCp_aCeWjiuV9O--iA2pMNGxWN_MMoKUN_IU-8E3OFivAiWToc4bjG3Yzp3Fsi5yY_i_yAoEj2H1sXvuSbFCMJ7v3l9YqAnWdWW81xPF6ZmzsNd9Ib6QQVN_sUJKFCscTDNwAcwwmcz4NjhvivPFAKRTZ_YhITAHU0yqEnJWcMwulkdXUDeaVHdvFhUE"/>
+</div>
+<div class="p-stack-sm flex flex-col flex-grow">
+<span class="font-body-sm text-body-sm text-secondary mb-1">WS-2055 • قطعة واحدة</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-2 line-clamp-2">مطرقة مخلبية فولاذية شديدة التحمل</h2>
+<div class="mt-auto flex items-end justify-between">
+<span class="font-headline-md text-headline-md text-brand-red">85.50 ر.س</span>
+</div>
+<button class="mt-stack-sm w-full bg-brand-red text-on-primary font-button text-button h-10 rounded-DEFAULT flex items-center justify-center gap-2 hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="shopping_cart">shopping_cart</span>
+                            أضف إلى السلة
+                        </button>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="bg-surface-container-lowest border border-border-light rounded-DEFAULT overflow-hidden group hover:shadow-md transition-shadow flex flex-col">
+<div class="aspect-square bg-surface-subtle relative p-4 flex items-center justify-center">
+<img class="object-contain w-full h-full mix-blend-multiply" data-alt="A professional studio photo of a comprehensive 100-piece mechanics tool set inside a durable red blow-molded plastic case, opened to reveal gleaming chrome sockets and wrenches. Bright white background, high contrast, industrial premium quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa3usSbpFvQN-iRPIx80_v_fxpnKOTtqdHjZ3WJ9JUq3238s4T8tuAA9uyIhWiaCRGhG4DYTKDHUS55xztMFX1YaVIE8To9XVjNxsenZUpjxJFnzNEF-UTJGLSbCVE-LEtS9FKjkg7LeoLFO41t264pQsP4SAt3pJu5ZKiHlisPzlGsfXMkp68PErSow4SBvYwkSN-gd5CCFm4cIT909vDoKZ0JXV-8onysyIfU5x6QZBAx6wGcyQCeLMS67SEaTtON7Ml7sb81eM"/>
+</div>
+<div class="p-stack-sm flex flex-col flex-grow">
+<span class="font-body-sm text-body-sm text-secondary mb-1">WS-9901 • طقم (100 قطعة)</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-2 line-clamp-2">طقم أدوات ميكانيكا شامل مع صندوق</h2>
+<div class="mt-auto flex items-end justify-between">
+<span class="font-headline-md text-headline-md text-brand-red">450.00 ر.س</span>
+</div>
+<button class="mt-stack-sm w-full bg-brand-red text-on-primary font-button text-button h-10 rounded-DEFAULT flex items-center justify-center gap-2 hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="shopping_cart">shopping_cart</span>
+                            أضف إلى السلة
+                        </button>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="bg-surface-container-lowest border border-border-light rounded-DEFAULT overflow-hidden group hover:shadow-md transition-shadow flex flex-col">
+<div class="aspect-square bg-surface-subtle relative p-4 flex items-center justify-center">
+<img class="object-contain w-full h-full mix-blend-multiply" data-alt="A professional studio photo of a digital caliper made of brushed stainless steel with a bright LCD screen, laid flat on a pristine white background. High resolution, sharp focus on the digital display, sterile technical lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiggRrYeGeIqCy4S7Fb83GGZeQMhunh_G3FA-CIFcqMq7a884qO77MoltARTq1oMgudlkAUsGstj_OWNxelqlKxwTRjssSFXIUsqJrn9ia6-hcgf787w1PFv9njrL4B4tbWdf5QD53yq6APn_7qmAf2KD5mKvZhUUH-3aLUlabhPj7r2hsXxd2-Tj6ggCCDga-zECOvPGg1YXGZl3zgRsnIaFbRu3vWRXEBuo0UFJ7fvzRwzHtHbOujFJOnU7vGohyTyOxfiZ-4cI"/>
+</div>
+<div class="p-stack-sm flex flex-col flex-grow">
+<span class="font-body-sm text-body-sm text-secondary mb-1">WS-3012 • قطعة واحدة</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-2 line-clamp-2">قدمة ذات الورنية الرقمية (فرجار)</h2>
+<div class="mt-auto flex items-end justify-between">
+<span class="font-headline-md text-headline-md text-brand-red">120.00 ر.س</span>
+</div>
+<button class="mt-stack-sm w-full bg-brand-red text-on-primary font-button text-button h-10 rounded-DEFAULT flex items-center justify-center gap-2 hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="shopping_cart">shopping_cart</span>
+                            أضف إلى السلة
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-on-secondary-fixed dark:bg-on-background full-width border-t border-outline dark:border-outline-variant flat no shadows mt-auto">
+<div class="w-full py-stack-lg px-margin-page grid grid-cols-1 md:grid-cols-4 gap-gutter text-right rtl max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1 mb-stack-md md:mb-0">
+<div class="font-headline-md text-headline-md text-surface-bright mb-stack-sm">WISEUP</div>
+<p class="font-body-sm text-body-sm text-secondary-fixed dark:text-secondary-fixed-dim">
+                    © 2024 WISEUP. جميع الحقوق محفوظة.
+                </p>
+</div>
+<div class="col-span-1 md:col-span-3 flex flex-wrap gap-stack-lg md:justify-end">
+<a class="font-body-sm text-body-sm text-secondary-fixed dark:text-secondary-fixed-dim hover:text-brand-red transition-colors opacity-90 hover:opacity-100" href="#">الخصوصية</a>
+<a class="font-body-sm text-body-sm text-secondary-fixed dark:text-secondary-fixed-dim hover:text-brand-red transition-colors opacity-90 hover:opacity-100" href="#">الشروط والأحكام</a>
+<a class="font-body-sm text-body-sm text-secondary-fixed dark:text-secondary-fixed-dim hover:text-brand-red transition-colors opacity-90 hover:opacity-100" href="#">سياسة التوصيل</a>
+<a class="font-body-sm text-body-sm text-secondary-fixed dark:text-secondary-fixed-dim hover:text-brand-red transition-colors opacity-90 hover:opacity-100" href="#">تواصل معنا</a>
+</div>
+</div>
+</footer>
+</body></html>
