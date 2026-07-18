@@ -1,0 +1,99 @@
+// Prisma Schema for WiseUp Industrial Tools Store
+// PostgreSQL with pgvector extension for semantic search
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ─── Product Categories ──────────────────────────────────────────────
+
+model Category {
+  id        Int       @id @default(autoincrement())
+  nameAr    String    @map("name_ar")
+  nameEn    String    @map("name_en")
+  slug      String    @unique
+  sourceUrl String?   @map("source_url")
+  sortOrder Int       @default(0) @map("sort_order")
+  createdAt DateTime  @default(now()) @map("created_at")
+  updatedAt DateTime  @updatedAt @map("updated_at")
+
+  products Product[]
+
+  @@map("categories")
+}
+
+// ─── Products ────────────────────────────────────────────────────────
+
+model Product {
+  id         Int       @id @default(autoincrement())
+  code       String    @unique @db.VarChar(20)
+  nameAr     String    @map("name_ar")
+  nameEn     String?   @map("name_en")
+  unit       String    @default("pcs") @db.VarChar(20)
+  priceJod   Decimal   @map("price_jod") @db.Decimal(10, 2)
+  imageUrl   String?   @map("image_url")
+  isActive   Boolean   @default(true) @map("is_active")
+  categoryId Int?      @map("category_id")
+  createdAt  DateTime  @default(now()) @map("created_at")
+  updatedAt  DateTime  @updatedAt @map("updated_at")
+
+  category Category? @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+
+  @@index([categoryId])
+  @@index([code])
+  @@map("products")
+}
+
+// ─── Chat Sessions ───────────────────────────────────────────────────
+
+model ChatSession {
+  id        String        @id @default(uuid()) @db.Uuid
+  createdAt DateTime      @default(now()) @map("created_at")
+  updatedAt DateTime      @updatedAt @map("updated_at")
+
+  messages ChatMessage[]
+  leads    Lead[]
+
+  @@map("chat_sessions")
+}
+
+// ─── Chat Messages ───────────────────────────────────────────────────
+
+model ChatMessage {
+  id        Int         @id @default(autoincrement())
+  sessionId String      @map("session_id") @db.Uuid
+  role      String      @db.VarChar(20) // 'user' | 'assistant' | 'system'
+  content   String
+  products  Json?       // attached product cards as JSONB
+  createdAt DateTime    @default(now()) @map("created_at")
+
+  session ChatSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+
+  @@index([sessionId])
+  @@map("chat_messages")
+}
+
+// ─── Leads ───────────────────────────────────────────────────────────
+
+model Lead {
+  id            Int         @id @default(autoincrement())
+  customerName  String      @map("customer_name")
+  customerPhone String?     @map("customer_phone") @db.VarChar(20)
+  customerEmail String?     @map("customer_email")
+  message       String?
+  productCodes  String[]    @map("product_codes")
+  totalJod      Decimal?    @map("total_jod") @db.Decimal(10, 2)
+  status        String      @default("new") @db.VarChar(20) // 'new' | 'emailed' | 'contacted'
+  sessionId     String?     @map("session_id") @db.Uuid
+  createdAt     DateTime    @default(now()) @map("created_at")
+
+  session ChatSession? @relation(fields: [sessionId], references: [id])
+
+  @@index([status])
+  @@map("leads")
+}

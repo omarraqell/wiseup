@@ -1,0 +1,8 @@
+{
+  "drop": [22],
+  "name_ar": {
+    "5": "سلسلة الزراديات",
+    "18": "مستلزمات السلامة"
+  },
+  "_comment": "Owner decisions from 2026-07-15 review. Applied by translate_categories.py AFTER the LLM pass. drop: category ids removed entirely (22 = 'Cutting and polishing', merged into 8). name_ar: hand-corrected Arabic names that must never be regenerated."
+}

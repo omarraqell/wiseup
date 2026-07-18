@@ -1,0 +1,70 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: wiseup-db
+    environment:
+      POSTGRES_DB: wiseup
+      POSTGRES_USER: wiseup
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-wiseup_dev_2026}
+    ports:
+      - "5433:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U wiseup"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build: ./backend
+    container_name: wiseup-api
+    ports:
+      - "4000:4000"
+    environment:
+      NODE_ENV: development
+      PORT: 4000
+      DATABASE_URL: postgresql://wiseup:${DB_PASSWORD:-wiseup_dev_2026}@postgres:5432/wiseup
+      AI_SERVICE_URL: http://ai-service:8000
+      GMAIL_APP_PASSWORD: ${GMAIL_APP_PASSWORD}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./backend/src:/app/src
+      - ./images:/app/images
+    restart: unless-stopped
+
+  ai-service:
+    build: ./ai-service
+    container_name: wiseup-ai
+    ports:
+      - "8000:8000"
+    environment:
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      TAVILY_API_KEY: ${TAVILY_API_KEY}
+      GMAIL_APP_PASSWORD: ${GMAIL_APP_PASSWORD}
+      WISEUP_EMBED_BACKEND: openai
+      LANGSMITH_TRACING: ${LANGSMITH_TRACING:-false}
+      LANGSMITH_API_KEY: ${LANGSMITH_API_KEY:-}
+      LANGSMITH_PROJECT: wiseup
+    volumes:
+      - chroma_data:/app/chroma_db_openai
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    container_name: wiseup-web
+    ports:
+      - "3100:3000"
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:4000
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  pg_data:
+  chroma_data:
