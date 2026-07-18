@@ -1995,6 +1995,17 @@ git commit -m "feat: product detail page and Stitch landing page with chat widge
   work, so only genuinely new products cost an LLM call), but the chain has to be wired up
   and `ingest_excel.py` has to stop being safe to run alone. Raised with the owner
   2026-07-15; deferred, not resolved.
+- **Phase 3's price rule needs two edits beyond the serializer flip** (final Phase 2 review,
+  2026-07-18). The one-line `include_price=False` covers every structured path by
+  construction, but two pre-existing channels bypass it: (a) `rag.py` `build_context()`
+  interpolates `السعر: {price_jod}` from doc metadata into the LLM prompt, so a business
+  account's `/ask` prose answer could still name prices — Phase 3 must gate it too;
+  (b) the chat widget's `card()` in `frontend/index.html` prints `${p.price_jod} JOD`
+  directly — with the key absent it renders "undefined JOD"; route it through
+  `WISEUP.money()` when Phase 3 lands. Neither is reachable in Phase 2 (no accounts).
+- **Owner's hands-on browser walk (Task 12 step 5) still owed**: JS behavior verified by
+  code review + server-side curl only. Walk /, /catalog, /category?id=N, /product?code=X,
+  the AR/EN toggle, and the chat widget before treating the storefront as validated.
 
 ## Deliberately not in this plan
 
