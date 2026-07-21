@@ -910,7 +910,7 @@ git commit -m "feat: route product responses through a single price-aware serial
 - Create: `frontend/src/lib/supabase/client.ts`
 - Create: `frontend/src/lib/supabase/server.ts`
 - Create: `frontend/src/lib/supabase/proxy.ts`
-- Create: `frontend/proxy.ts` (project root — Next.js 16 renamed `middleware.ts` to `proxy.ts`; confirmed against the currently-installed Next.js 16.2.10 via Supabase's own docs)
+- Create: `frontend/src/proxy.ts` (Next.js 16 renamed `middleware.ts` to `proxy.ts`; confirmed against the currently-installed Next.js 16.2.10 via Supabase's own docs. **Location note (corrected after Task 6 implementation):** the file goes in `src/`, not the project root, when the app lives under `src/app` — confirmed against this exact installed version's own bundled docs at `frontend/node_modules/next/dist/docs/01-app/03-api-reference/03-file-conventions/proxy.md`: "Create a `proxy.ts` ... file in the project root, or inside `src` if applicable, so that it is located at the same level as `pages` or `app`.")
 - Modify: `frontend/package.json` (add `@supabase/ssr`, `@supabase/supabase-js`)
 - Modify: `.env.example` (frontend-visible vars)
 
@@ -1019,9 +1019,9 @@ export async function updateSession(request: NextRequest) {
 }
 ```
 
-- [ ] **Step 6: Wire up the project-root `proxy.ts`**
+- [ ] **Step 6: Wire up `proxy.ts`**
 
-Create `frontend/proxy.ts`:
+Create `frontend/src/proxy.ts` (in `src/`, not the project root — see the file-placement note above):
 ```typescript
 import { type NextRequest } from "next/server";
 import { updateSession } from "@/lib/supabase/proxy";
@@ -1048,7 +1048,7 @@ Expected: build succeeds with no errors about `proxy.ts` or missing env vars (th
 - [ ] **Step 8: Commit**
 
 ```bash
-git add frontend/package.json frontend/package-lock.json frontend/src/lib/supabase frontend/proxy.ts .env.example
+git add frontend/package.json frontend/package-lock.json frontend/src/lib/supabase frontend/src/proxy.ts .env.example
 git commit -m "feat: add Supabase browser/server clients and session-refresh proxy"
 ```
 
