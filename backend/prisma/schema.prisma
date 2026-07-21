@@ -97,3 +97,19 @@ model Lead {
   @@index([status])
   @@map("leads")
 }
+
+// ─── Profiles (Supabase Auth roles) ───────────────────────────────────
+
+model Profile {
+  id          String   @id @db.Uuid          // same UUID as auth.users.id
+  role        String   @db.VarChar(20)       // "personal" | "business"
+  name        String
+  phone       String?
+  companyName String?  @map("company_name")  // business only
+  companyCity String?  @map("company_city")  // business only
+  companyType String?  @map("company_type")  // business only
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  @@map("profiles")
+}
