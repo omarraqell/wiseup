@@ -6,6 +6,7 @@
  */
 import { Router } from "express";
 import { prisma } from "../utils/prisma";
+import { serializeProduct } from "../utils/serializeProduct";
 
 export const productsRouter = Router();
 
@@ -39,19 +40,10 @@ productsRouter.get("/", async (req, res, next) => {
       prisma.product.count({ where }),
     ]);
 
+    const includePrice = req.user?.role !== "business";
+
     res.json({
-      products: products.map((p) => ({
-        code: p.code,
-        name_ar: p.nameAr,
-        name_en: p.nameEn,
-        unit: p.unit,
-        price_jod: Number(p.priceJod),
-        image_url: p.imageUrl || "",
-        category_id: p.categoryId,
-        category: p.category
-          ? { name_ar: p.category.nameAr, name_en: p.category.nameEn, slug: p.category.slug }
-          : null,
-      })),
+      products: products.map((p) => serializeProduct(p, includePrice)),
       pagination: { page, limit, total, pages: Math.ceil(total / limit) },
     });
   } catch (err) {
@@ -71,18 +63,8 @@ productsRouter.get("/:code", async (req, res, next) => {
       return res.status(404).json({ error: { message: "Product not found" } });
     }
 
-    res.json({
-      code: product.code,
-      name_ar: product.nameAr,
-      name_en: product.nameEn,
-      unit: product.unit,
-      price_jod: Number(product.priceJod),
-      image_url: product.imageUrl || "",
-      category_id: product.categoryId,
-      category: product.category
-        ? { name_ar: product.category.nameAr, name_en: product.category.nameEn, slug: product.category.slug }
-        : null,
-    });
+    const includePrice = req.user?.role !== "business";
+    res.json(serializeProduct(product, includePrice));
   } catch (err) {
     next(err);
   }
