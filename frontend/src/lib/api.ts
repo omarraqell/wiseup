@@ -3,6 +3,8 @@
  * In development, proxies to localhost:4000. In production, uses NEXT_PUBLIC_API_URL.
  */
 
+import { createClient } from "@/lib/supabase/client";
+
 export const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000";
 
 export function getProductImageUrl(imageUrl: string | null | undefined): string {
@@ -27,7 +29,7 @@ export interface Product {
   name_ar: string;
   name_en: string | null;
   unit: string;
-  price_jod: number;
+  price_jod?: number;
   image_url: string;
   category_id: number | null;
   category: { name_ar: string; name_en: string; slug: string } | null;
@@ -51,6 +53,14 @@ async function fetchJSON<T>(url: string, init?: RequestInit): Promise<T> {
   return res.json();
 }
 
+async function authHeaders(): Promise<HeadersInit> {
+  const supabase = createClient();
+  const {
+    data: { session },
+  } = await supabase.auth.getSession();
+  return session?.access_token ? { Authorization: `Bearer ${session.access_token}` } : {};
+}
+
 // ─── Categories ──────────────────────────────────────────────────────
 
 export async function getCategories(): Promise<Category[]> {
@@ -72,11 +82,15 @@ export async function getProducts(params?: {
   if (params?.page) qs.set("page", String(params.page));
   if (params?.limit) qs.set("limit", String(params.limit));
   const query = qs.toString() ? `?${qs}` : "";
-  return fetchJSON<ProductsResponse>(`${API_BASE}/api/products${query}`);
+  return fetchJSON<ProductsResponse>(`${API_BASE}/api/products${query}`, {
+    headers: await authHeaders(),
+  });
 }
 
 export async function getProduct(code: string): Promise<Product> {
-  return fetchJSON<Product>(`${API_BASE}/api/products/${encodeURIComponent(code)}`);
+  return fetchJSON<Product>(`${API_BASE}/api/products/${encodeURIComponent(code)}`, {
+    headers: await authHeaders(),
+  });
 }
 
 // ─── Chat ────────────────────────────────────────────────────────────
