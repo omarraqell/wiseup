@@ -14,6 +14,7 @@ import { categoriesRouter } from "./routes/categories";
 import { productsRouter } from "./routes/products";
 import { chatRouter } from "./routes/chat";
 import { leadsRouter } from "./routes/leads";
+import { authMiddleware } from "./middleware/authMiddleware";
 import { errorHandler } from "./middleware/errorHandler";
 
 const app = express();
@@ -24,6 +25,7 @@ app.use(helmet({ crossOriginResourcePolicy: { policy: "cross-origin" } }));
 app.use(cors({ origin: process.env.CORS_ORIGIN || "*" }));
 app.use(morgan("dev"));
 app.use(express.json());
+app.use(authMiddleware);
 app.use("/images", express.static(path.join(__dirname, "../images")));
 
 // ─── Health check ────────────────────────────────────────────────────
