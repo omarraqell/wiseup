@@ -4,9 +4,11 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { useLanguage } from "@/context/LanguageContext";
+import { useAuth } from "@/context/AuthContext";
 
 export default function Header() {
   const { lang, setLang, t } = useLanguage();
+  const { user, role, loading, signOut } = useAuth();
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
@@ -92,6 +94,26 @@ export default function Header() {
 
         {/* Trailing Actions */}
         <div className="flex gap-2 items-center">
+          {!loading && (
+            user ? (
+              <div className="flex items-center gap-2">
+                <span className="hidden sm:inline text-sm font-medium text-[#5e3f3b]">
+                  {role === "business" ? t("حساب تجاري", "Business") : t("حسابي", "My Account")}
+                </span>
+                <button
+                  onClick={signOut}
+                  className={buttonClass}
+                  title={t("تسجيل الخروج", "Log out")}
+                >
+                  <span className="material-symbols-outlined">logout</span>
+                </button>
+              </div>
+            ) : (
+              <Link href="/login" className={`${buttonClass} text-sm font-medium px-3`}>
+                {t("تسجيل الدخول", "Log in")}
+              </Link>
+            )
+          )}
           <button
             onClick={() => setLang(lang === "ar" ? "en" : "ar")}
             className={buttonClass}
