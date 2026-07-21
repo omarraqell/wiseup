@@ -1,23 +1,4 @@
-version: "3.9"
-
 services:
-  postgres:
-    image: pgvector/pgvector:pg16
-    container_name: wiseup-db
-    environment:
-      POSTGRES_DB: wiseup
-      POSTGRES_USER: wiseup
-      POSTGRES_PASSWORD: ${DB_PASSWORD:-wiseup_dev_2026}
-    ports:
-      - "5433:5432"
-    volumes:
-      - pg_data:/var/lib/postgresql/data
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U wiseup"]
-      interval: 5s
-      timeout: 5s
-      retries: 5
-
   backend:
     build: ./backend
     container_name: wiseup-api
@@ -26,12 +7,10 @@ services:
     environment:
       NODE_ENV: development
       PORT: 4000
-      DATABASE_URL: postgresql://wiseup:${DB_PASSWORD:-wiseup_dev_2026}@postgres:5432/wiseup
+      DATABASE_URL: ${DATABASE_URL}
+      SUPABASE_URL: ${SUPABASE_URL}
       AI_SERVICE_URL: http://ai-service:8000
       GMAIL_APP_PASSWORD: ${GMAIL_APP_PASSWORD}
-    depends_on:
-      postgres:
-        condition: service_healthy
     volumes:
       - ./backend/src:/app/src
       - ./images:/app/images
@@ -61,10 +40,11 @@ services:
       - "3100:3000"
     environment:
       NEXT_PUBLIC_API_URL: http://localhost:4000
+      NEXT_PUBLIC_SUPABASE_URL: ${SUPABASE_URL}
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: ${SUPABASE_ANON_KEY}
     depends_on:
       - backend
     restart: unless-stopped
 
 volumes:
-  pg_data:
   chroma_data:
