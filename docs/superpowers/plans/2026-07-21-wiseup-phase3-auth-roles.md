@@ -88,9 +88,24 @@ SUPABASE_ANON_KEY=eyJ...
 SUPABASE_SERVICE_ROLE_KEY=eyJ...
 ```
 
-- [ ] **Step 3: Update your local `.env`**
+- [ ] **Step 2b: Create `backend/.env.example`**
 
-Set `DATABASE_URL` to the real connection string from Step 1, `SUPABASE_URL` and `SUPABASE_ANON_KEY` to the values from Task 1. Leave `SUPABASE_SERVICE_ROLE_KEY` blank for now (reserved, unused this phase) unless Task 3's test needs it (it does — see Task 3).
+Prisma CLI and vitest both resolve `.env` relative to the current working directory (`backend/`, since every backend command in this plan runs via `cd backend`) — a repo-root `.env` alone is invisible to them. Docker Compose (Task 12) separately reads the repo-root `.env` for variable substitution in `docker-compose.yml`. The two are not redundant; both need the same values.
+
+Create `backend/.env.example`:
+```
+DATABASE_URL=postgresql://postgres.[project-ref]:[YOUR-PASSWORD]@aws-0-[region].pooler.supabase.com:5432/postgres
+SUPABASE_URL=https://[project-ref].supabase.co
+SUPABASE_ANON_KEY=eyJ...
+SUPABASE_SERVICE_ROLE_KEY=eyJ...
+PORT=4000
+AI_SERVICE_URL=http://localhost:8000
+GMAIL_APP_PASSWORD=
+```
+
+- [ ] **Step 3: Update your local `.env` files**
+
+Create both `.env` (repo root) and `backend/.env` (untracked in both cases) with the real values: `DATABASE_URL` from Step 1, `SUPABASE_URL` and `SUPABASE_ANON_KEY` from Task 1. `SUPABASE_SERVICE_ROLE_KEY` is required in `backend/.env` for Task 3's trigger test — get it from the Supabase Dashboard, **Project Settings → API → service_role key** — leave it blank in the repo-root `.env` (unused by Docker Compose this phase).
 
 - [ ] **Step 4: Apply existing migrations to Supabase**
 
@@ -114,10 +129,10 @@ Expected output ends with `Seeded 632 products successfully.` and `✨ Seeding c
 
 Call `list_tables` with the `project_id` and `schemas: ["public"]`. Expected: `categories` and `products` tables present. Then call `execute_sql` with `query: "select count(*) from products"` — expect `632`, and `"select count(*) from categories"` — expect `26`.
 
-- [ ] **Step 7: Commit the `.env.example` change**
+- [ ] **Step 7: Commit the `.env.example` changes**
 
 ```bash
-git add .env.example
+git add .env.example backend/.env.example
 git commit -m "docs: add Supabase env vars to .env.example"
 ```
 
@@ -240,6 +255,7 @@ npm install @supabase/supabase-js
 Create `backend/src/utils/__tests__/profilesTrigger.test.ts`:
 
 ```typescript
+import "dotenv/config"; // vitest does not auto-load .env — this reads backend/.env
 import { describe, it, expect, afterEach } from "vitest";
 import { createClient } from "@supabase/supabase-js";
 import { prisma } from "../prisma";
