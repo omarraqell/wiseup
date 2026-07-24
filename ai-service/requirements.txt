@@ -1,0 +1,14 @@
+langgraph
+langchain-core
+langchain-openai
+langchain-tavily
+langchain-chroma
+python-dotenv
+pytest
+langchain-community
+langchain-classic
+rank-bm25
+requests
+beautifulsoup4
+fastapi
+uvicorn[standard]

@@ -11,3 +11,6 @@ memory_store/
 .superpowers/
 test_output.log
 *.log
+node_modules/
+.next/
+dist/

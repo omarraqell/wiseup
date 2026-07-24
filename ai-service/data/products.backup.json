@@ -1,0 +1,4426 @@
+[
+  {
+    "code": "10101",
+    "name_ar": "زرادية كهرباء صناعي 6\"",
+    "unit": "pcs",
+    "price_jod": 2.5,
+    "image": "images/10101.png"
+  },
+  {
+    "code": "10102",
+    "name_ar": "زرادية كهرباء صناعي 7\"",
+    "unit": "pcs",
+    "price_jod": 2.95,
+    "image": "images/10102.png"
+  },
+  {
+    "code": "10104",
+    "name_ar": "زرادية كهرباء 6\"",
+    "unit": "pcs",
+    "price_jod": 1.85,
+    "image": "images/10104.png"
+  },
+  {
+    "code": "10105",
+    "name_ar": "زرادية كهرباء 7\"",
+    "unit": "pcs",
+    "price_jod": 2.2,
+    "image": "images/10105.png"
+  },
+  {
+    "code": "10201",
+    "name_ar": "قطاعة كهرباء صناعي 6\"",
+    "unit": "pcs",
+    "price_jod": 2.5,
+    "image": "images/10201.png"
+  },
+  {
+    "code": "10203",
+    "name_ar": "قطاعة كهرباء 6\"",
+    "unit": "pcs",
+    "price_jod": 1.75,
+    "image": "images/10203.png"
+  },
+  {
+    "code": "10301",
+    "name_ar": "زرادية بوز رفيع صناعي 6\"",
+    "unit": "pcs",
+    "price_jod": 2.5,
+    "image": "images/10301.png"
+  },
+  {
+    "code": "10302",
+    "name_ar": "زرادية بوز رفيع صناعي 8\"",
+    "unit": "pcs",
+    "price_jod": 2.95,
+    "image": "images/10302.png"
+  },
+  {
+    "code": "10502",
+    "name_ar": "قطاعة سلك مع عراية",
+    "unit": "pcs",
+    "price_jod": 2.25,
+    "image": "images/10502.png"
+  },
+  {
+    "code": "10503",
+    "name_ar": "عراية سلك",
+    "unit": "pcs",
+    "price_jod": 2.75,
+    "image": "images/10503.png"
+  },
+  {
+    "code": "10504",
+    "name_ar": "عراية سلك زمبرك",
+    "unit": "pcs",
+    "price_jod": 4.0,
+    "image": "images/10504.png"
+  },
+  {
+    "code": "10506",
+    "name_ar": "عراية سلك تومتيك 8\"",
+    "unit": "pcs",
+    "price_jod": 4.5,
+    "image": "images/10506.png"
+  },
+  {
+    "code": "10602",
+    "name_ar": "زرادية معزول 7\"",
+    "unit": "pcs",
+    "price_jod": 2.75,
+    "image": "images/10602.png"
+  },
+  {
+    "code": "10604",
+    "name_ar": "قطاعة معزول 6\"",
+    "unit": "pcs",
+    "price_jod": 2.25,
+    "image": "images/10604.png"
+  },
+  {
+    "code": "10703",
+    "name_ar": "قطاعة الكتروني 4.5\"",
+    "unit": "pcs",
+    "price_jod": 1.1,
+    "image": "images/10703.png"
+  },
+  {
+    "code": "10801",
+    "name_ar": "زرادية كباشي 7\"",
+    "unit": "pcs",
+    "price_jod": 1.75,
+    "image": "images/10801.png"
+  },
+  {
+    "code": "10802",
+    "name_ar": "زرادية كباشي 7\"",
+    "unit": "pcs",
+    "price_jod": 1.75,
+    "image": "images/10802.png"
+  },
+  {
+    "code": "10803",
+    "name_ar": "زرادية كباشي 7\"",
+    "unit": "pcs",
+    "price_jod": 1.75,
+    "image": "images/10803.png"
+  },
+  {
+    "code": "10804",
+    "name_ar": "زرادية كباشي 7\"",
+    "unit": "pcs",
+    "price_jod": 1.75,
+    "image": "images/10804.png"
+  },
+  {
+    "code": "10901",
+    "name_ar": "زرادية كبس 5\"",
+    "unit": "pcs",
+    "price_jod": 2.85,
+    "image": "images/10901.png"
+  },
+  {
+    "code": "10902",
+    "name_ar": "زرادية كبس صناعي 7\"",
+    "unit": "pcs",
+    "price_jod": 3.95,
+    "image": "images/10902.png"
+  },
+  {
+    "code": "10903",
+    "name_ar": "زرادية كبس صناعي 10\"",
+    "unit": "pcs",
+    "price_jod": 4.75,
+    "image": "images/10903.png"
+  },
+  {
+    "code": "10904",
+    "name_ar": "زرادية كبس فك صناعي 11\"",
+    "unit": "pcs",
+    "price_jod": 5.5,
+    "image": "images/10904.png"
+  },
+  {
+    "code": "10907",
+    "name_ar": "زرادية كبس بوز صناعي 9\"",
+    "unit": "pcs",
+    "price_jod": 4.5,
+    "image": "images/10907.png"
+  },
+  {
+    "code": "10908",
+    "name_ar": "زرادية بوز عريض صناعي 8\"",
+    "unit": "pcs",
+    "price_jod": 6.75,
+    "image": "images/10908.png"
+  },
+  {
+    "code": "10912",
+    "name_ar": "زرادية كبس صناعي جنزير 10\"",
+    "unit": "pcs",
+    "price_jod": 7.5,
+    "image": "images/10912.png"
+  },
+  {
+    "code": "11002",
+    "name_ar": "زرادية مضخة فورد 10\"",
+    "unit": "pcs",
+    "price_jod": 3.75,
+    "image": "images/11002.png"
+  },
+  {
+    "code": "11004",
+    "name_ar": "زرادية فورد صناعي 10\"",
+    "unit": "pcs",
+    "price_jod": 3.35,
+    "image": "images/11004.png"
+  },
+  {
+    "code": "11402",
+    "name_ar": "قطاعة طوبار 7\"",
+    "unit": "pcs",
+    "price_jod": 2.75,
+    "image": "images/11402.png"
+  },
+  {
+    "code": "11501",
+    "name_ar": "خرامة قشاط",
+    "unit": "pcs",
+    "price_jod": 3.4,
+    "image": "images/11501.png"
+  },
+  {
+    "code": "11608",
+    "name_ar": "مفتاح مواسير 8\"",
+    "unit": "pcs",
+    "price_jod": 2.35,
+    "image": "images/11608.png"
+  },
+  {
+    "code": "11610",
+    "name_ar": "مفتاح مواسير 10\"",
+    "unit": "pcs",
+    "price_jod": 2.95,
+    "image": "images/11610.png"
+  },
+  {
+    "code": "11612",
+    "name_ar": "مفتاح مواسير 12\"",
+    "unit": "pcs",
+    "price_jod": 3.75,
+    "image": "images/11612.png"
+  },
+  {
+    "code": "11614",
+    "name_ar": "مفتاح مواسير 14\"",
+    "unit": "pcs",
+    "price_jod": 4.5,
+    "image": "images/11614.png"
+  },
+  {
+    "code": "11618",
+    "name_ar": "مفتاح مواسير 18\"",
+    "unit": "pcs",
+    "price_jod": 6.5,
+    "image": "images/11618.png"
+  },
+  {
+    "code": "11624",
+    "name_ar": "مفتاح مواسير 24\"",
+    "unit": "pcs",
+    "price_jod": 9.5,
+    "image": "images/11624.png"
+  },
+  {
+    "code": "11636",
+    "name_ar": "مفتاح مواسير 36\"",
+    "unit": "pcs",
+    "price_jod": 17.0,
+    "image": "images/11636.png"
+  },
+  {
+    "code": "11924",
+    "name_ar": "مقص مبروم صناعي 24\"",
+    "unit": "pcs",
+    "price_jod": 11.0,
+    "image": "images/11924.png"
+  },
+  {
+    "code": "11930",
+    "name_ar": "مقص مبروم صناعي 30\"",
+    "unit": "pcs",
+    "price_jod": 14.75,
+    "image": "images/11930.png"
+  },
+  {
+    "code": "11936",
+    "name_ar": "مقص مبروم صناعي 36\"",
+    "unit": "pcs",
+    "price_jod": 19.0,
+    "image": "images/11936.png"
+  },
+  {
+    "code": "11942",
+    "name_ar": "مقص مبروم صناعي 42\"",
+    "unit": "pcs",
+    "price_jod": 26.5,
+    "image": "images/11942.png"
+  },
+  {
+    "code": "11948",
+    "name_ar": "مقص مبروم صناعي 48\"",
+    "unit": "pcs",
+    "price_jod": 32.0,
+    "image": "images/11948.png"
+  },
+  {
+    "code": "12001",
+    "name_ar": "طقم زرادية وقطاعه",
+    "unit": "pcs",
+    "price_jod": 5.5,
+    "image": "images/12001.png"
+  },
+  {
+    "code": "12003",
+    "name_ar": "طقم زرادية كباشي 4 قطع",
+    "unit": "pcs",
+    "price_jod": 6.75,
+    "image": "images/12003.png"
+  },
+  {
+    "code": "12005",
+    "name_ar": "طقم زرادية مع قطاعة الكتروني 4 قطع",
+    "unit": "pcs",
+    "price_jod": 5.0,
+    "image": "images/12005.png"
+  },
+  {
+    "code": "20101",
+    "name_ar": "مقص قماش",
+    "unit": "pcs",
+    "price_jod": 3.25,
+    "image": "images/20101.png"
+  },
+  {
+    "code": "20201",
+    "name_ar": "قطاعة كيبل 6\"",
+    "unit": "pcs",
+    "price_jod": 1.95,
+    "image": "images/20201.png"
+  },
+  {
+    "code": "20202",
+    "name_ar": "قطاعة كيبل 8\"",
+    "unit": "pcs",
+    "price_jod": 2.75,
+    "image": "images/20202.png"
+  },
+  {
+    "code": "20203",
+    "name_ar": "قطاعة كيبل 10\"",
+    "unit": "pcs",
+    "price_jod": 3.35,
+    "image": "images/20203.png"
+  },
+  {
+    "code": "20301",
+    "name_ar": "مقص صاج 10\"",
+    "unit": "pcs",
+    "price_jod": 3.25,
+    "image": "images/20301.png"
+  },
+  {
+    "code": "20405",
+    "name_ar": "مقص صاج صناعي مسكر 10\"",
+    "unit": "pcs",
+    "price_jod": 3.5,
+    "image": "images/20405.png"
+  },
+  {
+    "code": "20501",
+    "name_ar": "مقص اعشاب 10\"",
+    "unit": "pcs",
+    "price_jod": 3.95,
+    "image": "images/20501.png"
+  },
+  {
+    "code": "20502",
+    "name_ar": "مقص اعشاب 12\"",
+    "unit": "pcs",
+    "price_jod": 6.0,
+    "image": "images/20502.png"
+  },
+  {
+    "code": "20503",
+    "name_ar": "مقص اعشاب سحب 12\"",
+    "unit": "pcs",
+    "price_jod": 9.5,
+    "image": "images/20503.png"
+  },
+  {
+    "code": "20504",
+    "name_ar": "مقص اعشاب بوز طويل",
+    "unit": "pcs",
+    "price_jod": 8.0,
+    "image": "images/20504.png"
+  },
+  {
+    "code": "20507",
+    "name_ar": "مقص اعشاب يد فيبر",
+    "unit": "pcs",
+    "price_jod": 6.0,
+    "image": "images/20507.png"
+  },
+  {
+    "code": "30108",
+    "name_ar": "مفتاح موليت 8\"",
+    "unit": "pcs",
+    "price_jod": 2.75,
+    "image": "images/30108.png"
+  },
+  {
+    "code": "30109",
+    "name_ar": "مفتاح موليت 10\"",
+    "unit": "pcs",
+    "price_jod": 3.85,
+    "image": "images/30109.png"
+  },
+  {
+    "code": "30110",
+    "name_ar": "مفتاح موليت 12\"",
+    "unit": "pcs",
+    "price_jod": 5.0,
+    "image": "images/30110.png"
+  },
+  {
+    "code": "30111",
+    "name_ar": "مفتاح موليت 15\"",
+    "unit": "pcs",
+    "price_jod": 9.0,
+    "image": "images/30111.png"
+  },
+  {
+    "code": "30242",
+    "name_ar": "شق رنق 10 ملم",
+    "unit": "pcs",
+    "price_jod": 0.9,
+    "image": "images/30242.png"
+  },
+  {
+    "code": "30244",
+    "name_ar": "شق رنق 12 ملم",
+    "unit": "pcs",
+    "price_jod": 1.0,
+    "image": "images/30244.png"
+  },
+  {
+    "code": "30245",
+    "name_ar": "شق رنق 13 ملم",
+    "unit": "pcs",
+    "price_jod": 1.1,
+    "image": "images/30245.png"
+  },
+  {
+    "code": "30246",
+    "name_ar": "شق رنق 14 ملم",
+    "unit": "pcs",
+    "price_jod": 1.2,
+    "image": "images/30246.png"
+  },
+  {
+    "code": "30247",
+    "name_ar": "شق رنق 15 ملم",
+    "unit": "pcs",
+    "price_jod": 1.3,
+    "image": "images/30247.png"
+  },
+  {
+    "code": "30248",
+    "name_ar": "شق رنق 16 ملم",
+    "unit": "pcs",
+    "price_jod": 1.5,
+    "image": "images/30248.png"
+  },
+  {
+    "code": "30249",
+    "name_ar": "شق رنق 17 ملم",
+    "unit": "pcs",
+    "price_jod": 1.65,
+    "image": "images/30249.png"
+  },
+  {
+    "code": "30251",
+    "name_ar": "شق رنق 19 ملم",
+    "unit": "pcs",
+    "price_jod": 1.95,
+    "image": "images/30251.png"
+  },
+  {
+    "code": "30252",
+    "name_ar": "شق رنق 21 ملم",
+    "unit": "pcs",
+    "price_jod": 2.3,
+    "image": "images/30252.png"
+  },
+  {
+    "code": "30619",
+    "name_ar": "طقم شق رنق 8 قطع 6--22",
+    "unit": "pcs",
+    "price_jod": 8.0,
+    "image": "images/30619.png"
+  },
+  {
+    "code": "30901",
+    "name_ar": "وصلة بكس حرف ال 10\"",
+    "unit": "pcs",
+    "price_jod": 1.65,
+    "image": "images/30901.png"
+  },
+  {
+    "code": "30902",
+    "name_ar": "وصلة بكس حرف ال 12\"",
+    "unit": "pcs",
+    "price_jod": 1.9,
+    "image": "images/30902.png"
+  },
+  {
+    "code": "31401",
+    "name_ar": "طقطيقة صناعي 10\"",
+    "unit": "pcs",
+    "price_jod": 6.95,
+    "image": "images/31401.png"
+  },
+  {
+    "code": "31802",
+    "name_ar": "وصلة بكس مستقيم 5\"",
+    "unit": "pcs",
+    "price_jod": 1.0,
+    "image": "images/31802.png"
+  },
+  {
+    "code": "31803",
+    "name_ar": "وصلة بكس مستقيم 10\"",
+    "unit": "pcs",
+    "price_jod": 1.75,
+    "image": "images/31803.png"
+  },
+  {
+    "code": "32001",
+    "name_ar": "وصلة بكس متحرك 10\"",
+    "unit": "pcs",
+    "price_jod": 1.75,
+    "image": "images/32001.png"
+  },
+  {
+    "code": "32108",
+    "name_ar": "تي بكس صناعي 8 ملم",
+    "unit": "pcs",
+    "price_jod": 1.1,
+    "image": "images/32108.png"
+  },
+  {
+    "code": "32110",
+    "name_ar": "تي بكس صناعي 10 ملم",
+    "unit": "pcs",
+    "price_jod": 1.1,
+    "image": "images/32110.png"
+  },
+  {
+    "code": "32112",
+    "name_ar": "تي بكس صناعي 10 ملم",
+    "unit": "pcs",
+    "price_jod": 1.1,
+    "image": "images/32112.png"
+  },
+  {
+    "code": "32114",
+    "name_ar": "تي بكس صناعي 12 ملم",
+    "unit": "pcs",
+    "price_jod": 1.1,
+    "image": "images/32114.png"
+  },
+  {
+    "code": "32302",
+    "name_ar": "طقم الن كي مسدس وسط",
+    "unit": "pcs",
+    "price_jod": 2.0,
+    "image": "images/32302.png"
+  },
+  {
+    "code": "32303",
+    "name_ar": "طقم الن كي مسدس طويل",
+    "unit": "pcs",
+    "price_jod": 2.5,
+    "image": "images/32303.png"
+  },
+  {
+    "code": "32305",
+    "name_ar": "طقم الن كي مشرنف وسط",
+    "unit": "pcs",
+    "price_jod": 2.15,
+    "image": "images/32305.png"
+  },
+  {
+    "code": "32306",
+    "name_ar": "طقم الن كي مشرنف طويل",
+    "unit": "pcs",
+    "price_jod": 2.65,
+    "image": "images/32306.png"
+  },
+  {
+    "code": "32321",
+    "name_ar": "الن كي مفرد مع مقبض 4 ملم",
+    "unit": "pcs",
+    "price_jod": 0.8,
+    "image": "images/32321.png"
+  },
+  {
+    "code": "32322",
+    "name_ar": "الن كي مفرد مع مقبض 5 ملم",
+    "unit": "pcs",
+    "price_jod": 0.8,
+    "image": "images/32322.png"
+  },
+  {
+    "code": "32323",
+    "name_ar": "الن كي مفرد مع مقبض 6 ملم",
+    "unit": "pcs",
+    "price_jod": 0.9,
+    "image": "images/32323.png"
+  },
+  {
+    "code": "32324",
+    "name_ar": "الن كي مفرد مع مقبض 8 ملم",
+    "unit": "pcs",
+    "price_jod": 1.35,
+    "image": "images/32324.png"
+  },
+  {
+    "code": "32325",
+    "name_ar": "الن كي مفرد مع مقبض 10 ملم",
+    "unit": "pcs",
+    "price_jod": 1.65,
+    "image": "images/32325.png"
+  },
+  {
+    "code": "32332",
+    "name_ar": "طقم الن كي ميدالية مسدس",
+    "unit": "pcs",
+    "price_jod": 2.0,
+    "image": "images/32332.png"
+  },
+  {
+    "code": "32333",
+    "name_ar": "طقم الن كي ميدالية مشرنف",
+    "unit": "pcs",
+    "price_jod": 2.25,
+    "image": "images/32333.png"
+  },
+  {
+    "code": "32410",
+    "name_ar": "بكس طويل  10ملم",
+    "unit": "pcs",
+    "price_jod": 0.85,
+    "image": "images/32410.png"
+  },
+  {
+    "code": "32412",
+    "name_ar": "بكس طويل 12ملم",
+    "unit": "pcs",
+    "price_jod": 0.85,
+    "image": "images/32412.png"
+  },
+  {
+    "code": "32413",
+    "name_ar": "بكس طويل  13ملم",
+    "unit": "pcs",
+    "price_jod": 0.85,
+    "image": "images/32413.png"
+  },
+  {
+    "code": "32414",
+    "name_ar": "بكس طويل  14ملم",
+    "unit": "pcs",
+    "price_jod": 0.85,
+    "image": "images/32414.png"
+  },
+  {
+    "code": "32416",
+    "name_ar": "بكس طويل  16ملم",
+    "unit": "pcs",
+    "price_jod": 0.85,
+    "image": "images/32416.png"
+  },
+  {
+    "code": "32417",
+    "name_ar": "بكس طويل  17ملم",
+    "unit": "pcs",
+    "price_jod": 0.9,
+    "image": "images/32417.png"
+  },
+  {
+    "code": "32419",
+    "name_ar": "بكس طويل 19ملم",
+    "unit": "pcs",
+    "price_jod": 0.95,
+    "image": "images/32419.png"
+  },
+  {
+    "code": "32422",
+    "name_ar": "بكس طويل  22ملم",
+    "unit": "pcs",
+    "price_jod": 1.15,
+    "image": "images/32422.png"
+  },
+  {
+    "code": "32424",
+    "name_ar": "بكس طويل  24ملم",
+    "unit": "pcs",
+    "price_jod": 1.5,
+    "image": "images/32424.png"
+  },
+  {
+    "code": "40401",
+    "name_ar": "مكبس راسيات RG",
+    "unit": "pcs",
+    "price_jod": 3.35,
+    "image": "images/40401.png"
+  },
+  {
+    "code": "40501",
+    "name_ar": "فرد شمع 100W",
+    "unit": "pcs",
+    "price_jod": 3.0,
+    "image": "images/40501.png"
+  },
+  {
+    "code": "40603",
+    "name_ar": "كاوي لحام 60W",
+    "unit": "pcs",
+    "price_jod": 2.75,
+    "image": "images/40603.png"
+  },
+  {
+    "code": "40604",
+    "name_ar": "كاوي لحام مع بكرة",
+    "unit": "pcs",
+    "price_jod": 6.85,
+    "image": "images/40604.png"
+  },
+  {
+    "code": "40605",
+    "name_ar": "كاوي لحام صناعي 80 W",
+    "unit": "pcs",
+    "price_jod": 3.75,
+    "image": "images/40605.png"
+  },
+  {
+    "code": "40606",
+    "name_ar": "كاوي لحام صناعي 100 W",
+    "unit": "pcs",
+    "price_jod": 4.5,
+    "image": "images/40606.png"
+  },
+  {
+    "code": "40801",
+    "name_ar": "قصدير لحام 10 ملم * 100 غرام",
+    "unit": "pcs",
+    "price_jod": 2.0,
+    "image": "images/40801.png"
+  },
+  {
+    "code": "40802",
+    "name_ar": "قصدير لحام 200 غرام * 1.6 ملم",
+    "unit": "pcs",
+    "price_jod": 5.5,
+    "image": "images/40802.png"
+  },
+  {
+    "code": "40901",
+    "name_ar": "مفك تستر صغير",
+    "unit": "pcs",
+    "price_jod": 0.35,
+    "image": "images/40901.png"
+  },
+  {
+    "code": "40902",
+    "name_ar": "مفك تستر كبير",
+    "unit": "pcs",
+    "price_jod": 0.45,
+    "image": "images/40902.png"
+  },
+  {
+    "code": "40904",
+    "name_ar": "مفك فحص كهرباء",
+    "unit": "pcs",
+    "price_jod": 3.0,
+    "image": "images/40904.png"
+  },
+  {
+    "code": "40905",
+    "name_ar": "مفك كهرباء قلاب",
+    "unit": "pcs",
+    "price_jod": 1.25,
+    "image": "images/40905.png"
+  },
+  {
+    "code": "41001",
+    "name_ar": "افوميتر",
+    "unit": "pcs",
+    "price_jod": 5.0,
+    "image": "images/41001.png"
+  },
+  {
+    "code": "41002",
+    "name_ar": "ملتيميتر دجتل",
+    "unit": "pcs",
+    "price_jod": 17.0,
+    "image": "images/41002.png"
+  },
+  {
+    "code": "41003",
+    "name_ar": "كلام ميتر دجتل",
+    "unit": "pcs",
+    "price_jod": 28.0,
+    "image": "images/41003.png"
+  },
+  {
+    "code": "41401",
+    "name_ar": "تب كهرباء",
+    "unit": "pcs",
+    "price_jod": 0.2,
+    "image": "images/41401.png"
+  },
+  {
+    "code": "50100",
+    "name_ar": "شاكوش خلع يد فيبر 250 غرام قزم",
+    "unit": "pcs",
+    "price_jod": 1.9,
+    "image": "images/50100.png"
+  },
+  {
+    "code": "50101",
+    "name_ar": "شاكوش خلع يد فيبر 250 غرام",
+    "unit": "pcs",
+    "price_jod": 2.3,
+    "image": "images/50101.png"
+  },
+  {
+    "code": "50103",
+    "name_ar": "شاكوش خلع يد فيبر 500 غرام",
+    "unit": "pcs",
+    "price_jod": 3.0,
+    "image": "images/50103.png"
+  },
+  {
+    "code": "50119",
+    "name_ar": "شاكوش حدادة يد فيبر 300 غرام",
+    "unit": "pcs",
+    "price_jod": 2.0,
+    "image": "images/50119.png"
+  },
+  {
+    "code": "50121",
+    "name_ar": "شاكوش حدادة يد فيبر 500 غرام",
+    "unit": "pcs",
+    "price_jod": 2.65,
+    "image": "images/50121.png"
+  },
+  {
+    "code": "50124",
+    "name_ar": "شاكوش حدادة يد فيبر 1000 غرام",
+    "unit": "pcs",
+    "price_jod": 4.0,
+    "image": "images/50124.png"
+  },
+  {
+    "code": "50125",
+    "name_ar": "شاكوش حدادة يد فيبر 1500 غرام",
+    "unit": "pcs",
+    "price_jod": 5.1,
+    "image": "images/50125.png"
+  },
+  {
+    "code": "50126",
+    "name_ar": "شاكوش حدادة يد فيبر 2000 غرام",
+    "unit": "pcs",
+    "price_jod": 6.15,
+    "image": "images/50126.png"
+  },
+  {
+    "code": "50301",
+    "name_ar": "بلطة يد فيبر 600 غرام",
+    "unit": "pcs",
+    "price_jod": 4.45,
+    "image": "images/50301.png"
+  },
+  {
+    "code": "50601",
+    "name_ar": "مالج يد خشب",
+    "unit": "pcs",
+    "price_jod": 1.75,
+    "image": "images/50601.png"
+  },
+  {
+    "code": "50602",
+    "name_ar": "مالج يد خشب مشرنف",
+    "unit": "pcs",
+    "price_jod": 1.85,
+    "image": "images/50602.png"
+  },
+  {
+    "code": "50603",
+    "name_ar": "مالج يد مسكر نسلة ستانلس عادي",
+    "unit": "pcs",
+    "price_jod": 3.0,
+    "image": "images/50603.png"
+  },
+  {
+    "code": "50604",
+    "name_ar": "مالج يد مسكر نسلة ستانلس مشرنف",
+    "unit": "pcs",
+    "price_jod": 3.0,
+    "image": "images/50604.png"
+  },
+  {
+    "code": "50606",
+    "name_ar": "مالج يد بلاستك مشرنف",
+    "unit": "pcs",
+    "price_jod": 1.65,
+    "image": "images/50606.png"
+  },
+  {
+    "code": "50607",
+    "name_ar": "مالج يد فيبر نسلة ستانلس عادي",
+    "unit": "pcs",
+    "price_jod": 3.4,
+    "image": "images/50607.png"
+  },
+  {
+    "code": "50608",
+    "name_ar": "مالج يد فيبر نسلة ستانلس مشرنف",
+    "unit": "pcs",
+    "price_jod": 3.6,
+    "image": "images/50608.png"
+  },
+  {
+    "code": "50712",
+    "name_ar": "مشحاف يد خشب 2\"",
+    "unit": "pcs",
+    "price_jod": 0.5,
+    "image": "images/50712.png"
+  },
+  {
+    "code": "50714",
+    "name_ar": "مشحاف يد خشب 3\"",
+    "unit": "pcs",
+    "price_jod": 0.55,
+    "image": "images/50714.png"
+  },
+  {
+    "code": "50716",
+    "name_ar": "مشحاف يد خشب 4\"",
+    "unit": "pcs",
+    "price_jod": 0.6,
+    "image": "images/50716.png"
+  },
+  {
+    "code": "50717",
+    "name_ar": "مشحاف يد خشب 5\"",
+    "unit": "pcs",
+    "price_jod": 0.675,
+    "image": "images/50717.png"
+  },
+  {
+    "code": "50718",
+    "name_ar": "مشحاف يد خشب 6\"",
+    "unit": "pcs",
+    "price_jod": 0.725,
+    "image": "images/50718.png"
+  },
+  {
+    "code": "50801",
+    "name_ar": "مسطرين مثلث 6\"",
+    "unit": "pcs",
+    "price_jod": 0.8999999999999999,
+    "image": "images/50801.png"
+  },
+  {
+    "code": "50802",
+    "name_ar": "مسطرين مثلث 7\"",
+    "unit": "pcs",
+    "price_jod": 1.0,
+    "image": "images/50802.png"
+  },
+  {
+    "code": "50813",
+    "name_ar": "مسطرين مربع 16 سم",
+    "unit": "pcs",
+    "price_jod": 1.15,
+    "image": "images/50813.png"
+  },
+  {
+    "code": "50814",
+    "name_ar": "مسطرين مربع 18 سم",
+    "unit": "pcs",
+    "price_jod": 1.25,
+    "image": "images/50814.png"
+  },
+  {
+    "code": "50815",
+    "name_ar": "مسطرين مربع 20 سم",
+    "unit": "pcs",
+    "price_jod": 1.35,
+    "image": "images/50815.png"
+  },
+  {
+    "code": "50901",
+    "name_ar": "مشحاف بنيل",
+    "unit": "pcs",
+    "price_jod": 0.7,
+    "image": "images/50901.png"
+  },
+  {
+    "code": "50930",
+    "name_ar": "مشحاف بنيل طويل 30 سم",
+    "unit": "pcs",
+    "price_jod": 2.65,
+    "image": "images/50930.png"
+  },
+  {
+    "code": "50960",
+    "name_ar": "مشحاف بنيل طويل 60 سم",
+    "unit": "pcs",
+    "price_jod": 3.0,
+    "image": "images/50960.png"
+  },
+  {
+    "code": "51104",
+    "name_ar": "ازميل عريض 25 سم",
+    "unit": "pcs",
+    "price_jod": 1.7999999999999998,
+    "image": "images/51104.png"
+  },
+  {
+    "code": "51105",
+    "name_ar": "ازميل بوز 30 سم",
+    "unit": "pcs",
+    "price_jod": 1.9,
+    "image": "images/51105.png"
+  },
+  {
+    "code": "51106",
+    "name_ar": "ازميل عريض 30 سم",
+    "unit": "pcs",
+    "price_jod": 1.9,
+    "image": "images/51106.png"
+  },
+  {
+    "code": "51301",
+    "name_ar": "طقم سنسيل 4 قطع",
+    "unit": "pcs",
+    "price_jod": 7.5,
+    "image": "images/51301.png"
+  },
+  {
+    "code": "51312",
+    "name_ar": "سنسيل نجارين 12 ملم",
+    "unit": "pcs",
+    "price_jod": 2.0,
+    "image": "images/51312.png"
+  },
+  {
+    "code": "51316",
+    "name_ar": "سنسيل نجارين 16 ملم",
+    "unit": "pcs",
+    "price_jod": 2.0,
+    "image": "images/51316.png"
+  },
+  {
+    "code": "51319",
+    "name_ar": "سنسيل نجارين 19 ملم",
+    "unit": "pcs",
+    "price_jod": 2.0,
+    "image": "images/51319.png"
+  },
+  {
+    "code": "51325",
+    "name_ar": "سنسيل نجارين 25 ملم",
+    "unit": "pcs",
+    "price_jod": 2.0,
+    "image": "images/51325.png"
+  },
+  {
+    "code": "51501",
+    "name_ar": "خيط علام مع بودرة",
+    "unit": "pcs",
+    "price_jod": 1.45,
+    "image": "images/51501.png"
+  },
+  {
+    "code": "51801",
+    "name_ar": "عرباية باطون",
+    "unit": "pcs",
+    "price_jod": 24.5,
+    "image": "images/51801.png"
+  },
+  {
+    "code": "51901",
+    "name_ar": "عرباية جر 41 سم * 73 سم",
+    "unit": "pcs",
+    "price_jod": 27.0,
+    "image": "images/51901.png"
+  },
+  {
+    "code": "51906",
+    "name_ar": "عرباية طوي 70 سم",
+    "unit": "pcs",
+    "price_jod": 16.5,
+    "image": "images/51906.png"
+  },
+  {
+    "code": "51907",
+    "name_ar": "عرباية طوي 50 سم",
+    "unit": "pcs",
+    "price_jod": 10.0,
+    "image": "images/51907.png"
+  },
+  {
+    "code": "61902",
+    "name_ar": "راس قص سمونة 2 قطعة",
+    "unit": "pcs",
+    "price_jod": 6.75,
+    "image": "images/61902.png"
+  },
+  {
+    "code": "62505",
+    "name_ar": "طقم مفك براغي عكسي 5 قطع",
+    "unit": "pcs",
+    "price_jod": 1.1,
+    "image": "images/62505.png"
+  },
+  {
+    "code": "62506",
+    "name_ar": "طقم مفك براغي عكسي 6 قطع",
+    "unit": "pcs",
+    "price_jod": 1.6,
+    "image": "images/62506.png"
+  },
+  {
+    "code": "63701",
+    "name_ar": "مزيتة 200 مل",
+    "unit": "pcs",
+    "price_jod": 1.25,
+    "image": "images/63701.png"
+  },
+  {
+    "code": "63801",
+    "name_ar": "منفاخ سيارة راسين",
+    "unit": "pcs",
+    "price_jod": 26.0,
+    "image": "images/63801.png"
+  },
+  {
+    "code": "63901",
+    "name_ar": "منفاخ بسكليت",
+    "unit": "pcs",
+    "price_jod": 5.5,
+    "image": "images/63901.png"
+  },
+  {
+    "code": "63904",
+    "name_ar": "منفاخ بسكليت",
+    "unit": "pcs",
+    "price_jod": 4.0,
+    "image": "images/63904.png"
+  },
+  {
+    "code": "64003",
+    "name_ar": "فرد هواء على كرت",
+    "unit": "pcs",
+    "price_jod": 2.0,
+    "image": "images/64003.png"
+  },
+  {
+    "code": "64102",
+    "name_ar": "مطس شحمة يدوي",
+    "unit": "pcs",
+    "price_jod": 5.5,
+    "image": "images/64102.png"
+  },
+  {
+    "code": "64201",
+    "name_ar": "جك تمساح 2 طن",
+    "unit": "pcs",
+    "price_jod": 22.0,
+    "image": "images/64201.png"
+  },
+  {
+    "code": "64203",
+    "name_ar": "جك زيت 3 طن",
+    "unit": "pcs",
+    "price_jod": 10.0,
+    "image": "images/64203.png"
+  },
+  {
+    "code": "64210",
+    "name_ar": "جحش كراج 3 طن",
+    "unit": "pcs",
+    "price_jod": 15.0,
+    "image": "images/64210.png"
+  },
+  {
+    "code": "64211",
+    "name_ar": "جحش كراج 6 طن",
+    "unit": "pcs",
+    "price_jod": 25.0,
+    "image": "images/64211.png"
+  },
+  {
+    "code": "64230",
+    "name_ar": "جك رالي 3 طن * 31.5 كيلو",
+    "unit": "pcs",
+    "price_jod": 110.0,
+    "image": "images/64230.png"
+  },
+  {
+    "code": "64231",
+    "name_ar": "جك رالي 3 طن * 22 كيلو",
+    "unit": "pcs",
+    "price_jod": 92.5,
+    "image": "images/64231.png"
+  },
+  {
+    "code": "64235",
+    "name_ar": "جك مرسيدس 1 طن",
+    "unit": "pcs",
+    "price_jod": 6.0,
+    "image": "images/64235.png"
+  },
+  {
+    "code": "64236",
+    "name_ar": "جك مرسيدس 1.5 طن",
+    "unit": "pcs",
+    "price_jod": 6.5,
+    "image": "images/64236.png"
+  },
+  {
+    "code": "64237",
+    "name_ar": "جك مرسيدس 2 طن",
+    "unit": "pcs",
+    "price_jod": 7.5,
+    "image": "images/64237.png"
+  },
+  {
+    "code": "64301",
+    "name_ar": "مضخة ديزل كهرباء",
+    "unit": "pcs",
+    "price_jod": 22.5,
+    "image": "images/64301.png"
+  },
+  {
+    "code": "64332",
+    "name_ar": "مضخة ديزل يدوي 32",
+    "unit": "pcs",
+    "price_jod": 19.0,
+    "image": "images/64332.png"
+  },
+  {
+    "code": "64601",
+    "name_ar": "كيبل شتراك 2.5 م * 500 امبير",
+    "unit": "pcs",
+    "price_jod": 7.0,
+    "image": "images/64601.png"
+  },
+  {
+    "code": "64606",
+    "name_ar": "سلك 2.5 ملم * 25 متر على بكرة",
+    "unit": "pcs",
+    "price_jod": 30.0,
+    "image": "images/64606.png"
+  },
+  {
+    "code": "64607",
+    "name_ar": "سلك 2.5 ملم * 50 متر على بكرة",
+    "unit": "pcs",
+    "price_jod": 45.0,
+    "image": "images/64607.png"
+  },
+  {
+    "code": "70201",
+    "name_ar": "طقم بكس 24 قطعة",
+    "unit": "SET",
+    "price_jod": 25.0,
+    "image": "images/70201.png"
+  },
+  {
+    "code": "80116",
+    "name_ar": "متر كوشوك 5 متر عريض",
+    "unit": "pcs",
+    "price_jod": 1.65,
+    "image": "images/80116.png"
+  },
+  {
+    "code": "80117",
+    "name_ar": "متر كوشوك 7.5 متر عريض",
+    "unit": "pcs",
+    "price_jod": 2.25,
+    "image": "images/80117.png"
+  },
+  {
+    "code": "80201",
+    "name_ar": "متر كركر 30 متر",
+    "unit": "pcs",
+    "price_jod": 4.9,
+    "image": "images/80201.png"
+  },
+  {
+    "code": "80202",
+    "name_ar": "متر كركر 50 متر",
+    "unit": "pcs",
+    "price_jod": 7.0,
+    "image": "images/80202.png"
+  },
+  {
+    "code": "80304",
+    "name_ar": "متر كركر مساحة 30 متر",
+    "unit": "pcs",
+    "price_jod": 5.5,
+    "image": "images/80304.png"
+  },
+  {
+    "code": "80305",
+    "name_ar": "متر كركر مساحة 50 متر",
+    "unit": "pcs",
+    "price_jod": 7.0,
+    "image": "images/80305.png"
+  },
+  {
+    "code": "80402",
+    "name_ar": "ميزان بناء مفنطيس 40 سم",
+    "unit": "pcs",
+    "price_jod": 5.75,
+    "image": "images/80402.png"
+  },
+  {
+    "code": "80403",
+    "name_ar": "ميزان بناء مفنطيس 60 سم",
+    "unit": "pcs",
+    "price_jod": 7.9,
+    "image": "images/80403.png"
+  },
+  {
+    "code": "80405",
+    "name_ar": "ميزان بناء 30 سم",
+    "unit": "pcs",
+    "price_jod": 3.5,
+    "image": "images/80405.png"
+  },
+  {
+    "code": "80406",
+    "name_ar": "ميزان بناء 45 سم",
+    "unit": "pcs",
+    "price_jod": 4.25,
+    "image": "images/80406.png"
+  },
+  {
+    "code": "80407",
+    "name_ar": "ميزان بناء 60 سم",
+    "unit": "pcs",
+    "price_jod": 5.0,
+    "image": "images/80407.png"
+  },
+  {
+    "code": "80410",
+    "name_ar": "ميزان بليط دق  40 سم",
+    "unit": "pcs",
+    "price_jod": 5.5,
+    "image": "images/80410.png"
+  },
+  {
+    "code": "80411",
+    "name_ar": "ميزان بليط دق  50 سم",
+    "unit": "pcs",
+    "price_jod": 6.0,
+    "image": "images/80411.png"
+  },
+  {
+    "code": "80412",
+    "name_ar": "ميزان بليط دق  60 سم",
+    "unit": "pcs",
+    "price_jod": 7.0,
+    "image": "images/80412.png"
+  },
+  {
+    "code": "80413",
+    "name_ar": "ميزان مغنطيس 20 سم",
+    "unit": "pcs",
+    "price_jod": 1.0,
+    "image": "images/80413.png"
+  },
+  {
+    "code": "80501",
+    "name_ar": "زاوية علام مع ميزان 30 سم",
+    "unit": "pcs",
+    "price_jod": 2.6999999999999997,
+    "image": "images/80501.png"
+  },
+  {
+    "code": "80503",
+    "name_ar": "زاوية علام كروم 40*60",
+    "unit": "pcs",
+    "price_jod": 3.5,
+    "image": "images/80503.png"
+  },
+  {
+    "code": "80504",
+    "name_ar": "زاوية علام اسود 20سم * 30 سم",
+    "unit": "pcs",
+    "price_jod": 1.1,
+    "image": "images/80504.png"
+  },
+  {
+    "code": "80505",
+    "name_ar": "زاوية علام اسود 40سم * 60 سم",
+    "unit": "pcs",
+    "price_jod": 2.0,
+    "image": "images/80505.png"
+  },
+  {
+    "code": "80701",
+    "name_ar": "كليبر دجتل صناعي",
+    "unit": "pcs",
+    "price_jod": 13.75,
+    "image": "images/80701.png"
+  },
+  {
+    "code": "80801",
+    "name_ar": "عجل مساحة دجتل",
+    "unit": "pcs",
+    "price_jod": 30.0,
+    "image": "images/80801.png"
+  },
+  {
+    "code": "80802",
+    "name_ar": "عجل مساحة عادي",
+    "unit": "pcs",
+    "price_jod": 22.0,
+    "image": "images/80802.png"
+  },
+  {
+    "code": "80902",
+    "name_ar": "متر ليزر 40 متر",
+    "unit": "pcs",
+    "price_jod": 20.0,
+    "image": "images/80902.png"
+  },
+  {
+    "code": "80903",
+    "name_ar": "متر ليزر 70 متر",
+    "unit": "pcs",
+    "price_jod": 25.0,
+    "image": "images/80903.png"
+  },
+  {
+    "code": "81001",
+    "name_ar": "ميزان لفل",
+    "unit": "pcs",
+    "price_jod": 32.0,
+    "image": "images/81001.png"
+  },
+  {
+    "code": "81002",
+    "name_ar": "لفل 16 خط",
+    "unit": "pcs",
+    "price_jod": 98.0,
+    "image": "images/81002.png"
+  },
+  {
+    "code": "81006",
+    "name_ar": "قاعدة لفل",
+    "unit": "pcs",
+    "price_jod": 17.0,
+    "image": ""
+  },
+  {
+    "code": "81102",
+    "name_ar": "ميزان كف 20 كيلو",
+    "unit": "pcs",
+    "price_jod": 10.0,
+    "image": "images/81102.png"
+  },
+  {
+    "code": "81103",
+    "name_ar": "ميزان تعليق 100 كيلو جديد",
+    "unit": "pcs",
+    "price_jod": 5.5,
+    "image": "images/81103.png"
+  },
+  {
+    "code": "81201",
+    "name_ar": "ميزان الكتروني 40 كيلو",
+    "unit": "pcs",
+    "price_jod": 25.0,
+    "image": "images/81201.png"
+  },
+  {
+    "code": "81202",
+    "name_ar": "ميزان الكتروني رقبة 40 كيلو",
+    "unit": "pcs",
+    "price_jod": 35.0,
+    "image": "images/81202.png"
+  },
+  {
+    "code": "81203",
+    "name_ar": "ميزان ذهب 5 كيلو",
+    "unit": "pcs",
+    "price_jod": 3.0,
+    "image": "images/81203.png"
+  },
+  {
+    "code": "81204",
+    "name_ar": "ميزان تعليق دجتل  50 كيلو",
+    "unit": "pcs",
+    "price_jod": 2.4,
+    "image": "images/81204.png"
+  },
+  {
+    "code": "81206",
+    "name_ar": "ميزان تعليق دجتل  300 كيلو",
+    "unit": "pcs",
+    "price_jod": 17.4,
+    "image": "images/81206.png"
+  },
+  {
+    "code": "81303",
+    "name_ar": "ميزان قبان 300 كيلو مع ضهر",
+    "unit": "pcs",
+    "price_jod": 65.0,
+    "image": "images/81303.png"
+  },
+  {
+    "code": "81315",
+    "name_ar": "ميزان قبان 150 كيلو",
+    "unit": "pcs",
+    "price_jod": 40.0,
+    "image": "images/81315.png"
+  },
+  {
+    "code": "81330",
+    "name_ar": "ميزان قبان 300 كيلو",
+    "unit": "pcs",
+    "price_jod": 60.0,
+    "image": "images/81330.png"
+  },
+  {
+    "code": "90102",
+    "name_ar": "مفك ربر عادي 4\"",
+    "unit": "pcs",
+    "price_jod": 0.575,
+    "image": "images/90102.png"
+  },
+  {
+    "code": "90103",
+    "name_ar": "مفك ربر عادي 5\"",
+    "unit": "pcs",
+    "price_jod": 0.6,
+    "image": "images/90103.png"
+  },
+  {
+    "code": "90105",
+    "name_ar": "مفك ربر عادي 6\"",
+    "unit": "pcs",
+    "price_jod": 0.625,
+    "image": "images/90105.png"
+  },
+  {
+    "code": "90108",
+    "name_ar": "مفك ربر مصلب 4\"",
+    "unit": "pcs",
+    "price_jod": 0.575,
+    "image": "images/90108.png"
+  },
+  {
+    "code": "90109",
+    "name_ar": "مفك ربر مصلب 5\"",
+    "unit": "pcs",
+    "price_jod": 0.6,
+    "image": "images/90109.png"
+  },
+  {
+    "code": "90110",
+    "name_ar": "مفك ربر مصلب 6\"",
+    "unit": "pcs",
+    "price_jod": 0.625,
+    "image": "images/90110.png"
+  },
+  {
+    "code": "90115",
+    "name_ar": "مفك ربر يد احمر 5\" عادي",
+    "unit": "pcs",
+    "price_jod": 0.5,
+    "image": "images/90115.png"
+  },
+  {
+    "code": "90121",
+    "name_ar": "مفك ربر يد احمر 5\" مصلب",
+    "unit": "pcs",
+    "price_jod": 0.5,
+    "image": "images/90121.png"
+  },
+  {
+    "code": "90124",
+    "name_ar": "مفك ربر يد احمر 8\" مصلب",
+    "unit": "pcs",
+    "price_jod": 0.65,
+    "image": "images/90124.png"
+  },
+  {
+    "code": "90130",
+    "name_ar": "مفك ربر دق مصلب 4\"",
+    "unit": "pcs",
+    "price_jod": 0.8999999999999999,
+    "image": "images/90130.png"
+  },
+  {
+    "code": "90131",
+    "name_ar": "مفك ربر دق مصلب 5\"",
+    "unit": "pcs",
+    "price_jod": 1.0,
+    "image": "images/90131.png"
+  },
+  {
+    "code": "90205",
+    "name_ar": "طقم مفك 7 قطع",
+    "unit": "pcs",
+    "price_jod": 4.0,
+    "image": "images/90205.png"
+  },
+  {
+    "code": "90208",
+    "name_ar": "مفك ربر قلاب",
+    "unit": "pcs",
+    "price_jod": 1.0,
+    "image": "images/90208.png"
+  },
+  {
+    "code": "90300",
+    "name_ar": "طقم مفك خلوي 6 قطع",
+    "unit": "pcs",
+    "price_jod": 2.5,
+    "image": "images/90300.png"
+  },
+  {
+    "code": "90301",
+    "name_ar": "طقم مفك خلوي 6 قطع اسود",
+    "unit": "pcs",
+    "price_jod": 3.0,
+    "image": "images/90301.png"
+  },
+  {
+    "code": "90302",
+    "name_ar": "طقم مفك مع بكسات 37 قطعة",
+    "unit": "pcs",
+    "price_jod": 3.25,
+    "image": "images/90302.png"
+  },
+  {
+    "code": "90501",
+    "name_ar": "راسية مفك مصلب 6.5 سم",
+    "unit": "pcs",
+    "price_jod": 0.25,
+    "image": "images/90501.png"
+  },
+  {
+    "code": "100101",
+    "name_ar": "مشرط سجاد",
+    "unit": "pcs",
+    "price_jod": 1.25,
+    "image": "images/100101.png"
+  },
+  {
+    "code": "100102",
+    "name_ar": "شفرات مشرط ثقيل",
+    "unit": "pcs",
+    "price_jod": 0.4,
+    "image": "images/100102.png"
+  },
+  {
+    "code": "100103",
+    "name_ar": "مشرط",
+    "unit": "pcs",
+    "price_jod": 0.85,
+    "image": "images/100103.png"
+  },
+  {
+    "code": "100104",
+    "name_ar": "مشرط سجاد طويل",
+    "unit": "pcs",
+    "price_jod": 1.6,
+    "image": "images/100104.png"
+  },
+  {
+    "code": "100105",
+    "name_ar": "شفرات مشرط طوي",
+    "unit": "pcs",
+    "price_jod": 0.5,
+    "image": "images/100105.png"
+  },
+  {
+    "code": "100106",
+    "name_ar": "مشرط",
+    "unit": "pcs",
+    "price_jod": 0.8,
+    "image": "images/100106.png"
+  },
+  {
+    "code": "100107",
+    "name_ar": "مشرط",
+    "unit": "pcs",
+    "price_jod": 1.0,
+    "image": "images/100107.png"
+  },
+  {
+    "code": "100108",
+    "name_ar": "مشرط سجاد احمر",
+    "unit": "pcs",
+    "price_jod": 1.45,
+    "image": "images/100108.png"
+  },
+  {
+    "code": "100109",
+    "name_ar": "مشرط سجاد فضي",
+    "unit": "pcs",
+    "price_jod": 2.95,
+    "image": "images/100109.png"
+  },
+  {
+    "code": "100110",
+    "name_ar": "مشرط سجاد كروك طويل",
+    "unit": "pcs",
+    "price_jod": 3.15,
+    "image": "images/100110.png"
+  },
+  {
+    "code": "100111",
+    "name_ar": "مشرط قلم",
+    "unit": "pcs",
+    "price_jod": 0.3,
+    "image": "images/100111.png"
+  },
+  {
+    "code": "100112",
+    "name_ar": "مشرط عجل شفرة 25 ملم",
+    "unit": "pcs",
+    "price_jod": 1.5,
+    "image": "images/100112.png"
+  },
+  {
+    "code": "100113",
+    "name_ar": "شفرات مشرط عريض 25",
+    "unit": "pcs",
+    "price_jod": 1.25,
+    "image": "images/100113.png"
+  },
+  {
+    "code": "100501",
+    "name_ar": "المازة كاز",
+    "unit": "pcs",
+    "price_jod": 1.75,
+    "image": "images/100501.png"
+  },
+  {
+    "code": "100601",
+    "name_ar": "موس تطعيم مستقيم",
+    "unit": "pcs",
+    "price_jod": 2.0,
+    "image": "images/100601.png"
+  },
+  {
+    "code": "100602",
+    "name_ar": "موس تطعيم اعوج",
+    "unit": "pcs",
+    "price_jod": 2.0,
+    "image": "images/100602.png"
+  },
+  {
+    "code": "100801",
+    "name_ar": "مقص مواسير بلاستك مستقيم",
+    "unit": "pcs",
+    "price_jod": 2.1,
+    "image": "images/100801.png"
+  },
+  {
+    "code": "100802",
+    "name_ar": "مقص مواسير بلاستك 42 ملم",
+    "unit": "pcs",
+    "price_jod": 3.25,
+    "image": "images/100802.png"
+  },
+  {
+    "code": "100804",
+    "name_ar": "مقص مواسير بلاستك 63 ملم",
+    "unit": "pcs",
+    "price_jod": 7.5,
+    "image": "images/100804.png"
+  },
+  {
+    "code": "100810",
+    "name_ar": "مقص مواسير نحاس دائري 32",
+    "unit": "pcs",
+    "price_jod": 4.0,
+    "image": "images/100810.png"
+  },
+  {
+    "code": "100811",
+    "name_ar": "مقص مواسير نحاس مربع 22",
+    "unit": "pcs",
+    "price_jod": 2.25,
+    "image": "images/100811.png"
+  },
+  {
+    "code": "100907",
+    "name_ar": "طقم نسلة تخريقة",
+    "unit": "pcs",
+    "price_jod": 0.9,
+    "image": "images/100907.png"
+  },
+  {
+    "code": "100921",
+    "name_ar": "طقم نسلة ترددي",
+    "unit": "pcs",
+    "price_jod": 1.5,
+    "image": "images/100921.png"
+  },
+  {
+    "code": "101004",
+    "name_ar": "منشار حديد",
+    "unit": "pcs",
+    "price_jod": 2.25,
+    "image": "images/101004.png"
+  },
+  {
+    "code": "101005",
+    "name_ar": "منشار حديد سوبر يد كوشوك",
+    "unit": "pcs",
+    "price_jod": 4.25,
+    "image": "images/101005.png"
+  },
+  {
+    "code": "101102",
+    "name_ar": "اسطوانة قص خشب 4.5\" * 30 سن",
+    "unit": "pcs",
+    "price_jod": 2.0,
+    "image": "images/101102.png"
+  },
+  {
+    "code": "101103",
+    "name_ar": "اسطوانة قص خشب 7\" * 40 سن",
+    "unit": "pcs",
+    "price_jod": 3.75,
+    "image": "images/101103.png"
+  },
+  {
+    "code": "101104",
+    "name_ar": "اسطوانة قص خشب 7\" * 60 سن",
+    "unit": "pcs",
+    "price_jod": 4.75,
+    "image": "images/101104.png"
+  },
+  {
+    "code": "101518",
+    "name_ar": "هولسو قرانيت 18 ملم",
+    "unit": "pcs",
+    "price_jod": 0.85,
+    "image": "images/101518.png"
+  },
+  {
+    "code": "101525",
+    "name_ar": "هولسو قرانيت 25 ملم",
+    "unit": "pcs",
+    "price_jod": 1.1,
+    "image": "images/101525.png"
+  },
+  {
+    "code": "101625",
+    "name_ar": "هولسو  25 ملم",
+    "unit": "pcs",
+    "price_jod": 1.95,
+    "image": "images/101625.png"
+  },
+  {
+    "code": "101635",
+    "name_ar": "هولسو  35 ملم",
+    "unit": "pcs",
+    "price_jod": 3.0,
+    "image": "images/101635.png"
+  },
+  {
+    "code": "101640",
+    "name_ar": "هولسو  40 ملم",
+    "unit": "pcs",
+    "price_jod": 3.5,
+    "image": "images/101640.png"
+  },
+  {
+    "code": "101650",
+    "name_ar": "هولسو  50 ملم",
+    "unit": "pcs",
+    "price_jod": 4.0,
+    "image": "images/101650.png"
+  },
+  {
+    "code": "101802",
+    "name_ar": "اسطوانة قص قرانيت مفتوحة 4.5\"",
+    "unit": "pcs",
+    "price_jod": 1.75,
+    "image": "images/101802.png"
+  },
+  {
+    "code": "101803",
+    "name_ar": "اسطوانة قص قرانيت مفتوحة 7\"",
+    "unit": "pcs",
+    "price_jod": 3.75,
+    "image": "images/101803.png"
+  },
+  {
+    "code": "101804",
+    "name_ar": "اسطوانة قص قرانيت مفتوحة 9\"",
+    "unit": "pcs",
+    "price_jod": 5.75,
+    "image": "images/101804.png"
+  },
+  {
+    "code": "101810",
+    "name_ar": "اسطوانة قص قرانيت مسكر 4.5\"",
+    "unit": "pcs",
+    "price_jod": 1.5,
+    "image": "images/101810.png"
+  },
+  {
+    "code": "101811",
+    "name_ar": "اسطوانة قص متعدد 7\"",
+    "unit": "pcs",
+    "price_jod": 5.25,
+    "image": "images/101811.png"
+  },
+  {
+    "code": "101812",
+    "name_ar": "اسطوانة قص قرانيت مسكر 9\"",
+    "unit": "pcs",
+    "price_jod": 6.0,
+    "image": "images/101812.png"
+  },
+  {
+    "code": "101814",
+    "name_ar": "اسطوانة قص بورسلان مسكر 4.5\"",
+    "unit": "pcs",
+    "price_jod": 3.1,
+    "image": "images/101814.png"
+  },
+  {
+    "code": "101820",
+    "name_ar": "اسطوانة قص قرانيت شفرة 4.5\"",
+    "unit": "pcs",
+    "price_jod": 3.0,
+    "image": "images/101820.png"
+  },
+  {
+    "code": "102018",
+    "name_ar": "ريشة ستانلس 8 ملم",
+    "unit": "pcs",
+    "price_jod": 1.35,
+    "image": "images/102018.png"
+  },
+  {
+    "code": "102022",
+    "name_ar": "ريشة ستانلس 10 ملم",
+    "unit": "pcs",
+    "price_jod": 2.15,
+    "image": "images/102022.png"
+  },
+  {
+    "code": "102306",
+    "name_ar": "ريشة حجر 6 ملم",
+    "unit": "pcs",
+    "price_jod": 0.25,
+    "image": "images/102306.png"
+  },
+  {
+    "code": "102308",
+    "name_ar": "ريشة حجر 8 ملم",
+    "unit": "pcs",
+    "price_jod": 0.35,
+    "image": "images/102308.png"
+  },
+  {
+    "code": "102310",
+    "name_ar": "ريشة حجر 10 ملم",
+    "unit": "pcs",
+    "price_jod": 0.45,
+    "image": "images/102310.png"
+  },
+  {
+    "code": "102312",
+    "name_ar": "ريشة حجر 12 ملم",
+    "unit": "pcs",
+    "price_jod": 0.65,
+    "image": "images/102312.png"
+  },
+  {
+    "code": "102410",
+    "name_ar": "طقم ريشة هرم",
+    "unit": "pcs",
+    "price_jod": 6.75,
+    "image": "images/102410.png"
+  },
+  {
+    "code": "102718",
+    "name_ar": "ريشة خشب 18 ملم",
+    "unit": "pcs",
+    "price_jod": 1.35,
+    "image": "images/102718.png"
+  },
+  {
+    "code": "102720",
+    "name_ar": "ريشة خشب 20 ملم",
+    "unit": "pcs",
+    "price_jod": 1.55,
+    "image": "images/102720.png"
+  },
+  {
+    "code": "102722",
+    "name_ar": "ريشة خشب 22 ملم",
+    "unit": "pcs",
+    "price_jod": 1.65,
+    "image": "images/102722.png"
+  },
+  {
+    "code": "102725",
+    "name_ar": "ريشة خشب 25 ملم",
+    "unit": "pcs",
+    "price_jod": 1.85,
+    "image": "images/102725.png"
+  },
+  {
+    "code": "102801",
+    "name_ar": "طقم ذكر تسنين 8 قطع 3ملم-12ملم",
+    "unit": "pcs",
+    "price_jod": 4.75,
+    "image": "images/102801.png"
+  },
+  {
+    "code": "102802",
+    "name_ar": "طقم ذكر تسنين دائري 8 قطع 3ملم-12ملم",
+    "unit": "pcs",
+    "price_jod": 5.0,
+    "image": "images/102802.png"
+  },
+  {
+    "code": "102820",
+    "name_ar": "طقم ذكر تسنين دائري + مربع 20 قطعه 3ملم-12ملم",
+    "unit": "pcs",
+    "price_jod": 15.0,
+    "image": "images/102820.png"
+  },
+  {
+    "code": "103006",
+    "name_ar": "ريشة زجاج 6 ملم",
+    "unit": "pcs",
+    "price_jod": 0.7,
+    "image": "images/103006.png"
+  },
+  {
+    "code": "103008",
+    "name_ar": "ريشة زجاج 8 ملم",
+    "unit": "pcs",
+    "price_jod": 0.9,
+    "image": "images/103008.png"
+  },
+  {
+    "code": "103010",
+    "name_ar": "ريشة زجاج 10 ملم",
+    "unit": "pcs",
+    "price_jod": 1.2,
+    "image": "images/103010.png"
+  },
+  {
+    "code": "103012",
+    "name_ar": "ريشة زجاج 12 ملم",
+    "unit": "pcs",
+    "price_jod": 1.4,
+    "image": "images/103012.png"
+  },
+  {
+    "code": "103103",
+    "name_ar": "طقم هولسو 16 قطعة",
+    "unit": "pcs",
+    "price_jod": 5.45,
+    "image": "images/103103.png"
+  },
+  {
+    "code": "103105",
+    "name_ar": "طقم هولسو 3 قطع",
+    "unit": "pcs",
+    "price_jod": 1.85,
+    "image": "images/103105.png"
+  },
+  {
+    "code": "103106",
+    "name_ar": "طقم هولسو 5 قطع",
+    "unit": "pcs",
+    "price_jod": 2.0,
+    "image": "images/103106.png"
+  },
+  {
+    "code": "103108",
+    "name_ar": "طقم هولسو كباية 7 قطع",
+    "unit": "pcs",
+    "price_jod": 2.5,
+    "image": "images/103108.png"
+  },
+  {
+    "code": "103216",
+    "name_ar": "ريشة منقار  16",
+    "unit": "pcs",
+    "price_jod": 0.5,
+    "image": "images/103216.png"
+  },
+  {
+    "code": "103218",
+    "name_ar": "ريشة منقار  18",
+    "unit": "pcs",
+    "price_jod": 0.5,
+    "image": "images/103218.png"
+  },
+  {
+    "code": "103225",
+    "name_ar": "ريشة منقار25",
+    "unit": "pcs",
+    "price_jod": 0.6,
+    "image": "images/103225.png"
+  },
+  {
+    "code": "103332",
+    "name_ar": "ريشة هرم 32 ملم",
+    "unit": "pcs",
+    "price_jod": 4.0,
+    "image": "images/103332.png"
+  },
+  {
+    "code": "103401",
+    "name_ar": "ادبتر هولسو",
+    "unit": "pcs",
+    "price_jod": 1.25,
+    "image": "images/103401.png"
+  },
+  {
+    "code": "103402",
+    "name_ar": "ادبتر هولسو",
+    "unit": "pcs",
+    "price_jod": 2.0,
+    "image": "images/103402.png"
+  },
+  {
+    "code": "103407",
+    "name_ar": "طقم هولسو 6 قطع",
+    "unit": "pcs",
+    "price_jod": 8.0,
+    "image": "images/103407.png"
+  },
+  {
+    "code": "103411",
+    "name_ar": "طقم هولسو 11 قطعه",
+    "unit": "pcs",
+    "price_jod": 15.0,
+    "image": "images/103411.png"
+  },
+  {
+    "code": "110101",
+    "name_ar": "مقص شجر اعوج 8\"",
+    "unit": "pcs",
+    "price_jod": 4.25,
+    "image": "images/110101.png"
+  },
+  {
+    "code": "110102",
+    "name_ar": "مقص شجر يد ربر 75\"",
+    "unit": "pcs",
+    "price_jod": 1.95,
+    "image": "images/110102.png"
+  },
+  {
+    "code": "110106",
+    "name_ar": "مقص شجر ربر",
+    "unit": "pcs",
+    "price_jod": 4.25,
+    "image": "images/110106.png"
+  },
+  {
+    "code": "110107",
+    "name_ar": "مقص شجر مستقيم يد دائري",
+    "unit": "pcs",
+    "price_jod": 2.4,
+    "image": "images/110107.png"
+  },
+  {
+    "code": "110200",
+    "name_ar": "منشار شجر راس زاوية",
+    "unit": "pcs",
+    "price_jod": 3.3,
+    "image": "images/110200.png"
+  },
+  {
+    "code": "110201",
+    "name_ar": "منشار شجر يد خشب",
+    "unit": "pcs",
+    "price_jod": 3.0,
+    "image": "images/110201.png"
+  },
+  {
+    "code": "110211",
+    "name_ar": "منشار خشب يد فيبر 45 سم",
+    "unit": "pcs",
+    "price_jod": 2.5,
+    "image": "images/110211.png"
+  },
+  {
+    "code": "110212",
+    "name_ar": "منشار خشب يد فيبر 50 سم",
+    "unit": "pcs",
+    "price_jod": 2.65,
+    "image": "images/110212.png"
+  },
+  {
+    "code": "110213",
+    "name_ar": "منشار خشب يد فيبر 55 سم",
+    "unit": "pcs",
+    "price_jod": 2.85,
+    "image": "images/110213.png"
+  },
+  {
+    "code": "110214",
+    "name_ar": "منشار خشب يد فيبر 60 سم",
+    "unit": "pcs",
+    "price_jod": 3.0,
+    "image": "images/110214.png"
+  },
+  {
+    "code": "110215",
+    "name_ar": "منشار خشب يد خشب 35 سم",
+    "unit": "pcs",
+    "price_jod": 1.85,
+    "image": "images/110215.png"
+  },
+  {
+    "code": "110216",
+    "name_ar": "منشار خشب يد خشب 40 سم",
+    "unit": "pcs",
+    "price_jod": 2.0,
+    "image": "images/110216.png"
+  },
+  {
+    "code": "110217",
+    "name_ar": "منشار خشب يد خشب 45 سم",
+    "unit": "pcs",
+    "price_jod": 2.15,
+    "image": "images/110217.png"
+  },
+  {
+    "code": "110218",
+    "name_ar": "منشار خشب يد خشب 50 سم",
+    "unit": "pcs",
+    "price_jod": 2.3,
+    "image": "images/110218.png"
+  },
+  {
+    "code": "110219",
+    "name_ar": "منشار خشب يد خشب 55 سم",
+    "unit": "pcs",
+    "price_jod": 2.5,
+    "image": "images/110219.png"
+  },
+  {
+    "code": "110220",
+    "name_ar": "منشار خشب يد خشب 60 سم",
+    "unit": "pcs",
+    "price_jod": 2.85,
+    "image": "images/110220.png"
+  },
+  {
+    "code": "110221",
+    "name_ar": "منشار خشب مع قاعدة",
+    "unit": "pcs",
+    "price_jod": 5.0,
+    "image": "images/110221.png"
+  },
+  {
+    "code": "110222",
+    "name_ar": "منشار جبصين",
+    "unit": "pcs",
+    "price_jod": 1.75,
+    "image": "images/110222.png"
+  },
+  {
+    "code": "110401",
+    "name_ar": "كريك دائري مع عصا",
+    "unit": "pcs",
+    "price_jod": 5.65,
+    "image": "images/110401.png"
+  },
+  {
+    "code": "110402",
+    "name_ar": "كريك مربع مع عصا",
+    "unit": "pcs",
+    "price_jod": 5.65,
+    "image": "images/110402.png"
+  },
+  {
+    "code": "110405",
+    "name_ar": "كريك بولاد 1 كيلو قياس 27",
+    "unit": "pcs",
+    "price_jod": 2.6999999999999997,
+    "image": "images/110405.png"
+  },
+  {
+    "code": "110406",
+    "name_ar": "كريك بولاد 1 كيلو  قياس  29",
+    "unit": "pcs",
+    "price_jod": 2.85,
+    "image": "images/110406.png"
+  },
+  {
+    "code": "110601",
+    "name_ar": "منشار شجر طوي",
+    "unit": "pcs",
+    "price_jod": 2.25,
+    "image": "images/110601.png"
+  },
+  {
+    "code": "110701",
+    "name_ar": "طرمبة رش زراعي 16 لتر",
+    "unit": "pcs",
+    "price_jod": 11.5,
+    "image": "images/110701.png"
+  },
+  {
+    "code": "110702",
+    "name_ar": "طرمبة رش زراعي 5 لتر",
+    "unit": "pcs",
+    "price_jod": 6.0,
+    "image": "images/110702.png"
+  },
+  {
+    "code": "110703",
+    "name_ar": "طرمبة رش زراعي 2 لتر",
+    "unit": "pcs",
+    "price_jod": 2.5,
+    "image": "images/110703.png"
+  },
+  {
+    "code": "110716",
+    "name_ar": "طرمبة رش زراعي 16 لتر شحن",
+    "unit": "pcs",
+    "price_jod": 30.0,
+    "image": "images/110716.png"
+  },
+  {
+    "code": "110803",
+    "name_ar": "مشط ارض 14 اصبع",
+    "unit": "pcs",
+    "price_jod": 1.6,
+    "image": "images/110803.png"
+  },
+  {
+    "code": "110901",
+    "name_ar": "مرش ماء مسدس",
+    "unit": "pcs",
+    "price_jod": 2.0,
+    "image": "images/110901.png"
+  },
+  {
+    "code": "110902",
+    "name_ar": "مرش ماء راس دوش",
+    "unit": "pcs",
+    "price_jod": 2.25,
+    "image": "images/110902.png"
+  },
+  {
+    "code": "110903",
+    "name_ar": "طقم مرش ماء مستقيم مع كوبلنج",
+    "unit": "pcs",
+    "price_jod": 1.75,
+    "image": "images/110903.png"
+  },
+  {
+    "code": "110906",
+    "name_ar": "طقم كوبلنج بلاستك 3 قطع",
+    "unit": "pcs",
+    "price_jod": 1.25,
+    "image": "images/110906.png"
+  },
+  {
+    "code": "110911",
+    "name_ar": "كوبلنج حنفية 1/2\"",
+    "unit": "pcs",
+    "price_jod": 0.5,
+    "image": "images/110911.png"
+  },
+  {
+    "code": "110912",
+    "name_ar": "وصلة بربيش 1/2\"",
+    "unit": "pcs",
+    "price_jod": 0.5,
+    "image": "images/110912.png"
+  },
+  {
+    "code": "110913",
+    "name_ar": "راسية حنفية 1/2\" * 3/4\"",
+    "unit": "pcs",
+    "price_jod": 0.425,
+    "image": "images/110913.png"
+  },
+  {
+    "code": "111001",
+    "name_ar": "بكرة بربيش ماء مع عجل",
+    "unit": "pcs",
+    "price_jod": 13.9,
+    "image": "images/111001.png"
+  },
+  {
+    "code": "111315",
+    "name_ar": "بربيش ماء مع بكرة تومتيك 1/2\" *1.5ملم * 15 متر",
+    "unit": "pcs",
+    "price_jod": 47.5,
+    "image": "images/111315.png"
+  },
+  {
+    "code": "111320",
+    "name_ar": "بربيش هواء مع بكرة تومتيك 5/16 * 1.5ملم * 20 متر",
+    "unit": "pcs",
+    "price_jod": 47.5,
+    "image": "images/111320.png"
+  },
+  {
+    "code": "111330",
+    "name_ar": "بربيش ماء مع بكرة تومتيك 1/2\" * 2 ملم * 30 متر",
+    "unit": "pcs",
+    "price_jod": 75.0,
+    "image": "images/111330.png"
+  },
+  {
+    "code": "120102",
+    "name_ar": "فرد تباشيم 11\"",
+    "unit": "pcs",
+    "price_jod": 3.75,
+    "image": "images/120102.png"
+  },
+  {
+    "code": "120103",
+    "name_ar": "فرد تباشيم 10\"",
+    "unit": "pcs",
+    "price_jod": 3.25,
+    "image": "images/120103.png"
+  },
+  {
+    "code": "120201",
+    "name_ar": "مكبس تنجيد عيار",
+    "unit": "pcs",
+    "price_jod": 4.25,
+    "image": "images/120201.png"
+  },
+  {
+    "code": "120202",
+    "name_ar": "مكبس تنجيد",
+    "unit": "pcs",
+    "price_jod": 3.5,
+    "image": "images/120202.png"
+  },
+  {
+    "code": "120204",
+    "name_ar": "مكبس تنجيد بلاستك",
+    "unit": "pcs",
+    "price_jod": 3.25,
+    "image": "images/120204.png"
+  },
+  {
+    "code": "120402",
+    "name_ar": "فرد دهان F-75",
+    "unit": "pcs",
+    "price_jod": 6.5,
+    "image": "images/120402.png"
+  },
+  {
+    "code": "120403",
+    "name_ar": "فرد ديزل",
+    "unit": "pcs",
+    "price_jod": 4.2,
+    "image": "images/120403.png"
+  },
+  {
+    "code": "120404",
+    "name_ar": "فرد دهان طاسة بلاستك",
+    "unit": "pcs",
+    "price_jod": 11.0,
+    "image": "images/120404.png"
+  },
+  {
+    "code": "120407",
+    "name_ar": "فرد دهان خطاطين",
+    "unit": "pcs",
+    "price_jod": 6.0,
+    "image": "images/120407.png"
+  },
+  {
+    "code": "120408",
+    "name_ar": "فرد دهان 4001",
+    "unit": "pcs",
+    "price_jod": 18.5,
+    "image": "images/120408.png"
+  },
+  {
+    "code": "120501",
+    "name_ar": "فرد معجونة",
+    "unit": "pcs",
+    "price_jod": 3.9,
+    "image": "images/120501.png"
+  },
+  {
+    "code": "120503",
+    "name_ar": "فرد معجونة",
+    "unit": "pcs",
+    "price_jod": 2.75,
+    "image": "images/120503.png"
+  },
+  {
+    "code": "120505",
+    "name_ar": "فرد معجونة",
+    "unit": "pcs",
+    "price_jod": 2.1,
+    "image": "images/120505.png"
+  },
+  {
+    "code": "120506",
+    "name_ar": "فرد معجونة انبوب",
+    "unit": "pcs",
+    "price_jod": 3.5,
+    "image": "images/120506.png"
+  },
+  {
+    "code": "120507",
+    "name_ar": "فرد قوما 9\"",
+    "unit": "pcs",
+    "price_jod": 5.0,
+    "image": "images/120507.png"
+  },
+  {
+    "code": "120508",
+    "name_ar": "فرد كوما 15\"",
+    "unit": "pcs",
+    "price_jod": 5.5,
+    "image": "images/120508.png"
+  },
+  {
+    "code": "120509",
+    "name_ar": "فرد فوم احمر",
+    "unit": "pcs",
+    "price_jod": 2.9,
+    "image": "images/120509.png"
+  },
+  {
+    "code": "120510",
+    "name_ar": "فرد فوم يد كوشوك",
+    "unit": "pcs",
+    "price_jod": 5.95,
+    "image": "images/120510.png"
+  },
+  {
+    "code": "120601",
+    "name_ar": "ملقط زجاج مفرد",
+    "unit": "pcs",
+    "price_jod": 1.75,
+    "image": "images/120601.png"
+  },
+  {
+    "code": "120602",
+    "name_ar": "ملقط زجاج مجوز",
+    "unit": "pcs",
+    "price_jod": 4.5,
+    "image": "images/120602.png"
+  },
+  {
+    "code": "120603",
+    "name_ar": "ملقط زجاج ثلاثي",
+    "unit": "pcs",
+    "price_jod": 6.5,
+    "image": "images/120603.png"
+  },
+  {
+    "code": "120801",
+    "name_ar": "ماكينة شبريز",
+    "unit": "pcs",
+    "price_jod": 5.0,
+    "image": "images/120801.png"
+  },
+  {
+    "code": "121004",
+    "name_ar": "تب ورق 1\"",
+    "unit": "pcs",
+    "price_jod": 0.105,
+    "image": "images/121004.png"
+  },
+  {
+    "code": "121006",
+    "name_ar": "تب ورق 2\"",
+    "unit": "pcs",
+    "price_jod": 0.21,
+    "image": "images/121006.png"
+  },
+  {
+    "code": "121009",
+    "name_ar": "تب تشقق 45 متر",
+    "unit": "pcs",
+    "price_jod": 0.8,
+    "image": "images/121009.png"
+  },
+  {
+    "code": "121010",
+    "name_ar": "تب تشقق 90 متر",
+    "unit": "pcs",
+    "price_jod": 1.6,
+    "image": "images/121010.png"
+  },
+  {
+    "code": "121101",
+    "name_ar": "فرد مسمار  هواء F30",
+    "unit": "pcs",
+    "price_jod": 15.0,
+    "image": "images/121101.png"
+  },
+  {
+    "code": "121102",
+    "name_ar": "مكبس تنجيد هوا   1013 J",
+    "unit": "pcs",
+    "price_jod": 18.0,
+    "image": "images/121102.png"
+  },
+  {
+    "code": "121301",
+    "name_ar": "سلكون شفاف 300 غرام",
+    "unit": "pcs",
+    "price_jod": 1.3,
+    "image": "images/121301.png"
+  },
+  {
+    "code": "121305/5",
+    "name_ar": "معجونة اكريلك",
+    "unit": "pcs",
+    "price_jod": 0.46,
+    "image": "images/121305_5.png"
+  },
+  {
+    "code": "121311",
+    "name_ar": "سوبر جلو",
+    "unit": "pcs",
+    "price_jod": 1.0,
+    "image": "images/121311.png"
+  },
+  {
+    "code": "121315",
+    "name_ar": "اصبعين خلط",
+    "unit": "pcs",
+    "price_jod": 0.6,
+    "image": "images/121315.png"
+  },
+  {
+    "code": "121406",
+    "name_ar": "اسافين بلاستك 6 ملم",
+    "unit": "pcs",
+    "price_jod": 0.5,
+    "image": "images/121406.png"
+  },
+  {
+    "code": "121407",
+    "name_ar": "اسافين بلاستك 7 ملم",
+    "unit": "pcs",
+    "price_jod": 0.5,
+    "image": "images/121407.png"
+  },
+  {
+    "code": "121408",
+    "name_ar": "اسافين بلاستك 8 ملم",
+    "unit": "pcs",
+    "price_jod": 0.65,
+    "image": "images/121408.png"
+  },
+  {
+    "code": "121410",
+    "name_ar": "اسافين بلاستك 10 ملم",
+    "unit": "pcs",
+    "price_jod": 0.6,
+    "image": "images/121410.png"
+  },
+  {
+    "code": "121412",
+    "name_ar": "اسافين بلاستك 12 ملم",
+    "unit": "pcs",
+    "price_jod": 0.55,
+    "image": "images/121412.png"
+  },
+  {
+    "code": "121414-6",
+    "name_ar": "اسفين حديد 6 ملم",
+    "unit": "pcs",
+    "price_jod": 0.55,
+    "image": "images/121414-6.png"
+  },
+  {
+    "code": "121414-8",
+    "name_ar": "اسفين حديد 8 ملم",
+    "unit": "pcs",
+    "price_jod": 0.55,
+    "image": "images/121414-8.png"
+  },
+  {
+    "code": "121414-10",
+    "name_ar": "اسفين حديد 10 ملم",
+    "unit": "pcs",
+    "price_jod": 0.55,
+    "image": "images/121414-10.png"
+  },
+  {
+    "code": "121502",
+    "name_ar": "كلبسات تنجيد",
+    "unit": "pcs",
+    "price_jod": 0.4,
+    "image": "images/121502.png"
+  },
+  {
+    "code": "121601",
+    "name_ar": "مسمار تنجيد F30",
+    "unit": "pcs",
+    "price_jod": 2.25,
+    "image": "images/121601.png"
+  },
+  {
+    "code": "121602",
+    "name_ar": "مسمار تنجيد F40",
+    "unit": "pcs",
+    "price_jod": 3.35,
+    "image": "images/121602.png"
+  },
+  {
+    "code": "121603",
+    "name_ar": "مسمار تنجيد F50",
+    "unit": "pcs",
+    "price_jod": 4.4,
+    "image": "images/121603.png"
+  },
+  {
+    "code": "121604",
+    "name_ar": "كلبسات تنجيد هواء",
+    "unit": "pcs",
+    "price_jod": 1.25,
+    "image": "images/121604.png"
+  },
+  {
+    "code": "121605",
+    "name_ar": "كلبسات تنجيد هواء",
+    "unit": "pcs",
+    "price_jod": 1.75,
+    "image": "images/121605.png"
+  },
+  {
+    "code": "121801",
+    "name_ar": "فرد بناشر 1\"",
+    "unit": "pcs",
+    "price_jod": 152.0,
+    "image": "images/121801.png"
+  },
+  {
+    "code": "121802",
+    "name_ar": "فرد بناشر 1/2\"",
+    "unit": "pcs",
+    "price_jod": 43.0,
+    "image": "images/121802.png"
+  },
+  {
+    "code": "130102",
+    "name_ar": "فيبر جلخ 4.5\"",
+    "unit": "pcs",
+    "price_jod": 0.55,
+    "image": "images/130102.png"
+  },
+  {
+    "code": "130103",
+    "name_ar": "فيبر جلخ 7\"",
+    "unit": "pcs",
+    "price_jod": 1.1,
+    "image": "images/130103.png"
+  },
+  {
+    "code": "130402",
+    "name_ar": "اسطوانة قص ستانلس 4.5\"",
+    "unit": "pcs",
+    "price_jod": 0.24,
+    "image": "images/130402.png"
+  },
+  {
+    "code": "130404",
+    "name_ar": "اسطوانة قص حديد 9\"",
+    "unit": "pcs",
+    "price_jod": 0.9,
+    "image": "images/130404.png"
+  },
+  {
+    "code": "130510",
+    "name_ar": "ورق حف مدرج 4.5\" * 40",
+    "unit": "pcs",
+    "price_jod": 0.45,
+    "image": "images/130510.png"
+  },
+  {
+    "code": "130511",
+    "name_ar": "ورق حف مدرج 4.5\" * 60",
+    "unit": "pcs",
+    "price_jod": 0.45,
+    "image": "images/130511.png"
+  },
+  {
+    "code": "130512",
+    "name_ar": "ورق حف مدرج 4.5\" * 80",
+    "unit": "pcs",
+    "price_jod": 0.45,
+    "image": "images/130512.png"
+  },
+  {
+    "code": "130514",
+    "name_ar": "ورق حف مدرج 4.5\" * 120",
+    "unit": "pcs",
+    "price_jod": 0.45,
+    "image": "images/130514.png"
+  },
+  {
+    "code": "130602",
+    "name_ar": "فراشي صاروخ مجدول 3\"",
+    "unit": "pcs",
+    "price_jod": 1.45,
+    "image": "images/130602.png"
+  },
+  {
+    "code": "130603",
+    "name_ar": "فراشي صاروخ مجدول 4\"",
+    "unit": "pcs",
+    "price_jod": 2.0,
+    "image": "images/130603.png"
+  },
+  {
+    "code": "130607",
+    "name_ar": "فراشي صاروخ نحاس 3\"",
+    "unit": "pcs",
+    "price_jod": 1.5,
+    "image": "images/130607.png"
+  },
+  {
+    "code": "130608",
+    "name_ar": "فراشي صاروخ نحاس 4\"",
+    "unit": "pcs",
+    "price_jod": 2.0,
+    "image": "images/130608.png"
+  },
+  {
+    "code": "130611",
+    "name_ar": "طقم فراشي درل نحاس 3 قطع",
+    "unit": "pcs",
+    "price_jod": 1.4,
+    "image": "images/130611.png"
+  },
+  {
+    "code": "130612",
+    "name_ar": "طقم فراشي درل نحاس 5 قطع",
+    "unit": "pcs",
+    "price_jod": 1.9,
+    "image": "images/130612.png"
+  },
+  {
+    "code": "131010",
+    "name_ar": "فيبر جلخ قرانيت 4.5\"",
+    "unit": "pcs",
+    "price_jod": 7.0,
+    "image": "images/131010.png"
+  },
+  {
+    "code": "131015",
+    "name_ar": "اسطوانة جلخ قرانيت 4.5\"",
+    "unit": "pcs",
+    "price_jod": 6.5,
+    "image": "images/131015.png"
+  },
+  {
+    "code": "140101",
+    "name_ar": "مقبض لحام",
+    "unit": "pcs",
+    "price_jod": 2.75,
+    "image": "images/140101.png"
+  },
+  {
+    "code": "140107",
+    "name_ar": "مقبص شصى 500",
+    "unit": "pcs",
+    "price_jod": 1.85,
+    "image": "images/140107.png"
+  },
+  {
+    "code": "140201",
+    "name_ar": "نضارة الحام الكتروني راس",
+    "unit": "pcs",
+    "price_jod": 6.0,
+    "image": "images/140201.png"
+  },
+  {
+    "code": "140202",
+    "name_ar": "نضارة الحام الكتروني",
+    "unit": "pcs",
+    "price_jod": 5.0,
+    "image": "images/140202.png"
+  },
+  {
+    "code": "140203",
+    "name_ar": "نضارة لحام مجوز",
+    "unit": "pcs",
+    "price_jod": 1.15,
+    "image": "images/140203.png"
+  },
+  {
+    "code": "140206",
+    "name_ar": "نضارة غبرة اطار اسود",
+    "unit": "pcs",
+    "price_jod": 0.75,
+    "image": "images/140206.png"
+  },
+  {
+    "code": "140207",
+    "name_ar": "نضارة غبرة عريضة",
+    "unit": "pcs",
+    "price_jod": 0.75,
+    "image": "images/140207.png"
+  },
+  {
+    "code": "140301",
+    "name_ar": "وجه لحام الكتروني",
+    "unit": "pcs",
+    "price_jod": 12.5,
+    "image": "images/140301.png"
+  },
+  {
+    "code": "140302",
+    "name_ar": "وجه لحام",
+    "unit": "pcs",
+    "price_jod": 2.85,
+    "image": "images/140302.png"
+  },
+  {
+    "code": "140306",
+    "name_ar": "وجه واقي شفاف",
+    "unit": "pcs",
+    "price_jod": 3.0,
+    "image": "images/140306.png"
+  },
+  {
+    "code": "140501",
+    "name_ar": "طاقية عمال اصفر",
+    "unit": "pcs",
+    "price_jod": 2.0,
+    "image": "images/140501.png"
+  },
+  {
+    "code": "140502",
+    "name_ar": "طاقية عمال احمر",
+    "unit": "pcs",
+    "price_jod": 2.0,
+    "image": "images/140502.png"
+  },
+  {
+    "code": "140504",
+    "name_ar": "طاقية عمال ابيض",
+    "unit": "pcs",
+    "price_jod": 2.0,
+    "image": "images/140504.png"
+  },
+  {
+    "code": "140505",
+    "name_ar": "طاقية عمال ازرق",
+    "unit": "pcs",
+    "price_jod": 2.0,
+    "image": "images/140505.png"
+  },
+  {
+    "code": "140701",
+    "name_ar": "كفوف كتان",
+    "unit": "pcs",
+    "price_jod": 1.75,
+    "image": "images/140701.png"
+  },
+  {
+    "code": "140702",
+    "name_ar": "كفوف لحام",
+    "unit": "pcs",
+    "price_jod": 2.45,
+    "image": "images/140702.png"
+  },
+  {
+    "code": "140801",
+    "name_ar": "كفوف مغطس وسط",
+    "unit": "pcs",
+    "price_jod": 0.525,
+    "image": "images/140801.png"
+  },
+  {
+    "code": "140802",
+    "name_ar": "كفوف مغطس ثقيل",
+    "unit": "pcs",
+    "price_jod": 0.85,
+    "image": "images/140802.png"
+  },
+  {
+    "code": "140806",
+    "name_ar": "Cut-Resistant Gloves",
+    "unit": "pcs",
+    "price_jod": 1.35,
+    "image": "images/140806.png"
+  },
+  {
+    "code": "140807",
+    "name_ar": "Terylene Embossing Gloves",
+    "unit": "pcs",
+    "price_jod": 0.95,
+    "image": "images/140807.png"
+  },
+  {
+    "code": "140808",
+    "name_ar": "Oil Proof Touch Screen Gloves",
+    "unit": "pcs",
+    "price_jod": 1.35,
+    "image": "images/140808.png"
+  },
+  {
+    "code": "141141",
+    "name_ar": "حذاء سيفتي 41",
+    "unit": "pcs",
+    "price_jod": 13.5,
+    "image": "images/141141.png"
+  },
+  {
+    "code": "141142",
+    "name_ar": "حذاء سيفتي 42",
+    "unit": "pcs",
+    "price_jod": 13.5,
+    "image": "images/141142.png"
+  },
+  {
+    "code": "141143",
+    "name_ar": "حذاء سيفتي 43",
+    "unit": "pcs",
+    "price_jod": 13.5,
+    "image": "images/141143.png"
+  },
+  {
+    "code": "141144",
+    "name_ar": "حذاء سيفتي 44",
+    "unit": "pcs",
+    "price_jod": 13.5,
+    "image": "images/141144.png"
+  },
+  {
+    "code": "141145",
+    "name_ar": "حذاء سيفتي 45",
+    "unit": "pcs",
+    "price_jod": 13.5,
+    "image": "images/141145.png"
+  },
+  {
+    "code": "141201",
+    "name_ar": "كمامة كيماوي فلتر مفرد",
+    "unit": "pcs",
+    "price_jod": 1.75,
+    "image": "images/141201.png"
+  },
+  {
+    "code": "141202",
+    "name_ar": "كمامة كيماوي فلتر مجوز",
+    "unit": "pcs",
+    "price_jod": 2.5,
+    "image": "images/141202.png"
+  },
+  {
+    "code": "141401",
+    "name_ar": "طقم فرد حرق",
+    "unit": "pcs",
+    "price_jod": 12.5,
+    "image": "images/141401.png"
+  },
+  {
+    "code": "141402",
+    "name_ar": "طقم فرد حرق",
+    "unit": "pcs",
+    "price_jod": 11.0,
+    "image": "images/141402.png"
+  },
+  {
+    "code": "141703",
+    "name_ar": "سلم درجة عريضة 3",
+    "unit": "pcs",
+    "price_jod": 18.9,
+    "image": "images/141703.png"
+  },
+  {
+    "code": "141704",
+    "name_ar": "سلم درجة عريضة 4",
+    "unit": "pcs",
+    "price_jod": 25.2,
+    "image": "images/141704.png"
+  },
+  {
+    "code": "141705",
+    "name_ar": "سلم درجة عريضة 5",
+    "unit": "pcs",
+    "price_jod": 31.5,
+    "image": "images/141705.png"
+  },
+  {
+    "code": "141706",
+    "name_ar": "سلم درجة عريضة 6",
+    "unit": "pcs",
+    "price_jod": 37.8,
+    "image": "images/141706.png"
+  },
+  {
+    "code": "141732",
+    "name_ar": "سلم سحب 3.2 متر",
+    "unit": "pcs",
+    "price_jod": 61.5,
+    "image": "images/141732.png"
+  },
+  {
+    "code": "141842",
+    "name_ar": "جزمة 42",
+    "unit": "pcs",
+    "price_jod": 6.0,
+    "image": "images/141842.png"
+  },
+  {
+    "code": "141843",
+    "name_ar": "جزمة 43",
+    "unit": "pcs",
+    "price_jod": 6.0,
+    "image": "images/141843.png"
+  },
+  {
+    "code": "141844",
+    "name_ar": "جزمة 44",
+    "unit": "pcs",
+    "price_jod": 6.0,
+    "image": "images/141844.png"
+  },
+  {
+    "code": "141845",
+    "name_ar": "جزمة 45",
+    "unit": "pcs",
+    "price_jod": 6.0,
+    "image": "images/141845.png"
+  },
+  {
+    "code": "B141842",
+    "name_ar": "جزمة اسود 42",
+    "unit": "pcs",
+    "price_jod": 5.0,
+    "image": "images/B141842.png"
+  },
+  {
+    "code": "B141843",
+    "name_ar": "جزمة اسود 43",
+    "unit": "pcs",
+    "price_jod": 5.0,
+    "image": "images/B141843.png"
+  },
+  {
+    "code": "B141844",
+    "name_ar": "جزمة اسود 44",
+    "unit": "pcs",
+    "price_jod": 5.0,
+    "image": "images/B141844.png"
+  },
+  {
+    "code": "B141845",
+    "name_ar": "جزمة اسود 45",
+    "unit": "pcs",
+    "price_jod": 5.0,
+    "image": "images/B141845.png"
+  },
+  {
+    "code": "141901",
+    "name_ar": "واقي اذن",
+    "unit": "pcs",
+    "price_jod": 2.5,
+    "image": "images/141901.png"
+  },
+  {
+    "code": "150102",
+    "name_ar": "صندوق عدة بلاستك ملقط حديد 17\"",
+    "unit": "pcs",
+    "price_jod": 6.4,
+    "image": "images/150102.png"
+  },
+  {
+    "code": "150103",
+    "name_ar": "صندوق عدة بلاستك ملقط حديد 20\"",
+    "unit": "pcs",
+    "price_jod": 10.0,
+    "image": "images/150103.png"
+  },
+  {
+    "code": "150106",
+    "name_ar": "صندوق عدة ثقيل 53 سم",
+    "unit": "pcs",
+    "price_jod": 12.0,
+    "image": "images/150106.png"
+  },
+  {
+    "code": "150110",
+    "name_ar": "طاولة كراج 3 رفوف",
+    "unit": "pcs",
+    "price_jod": 26.0,
+    "image": "images/150110.png"
+  },
+  {
+    "code": "150201",
+    "name_ar": "شنتة عدة مقبض حديد 16\"",
+    "unit": "pcs",
+    "price_jod": 13.0,
+    "image": "images/150201.png"
+  },
+  {
+    "code": "150202",
+    "name_ar": "شنتة عدة 16\"",
+    "unit": "pcs",
+    "price_jod": 16.0,
+    "image": "images/150202.png"
+  },
+  {
+    "code": "150203",
+    "name_ar": "شنتة عدة 16\"",
+    "unit": "pcs",
+    "price_jod": 9.5,
+    "image": "images/150203.png"
+  },
+  {
+    "code": "150204",
+    "name_ar": "حرجاية طوبار",
+    "unit": "pcs",
+    "price_jod": 6.0,
+    "image": "images/150204.png"
+  },
+  {
+    "code": "150206",
+    "name_ar": "شنتة عدة كتف",
+    "unit": "pcs",
+    "price_jod": 26.0,
+    "image": "images/150206.png"
+  },
+  {
+    "code": "150208",
+    "name_ar": "فزت عدة ثقيل",
+    "unit": "pcs",
+    "price_jod": 11.0,
+    "image": "images/150208.png"
+  },
+  {
+    "code": "150218",
+    "name_ar": "شنتة عدة جر",
+    "unit": "pcs",
+    "price_jod": 35.0,
+    "image": "images/150218.png"
+  },
+  {
+    "code": "150401",
+    "name_ar": "حبل شد طقطية 3 طن",
+    "unit": "pcs",
+    "price_jod": 8.0,
+    "image": "images/150401.png"
+  },
+  {
+    "code": "150402",
+    "name_ar": "حبل شد طقطيقة 5 طن",
+    "unit": "pcs",
+    "price_jod": 11.0,
+    "image": "images/150402.png"
+  },
+  {
+    "code": "150406",
+    "name_ar": "حبل شد 5 متر * 5طن",
+    "unit": "pcs",
+    "price_jod": 6.5,
+    "image": "images/150406.png"
+  },
+  {
+    "code": "150510",
+    "name_ar": "كيبل تايد 20 سم",
+    "unit": "pcs",
+    "price_jod": 0.75,
+    "image": "images/150510.png"
+  },
+  {
+    "code": "150517",
+    "name_ar": "كيبل تايد 30 سم",
+    "unit": "pcs",
+    "price_jod": 1.25,
+    "image": "images/150517.png"
+  },
+  {
+    "code": "150519",
+    "name_ar": "كيبل تايد 40 سم",
+    "unit": "pcs",
+    "price_jod": 1.65,
+    "image": "images/150519.png"
+  },
+  {
+    "code": "150521",
+    "name_ar": "كيبل تايد 50 سم",
+    "unit": "pcs",
+    "price_jod": 2.5,
+    "image": "images/150521.png"
+  },
+  {
+    "code": "160102",
+    "name_ar": "رول دهان",
+    "unit": "pcs",
+    "price_jod": 1.5,
+    "image": "images/160102.png"
+  },
+  {
+    "code": "160202",
+    "name_ar": "طقم رول غيار 10 سم مع يد",
+    "unit": "pcs",
+    "price_jod": 2.25,
+    "image": "images/160202.png"
+  },
+  {
+    "code": "160203",
+    "name_ar": "طقم رول غيار 20 سم مع يد",
+    "unit": "pcs",
+    "price_jod": 6.5,
+    "image": "images/160203.png"
+  },
+  {
+    "code": "160501",
+    "name_ar": "فراشي دهان 1\"",
+    "unit": "pcs",
+    "price_jod": 0.235,
+    "image": "images/160501.png"
+  },
+  {
+    "code": "160502",
+    "name_ar": "فراشي دهان 2\"",
+    "unit": "pcs",
+    "price_jod": 0.425,
+    "image": "images/160502.png"
+  },
+  {
+    "code": "160503",
+    "name_ar": "فراشي دهان 3\"",
+    "unit": "pcs",
+    "price_jod": 0.7,
+    "image": "images/160503.png"
+  },
+  {
+    "code": "160504",
+    "name_ar": "فراشي دهان 4\"",
+    "unit": "pcs",
+    "price_jod": 0.8999999999999999,
+    "image": "images/160504.png"
+  },
+  {
+    "code": "160515",
+    "name_ar": "فراشي دهان 1.5\"",
+    "unit": "pcs",
+    "price_jod": 0.33,
+    "image": "images/160515.png"
+  },
+  {
+    "code": "160525",
+    "name_ar": "فراشي دهان 2.5\"",
+    "unit": "pcs",
+    "price_jod": 0.58,
+    "image": "images/160525.png"
+  },
+  {
+    "code": "170401",
+    "name_ar": "سشوار كهرباء 2000 وط",
+    "unit": "pcs",
+    "price_jod": 12.5,
+    "image": "images/170401.png"
+  },
+  {
+    "code": "170402",
+    "name_ar": "سشوار كهرباء صناعي مع راسيات 2000 وط",
+    "unit": "pcs",
+    "price_jod": 17.0,
+    "image": "images/170402.png"
+  },
+  {
+    "code": "170701",
+    "name_ar": "حشاشة بنزين 430",
+    "unit": "pcs",
+    "price_jod": 70.0,
+    "image": "images/170701.png"
+  },
+  {
+    "code": "170702",
+    "name_ar": "حشاشة بنزين 520",
+    "unit": "pcs",
+    "price_jod": 80.0,
+    "image": "images/170702.png"
+  },
+  {
+    "code": "170816",
+    "name_ar": "ايزي ابرس",
+    "unit": "pcs",
+    "price_jod": 17.0,
+    "image": "images/170816.png"
+  },
+  {
+    "code": "170817",
+    "name_ar": "ايزي ابرس ساعة",
+    "unit": "pcs",
+    "price_jod": 18.0,
+    "image": "images/170817.png"
+  },
+  {
+    "code": "170820",
+    "name_ar": "عوامة مضخة 3 متر",
+    "unit": "pcs",
+    "price_jod": 6.0,
+    "image": "images/170820.png"
+  },
+  {
+    "code": "170821",
+    "name_ar": "عوامة مضخة 5 متر",
+    "unit": "pcs",
+    "price_jod": 8.0,
+    "image": "images/170821.png"
+  },
+  {
+    "code": "170826",
+    "name_ar": "مضخة ماء 2\" * 1500 وط",
+    "unit": "pcs",
+    "price_jod": 95.0,
+    "image": "images/170826.png"
+  },
+  {
+    "code": "170827",
+    "name_ar": "مضخة غذائي 1/2\" * 370 وط",
+    "unit": "pcs",
+    "price_jod": 62.0,
+    "image": "images/170827.png"
+  },
+  {
+    "code": "170828",
+    "name_ar": "مضخة غذائي 3/4\" * 550 وط",
+    "unit": "pcs",
+    "price_jod": 65.0,
+    "image": "images/170828.png"
+  },
+  {
+    "code": "170831",
+    "name_ar": "مضخة ماء بنزين 2\"",
+    "unit": "pcs",
+    "price_jod": 86.0,
+    "image": "images/170831.png"
+  },
+  {
+    "code": "170832",
+    "name_ar": "مضخة ماء بنزين 3\"",
+    "unit": "pcs",
+    "price_jod": 100.0,
+    "image": "images/170832.png"
+  },
+  {
+    "code": "171210",
+    "name_ar": "مولد كهرباء مع ماكينة لحام 5000 وط",
+    "unit": "pcs",
+    "price_jod": 720.0,
+    "image": "images/171210.png"
+  },
+  {
+    "code": "171401",
+    "name_ar": "درل شحن 12 فولت",
+    "unit": "pcs",
+    "price_jod": 22.0,
+    "image": "images/171401.png"
+  },
+  {
+    "code": "171402",
+    "name_ar": "درل شحن 18 فولت راس حديد",
+    "unit": "pcs",
+    "price_jod": 50.0,
+    "image": "images/171402.png"
+  },
+  {
+    "code": "171406",
+    "name_ar": "درل شحن 21 فولت SDS",
+    "unit": "pcs",
+    "price_jod": 90.0,
+    "image": "images/171406.png"
+  },
+  {
+    "code": "171410",
+    "name_ar": "بلور هواء شحن 21 فولت",
+    "unit": "pcs",
+    "price_jod": 35.0,
+    "image": "images/171410.png"
+  },
+  {
+    "code": "171414",
+    "name_ar": "درل شحن 10 ملم * 21 فولت",
+    "unit": "pcs",
+    "price_jod": 55.0,
+    "image": "images/171414.png"
+  },
+  {
+    "code": "171415",
+    "name_ar": "فرد غسيل شحن 21 فولت",
+    "unit": "pcs",
+    "price_jod": 25.0,
+    "image": "images/171415.png"
+  },
+  {
+    "code": "171416",
+    "name_ar": "درل شحن 13 ملم * 21 فولت",
+    "unit": "pcs",
+    "price_jod": 62.0,
+    "image": "images/171416.png"
+  },
+  {
+    "code": "171417",
+    "name_ar": "صاروخ شحن 4.5\"",
+    "unit": "pcs",
+    "price_jod": 75.0,
+    "image": "images/171417.png"
+  },
+  {
+    "code": "171420",
+    "name_ar": "درل بكسات 21 فولت 300 انيوتن",
+    "unit": "pcs",
+    "price_jod": 65.0,
+    "image": "images/171420.png"
+  },
+  {
+    "code": "171421",
+    "name_ar": "درل بكسات 21 فولت 500 انيوتن",
+    "unit": "pcs",
+    "price_jod": 77.0,
+    "image": "images/171421.png"
+  },
+  {
+    "code": "171422",
+    "name_ar": "سكل قرانيت شحن 6.5\" * 21 فولت",
+    "unit": "pcs",
+    "price_jod": 85.0,
+    "image": "images/171422.png"
+  },
+  {
+    "code": "171424",
+    "name_ar": "رجاج بلاط كهرباء 21 فولت",
+    "unit": "pcs",
+    "price_jod": 42.0,
+    "image": "images/171424.png"
+  },
+  {
+    "code": "171425",
+    "name_ar": "مقص شجر شحن 21 فولت",
+    "unit": "pcs",
+    "price_jod": 75.0,
+    "image": "images/171425.png"
+  },
+  {
+    "code": "171426",
+    "name_ar": "منشار شجر شحن 8\" * 21 فولت",
+    "unit": "pcs",
+    "price_jod": 60.0,
+    "image": "images/171426.png"
+  },
+  {
+    "code": "171428",
+    "name_ar": "تخريقة شحن 21 فولت",
+    "unit": "pcs",
+    "price_jod": 68.0,
+    "image": "images/171428.png"
+  },
+  {
+    "code": "171431",
+    "name_ar": "منفاخ سيارة شحن 21 فولت",
+    "unit": "pcs",
+    "price_jod": 30.0,
+    "image": "images/171431.png"
+  },
+  {
+    "code": "171434",
+    "name_ar": "درل شحن  21 فولت  SDS",
+    "unit": "pcs",
+    "price_jod": 55.0,
+    "image": "images/171434.png"
+  },
+  {
+    "code": "172002",
+    "name_ar": "منشار بنزين 18\"",
+    "unit": "pcs",
+    "price_jod": 70.0,
+    "image": "images/172002.png"
+  },
+  {
+    "code": "172003",
+    "name_ar": "منشار بنزين 20\"",
+    "unit": "pcs",
+    "price_jod": 75.0,
+    "image": "images/172003.png"
+  },
+  {
+    "code": "172201",
+    "name_ar": "حفافة كهرباء دائرية 900 وط",
+    "unit": "pcs",
+    "price_jod": 50.0,
+    "image": "images/172201.png"
+  },
+  {
+    "code": "172202",
+    "name_ar": "حفافة طويلة 880 وط",
+    "unit": "pcs",
+    "price_jod": 75.0,
+    "image": "images/172202.png"
+  },
+  {
+    "code": "172601",
+    "name_ar": "طقم كت درل + صاروخ شحن",
+    "unit": "SET",
+    "price_jod": 85.0,
+    "image": "images/172601.png"
+  },
+  {
+    "code": "172602",
+    "name_ar": "طقم كت درل شحن+ درل اس دي اس شحن",
+    "unit": "SET",
+    "price_jod": 80.0,
+    "image": "images/172602.png"
+  },
+  {
+    "code": "180102",
+    "name_ar": "جوزة درل 13 ملم",
+    "unit": "pcs",
+    "price_jod": 2.75,
+    "image": "images/180102.png"
+  },
+  {
+    "code": "180106",
+    "name_ar": "مفتاح درل 13 ملم",
+    "unit": "pcs",
+    "price_jod": 0.5,
+    "image": "images/180106.png"
+  },
+  {
+    "code": "180117",
+    "name_ar": "جوزة ادرل مع ادبتر 13 ملم",
+    "unit": "pcs",
+    "price_jod": 2.25,
+    "image": "images/180117.png"
+  },
+  {
+    "code": "180125",
+    "name_ar": "مفتاح صاروخ 9\"",
+    "unit": "pcs",
+    "price_jod": 0.85,
+    "image": "images/180125.png"
+  },
+  {
+    "code": "180201",
+    "name_ar": "ستاند صاروخ",
+    "unit": "pcs",
+    "price_jod": 14.0,
+    "image": "images/180201.png"
+  },
+  {
+    "code": "181017",
+    "name_ar": "كفوف ضد القطع برتقالي",
+    "unit": "pcs",
+    "price_jod": 2.0,
+    "image": "images/181017.png"
+  },
+  {
+    "code": "181006",
+    "name_ar": "كفوف مغطس ثقيل",
+    "unit": "pcs",
+    "price_jod": 0.5,
+    "image": "images/181006.png"
+  },
+  {
+    "code": "181009",
+    "name_ar": "فوم 750 ملم * 600 غرام",
+    "unit": "pcs",
+    "price_jod": 1.85,
+    "image": "images/181009.png"
+  },
+  {
+    "code": "181910",
+    "name_ar": "200ML*35Gسوبرجلو مع منشف",
+    "unit": "pcs",
+    "price_jod": 1.0,
+    "image": "images/181910.png"
+  },
+  {
+    "code": "181911",
+    "name_ar": "200ML*50Gسوبر جلو كع منشف",
+    "unit": "pcs",
+    "price_jod": 1.25,
+    "image": "images/181911.png"
+  },
+  {
+    "code": "181912",
+    "name_ar": "400ML * 100Gسوبر جلو مع منشف",
+    "unit": "pcs",
+    "price_jod": 2.0,
+    "image": "images/181912.png"
+  },
+  {
+    "code": "181007",
+    "name_ar": "عجل نفخ 400",
+    "unit": "pcs",
+    "price_jod": 6.85,
+    "image": "images/181007.png"
+  },
+  {
+    "code": "190102",
+    "name_ar": "قفل سكب 32 ملم",
+    "unit": "pcs",
+    "price_jod": 0.75,
+    "image": "images/190102.png"
+  },
+  {
+    "code": "190103",
+    "name_ar": "قفل سكب 38 ملم",
+    "unit": "pcs",
+    "price_jod": 1.0,
+    "image": "images/190103.png"
+  },
+  {
+    "code": "190104",
+    "name_ar": "قفل سكب 50 ملم",
+    "unit": "pcs",
+    "price_jod": 1.35,
+    "image": "images/190104.png"
+  },
+  {
+    "code": "190105",
+    "name_ar": "قفل سكب 63 ملم",
+    "unit": "pcs",
+    "price_jod": 2.05,
+    "image": "images/190105.png"
+  },
+  {
+    "code": "190106",
+    "name_ar": "قفل سكب 75 ملم",
+    "unit": "pcs",
+    "price_jod": 3.0,
+    "image": "images/190106.png"
+  },
+  {
+    "code": "190203",
+    "name_ar": "قفل نحاس كامل 30 ملم",
+    "unit": "pcs",
+    "price_jod": 2.4,
+    "image": "images/190203.png"
+  },
+  {
+    "code": "190204",
+    "name_ar": "قفل نحاس كامل 40 ملم",
+    "unit": "pcs",
+    "price_jod": 3.45,
+    "image": "images/190204.png"
+  },
+  {
+    "code": "190205",
+    "name_ar": "قفل نحاس كامل 50 ملم",
+    "unit": "pcs",
+    "price_jod": 5.25,
+    "image": "images/190205.png"
+  },
+  {
+    "code": "190206",
+    "name_ar": "قفل نحاس كامل 63 ملم",
+    "unit": "pcs",
+    "price_jod": 6.5,
+    "image": "images/190206.png"
+  },
+  {
+    "code": "190333",
+    "name_ar": "زرفيل مشلح",
+    "unit": "pcs",
+    "price_jod": 4.25,
+    "image": "images/190333.png"
+  },
+  {
+    "code": "190334",
+    "name_ar": "قلب سلندر كمبيوتر 7 سم",
+    "unit": "pcs",
+    "price_jod": 2.25,
+    "image": "images/190334.png"
+  },
+  {
+    "code": "041201-3K",
+    "name_ar": "ماكينة لحام مواسير 1500W",
+    "unit": "pcs",
+    "price_jod": 29.5,
+    "image": "images/041201-3K.png"
+  },
+  {
+    "code": "120302-2K",
+    "name_ar": "فرد دهان كهرباء",
+    "unit": "pcs",
+    "price_jod": 28.0,
+    "image": "images/120302-2K.png"
+  },
+  {
+    "code": "170102-2K",
+    "name_ar": "صاروخ كهرباء 700 وط 4.5\"",
+    "unit": "pcs",
+    "price_jod": 16.0,
+    "image": "images/170102-2K.png"
+  },
+  {
+    "code": "170103-2K",
+    "name_ar": "صاروخ كهرباء 2000 وط 7\"",
+    "unit": "pcs",
+    "price_jod": 34.5,
+    "image": "images/170103-2K.png"
+  },
+  {
+    "code": "170104-2K",
+    "name_ar": "صاروخ كهرباء 2300 وط 9\"",
+    "unit": "pcs",
+    "price_jod": 45.0,
+    "image": "images/170104-2K.png"
+  },
+  {
+    "code": "170105-2K",
+    "name_ar": "صاروخ كهرباء 850 وط 4\"",
+    "unit": "pcs",
+    "price_jod": 18.0,
+    "image": "images/170105-2K.png"
+  },
+  {
+    "code": "170106-2K",
+    "name_ar": "صاروخ كهرباء 900 وط 4.5\"",
+    "unit": "pcs",
+    "price_jod": 19.0,
+    "image": "images/170106-2K.png"
+  },
+  {
+    "code": "170201-2K",
+    "name_ar": "درل كهرباء 710 وط  13 ملم",
+    "unit": "pcs",
+    "price_jod": 19.0,
+    "image": "images/170201-2K.png"
+  },
+  {
+    "code": "170202-2K",
+    "name_ar": "درل كهرباء 710 وط  13 ملم",
+    "unit": "pcs",
+    "price_jod": 17.0,
+    "image": "images/170202-2K.png"
+  },
+  {
+    "code": "170203-2K",
+    "name_ar": "درل كهرباء 400 وط  6 ملم",
+    "unit": "pcs",
+    "price_jod": 14.0,
+    "image": "images/170203-2K.png"
+  },
+  {
+    "code": "170204-2K",
+    "name_ar": "درل كهرباء 450 وط  10 ملم",
+    "unit": "pcs",
+    "price_jod": 12.5,
+    "image": "images/170204-2K.png"
+  },
+  {
+    "code": "170205-2K",
+    "name_ar": "درل كهرباء 1100 وط 13 ملم",
+    "unit": "pcs",
+    "price_jod": 26.0,
+    "image": "images/170205-2K.png"
+  },
+  {
+    "code": "170206-2K",
+    "name_ar": "درل كهرباء 16 ملم",
+    "unit": "pcs",
+    "price_jod": 37.0,
+    "image": "images/170206-2K.png"
+  },
+  {
+    "code": "170302-2K",
+    "name_ar": "سكل نجارين 1400 وط  7\"",
+    "unit": "pcs",
+    "price_jod": 38.0,
+    "image": "images/170302-2K.png"
+  },
+  {
+    "code": "170304-2K",
+    "name_ar": "سكل نجارين 2200 وط  9\"",
+    "unit": "pcs",
+    "price_jod": 60.0,
+    "image": "images/170304-2K.png"
+  },
+  {
+    "code": "170305-2K",
+    "name_ar": "سكل نجارين ثابت 1800 وط",
+    "unit": "pcs",
+    "price_jod": 82.0,
+    "image": "images/170305-2K.png"
+  },
+  {
+    "code": "170306-2K",
+    "name_ar": "Table Saw 255MM",
+    "unit": "pcs",
+    "price_jod": 155.0,
+    "image": "images/170306-2K.png"
+  },
+  {
+    "code": "170308-2K",
+    "name_ar": "مقطع حديد 2500 وط  14.5\"",
+    "unit": "pcs",
+    "price_jod": 72.0,
+    "image": "images/170308-2K.png"
+  },
+  {
+    "code": "170309-2K",
+    "name_ar": "منشار سكل طاوله 2000 وط",
+    "unit": "pcs",
+    "price_jod": 195.0,
+    "image": "images/170309-2K.png"
+  },
+  {
+    "code": "170312-2K",
+    "name_ar": "منشار سكل ذيل 2000 وط",
+    "unit": "pcs",
+    "price_jod": 125.0,
+    "image": "images/170312-2K.png"
+  },
+  {
+    "code": "170403-2K",
+    "name_ar": "بلور هواء 400 وط",
+    "unit": "pcs",
+    "price_jod": 12.0,
+    "image": "images/170403-2K.png"
+  },
+  {
+    "code": "170404-2K",
+    "name_ar": "بلور هواء صناعي 650 وط",
+    "unit": "pcs",
+    "price_jod": 22.8,
+    "image": "images/170404-2K.png"
+  },
+  {
+    "code": "170405-2K",
+    "name_ar": "بلور هواء صناعي 620 وط",
+    "unit": "pcs",
+    "price_jod": 15.0,
+    "image": "images/170405-2K.png"
+  },
+  {
+    "code": "170500-2K",
+    "name_ar": "ماكينة لحام 120 امبير",
+    "unit": "pcs",
+    "price_jod": 45.0,
+    "image": "images/170500-2K.png"
+  },
+  {
+    "code": "170501-2K",
+    "name_ar": "ماكينة لحام 160 امبير",
+    "unit": "pcs",
+    "price_jod": 63.5,
+    "image": "images/170501-2K.png"
+  },
+  {
+    "code": "170502-2K",
+    "name_ar": "ماكينة لحام 200 امبير",
+    "unit": "pcs",
+    "price_jod": 80.0,
+    "image": "images/170502-2K.png"
+  },
+  {
+    "code": "170506-2K",
+    "name_ar": "شاحن بطارية سيارة",
+    "unit": "pcs",
+    "price_jod": 40.0,
+    "image": "images/170506-2K.png"
+  },
+  {
+    "code": "170507-2K",
+    "name_ar": "شاحن بطارية سيارة",
+    "unit": "pcs",
+    "price_jod": 100.0,
+    "image": "images/170507-2K.png"
+  },
+  {
+    "code": "170511-2K",
+    "name_ar": "ماكينة لحام ميج",
+    "unit": "pcs",
+    "price_jod": 180.0,
+    "image": "images/170511-2K.png"
+  },
+  {
+    "code": "170512-2K",
+    "name_ar": "ماكينة لحام ميج",
+    "unit": "pcs",
+    "price_jod": 85.0,
+    "image": "images/170512-2K.png"
+  },
+  {
+    "code": "170602-2K",
+    "name_ar": "كمبريصة هواء 50 لتر",
+    "unit": "pcs",
+    "price_jod": 135.0,
+    "image": "images/170602-2K.png"
+  },
+  {
+    "code": "170604-2K",
+    "name_ar": "كمريصة هواء صايلنت 24 لتر",
+    "unit": "pcs",
+    "price_jod": 82.0,
+    "image": "images/170604-2K.png"
+  },
+  {
+    "code": "170605-2K",
+    "name_ar": "كمبريصة هواء 50 لتر صايلنت",
+    "unit": "pcs",
+    "price_jod": 177.0,
+    "image": "images/170605-2K.png"
+  },
+  {
+    "code": "170801/50HZ",
+    "name_ar": "مضخة ماء 1/2 حصان نحاس",
+    "unit": "pcs",
+    "price_jod": 22.5,
+    "image": "images/170801_50HZ.png"
+  },
+  {
+    "code": "170824",
+    "name_ar": "مضخة ماء 1 حصان نحاس",
+    "unit": "pcs",
+    "price_jod": 36.0,
+    "image": "images/170824.png"
+  },
+  {
+    "code": "170806",
+    "name_ar": "مضخة مع ايزي ابرس",
+    "unit": "pcs",
+    "price_jod": 35.0,
+    "image": "images/170806.png"
+  },
+  {
+    "code": "170805/50HZ",
+    "name_ar": "مضخة ماء جت 750 وط",
+    "unit": "pcs",
+    "price_jod": 50.0,
+    "image": "images/170805_50HZ.png"
+  },
+  {
+    "code": "170810/50HZ",
+    "name_ar": "مضخة جت غذائي",
+    "unit": "pcs",
+    "price_jod": 63.0,
+    "image": "images/170810_50HZ.png"
+  },
+  {
+    "code": "170814-2K-50HZ",
+    "name_ar": "مضخة غطس مع فرامة ستانلس 1500 وط",
+    "unit": "pcs",
+    "price_jod": 105.0,
+    "image": "images/170814-2K-50HZ.png"
+  },
+  {
+    "code": "170807",
+    "name_ar": "مضخة ماء غاطسة مع فرامة 1/2",
+    "unit": "pcs",
+    "price_jod": 58.0,
+    "image": "images/170807.png"
+  },
+  {
+    "code": "170809",
+    "name_ar": "مضخة ماء غاطسة مع فرامة 1",
+    "unit": "pcs",
+    "price_jod": 88.0,
+    "image": "images/170809.png"
+  },
+  {
+    "code": "170829-2K",
+    "name_ar": "مضخة جت مع ايزي ابرس",
+    "unit": "pcs",
+    "price_jod": 90.0,
+    "image": "images/170829-2K.png"
+  },
+  {
+    "code": "170850-2K",
+    "name_ar": "مضخة ماء غطس بلاستك 400 وط",
+    "unit": "pcs",
+    "price_jod": 26.0,
+    "image": "images/170850-2K.png"
+  },
+  {
+    "code": "170851-2K",
+    "name_ar": "مضخة ماء غطس بلاستك 750 وط",
+    "unit": "pcs",
+    "price_jod": 32.0,
+    "image": "images/170851-2K.png"
+  },
+  {
+    "code": "170860-2K",
+    "name_ar": "مضخه كيزر",
+    "unit": "pcs",
+    "price_jod": 25.0,
+    "image": "images/170860-2K.png"
+  },
+  {
+    "code": "170861",
+    "name_ar": "مضخه كيزر",
+    "unit": "pcs",
+    "price_jod": 25.0,
+    "image": "images/170861.png"
+  },
+  {
+    "code": "170901",
+    "name_ar": "مضخة ماء فراشي عريضة 1/2\"",
+    "unit": "pcs",
+    "price_jod": 36.0,
+    "image": "images/170901.png"
+  },
+  {
+    "code": "170901-2K",
+    "name_ar": "همر لف وتكسر  1050 وط",
+    "unit": "pcs",
+    "price_jod": 44.0,
+    "image": "images/170901-2K.png"
+  },
+  {
+    "code": "170902-2K",
+    "name_ar": "درل كهرباء 800 وط  SDS",
+    "unit": "pcs",
+    "price_jod": 33.0,
+    "image": "images/170902-2K.png"
+  },
+  {
+    "code": "170905-2K",
+    "name_ar": "همر تكسير 1250 وط",
+    "unit": "pcs",
+    "price_jod": 56.0,
+    "image": "images/170905-2K.png"
+  },
+  {
+    "code": "170906-2K",
+    "name_ar": "همر كهرباء 65 ملم 1500 وط",
+    "unit": "pcs",
+    "price_jod": 107.0,
+    "image": "images/170906-2K.png"
+  },
+  {
+    "code": "170907-2K",
+    "name_ar": "همر ماكس 32 ملم * 1500 وط",
+    "unit": "pcs",
+    "price_jod": 65.0,
+    "image": "images/170907-2K.png"
+  },
+  {
+    "code": "170908-2K",
+    "name_ar": "همر تكسير 1100 وط",
+    "unit": "pcs",
+    "price_jod": 50.0,
+    "image": "images/170908-2K.png"
+  },
+  {
+    "code": "170909-2k",
+    "name_ar": "همر تكسير 1400 وط",
+    "unit": "pcs",
+    "price_jod": 65.0,
+    "image": "images/170909-2k.png"
+  },
+  {
+    "code": "170910-2K",
+    "name_ar": "همر تكسير 65 ملم * 1300 وط * J45",
+    "unit": "pcs",
+    "price_jod": 90.0,
+    "image": "images/170910-2K.png"
+  },
+  {
+    "code": "170911-2K",
+    "name_ar": "همر تكسير 65 ملم * 1700 وط * J70",
+    "unit": "pcs",
+    "price_jod": 145.0,
+    "image": "images/170911-2K.png"
+  },
+  {
+    "code": "170912-2K",
+    "name_ar": "همر تكسير 65 ملم * 1700 وط * J68",
+    "unit": "pcs",
+    "price_jod": 130.0,
+    "image": "images/170912-2K.png"
+  },
+  {
+    "code": "171001-2K-50HZ",
+    "name_ar": "تخريقة كهرباء 750 وط صناعي",
+    "unit": "pcs",
+    "price_jod": 24.0,
+    "image": "images/171001-2K-50HZ.png"
+  },
+  {
+    "code": "171004-2K-50HZ",
+    "name_ar": "منشار ترددي 750 وط",
+    "unit": "pcs",
+    "price_jod": 32.0,
+    "image": "images/171004-2K-50HZ.png"
+  },
+  {
+    "code": "171102-2K",
+    "name_ar": "ماكينة جلخ 6\"",
+    "unit": "pcs",
+    "price_jod": 22.0,
+    "image": "images/171102-2K.png"
+  },
+  {
+    "code": "171106-2K",
+    "name_ar": "حفافة دائري 5\"",
+    "unit": "pcs",
+    "price_jod": 22.0,
+    "image": "images/171106-2K.png"
+  },
+  {
+    "code": "171107-2K",
+    "name_ar": "حفافة مربعة",
+    "unit": "pcs",
+    "price_jod": 22.0,
+    "image": "images/171107-2K.png"
+  },
+  {
+    "code": "171112-2K",
+    "name_ar": "صاروخ كهرباء بولش 7\"",
+    "unit": "pcs",
+    "price_jod": 40.0,
+    "image": "images/171112-2K.png"
+  },
+  {
+    "code": "171202-2K",
+    "name_ar": "مولد كهرباء بنزين 2 كيلو 2000 وط",
+    "unit": "pcs",
+    "price_jod": 165.0,
+    "image": "images/171202-2K.png"
+  },
+  {
+    "code": "171203-2K",
+    "name_ar": "مولد كهرباء بنزين 3 كيلو 2800 وط",
+    "unit": "pcs",
+    "price_jod": 185.0,
+    "image": "images/171203-2K.png"
+  },
+  {
+    "code": "171204-2K",
+    "name_ar": "مولد كهرباء بنزين 5 كيلو 5000 وط",
+    "unit": "pcs",
+    "price_jod": 400.0,
+    "image": "images/171204-2K.png"
+  },
+  {
+    "code": "171301-2K",
+    "name_ar": "مضخة غسيل 1400 وط * 70 بار",
+    "unit": "pcs",
+    "price_jod": 58.0,
+    "image": "images/171301-2K.png"
+  },
+  {
+    "code": "171302-2K",
+    "name_ar": "مضخة غسيل 1800 وط * 90بار",
+    "unit": "pcs",
+    "price_jod": 76.5,
+    "image": "images/171302-2K.png"
+  },
+  {
+    "code": "171305-2K",
+    "name_ar": "مضخة غسيل فار ماتور 1800 وط",
+    "unit": "pcs",
+    "price_jod": 77.0,
+    "image": "images/171305-2K.png"
+  },
+  {
+    "code": "171306-2K",
+    "name_ar": "مضخة غسيل 1800 وط *150بار",
+    "unit": "pcs",
+    "price_jod": 60.0,
+    "image": "images/171306-2K.png"
+  },
+  {
+    "code": "171307-2K",
+    "name_ar": "مضخة غسيل 2200 وط *170بار",
+    "unit": "pcs",
+    "price_jod": 75.0,
+    "image": "images/171307-2K.png"
+  },
+  {
+    "code": "171308-2K",
+    "name_ar": "مضخة غسيل 1600 وط *150بار ماتور",
+    "unit": "pcs",
+    "price_jod": 100.0,
+    "image": "images/171308-2K.png"
+  },
+  {
+    "code": "171401B",
+    "name_ar": "بطارية درل شحن 12 فولت",
+    "unit": "pcs",
+    "price_jod": 12.0,
+    "image": "images/171401B.png"
+  },
+  {
+    "code": "171401C",
+    "name_ar": "شاحن درل 12 فولت",
+    "unit": "pcs",
+    "price_jod": 5.0,
+    "image": "images/171401C.png"
+  },
+  {
+    "code": "171402B",
+    "name_ar": "بطارية درل شحن 18 فولت",
+    "unit": "pcs",
+    "price_jod": 17.5,
+    "image": "images/171402B.png"
+  },
+  {
+    "code": "171402C",
+    "name_ar": "شاحن درل 18 فولت",
+    "unit": "pcs",
+    "price_jod": 8.5,
+    "image": "images/171402C.png"
+  },
+  {
+    "code": "171420AH",
+    "name_ar": "بطارية درل شحن 21 فولت * 2 امبير",
+    "unit": "pcs",
+    "price_jod": 14.0,
+    "image": "images/171420AH.png"
+  },
+  {
+    "code": "171440AH",
+    "name_ar": "بطارية درل شحن 21 فولت * 4 امبير",
+    "unit": "pcs",
+    "price_jod": 23.0,
+    "image": "images/171440AH.png"
+  },
+  {
+    "code": "171601-2K",
+    "name_ar": "ماكينة فرمايكة صغيرة 550 وط",
+    "unit": "pcs",
+    "price_jod": 22.0,
+    "image": "images/171601-2K.png"
+  },
+  {
+    "code": "171602-2K",
+    "name_ar": "ماكينة فرمايكة  750 وط",
+    "unit": "pcs",
+    "price_jod": 50.0,
+    "image": "images/171602-2K.png"
+  },
+  {
+    "code": "171801-2K",
+    "name_ar": "درل خلط مكسر 1400 وط",
+    "unit": "pcs",
+    "price_jod": 50.0,
+    "image": "images/171801-2K.png"
+  },
+  {
+    "code": "171901-2K",
+    "name_ar": "طقم درمل 26قطعة 135 وط",
+    "unit": "SET",
+    "price_jod": 24.0,
+    "image": "images/171901-2K.png"
+  },
+  {
+    "code": "172016-2K",
+    "name_ar": "منشار شجر كهرباء 16\"",
+    "unit": "pcs",
+    "price_jod": 45.6,
+    "image": "images/172016-2K.png"
+  },
+  {
+    "code": "172320-2K",
+    "name_ar": "درل قائم  20 ملم * 750 وط",
+    "unit": "pcs",
+    "price_jod": 210.0,
+    "image": "images/172320-2K.png"
+  },
+  {
+    "code": "172415-2K",
+    "name_ar": "هوفر 15 لتر * 1200 وط",
+    "unit": "pcs",
+    "price_jod": 48.0,
+    "image": "images/172415-2K.png"
+  },
+  {
+    "code": "172430-2K",
+    "name_ar": "هوفر 30 لتر * 1400 وط",
+    "unit": "pcs",
+    "price_jod": 70.0,
+    "image": "images/172430-2K.png"
+  },
+  {
+    "code": "172470-2K",
+    "name_ar": "هوفر 70 لتر * 2000 وط",
+    "unit": "pcs",
+    "price_jod": 185.0,
+    "image": "images/172470-2K.png"
+  },
+  {
+    "code": "TH7401",
+    "name_ar": "بكرة سلك فارغ",
+    "unit": "pcs",
+    "price_jod": 14.0,
+    "image": "images/TH7401.png"
+  },
+  {
+    "code": "171402-1",
+    "name_ar": "درل شحن 21 فولت 2 بطارية",
+    "unit": "pcs",
+    "price_jod": 42.0,
+    "image": "images/171402-1.png"
+  },
+  {
+    "code": "171444",
+    "name_ar": "درل شحن 16 فولت 2 بطارية",
+    "unit": "pcs",
+    "price_jod": 24.0,
+    "image": "images/171444.png"
+  }
+]

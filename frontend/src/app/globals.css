@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-red: #E60616;
+  --color-brand-light: #ff3342;
+  --color-brand-dark: #b3000b;
+  --color-background-custom: #fff8f7;
+  --color-on-background-custom: #2a1614;
+  --color-surface-custom: #fff8f7;
+  --color-surface-container-low-custom: #fff0ee;
+  --color-surface-container-lowest-custom: #ffffff;
+  --color-surface-bright-custom: #fff8f7;
+  --color-surface-subtle-custom: #F5F5F5;
+  --color-border-light-custom: #E5E5E5;
+  --color-on-surface-variant-custom: #5e3f3b;
+  --color-secondary-custom: #5f5e5e;
+
+  --font-body: 'Inter', sans-serif;
+  --font-headline: 'Oswald', sans-serif;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #2a1614;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+}
+
+/* Scrollbar customizations */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #6B6B6B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #141414;
+}
+
+/* Animations */
+.card-in {
+  animation: cardIn .4s ease both;
+}
+
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
