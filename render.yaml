@@ -1,0 +1,57 @@
+# Render Blueprint for the WiseUp API and AI microservice.
+# Keep service names in sync with fromService references below.
+
+services:
+  - type: web
+    name: wiseup-ai-service
+    runtime: docker
+    plan: free
+    region: frankfurt
+    dockerfilePath: ./ai-service/Dockerfile
+    dockerContext: ./ai-service
+    healthCheckPath: /health
+    autoDeployTrigger: commit
+    envVars:
+      - key: WISEUP_EMBED_BACKEND
+        value: openai
+      - key: WISEUP_EMBED_MODEL
+        value: text-embedding-3-small
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: TAVILY_API_KEY
+        sync: false
+      - key: GMAIL_APP_PASSWORD
+        sync: false
+
+  - type: web
+    name: wiseup-backend
+    runtime: node
+    plan: free
+    region: frankfurt
+    buildCommand: cd backend && npm ci && npx prisma generate && npm run build
+    preDeployCommand: cd backend && npx prisma migrate deploy
+    startCommand: cd backend && npm start
+    healthCheckPath: /api/health
+    autoDeployTrigger: commit
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_ANON_KEY
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: CORS_ORIGIN
+        sync: false
+      - key: GMAIL_APP_PASSWORD
+        sync: false
+      - key: AI_SERVICE_HOSTPORT
+        fromService:
+          type: web
+          name: wiseup-ai-service
+          property: hostport

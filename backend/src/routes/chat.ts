@@ -9,7 +9,9 @@ import { ChatReqSchema, ChatResetSchema } from "../utils/validators";
 
 export const chatRouter = Router();
 
-const AI_SERVICE_URL = process.env.AI_SERVICE_URL || "http://localhost:8000";
+const AI_SERVICE_URL =
+  process.env.AI_SERVICE_URL ||
+  (process.env.AI_SERVICE_HOSTPORT ? `http://${process.env.AI_SERVICE_HOSTPORT}` : "http://localhost:8000");
 
 // Proxy chat request to Python AI microservice
 chatRouter.post("/", async (req, res, next) => {
