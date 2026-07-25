@@ -3,8 +3,7 @@ import { Inter, Oswald } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
 import { AuthProvider } from "@/context/AuthContext";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+
 
 const inter = Inter({
   variable: "--font-inter",
@@ -24,6 +23,8 @@ export const metadata: Metadata = {
     "أدوات صناعية عالية الجودة للمحترفين. متانة لا تضاهى وأداء يثق به الخبراء. Premium industrial hand tools for professionals.",
 };
 
+import LayoutWrapper from "@/components/LayoutWrapper";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -40,9 +41,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col antialiased bg-[#fff8f7] text-[#2a1614]">
         <AuthProvider>
           <LanguageProvider>
-            <Header />
-            <main className="flex-grow w-full">{children}</main>
-            <Footer />
+            <LayoutWrapper>{children}</LayoutWrapper>
           </LanguageProvider>
         </AuthProvider>
       </body>
