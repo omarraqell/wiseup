@@ -3,7 +3,6 @@
 import { useEffect, useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 import { getProduct, getProducts, getProductImageUrl, type Product } from "@/lib/api";
 import ProductCard from "@/components/ProductCard";
@@ -89,7 +88,7 @@ function ProductContent() {
         {/* Image */}
         <div className="bg-white rounded-lg border border-[#E5E5E5] p-6 flex items-center justify-center">
           {product.image_url ? (
-            <Image
+            <img
               src={getProductImageUrl(product.image_url)}
               alt={name}
               width={500}

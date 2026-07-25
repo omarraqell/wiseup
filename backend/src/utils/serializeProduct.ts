@@ -11,6 +11,7 @@ export function serializeProduct(p: ProductWithCategory, includePrice: boolean) 
     name_en: p.nameEn,
     unit: p.unit,
     image_url: p.imageUrl || "",
+    is_active: p.isActive,
     category_id: p.categoryId,
     category: p.category
       ? { name_ar: p.category.nameAr, name_en: p.category.nameEn, slug: p.category.slug }
